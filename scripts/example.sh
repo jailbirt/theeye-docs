@@ -1,34 +1,13 @@
-## It requieres that your script ends by returning "normal" or "failure" as value. 
+#!/usr/bin/env bash
+## For both Monitors and Tasks We need that your script ends by returning "normal" or "failure". 
+STATE="normal"
+# run your command
+echo "Hello World"
+#change state if its need it. 
+#print state.
+if [ $? -ne 0 ];then STATE="failure"; fi
+echo $STATE
 ## You can retrieve even more information by sending json formatted string. 
 ## 
-## sample code :
-## echo '{"state":"normal","data":"the data"}'
-## 
-
-#!/usr/bin/env bash
-
-NORMAL_STATE="normal";
-FAILURE_STATE="failure";
-
-# run resource state and verify
-# sample
-# echoed string will be used as the resource state
-result="1"
-if [ "$result" == "1" ];
-then
-  echo "$NORMAL_STATE"
-else
-  echo "$FAILURE_STATE"
-fi
-
-#
-# if you need to register extra data, use this format
-#
-state='failure'
-idx1='val1'
-idx2='val2'
-
-printf '{"state":"%s","data":{ "idx1":"%s", "idx2":"%s" }}' "$state" "$idx1" "$idx2"
-#
-# also unix command result state is stored, 0 for success
-exit 0
+## I.E :
+## echo '{"'$STATE'":"normal","data":{ "name1":"value1", "name2":"value2" }}'
