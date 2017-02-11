@@ -1,27 +1,17 @@
-/*
-   It requieres that your script ends by returning "normal" or "failure" as value. 
-   You can retrieve even more information by sending json formatted string. 
-
-   sample code :
-   echo '{"state":"normal","data":"the data"}'
- */
-
+//For both Monitors and Tasks We need that your script ends by returning "normal" or "failure". 
 // WARNING : check your current path and name to node binary.
-// could be node or nodejs.
 
-var NORMAL_STATE = 'normal';
-var FAILURE_STATE = 'failure';
+var state = 'normal';
 
-/**
- * check the resource state via 
- *
- */
-if( true ) { 
-  var resourceState = NORMAL_STATE;
-} else {
-  var resourceState = FAILURE_STATE;
+ // check state
+if( false ) { 
+  var state = 'false';
 }
 
-console.log( resourceState );
+console.log( state );
+
+//You can even retrieve more information by sending json formated string.
+//I.E
+//console.log( JSON.stringify({ state:state, data:{responseTime:responseTime} }) ); 
 
 process.exit;

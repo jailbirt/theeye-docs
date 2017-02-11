@@ -7,7 +7,7 @@ echo "Hello World"
 #print state.
 if [ $? -ne 0 ];then STATE="failure"; fi
 echo $STATE
-## You can retrieve even more information by sending json formatted string. 
+## You can even retrieve more information by sending json formatted string. 
 ## 
 ## I.E :
 ## echo '{"'$STATE'":"normal","data":{ "name1":"value1", "name2":"value2" }}'
