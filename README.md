@@ -1,3 +1,2 @@
 # theeye-docs
-+ Added Bash Example.
-+ 
++ [Sample Monitor/Task Scripts](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts)
