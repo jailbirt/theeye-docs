@@ -1,10 +1,13 @@
 
-# Build TheEye Agent
+# Build TheEye Agent (Unix)
 
 ### Prerequisite
 
 * EncloseJS with Key configured
 * TheEye-Agent installed and configured
+* Git
+* npm 3
+* Linux
 
 ### HOWTO
 
