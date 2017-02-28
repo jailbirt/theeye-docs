@@ -1,5 +1,5 @@
 
-# How to run scripts
+# Creating scripts
 
 The agent will parse the last line of the scripts looking for a string which represents a `state` or a `json` result object.
 
