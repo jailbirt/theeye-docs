@@ -2,9 +2,11 @@
 
 ## Scripts
 
-+ [Writing Scripts](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts/creating_scripts.md)
-+ [Sample](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts)
-+ [Script RunAs](https://github.com/theeye-io-team/theeye-docs/tree/master/faq/script_runas.md)
++ [Writing Scripts](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts/write.md)
+
++ [Scripts RunAs](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts/runas.md)
+
++ [Samples](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts)
 
 
 ## TheEye-Agent
