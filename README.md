@@ -2,6 +2,7 @@
 
 ## Scripts
 
++ [Creating Scripts](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts/creating_scripts.md)
 + [Sample Scripts](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts)
 
 ## FAQ - HOWTOs
