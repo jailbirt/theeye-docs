@@ -31,6 +31,7 @@ Nos ofrece la posibilidad de modificar los umbrales de monitoreo de las estadís
 (Host Stats Monitor) y que nos alerte cuando alcanza y/o supera dicho umbral.
 
 
+
 ![](https://github.com/patobas/docs/blob/master/monitor_stats.gif)
 
 + Script:
