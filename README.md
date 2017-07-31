@@ -35,7 +35,7 @@ Nos ofrece la posibilidad de modificar los umbrales de monitoreo de las estadís
 
 + Script:
 
-Lo podemos usar para verificar servicios, scripts, etc. 
+Lo podemos usar para monitorear hosts, servicios, scripts, etc. 
 (Tiene que devolver true de lo contrario siempre asume failure)
 Como en el siguiente ejemplo, verificamos si un bridge está levantado y funcionando.
 
