@@ -30,9 +30,12 @@ Hay muchos tipos de monitor. Nos sirve para controlar los servicios de nuestros 
 
 ![](https://github.com/patobas/docs/blob/master/monitor_stats.gif)
 
-+ Script (tiene que devolver true de lo contrario siempre asume failure).
++ Script:
+Lo podemos usar para verificar servicios, scripts, etc. 
+Tiene que devolver true de lo contrario siempre asume failure
+Por ejemplo verificamos si un bridge está levantado y funcionando.
 
-................
+![](https://github.com/patobas/docs/blob/master/monitor_script.gif)
 
 + API/WEB check, chequea el endpoint web con el payload y se puede machear string o 200/404/500
 
