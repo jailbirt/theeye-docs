@@ -39,7 +39,7 @@ Como en el siguiente ejemplo, verificamos si un bridge está levantado y funcion
 
 ![](https://github.com/patobas/docs/blob/master/monitor_script.gif)
 
-+ API/WEB check:
++ API/WEB check::
 (chequea el endpoint web con el payload y se puede machear string o 200/404/500)
 
 ................
