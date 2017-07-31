@@ -3,7 +3,6 @@
 
 ![](https://github.com/patobas/docs/blob/master/eye.png)
 
-test
 # Contents
 
 ### TheEye-CLI
