@@ -16,6 +16,8 @@
 
 + [Samples](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts)
 
+----
+
 Para crear un script: 
 
 ![](https://github.com/patobas/docs/blob/master/script.gif)
