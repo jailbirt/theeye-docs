@@ -18,14 +18,14 @@
 
 ----
 
-Para crear un script: 
+Crear un script: 
 
 ![](https://github.com/patobas/docs/blob/master/script.gif)
 
 
 # Monitor:
 
-Hay muchos tipos de monitor
+Hay muchos tipos de monitor.
 Nos sirve para controlar los servicios de nuestros equipos
 
 
@@ -35,14 +35,11 @@ Nos ofrece la posibilidad de modificar los umbrales de monitoreo de
 las estadísticas de los equipos (Host Stats Monitor) y que nos alerte cuando alcanza 
 y/o supera dicho umbral.
 
-
-
 ![](https://github.com/patobas/docs/blob/master/monitor_stats.gif)
 
 ### Script:
 
 Lo podemos usar para monitorear hosts, servicios, scripts, etc. 
-(Tiene que devolver true de lo contrario siempre asume failure)
 Como en el siguiente ejemplo, verificamos si un bridge está levantado y funcionando.
 
 
