@@ -32,7 +32,7 @@ Nos ofrece la posibilidad de modificar los umbrales de monitoreo de las estadís
 
 
 
-![](https://github.com/patobas/docs/blob/master/monitor_stats.gif)
+[](https://github.com/patobas/docs/blob/master/monitor_stats.gif)
 
 + Script:
 
@@ -55,7 +55,7 @@ Como en el siguiente ejemplo, verificamos si un bridge está levantado y funcion
 ### Create Task:
 + Se puede crear una tarea de tipo script. Se puede concatenar con eventos.
 
-................
+![](https://github.com/patobas/docs/blob/master/task-script.gif)
 
 + Se puede crear una tarea de tipo endpoint API/WEB. le pega a una web/api.
 
