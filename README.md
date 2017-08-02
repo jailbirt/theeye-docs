@@ -48,9 +48,10 @@ Como en el siguiente ejemplo, verificamos si un bridge está levantado y funcion
 
 ................
 
-+ Tipo proceso, busca un proceso.
++ Monitor - Proceso:
+Verifica el funcionamiento correcto de un proceso, binario, servicio. Por ej: Apache, mysql, etc.
 
-................
+![](https://github.com/patobas/docs/blob/master/monitor_process.gif)
 
 ### Create Task:
 + Se puede crear una tarea de tipo script. Se puede concatenar con eventos.
