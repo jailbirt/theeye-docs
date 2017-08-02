@@ -25,7 +25,7 @@ Para crear un script:
 ### Monitor:
 Hay muchos tipos de monitor. Nos sirve para controlar los servicios de nuestros equipos
 
-+ Estadísticas (STATS):
++ Estadísticas:
 
 Nos ofrece la posibilidad de modificar los umbrales de monitoreo de las estadísticas de los equipos
 (Host Stats Monitor) y que nos alerte cuando alcanza y/o supera dicho umbral.
