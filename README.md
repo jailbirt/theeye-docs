@@ -72,9 +72,11 @@ Se puede crear una tarea de tipo endpoint API/WEB. le pega a una web/api.
 
 ................
 
-Las tareas se pueden schedular, y en scheduled view se pueden ver todas las tareas programadas.
+### Tareas con Schedule:
 
-................
+Las tareas se pueden schedular, y en scheduled view se pueden ver todas las tareas programadas.
+![](https://github.com/patobas/docs/blob/master/schedule.gif)
+
 
 ### TheEye-Agent. Instalación:
 
