@@ -83,6 +83,9 @@ para que se ejecuten automáticamente, ya sea tareas de backup, reinicio de serv
 
 + [Build Agent Binary](https://github.com/theeye-io-team/theeye-docs/tree/master/agent/binary_build.md)
 
+
+
+
 ................
 
 + Lo de ir a profile, copiar y pegar en la consola.
