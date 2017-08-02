@@ -12,7 +12,7 @@ To pack the agent use the [Packager Script](https://github.com/interactar/theeye
 * npm 3 (at least)
 * zeit/pkg (npm package globally installed)
 * linux
-* theeye agent installed and configured
+* theeye agent installed and configured (I recommend to install and run the agent before continue)
 * compilation tools (depends on the distro and kernel version)
 
 ## HOWTO (This doc probably is outdated. There are scripts to generate the binary & the package. This is to do it manually)
