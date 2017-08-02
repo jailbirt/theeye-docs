@@ -25,12 +25,11 @@ Para crear un script:
 
 ### Monitor:
 
-
 Hay muchos tipos de monitor
 Nos sirve para controlar los servicios de nuestros equipos
 
 
-### Estadísticas:
+# Estadísticas:
 
 Nos ofrece la posibilidad de modificar los umbrales de monitoreo de 
 las estadísticas de los equipos (Host Stats Monitor) y que nos alerte cuando alcanza 
@@ -40,7 +39,7 @@ y/o supera dicho umbral.
 
 ![](https://github.com/patobas/docs/blob/master/monitor_stats.gif)
 
-### Script:
+# Script:
 
 Lo podemos usar para monitorear hosts, servicios, scripts, etc. 
 (Tiene que devolver true de lo contrario siempre asume failure)
@@ -49,20 +48,20 @@ Como en el siguiente ejemplo, verificamos si un bridge está levantado y funcion
 
 ![](https://github.com/patobas/docs/blob/master/monitor_script.gif)
 
-### API/WEB check:
+# API/WEB check:
 
 Chequea el endpoint web con el payload y se puede machear string o 200/404/500
 
 
 ................
 
-### Monitor - Proceso:
+# Monitor - Proceso:
 
 Verifica el funcionamiento correcto de un proceso, binario, servicio. Por ej: Apache, mysql, etc.
 
 ![](https://github.com/patobas/docs/blob/master/monitor_process.gif)
 
-### Create Task:
+### Crear Tareas:
 
 Se puede crear una tarea de tipo script. Se puede concatenar con eventos.
 
@@ -72,9 +71,10 @@ Se puede crear una tarea de tipo endpoint API/WEB. le pega a una web/api.
 
 ................
 
-### Tareas con Schedule:
+### Tareas Programadas (Schedule):
 
-Las tareas se pueden schedular, y en scheduled view se pueden ver todas las tareas programadas.
+Las tareas se pueden programar, y en "Schedule View" se pueden ver todas las tareas que están armadas
+para que se ejecuten automáticamente, ya sea tareas de backup, reinicio de servicios, etc.
 
 ![](https://github.com/patobas/docs/blob/master/schedule.gif)
 
