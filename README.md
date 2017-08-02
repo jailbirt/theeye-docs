@@ -88,7 +88,7 @@ para que se ejecuten automáticamente, ya sea tareas de backup, reinicio de serv
 
 ................
 
-+ Lo de ir a profile, copiar y pegar en la consola.
++ Profile, copiar y pegar en la consola.
 
 ### Templates:
 
