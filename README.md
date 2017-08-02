@@ -23,6 +23,7 @@ Para crear un script:
 
 
 ### Monitor:
+
 - Hay muchos tipos de monitor. 
 - Nos sirve para controlar los servicios de nuestros equipos
 
