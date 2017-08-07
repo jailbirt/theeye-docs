@@ -42,7 +42,6 @@ y/o supera dicho umbral.
 Lo podemos usar para monitorear hosts, servicios, scripts, etc. 
 Como en el siguiente ejemplo, verificamos si un bridge está levantado y funcionando.
 
-
 ![](https://github.com/patobas/docs/blob/master/monitor_script.gif)
 
 
@@ -50,8 +49,7 @@ Como en el siguiente ejemplo, verificamos si un bridge está levantado y funcion
 
 Chequea el endpoint web con el payload y se puede machear string o 200/404/500
 
-
-................
+[GIF]
 
 ### Monitor - Proceso:
 
@@ -67,7 +65,7 @@ Se puede crear una tarea de tipo script. Se puede concatenar con eventos.
 
 Se puede crear una tarea de tipo endpoint API/WEB. le pega a una web/api.
 
-................
+[GIF]
 
 ### Tareas Programadas (Schedule):
 
@@ -81,18 +79,15 @@ para que se ejecuten automáticamente, ya sea tareas de backup, reinicio de serv
 
 + [Build Agent Binary](https://github.com/theeye-io-team/theeye-docs/tree/master/agent/binary_build.md)
 
-
-
-
-................
+[GIF]
 
 + Profile, copiar y pegar en la consola.
 
 ### Templates:
 
-................
-
-+ ................
+[GIF]
 
 ### Webhooks:
 + Forma de acceder desde otro sistema, genera un link que al pegarle puede ejecutar una tarea si está vinculada.
+
+[GIF]
