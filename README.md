@@ -18,7 +18,7 @@
 
 ----
 
-Crear un script: 
+Para crear un script lo hacemos de la siguiente manera: 
 
 ![](https://github.com/patobas/docs/blob/master/script.gif)
 
@@ -44,6 +44,7 @@ Como en el siguiente ejemplo, verificamos si un bridge está levantado y funcion
 
 
 ![](https://github.com/patobas/docs/blob/master/monitor_script.gif)
+
 
 ### API/WEB check:
 
