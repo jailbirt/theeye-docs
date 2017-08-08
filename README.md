@@ -59,11 +59,11 @@ Verifica el funcionamiento correcto de un proceso, binario, servicio. Por ej: Ap
 
 # Tareas
 
-Se puede crear una tarea de tipo script. Se puede concatenar con eventos.
++ Crear una tarea de tipo script. Se puede concatenar con eventos.
 
 ![](https://github.com/patobas/docs/blob/master/task-script.gif)
 
-Se puede crear una tarea de tipo endpoint API/WEB. le pega a una web/api.
++ Crear una tarea de tipo endpoint API/WEB. le pega a una web/api.
 
 [GIF]
 
