@@ -79,11 +79,9 @@ para que se ejecuten automáticamente, ya sea tareas de backup, reinicio de serv
 
 + [Build Agent Binary](https://github.com/theeye-io-team/theeye-docs/tree/master/agent/binary_build.md)
 
-[GIF]
++ Para instalar en Linux, lo hacemos de la siguiente manera:
 
 ![](https://github.com/patobas/docs/blob/master/install_agent.gif)
-
-+ Profile, copiar y pegar en la consola.
 
 ### Templates:
 
