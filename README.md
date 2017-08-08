@@ -49,7 +49,8 @@ Como en el siguiente ejemplo, verificamos si un bridge está levantado y funcion
 
 Chequea el endpoint web con el payload y se puede machear string o 200/404/500
 
-[GIF]
+![](https://github.com/patobas/docs/blob/master/web_api.gif)
+
 
 + Monitor - Proceso
 
@@ -57,15 +58,18 @@ Verifica el funcionamiento correcto de un proceso, binario, servicio. Por ej: Ap
 
 ![](https://github.com/patobas/docs/blob/master/monitor_process.gif)
 
+
 # Tareas
 
 + Crear una tarea de tipo script. Se puede concatenar con eventos.
 
 ![](https://github.com/patobas/docs/blob/master/task-script.gif)
 
+
 + Crear una tarea de tipo endpoint API/WEB. le pega a una web/api.
 
 [GIF]
+
 
 + Tareas Programadas (Schedule)
 
