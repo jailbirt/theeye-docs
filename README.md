@@ -81,6 +81,8 @@ para que se ejecuten automáticamente, ya sea tareas de backup, reinicio de serv
 
 [GIF]
 
+![](https://github.com/patobas/docs/blob/master/install_agent.gif)
+
 + Profile, copiar y pegar en la consola.
 
 ### Templates:
