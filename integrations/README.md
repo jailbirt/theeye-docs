@@ -25,6 +25,7 @@ service theeye-agent restart
 
 ```
 
-![](https://github.com/theeye-io-team/theeye-docs/master/integrations/images/advancedLaunch.png)
+![](https://github.com/theeye-io-team/theeye-docs/blob/master/integrations/images/advancedLaunch.png)
+
 
 
