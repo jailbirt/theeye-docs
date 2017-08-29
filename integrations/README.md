@@ -5,7 +5,7 @@ If you plan to launch a EC2 Instance, you can automatically set a suitable hostn
 Steps:
 *1- go to your profile and copy theeye installation script: https://theeye.io/profile
 
-![](https://github.com/theeye-io-team/theeye-docs/master/integrations/images/theeye-agentInstallation.png)
+![](https://github.com/theeye-io-team/theeye-docs/blob/master/integrations/images/theeye-agentInstallation.png)
 
 
 *2- launch a new EC2 instance, hold on step number 3, you will fullfill advanced settings with the following script (watch out to full fille both hostnameFunction and theeyeInstall variables to fit your settings)
