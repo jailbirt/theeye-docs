@@ -19,7 +19,7 @@ hostnameFunction='YourHostname'
 #Replace theeyeInstall with the contents of step number 1.
 theeyeInstall='curl -s "https://s3.amazonaws.com/theeye.agent/linux/setup.sh" | bash -s "yourID" "yourSecret" "YourOrganization"' 
 
-hostnamectl set-hostname $(curl http://169.254.169.254/latest/meta-data/public-hostname%7Ccut -d. -f1).$hostnameFunction
+hostnamectl set-hostname $(curl http://169.254.169.254/latest/meta-data/public-hostname|cut -d. -f1).$hostnameFunction
 $theeyeInstall
 service theeye-agent restart
 
