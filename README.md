@@ -112,9 +112,9 @@ Luego a la derencha donde tenemos las tasks, las vemos duplicadas pero porque ap
 
 
 # Webhooks
-+ Un incoming webhook es una forma de acceder desde otro sistema, a su vez genera un link que al llamar la instrucción puede ejecutarla, si es que está vinculada a una tarea (o serie de tareas)
+Un incoming webhook es una forma de acceder desde otro sistema, a su vez genera un link que al llamar la instrucción puede ejecutarla, si es que está vinculada a una tarea (o serie de tareas)
 
-+ Las tareas se pueden ejecutar con trigger on y eso arma el Workflow.
+Las tareas se pueden ejecutar con trigger on y eso arma el Workflow.
 
 
 [GIF]
