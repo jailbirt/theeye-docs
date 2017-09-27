@@ -107,6 +107,10 @@ para que se ejecuten automáticamente, ya sea tareas de backup, reinicio de serv
 
 ![](https://github.com/patobas/docs/blob/master/template.gif)
 
+Los templates, en este caso llamados "Provisoning", los usamos para asignar las tareas ya creadas en un host a un nuevo equipo.
+Luego a la derencha donde tenemos las tasks, las vemos duplicadas pero porque apunta a diferentes servidores.
+
+
 # Webhooks
 + Forma de acceder desde otro sistema, genera un link que al pegarle puede ejecutar una tarea si está vinculada.
 
