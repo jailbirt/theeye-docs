@@ -105,7 +105,7 @@ para que se ejecuten automáticamente, ya sea tareas de backup, reinicio de serv
 
 # Templates
 
-[GIF]
+![](https://github.com/patobas/docs/blob/master/template.gif)
 
 # Webhooks
 + Forma de acceder desde otro sistema, genera un link que al pegarle puede ejecutar una tarea si está vinculada.
