@@ -116,8 +116,7 @@ Un incoming webhook es una forma de acceder desde otro sistema, a su vez genera 
 
 Las tareas se pueden ejecutar con trigger on y eso arma el Workflow.
 
-
-[GIF]
+![](https://github.com/patobas/docs/blob/master/webhook.gif)
 
 
 # Workflow
@@ -125,10 +124,10 @@ Las tareas se pueden ejecutar con trigger on y eso arma el Workflow.
 Un Workflow nos sirve para ver como está la estructura de las tareas, cómo se realizan y cuál es su orden correlativo.
 Por ej una tarea simple de un reinicio de servicio, el Workflow lo veremos de la siguiente manera:
 
-[GIF]
+![](https://github.com/patobas/docs/blob/master/workflow.gif)
 
 
 En cambio un Workflow del tipo Webhook, lo veremos totalmente diferente:
 
 
-[GIF]
+![](https://github.com/patobas/docs/blob/master/webhook_workflow.png)
