@@ -20,8 +20,8 @@
 
 ----
 
-Theeye es una herramienta Devops que permite armar un control remoto con indicadores (monitores) y acciones (tareas) customs para que vos o a quién le pases la posta pueda, de forma rápida, tomar acciones en tiempo real y desde la libertad del celular. 
-También sirve para disminuir tareas de soportepasar la posta a un compañero o jefe pesado.
+Theeye es una herramienta Devops que permite armar un control remoto con indicadores/semasforos (monitores) y acciones (tareas) customs para tomar acciones en tiempo real y desde la libertad del celular. 
+También sirve para disminuir tareas de soporte, poder pasar la posta a un compañero y hacer felices a los micro managers.
 
 Theeye es un orquestador que sirve para: monitorear, ejecutar acciones, armar workflows, provisionar equipos y programar tareas. 
 Theeye es un IFTTT / Zapier para Devops.
@@ -31,6 +31,7 @@ En cuanto a provisioning, cheff o ansible también son superiores. Nuestro enfoq
 Sí ya tenes tu monitoring armado con cloudwatch y new-relic y tu provisioning con cheff,  solo los indicadores importantes pueden estar en theeye, junto con las acciones. 
 Si estas empezando de cero y querés hacer todo desde theeye, tenemos una integración nativa con la suit de ELK y Docker, con lo cual es muy sencillo.
 
+<iframe src="https://atlas.mindmup.com/2017/11/5fa49fd0c43311e7b5da733708907222/theeye_functional_mindmap_es/index.html"></iframe>
 
 Para crear un script lo hacemos de la siguiente manera: 
 
