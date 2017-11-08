@@ -31,7 +31,9 @@ En cuanto a provisioning, cheff o ansible también son superiores. Nuestro enfoq
 Sí ya tenes tu monitoring armado con cloudwatch y new-relic y tu provisioning con cheff,  solo los indicadores importantes pueden estar en theeye, junto con las acciones. 
 Si estas empezando de cero y querés hacer todo desde theeye, tenemos una integración nativa con la suit de ELK y Docker, con lo cual es muy sencillo.
 
+{::nomarkdown}
 <iframe src="https://atlas.mindmup.com/2017/11/5fa49fd0c43311e7b5da733708907222/theeye_functional_mindmap_es/index.html"></iframe>
+{:/}
 
 Para crear un script lo hacemos de la siguiente manera: 
 
