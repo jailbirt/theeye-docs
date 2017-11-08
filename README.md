@@ -31,15 +31,17 @@ En cuanto a provisioning, cheff o ansible también son superiores. Nuestro enfoq
 Sí ya tenes tu monitoring armado con cloudwatch y new-relic y tu provisioning con cheff,  solo los indicadores importantes pueden estar en theeye, junto con las acciones. 
 Si estas empezando de cero y querés hacer todo desde theeye, tenemos una integración nativa con la suit de ELK y Docker, con lo cual es muy sencillo.
 
-{::nomarkdown}
 <iframe src="https://atlas.mindmup.com/2017/11/5fa49fd0c43311e7b5da733708907222/theeye_functional_mindmap_es/index.html"></iframe>
-{:/}
 
-Para crear un script lo hacemos de la siguiente manera: 
+El primer paso es la instalación de un agente para que comience a reportar:
 
-![](https://github.com/patobas/docs/blob/master/script.gif)
+# Instalación de Agentes
 
++ Para instalar en Linux, lo hacemos de la siguiente manera:
 
+![](https://github.com/patobas/docs/blob/master/install_agent.gif)
+
++ [Build Agent Binary](https://github.com/theeye-io-team/theeye-docs/tree/master/agent/binary_build.md)
 
 
 # Monitor
@@ -98,13 +100,12 @@ para que se ejecuten automáticamente, ya sea tareas de backup, reinicio de serv
 ![](https://github.com/patobas/docs/blob/master/schedule.gif)
 
 
-+ TheEye-Agent. Instalación
+# SCRIPTS
+Creación de script: 
 
-+ Para instalar en Linux, lo hacemos de la siguiente manera:
+![](https://github.com/patobas/docs/blob/master/script.gif)
 
-![](https://github.com/patobas/docs/blob/master/install_agent.gif)
 
-+ [Build Agent Binary](https://github.com/theeye-io-team/theeye-docs/tree/master/agent/binary_build.md)
 
 # Templates
 
