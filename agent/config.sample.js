@@ -25,7 +25,8 @@ module.exports = {
       "api_url": "",
       "client_id": "",
       "client_secret": "",
-      "client_customer": ""
+      "client_customer": "",
+      "client_hostname": "" // use this hostname instead of using system hostname
     }
    *
    * if not defined here, credentials can be defined using CLI environment variables
