@@ -73,9 +73,8 @@ Once you've logged-in, check the Dashboard.
 ### Resources
 
 #### Monitors
-
-Existen cinco tipo de monitores
-Nos sirve para controlar los servicios de nuestros equipos
+A monitor is used to check services' or resources' status. You can use this status information to take actions (e.g. run a task, send notification).
+There're five kind of monitors you can set from TheEye.
 
 
 + Stats
