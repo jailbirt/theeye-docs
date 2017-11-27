@@ -7,13 +7,13 @@
   * ##### [Check your first resource](#check-your-first-resource-1)
 
 ## [Resources](#resources-1)
-### Monitors
-### Tasks
-### Webhooks
-### Provisioning
-### Users
-### Organization
-### Scripts
+#### [Monitors](#monitors-1)
+#### Tasks
+#### Webhooks
+#### Provisioning
+#### Users
+#### Organization
+#### Scripts
 
 + [Writing Scripts](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts/write.md)
 
@@ -24,12 +24,9 @@
 + [Integrations](https://github.com/theeye-io-team/theeye-docs/tree/master/integrations)
 
 ## Other Tools
-#### TheEye-CLI
-+ [CLI Util](https://github.com/theeye-io-team/theeye-docs/tree/master/cli)
++ [TheEye_Cli Util](https://github.com/theeye-io-team/theeye-docs/tree/master/cli)
 + [Build Agent Binary](https://github.com/theeye-io-team/theeye-docs/tree/master/agent/binary_build.md)
 ----
-
-
 
 ### What is TheEye
     * A remote server managament and a monitoring tool (Devops)
