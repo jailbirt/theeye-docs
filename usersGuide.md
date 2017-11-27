@@ -21,6 +21,7 @@
 ## Other Tools
 #### TheEye-CLI
 + [CLI Util](https://github.com/theeye-io-team/theeye-docs/tree/master/cli)
++ [Build Agent Binary](https://github.com/theeye-io-team/theeye-docs/tree/master/agent/binary_build.md)
 ----
 
 
@@ -55,7 +56,6 @@ If it is the first time you access TheEye Website, access the link in the monito
 
 ![](https://github.com/patobas/docs/blob/master/install_agent.gif)
 
-+ [Build Agent Binary](https://github.com/theeye-io-team/theeye-docs/tree/master/agent/binary_build.md)
 
 + Windows:
 
