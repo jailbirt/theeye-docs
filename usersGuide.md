@@ -5,11 +5,12 @@
 # Contents
 #### [What is TheEye?](#what-is-theeye-1)
 #### [First Steps](#first-steps-1)
-##### [Agent Installation](#agent-installation-1)
+  * ##### [Agent Installation](#agent-installation-1)
 
 ## [Resources](#resources-1)
 
-## Useful Stuff
+
+## Other Tools
 #### TheEye-CLI
 + [CLI Util](https://github.com/theeye-io-team/theeye-docs/tree/master/cli)
 
@@ -47,9 +48,8 @@ To start using ThEye you will need:
 2. Install an agent on each server you would like to perform actions.
 3. Create yor first resource from TheEye Web.
 
-El primer paso es la instalación de un agente para que comience a reportar:
-
 #### Agent Installation
+From TheEye Web, go to "settings" in the left menu and get to the "installation" section.
 
 + Linux:
 
@@ -58,6 +58,7 @@ El primer paso es la instalación de un agente para que comience a reportar:
 + [Build Agent Binary](https://github.com/theeye-io-team/theeye-docs/tree/master/agent/binary_build.md)
 
 + Windows:
+
 
 
 ### Resources
