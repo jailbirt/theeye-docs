@@ -1,8 +1,8 @@
 How to use the CLI
 
-The CLI is a command line utility based on the Agent Core. Basically with the CLI, you can perform authenticated request to the API and create custom clients or automated tasks from any command line shell.
+The CLI is a command line utility based on the Agent Core. Basically the CLI allows you to perform authenticated requests to the API and create custom clients or automated tasks from any command line shell.
 
-The CLI accepts the same environment variables as the agent do.
+The CLI accepts the same environment variables as the agent.
 
 + DEBUG
 + NODE_ENV
@@ -41,5 +41,5 @@ The following command will fetch all your available monitors
 `NODE_ENV=cfgfilename ./cli/theeye-cli.js -a get -r resource`
 
 
-Note that you will be able to perform only actions authorized to the user you are using (check configuration options).
+Note: You will be able to perform only authorized actions to the user you are using (check configuration options).
 Agents for example, have limited permissions. To perform advanced actions (like create, delete or update) you will need a user with admin or higher permissions.
