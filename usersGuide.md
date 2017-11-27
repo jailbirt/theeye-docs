@@ -5,9 +5,12 @@
 # Contents
 #### [What is TheEye?](#what-is-theeye-1)
 #### [First Steps](#first-steps-1)
+##### [Agent Installation](#agent-installation-1)
 
+## [Resources](#resources-1)
+
+## Useful Stuff
 #### TheEye-CLI
-
 + [CLI Util](https://github.com/theeye-io-team/theeye-docs/tree/master/cli)
 
 ### Scripts
@@ -46,16 +49,20 @@ To start using ThEye you will need:
 
 El primer paso es la instalación de un agente para que comience a reportar:
 
-# Instalación de Agentes
+#### Agent Installation
 
-+ Para instalar en Linux, lo hacemos de la siguiente manera:
++ Linux:
 
 ![](https://github.com/patobas/docs/blob/master/install_agent.gif)
 
 + [Build Agent Binary](https://github.com/theeye-io-team/theeye-docs/tree/master/agent/binary_build.md)
 
++ Windows:
 
-# Monitor
+
+### Resources
+
+#### Monitors
 
 Existen cinco tipo de monitores
 Nos sirve para controlar los servicios de nuestros equipos
