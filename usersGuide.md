@@ -3,7 +3,7 @@
 ![](https://github.com/patobas/docs/blob/master/eye.png)
 
 # Contents
-#### [What is TheEye?](#what-is-theeye)
+#### [What is TheEye?](#what-is-theeye-1)
 #### First Steps
 
 #### TheEye-CLI
