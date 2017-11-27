@@ -4,7 +4,7 @@
 
 # Contents
 #### [What is TheEye?](#what-is-theeye-1)
-#### First Steps
+#### [First Steps](#first-steps-1)
 
 #### TheEye-CLI
 
@@ -34,9 +34,8 @@
     * A Real time support tool
     
     
-Si estas empezando de cero y querés hacer todo desde theeye, tenemos una integración nativa con la suit de ELK y Docker, con lo cual es muy sencillo.
-
-<iframe src="https://atlas.mindmup.com/2017/11/5fa49fd0c43311e7b5da733708907222/theeye_functional_mindmap_es/index.html" width="1800" height="900"> ></iframe>
+If you want start from the scratch, there's a native integration with ELK and Docker: 
+[TheEye MindMap](https://atlas.mindmup.com/2017/11/5fa49fd0c43311e7b5da733708907222/theeye_functional_mindmap_es/index.html)
 
 
 ### First Steps
