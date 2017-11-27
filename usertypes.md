@@ -19,7 +19,7 @@ _There're 6 user profiles, each type has different permissions._
     * Add and delete users
     * Set user credential (admin/manager/user/viewer)
 
-Note: **Users will have access to resources provided by ACLs. Only user types with Full Access permission will be able to see all resources.**
+_Note:_ **Users will have access to resources provided by ACLs. Only user types with _Full Access_ permission will be able to see all resources.**
 
 
 ### Effective permissions per credential type
