@@ -67,21 +67,21 @@ If it is the first time you access TheEye Website, click the link in the monitor
 + Windows:
 
 #### Check your first resource
-Once you've logged-in, check the Dashboard.
+Check the Dashboard view after login.
 
 
 ### Resources
 
 #### Monitors
 A monitor is used to check services' or resources' status. You can use this status information to take actions (e.g. run a task, send notification).
-There're five kind of monitors you can set from TheEye.
+You can always customize the time between checks.
 
+There're five kind of monitors you can set up from TheEye.
 
 + Stats
 
-Nos ofrece la posibilidad de modificar los umbrales de monitoreo de 
-las estadísticas de los equipos (Host Stats Monitor) y que nos alerte cuando alcanza 
-y/o supera dicho umbral.
+Checks your Hosts' stats (health) and triggers alerts when thresholds are exceeded.
+You can set your own thresholds.
 
 ![](https://github.com/patobas/docs/blob/master/monitor_stats.gif)
 
@@ -95,14 +95,15 @@ Como en el siguiente ejemplo, verificamos si un bridge está levantado y funcion
 
 + API/WEB check
 
-Chequea el endpoint web con el payload y se puede machear string o 200/404/500
+Sends a request to and endpoint and checks for an expected answer.
+Custom payload and custom expected responses are allowed.
 
 ![](https://github.com/patobas/docs/blob/master/web_api.gif)
 
 
-+ Monitor - Proceso
++ Monitor - Process
 
-Verifica el funcionamiento correcto de un proceso, binario, servicio. Por ej: Apache, mysql, etc.
+Verifies a process is running (e.g. daemon)
 
 ![](https://github.com/patobas/docs/blob/master/monitor_process.gif)
 
