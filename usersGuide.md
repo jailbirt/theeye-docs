@@ -88,8 +88,8 @@ You can set your own thresholds.
 
 + Script
 
-Lo podemos usar para monitorear hosts, servicios, scripts, etc. 
-Como en el siguiente ejemplo, verificamos si un bridge está levantado y funcionando.
+Create a script and use the output log to monitor a state when other monitor does not suit your needs.
+This is an example script to check if a bridge is running.
 
 ![](https://github.com/patobas/docs/blob/master/monitor_script.gif)
 
@@ -104,7 +104,7 @@ Custom payload and custom expected responses are allowed.
 
 + Monitor - Process
 
-Verifies a process is running (e.g. daemon)
+Verifies that a process is running (e.g. daemon)
 
 ![](https://github.com/patobas/docs/blob/master/monitor_process.gif)
 
