@@ -8,12 +8,6 @@
   * ##### [Agent Installation](#agent-installation-1)
 
 ## [Resources](#resources-1)
-
-
-## Other Tools
-#### TheEye-CLI
-+ [CLI Util](https://github.com/theeye-io-team/theeye-docs/tree/master/cli)
-
 ### Scripts
 
 + [Writing Scripts](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts/write.md)
@@ -24,6 +18,9 @@
 
 + [Integrations](https://github.com/theeye-io-team/theeye-docs/tree/master/integrations)
 
+## Other Tools
+#### TheEye-CLI
++ [CLI Util](https://github.com/theeye-io-team/theeye-docs/tree/master/cli)
 ----
 
 
