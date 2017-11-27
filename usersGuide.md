@@ -1,7 +1,5 @@
 [![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
 
-![](https://github.com/patobas/docs/blob/master/eye.png)
-
 # Contents
 #### [What is TheEye?](#what-is-theeye-1)
 #### [First Steps](#first-steps-1)
