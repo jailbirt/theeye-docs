@@ -3,7 +3,7 @@
 ![](https://github.com/patobas/docs/blob/master/eye.png)
 
 # Contents
-#### [What is TheEye?](#what-is-theeye?)
+#### [What is TheEye?](#what-is-theeye)
 #### First Steps
 
 #### TheEye-CLI
@@ -24,7 +24,7 @@
 
 
 
-### What is TheEye?(#what-is-theeye?)
+### What is TheEye
     * A remote server managament and a monitoring tool (Devops)
     * A server provision tool
     * A task manager (with scheduler)
