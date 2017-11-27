@@ -15,13 +15,13 @@
 #### Organization
 #### Scripts
 
-+ [Writing Scripts](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts/write.md)
++ [Writing Scripts](scripts/write.md)
 
-+ [Scripts RunAs](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts/runas.md)
++ [Scripts RunAs](scripts/runas.md)
 
-+ [Samples](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts)
++ [Samples](scripts)
 
-+ [Integrations](https://github.com/theeye-io-team/theeye-docs/tree/master/integrations)
++ [Integrations](integrations)
 
 ## Other Tools
 + [TheEye_Cli Util](https://github.com/theeye-io-team/theeye-docs/tree/master/cli)
@@ -49,7 +49,7 @@ To start using ThEye you will need:
 3. Create yor first resource from TheEye Web.
 
 Once you've activated your user, you'll see the Dasboard view like this:
-![](https://github.com/theeye-io/theeye-docs/blob/master/images/FirstTimeLogin.jpg)
+![](images/FirstTimeLogin.jpg)
 
 #### Agent Installation
 If it is the first time you access TheEye Website, click the link in the monitors panel where says "Click HERE to get the step by step instructions to install the Agent on Linux and Windows operating systems", otherwise go to "settings" in the left menu and get to the "installation" section.
@@ -61,7 +61,7 @@ If it is the first time you access TheEye Website, click the link in the monitor
 
 + Windows:
 
-![](https://github.com/theeye-io/theeye-docs/blob/master/images/WindowsAgentInstall.gif)
+![](images/WindowsAgentInstall.gif)
 
 
 #### Check your first resource
