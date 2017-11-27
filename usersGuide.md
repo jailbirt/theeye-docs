@@ -9,6 +9,12 @@
   * ##### [Check your first resource](#check-your-first-resource-1)
 
 ## [Resources](#resources-1)
+### Monitors
+### Tasks
+### Webhooks
+### Provisioning
+### Users
+### Organization
 ### Scripts
 
 + [Writing Scripts](https://github.com/theeye-io-team/theeye-docs/tree/master/scripts/write.md)
