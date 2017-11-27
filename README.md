@@ -74,10 +74,9 @@ Check the Dashboard view after login, you should see "All up and running" in the
 A monitor is used to check services' or resources' status. You can use this status information to take actions (e.g. run a task, send notification).
 You can always customize the time between checks.
 
-There're five kind of monitors you can set up from TheEye. Stats, Script, API/Web Check, Process and File.
+There're five kind of monitors you can set up from TheEye: Stats, Script, API/Web Check, Process and File.
 Check the monitors documentation: 
 [Monitors](https://github.com/theeye-io/theeye-docs/blob/master/monitors.md)
-
 
 
 # Tasks
@@ -86,9 +85,7 @@ Check the monitors documentation:
 
 ![](https://github.com/patobas/docs/blob/master/task-script.gif)
 
-
 + Create en endpoint API/WEB task.
-
 
 + Schedule a task.
 
