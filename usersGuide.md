@@ -109,19 +109,17 @@ Verifies that a process is running (e.g. daemon)
 ![](https://github.com/patobas/docs/blob/master/monitor_process.gif)
 
 
-# Tareas
+# Tasks
 
-+ Crear una tarea de tipo script. Se puede concatenar con eventos.
++ Script task. Chained to an event.
 
 ![](https://github.com/patobas/docs/blob/master/task-script.gif)
 
 
-+ Crear una tarea de tipo endpoint API/WEB. le pega a una web/api.
-
-[GIF]
++ Create en endpoint API/WEB task.
 
 
-+ Tareas Programadas (Schedule)
++ Schedule a task.
 
 Las tareas se pueden programar, y en "Schedule View" se pueden ver todas las tareas que están armadas
 para que se ejecuten automáticamente, ya sea tareas de backup, reinicio de servicios, etc.
@@ -129,7 +127,7 @@ para que se ejecuten automáticamente, ya sea tareas de backup, reinicio de serv
 ![](https://github.com/patobas/docs/blob/master/schedule.gif)
 
 
-# SCRIPTS
+# Scripts
 Creación de script: 
 
 ![](https://github.com/patobas/docs/blob/master/script.gif)
