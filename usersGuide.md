@@ -65,6 +65,7 @@ If it is the first time you access TheEye Website, click the link in the monitor
 
 
 + Windows:
+![](https://github.com/theeye-io/theeye-docs/blob/master/images/WindowsAgentInstall.gif)
 
 #### Check your first resource
 Check the Dashboard view after login.
