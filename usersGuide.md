@@ -57,7 +57,6 @@ From TheEye Web, go to "settings" in the left menu and get to the "installation"
 + Windows:
 
 
-
 ### Resources
 
 #### Monitors
