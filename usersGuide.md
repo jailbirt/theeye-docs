@@ -6,7 +6,7 @@
 #### [What is TheEye?](#what-is-theeye-1)
 #### [First Steps](#first-steps-1)
   * ##### [Agent Installation](#agent-installation-1)
-  * ##### [Create your first resource](#create-your-first-resource-1)
+  * ##### [Check your first resource](#check-your-first-resource-1)
 
 ## [Resources](#resources-1)
 ### Scripts
@@ -60,7 +60,9 @@ If it is the first time you access TheEye Website, access the link in the monito
 
 + Windows:
 
-#### Create your first resource
+#### Check your first resource
+Once you've logged-in, check the Dashboard.
+
 
 ### Resources
 
