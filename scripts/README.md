@@ -1,9 +1,14 @@
 
-+ [Writing Scripts](scripts/write.md)
 
-+ [Scripts RunAs](scripts/runas.md)
+#Scripts Documentation
+## Contents
+#### Writing Scripts
+#### Scripts Run As
+-------------------
 
-+ [Samples](scripts)
++ [Writing Scripts](write.md)
+
++ [Scripts RunAs](runas.md)
 
 # Theeye Sample Scripts
 + [Windows Batch](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/example.bat)
