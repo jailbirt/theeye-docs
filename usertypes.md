@@ -11,7 +11,7 @@
 User Accounts and Credential types (Web/Mobile access)
 ======================================================
 
-_There're 6 user profiles, each type has different permissions._
+_There're six user profiles, each type has different permissions._
 
 ## Permissions
 1. Full Control
