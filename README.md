@@ -89,10 +89,10 @@ A task is like a job, it can be performed or executed on demand. You can also us
 
 
 #### Scripts
-Creación de script: 
+You can write scripts directly from TheEye web to your servers or you can create scripts to be used as API Calls or monitors.
+Check the [Scripts Documentation](scripts) for more details.
 
 ![](https://github.com/patobas/docs/blob/master/script.gif)
-
 
 
 #### Provisining (Templates)
