@@ -1,5 +1,5 @@
 [![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
-# Users Documentation
+# User Management Documentation
 
 # Contents
 
