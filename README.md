@@ -75,8 +75,7 @@ A monitor is used to check services' or resources' status. You can use this stat
 You can always customize the time between checks.
 
 There're five kind of monitors you can set up from TheEye: Stats, Script, API/Web Check, Process and File.
-Check the monitors documentation: 
-[Monitors](https://github.com/theeye-io/theeye-docs/blob/master/monitors.md)
+Check the [Monitors Documentation](https://github.com/theeye-io/theeye-docs/blob/master/monitors.md)
 
 
 #### Tasks
