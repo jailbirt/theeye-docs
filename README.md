@@ -48,7 +48,7 @@ To start using ThEye you will need:
 2. Install an agent on each server you would like to perform actions.
 3. Create yor first resource from TheEye Web.
 
-Once you've activated your user, you'll see the Dasboard view like this:
+Once you've activated your user, you'll see the Dasboard:
 ![](images/FirstTimeLogin.jpg)
 
 #### Agent Installation
