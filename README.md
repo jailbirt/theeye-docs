@@ -91,6 +91,7 @@ Check the [Scripts Documentation](scripts) for more details.
 #### Provisioning (Templates)
 
 One of the main advantages brought by TheEye is the fact that all your technical stuff is stashed at the moment it is created (scripts, tasks, monitors). Provisioning allows you to reuse your stuff for other servers in the same way a template works.
+To reuse all the resources created for a server, go to _Povisioning_ in the left menu, select your source host in the _base template_ input box, set a name for the template and select your destination hosts in the _Hosts to add to the template_ input box. All the resources from your source host will now be available on your destinations hosts. 
 
 ![](https://github.com/patobas/docs/blob/master/template.gif)
 
