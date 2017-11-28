@@ -5,7 +5,7 @@
 
 ### User Roles
 #### Permissions
-#### Effective permissions per credential type
+#### Effective permissions per role type
 ### [Members Page (CRUD Users)](#members-page-user-administration)
 ----------
 User Accounts and Roles (Web/Mobile access)
