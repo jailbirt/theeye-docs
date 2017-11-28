@@ -73,4 +73,4 @@ The user account must be activated by the activation link sent by email.
 In the previous section we've described user roles and user administration. ACLs applies directly to resources.
 Admin roles can make resources visible to other members by adding them to the input field labeled _ACL's_ available on _Tasks_ and _Monitors_.
 
-![](images/ACLs.png)
+![](/images/ACLs.png)
