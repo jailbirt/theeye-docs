@@ -26,8 +26,7 @@ _Note:_ **Users will have access to resources provided by ACLs. Only user types 
 
 1. **root**
     * Full Control
-    * Full Access
-
+    
 2. **owner**
     * Full Access
     * Create and Modify
