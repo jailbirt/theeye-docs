@@ -7,12 +7,14 @@
   * ##### [Check your first resource](#check-your-first-resource-1)
 
 #### [User Management](#users)
+#### [Organization](#organization-1)
+
 ## Resources
 #### [Monitors](#monitors-1)
 #### [Tasks](#tasks-1)
 #### [Webhooks](#webhooks-1)
 #### [Provisioning](#provisioning-1)
-#### [Organization](#organization-1)
+
 #### [Scripts](#scripts-1)
 #### [Integrations](#integrations-1)
 
