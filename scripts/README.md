@@ -1,6 +1,6 @@
 
-
-#Scripts Documentation
+[![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
+# Scripts Documentation
 ## Contents
 #### Writing Scripts
 #### Scripts Run As
