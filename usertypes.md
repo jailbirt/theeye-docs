@@ -61,4 +61,4 @@ _Note:_ **Users will have access to resources provided by ACLs. Only user types 
 
 ## Members Page
 To Create or modify users, go to _Settings_ from the left menu and then go to _Members_ section.
-![](images/User Members.jpg)
+![](images/user_members.jpg)
