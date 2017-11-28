@@ -7,6 +7,7 @@
 #### Permissions
 #### Effective permissions per role type
 ### [Members Page (CRUD Users)](#members-page-user-administration)
+### [ACLs](#acl)
 ----------
 User Accounts and Roles (Web/Mobile access)
 ======================================================
@@ -67,3 +68,9 @@ To Create, modify or delete users, go to _Settings_ from the left menu and then 
 
 When you invite a new user, you will be prompted to select the user's role (admin/user/viewer/manager). The role can be changed at any time by a user manager.
 The user account must be activated by the activation link sent by email.
+
+## ACLs
+In the previous section we've described user roles and user administration. ACLs applies directly to resources.
+Admin roles can make resources visible to other members by adding them to the input field labeled _ACL's_ available on _Tasks_ and _Monitors_.
+
+![](images/ACLs.png)
