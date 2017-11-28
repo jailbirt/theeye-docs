@@ -60,7 +60,7 @@ _Note:_ **Users will have access to resources provided by ACLs. Only user types 
     * View
     * Execution
 
-## Members Page
+## Members Page (User administration)
 To Create or modify users, go to _Settings_ from the left menu and then go to _Members_ section.
 
 ![](images/user_members.jpg)
