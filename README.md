@@ -6,8 +6,8 @@
   * ##### [Agent Installation](#agent-installation-1)
   * ##### [Check your first resource](#check-your-first-resource-1)
 
-### [User Management](#users)
-## [Resources]
+#### [User Management](#users)
+## Resources
 #### [Monitors](#monitors-1)
 #### [Tasks](#tasks-1)
 #### [Webhooks](#webhooks-1)
