@@ -53,7 +53,7 @@ Once you've activated your user account, you'll see this Dasboard after login:
 ![](images/FirstTimeLogin.jpg)
 
 #### Agent Installation
-If it is the first time you access TheEye Website, click the link in the monitors panel where says "Click HERE to get the step by step instructions to install the Agent on Linux and Windows operating systems", otherwise go to "settings" in the left menu and get to the "installation" section.
+If it is the first time you access TheEye Website, click the link in the monitors panel where says "Click HERE to get the step by step instructions to install the Agent on Linux and Windows operating systems", otherwise go to "settings" in the left menu and get to the "installation" section. Installation instructions are provided for Linux and Windows systems.
 
 + Linux:
 
