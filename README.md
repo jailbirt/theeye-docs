@@ -19,8 +19,8 @@
 #### [Integrations](#integrations-1)
 
 ## Other Tools
-+ [TheEye_Cli Util](https://github.com/theeye-io-team/theeye-docs/tree/master/cli)
-+ [Build Agent Binary](https://github.com/theeye-io-team/theeye-docs/tree/master/agent/binary_build.md)
++ [TheEye_Cli Util](cli)
++ [Build Agent Binary](agent/binary_build.md)
 + [Agent Docs](agent)
 ----
 
