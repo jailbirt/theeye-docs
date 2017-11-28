@@ -1,3 +1,5 @@
+[![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
+
 User Accounts and Credential types (Web/Mobile access)
 ======================================================
 
@@ -49,3 +51,7 @@ _Note:_ **Users will have access to resources provided by ACLs. Only user types 
     * User Admin
     * View
     * Execution
+
+## Members Page
+To Create or modify users, go to _Settings_ from the left menu and then go to _Members_ section.
+![](images/User Members.jpg)
