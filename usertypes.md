@@ -1,5 +1,6 @@
 [![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
-
+# Users Documentation
+=====================
 # Contents
 
 ### User Accounts and Credential types
