@@ -30,7 +30,7 @@
 
 ### What is TheEye
     * A remote server managament and a monitoring tool (Devops)
-    * A server provision tool
+    * A server provisioning tool
     * A task manager (with scheduler)
     * A Workflow creation tool (IFTTT)
     * A technical repository
