@@ -85,10 +85,7 @@ Check the [Monitors Documentation](https://github.com/theeye-io/theeye-docs/blob
 
 
 #### Tasks
-
-Check the [Tasks Documentation](tasks.md) for more details.
-+ Schedule a task.
-You can use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. 
+A task is like a job, it can be performed or executed on demand. You can also use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. Check the [Tasks Documentation](tasks.md) for more details.
 
 
 #### Scripts
