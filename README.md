@@ -49,7 +49,7 @@ To start using ThEye you will need:
 2. Install an agent on each server you would like to perform actions.
 3. Create yor first resource from TheEye Web.
 
-Once you've activated your user, you'll see this Dasboard after login:
+Once you've activated your user account, you'll see this Dasboard after login:
 ![](images/FirstTimeLogin.jpg)
 
 #### Agent Installation
@@ -110,7 +110,7 @@ Los templates, en este caso llamados "Provisoning", los usamos para asignar las 
 Luego a la derencha donde tenemos las tasks, las vemos duplicadas pero porque apunta a diferentes servidores.
 
 #### Users
-TheEye provides six credential' types for user accounts. You can create users on the go with the appropiate credential.
+TheEye provides six different user roles. You can create users on the go with the appropiate role.
 See the [Users Documentation](usertypes.md) for more details.
 
 #### Webhooks
