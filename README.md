@@ -30,7 +30,7 @@
     * A task manager (with scheduler)
     * A Workflow creation tool (IFTTT)
     * A technical repository
-    * An integration platform
+    * An integration and automation platform
     * A Real time support tool
     
     
