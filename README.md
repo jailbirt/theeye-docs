@@ -92,11 +92,14 @@ Check the [Scripts Documentation](scripts) for more details.
 
 One of the main advantages brought by TheEye is the fact that all your technical stuff is stashed at the moment it is created (scripts, tasks, monitors). Provisioning allows you to reuse your stuff for other servers in the same way a template works.
 To reuse all the resources created for a server, go to _Povisioning_ in the left menu, select your source host in the _base template_ input box, set a name for the template and select your destination hosts in the _Hosts to add to the template_ input box. 
-All the resources from your source host will now be available on your destinations hosts. 
+All the resources from your source host will now be available on your destination hosts. 
 
 ![](https://github.com/patobas/docs/blob/master/template.gif)
 
 #### Webhooks
+
+*FALTA DOCUMENTAR*
+
 Un incoming webhook es una forma de acceder desde otro sistema, a su vez genera un link que al llamar la instrucción puede ejecutarla, si es que está vinculada a una tarea (o serie de tareas)
 
 Las tareas se pueden ejecutar con trigger on y eso arma el Workflow.
@@ -105,6 +108,8 @@ Las tareas se pueden ejecutar con trigger on y eso arma el Workflow.
 
 
 # Workflow
+
+*FALTA DOCUMENTAR*
 
 Un Workflow nos sirve para ver como está la estructura de las tareas, cómo se realizan y cuál es su orden correlativo.
 Por ej una tarea simple de un reinicio de servicio, el Workflow lo veremos de la siguiente manera:
