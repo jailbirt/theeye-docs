@@ -1,5 +1,12 @@
 [![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
 
+# Contents
+----------
+### User Accounts and Credential types
+### Permissions
+### Effective permissions per credential type
+### Members Page (CRUD Users)
+
 User Accounts and Credential types (Web/Mobile access)
 ======================================================
 
