@@ -7,7 +7,7 @@
   * ##### [Check your first resource](#check-your-first-resource-1)
 
 ### [User Management](#users)
-## [Resources](#resources-1)
+## [Resources]
 #### [Monitors](#monitors-1)
 #### [Tasks](#tasks-1)
 #### [Webhooks](#webhooks-1)
