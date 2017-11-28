@@ -40,7 +40,7 @@ If you want start from the scratch, there's a native integration with ELK and Do
 
 ### First Steps
 To start using ThEye you will need:
-1. A user account. To get an user: https://theeye.io/register
+1. A user account. (If you don't have onee go to https://theeye.io/register)
 2. Install an agent on each server you would like to perform actions.
 3. Create yor first resource from TheEye Web.
 
