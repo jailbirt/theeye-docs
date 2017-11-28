@@ -11,7 +11,7 @@
 #### [Tasks](#tasks-1)
 #### [Webhooks](#webhooks-1)
 #### [Provisioning](#provisioning-1)
-#### [Users](#users-1)
+#### [User Management](#users-1)
 #### [Organization](#organization-1)
 #### [Scripts](#scripts-1)
 
@@ -111,7 +111,7 @@ Luego a la derencha donde tenemos las tasks, las vemos duplicadas pero porque ap
 
 #### Users
 TheEye provides six different user roles. You can create users on the go with the appropiate role.
-See the [Users Documentation](usertypes.md) for more details.
+See the [Users Management Documentation](usertypes.md) for more details.
 
 #### Webhooks
 Un incoming webhook es una forma de acceder desde otro sistema, a su vez genera un link que al llamar la instrucción puede ejecutarla, si es que está vinculada a una tarea (o serie de tareas)
