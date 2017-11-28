@@ -8,12 +8,12 @@
 
 ## [Resources](#resources-1)
 #### [Monitors](#monitors-1)
-#### Tasks
-#### Webhooks
-#### Provisioning
-#### Users
-#### Organization
-#### Scripts
+#### [Tasks](#tasks-1)
+#### [Webhooks](#webhooks-1)
+#### [Provisioning](#provisioning-1)
+#### [Users](#users-1)
+#### [Organization](#organization-1)
+#### [Scripts](#scripts-1)
 
 + [Writing Scripts](scripts/write.md)
 
@@ -79,9 +79,9 @@ Check the monitors documentation:
 [Monitors](https://github.com/theeye-io/theeye-docs/blob/master/monitors.md)
 
 
-# Tasks
+#### Tasks
 
-+ Script task. Chained to an event.
++ Script task. Linked to an event.
 
 ![](https://github.com/patobas/docs/blob/master/task-script.gif)
 
@@ -89,28 +89,31 @@ Check the monitors documentation:
 
 + Schedule a task.
 
-Las tareas se pueden programar, y en "Schedule View" se pueden ver todas las tareas que están armadas
-para que se ejecuten automáticamente, ya sea tareas de backup, reinicio de servicios, etc.
+You can use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify.
+To view or perform an operation, go to the _Tasks_ section and click on the scheduler icon.
 
 ![](https://github.com/patobas/docs/blob/master/schedule.gif)
 
 
-# Scripts
+#### Scripts
 Creación de script: 
 
 ![](https://github.com/patobas/docs/blob/master/script.gif)
 
 
 
-# Templates
+#### Provisining (Templates)
 
 ![](https://github.com/patobas/docs/blob/master/template.gif)
 
 Los templates, en este caso llamados "Provisoning", los usamos para asignar las tareas ya creadas en un host a un nuevo equipo.
 Luego a la derencha donde tenemos las tasks, las vemos duplicadas pero porque apunta a diferentes servidores.
 
+#### Users
+TheEye provides six credential' types for user accounts. You can create users on the go with the appropiate credential.
+See the [Users Documentation](usertypes.md) for more details.
 
-# Webhooks
+#### Webhooks
 Un incoming webhook es una forma de acceder desde otro sistema, a su vez genera un link que al llamar la instrucción puede ejecutarla, si es que está vinculada a una tarea (o serie de tareas)
 
 Las tareas se pueden ejecutar con trigger on y eso arma el Workflow.
