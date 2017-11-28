@@ -6,12 +6,12 @@
   * ##### [Agent Installation](#agent-installation-1)
   * ##### [Check your first resource](#check-your-first-resource-1)
 
+### [User Management](#users)
 ## [Resources](#resources-1)
 #### [Monitors](#monitors-1)
 #### [Tasks](#tasks-1)
 #### [Webhooks](#webhooks-1)
 #### [Provisioning](#provisioning-1)
-#### [User Management](#users-1)
 #### [Organization](#organization-1)
 #### [Scripts](#scripts-1)
 
@@ -69,6 +69,11 @@ If it is the first time you access TheEye Website, click the link in the monitor
 Check the Dashboard view after login, you should see "All up and running" in the monitors panel.
 
 ------------------------------
+
+### Users
+TheEye provides six different user roles. You can create users on the go with the appropiate role.
+See the [Users Management Documentation](usertypes.md) for more details.
+
 ### Resources
 
 #### Monitors
@@ -108,10 +113,6 @@ Creación de script:
 
 Los templates, en este caso llamados "Provisoning", los usamos para asignar las tareas ya creadas en un host a un nuevo equipo.
 Luego a la derencha donde tenemos las tasks, las vemos duplicadas pero porque apunta a diferentes servidores.
-
-#### Users
-TheEye provides six different user roles. You can create users on the go with the appropiate role.
-See the [Users Management Documentation](usertypes.md) for more details.
 
 #### Webhooks
 Un incoming webhook es una forma de acceder desde otro sistema, a su vez genera un link que al llamar la instrucción puede ejecutarla, si es que está vinculada a una tarea (o serie de tareas)
