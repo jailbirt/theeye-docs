@@ -67,7 +67,7 @@ If it is the first time you access TheEye Website, click the link in the monitor
 #### Check your first resource
 Check the Dashboard view after login, you should see "All up and running" in the monitors panel.
 
-
+------------------------------
 ### Resources
 
 #### Monitors
