@@ -14,14 +14,7 @@
 #### [Provisioning](#provisioning-1)
 #### [Organization](#organization-1)
 #### [Scripts](#scripts-1)
-
-+ [Writing Scripts](scripts/write.md)
-
-+ [Scripts RunAs](scripts/runas.md)
-
-+ [Samples](scripts)
-
-+ [Integrations](integrations)
+#### [Integrations](#integrations-1)
 
 ## Other Tools
 + [TheEye_Cli Util](https://github.com/theeye-io-team/theeye-docs/tree/master/cli)
