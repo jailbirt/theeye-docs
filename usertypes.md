@@ -8,10 +8,10 @@
 #### Effective permissions per credential type
 ### [Members Page (CRUD Users)](#members-page-user-administration)
 ----------
-User Accounts and Credential types (Web/Mobile access)
+User Accounts and Roles (Web/Mobile access)
 ======================================================
 
-_There're six user profiles, each type has different permissions._
+_There're six user profiles, each one has different permissions._
 
 ## Permissions
 1. Full Control
