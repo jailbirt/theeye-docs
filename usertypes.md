@@ -37,6 +37,7 @@ _Note:_ **Users will have access to resources provided by ACLs. Only user types 
 3. **admin**
     * Full Access
     * Create and Modify
+    * Execution
 
 4. **user**
     * View
