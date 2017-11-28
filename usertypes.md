@@ -62,6 +62,7 @@ _Note:_ **Users will have access to resources provided by ACLs. Only user types 
 
 ## Members Page
 To Create or modify users, go to _Settings_ from the left menu and then go to _Members_ section.
+
 ![](images/user_members.jpg)
 
 When you invite a new user, you will be prompted to select the user's credential type(admin/user/viewer/manager). You can always change the user's credential type at any time.
