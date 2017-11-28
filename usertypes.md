@@ -3,7 +3,7 @@
 
 # Contents
 
-### User Accounts and Credential types
+### User Roles
 #### Permissions
 #### Effective permissions per credential type
 ### [Members Page (CRUD Users)](#members-page-user-administration)
@@ -32,7 +32,7 @@ _There're six user profiles, each type has different permissions._
 _Note:_ **Users will have access to resources provided by ACLs. Only user types with _Full Access_ permission will be able to see all resources.**
 
 
-### Effective permissions per credential type
+### Effective permissions per role
 
 1. **root**
     * Full Control
@@ -65,5 +65,5 @@ To Create, modify or delete users, go to _Settings_ from the left menu and then 
 
 ![](images/user_members.jpg)
 
-When you invite a new user, you will be prompted to select the user's credential type(admin/user/viewer/manager). You can always change the user's credential type at any time.
+When you invite a new user, you will be prompted to select the user's role (admin/user/viewer/manager). The role can be changed at any time by a user manager.
 The user account must be activated by the activation link sent by email.
