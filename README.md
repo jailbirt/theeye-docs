@@ -88,12 +88,11 @@ You can write scripts directly from TheEye web to your servers or you can create
 Check the [Scripts Documentation](scripts) for more details.
 
 
-#### Provisining (Templates)
+#### Provisioning (Templates)
+
+One of the main advantages brought by TheEye is the fact that all your technical stuff is stashed at the moment it is created (scripts, tasks, monitors). Provisioning allows you to reuse your stuff for other servers in the same way a template works.
 
 ![](https://github.com/patobas/docs/blob/master/template.gif)
-
-Los templates, en este caso llamados "Provisoning", los usamos para asignar las tareas ya creadas en un host a un nuevo equipo.
-Luego a la derencha donde tenemos las tasks, las vemos duplicadas pero porque apunta a diferentes servidores.
 
 #### Webhooks
 Un incoming webhook es una forma de acceder desde otro sistema, a su vez genera un link que al llamar la instrucción puede ejecutarla, si es que está vinculada a una tarea (o serie de tareas)
