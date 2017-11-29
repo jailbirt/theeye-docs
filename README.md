@@ -34,8 +34,8 @@
     * A Real time support tool
     
     
-If you want start from the scratch, there's a native integration with ELK and Docker: 
-[TheEye MindMap](https://atlas.mindmup.com/2017/11/7f1f2fb0d53611e7a974c121a32f69bf/theeye_functional_mindmap_es/index.html)
+If you want start from the scratch, there's a native integration with ELK and Docker.
+Check this out [TheEye MindMap](https://atlas.mindmup.com/2017/11/7f1f2fb0d53611e7a974c121a32f69bf/theeye_functional_mindmap_es/index.html)
 
 
 ### First Steps
