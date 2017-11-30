@@ -8,7 +8,7 @@
 -------------------------------------
 ### Create and modify tasks
 Creating a task is simple, just go to the tasks section in the left "hamburger" menu, and click on "+ New Task". 
-A task can be modified directly from the tasks' panel in the Dashboard or you can go to the tasks page in the left menu, and click the edit button over the task box.
+A task can be modified directly from the tasks' panel in the Dashboard or you can go to the tasks page in the left menu, and click the edit button over the task row.
 
 #### Script task. Linked to an event.
 
