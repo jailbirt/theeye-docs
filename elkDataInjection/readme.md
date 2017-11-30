@@ -41,40 +41,40 @@ This events can be identified as the following topics:
 
 Topics configuration: 
 
-"agent": { 
-  "version": "agent-version"
-},
-"host": {
-  "stats": "host-stats",
-},
-"monitor": {
-  "crud": "monitor-crud",
-  "execution": "monitor-execution",
-  "state": "monitor-state",
-},
-"script": {
-  "crud": "script-crud"
-},
-"file": {
-  "crud": "file-crud"
-},
-"hostgroup": {
-  "crud": "provisioning-crud",
-},
-"host": {
-  "crud": "host-crud",
-  "stats": "host-stats"
-},
-"task": {
-  "crud": "task-crud"
-},
-"job": {
-  "crud": "job-crud"
-},
-"webhook": {
-  "crud": "webhook-crud",
-  "triggered": "triggered-webhook"
-}
+>"agent": { 
+>  "version": "agent-version"
+>},
+>"host": {
+>  "stats": "host-stats",
+>},
+>"monitor": {
+>  "crud": "monitor-crud",
+>  "execution": "monitor-execution",
+>  "state": "monitor-state",
+>},
+>"script": {
+>  "crud": "script-crud"
+>},
+>"file": {
+>  "crud": "file-crud"
+>},
+>"hostgroup": {
+>  "crud": "provisioning-crud",
+>},
+>"host": {
+>  "crud": "host-crud",
+>  "stats": "host-stats"
+>},
+>"task": {
+>  "crud": "task-crud"
+>},
+>"job": {
+>  "crud": "job-crud"
+>},
+>"webhook": {
+>  "crud": "webhook-crud",
+>  "triggered": "triggered-webhook"
+>}
 
 
 ### Notifications
