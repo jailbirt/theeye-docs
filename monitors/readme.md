@@ -4,7 +4,7 @@
 ### Contents
 #### [Stats Monitor](#monitor-type-stats)
 #### [Script Monitor](#monitor-type-script)
-#### [API/Web Check Monitor](#monitor-type-api-web-check)
+#### [API/Web Check Monitor](#monitor-type-api-webcheck)
 #### [Process Monitor](#monitor-type-process)
 #### [File Monitor](#monitor-type-file)
 ------------------------------
