@@ -1,5 +1,6 @@
-TheEye Icon
-Contents
+[![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
+
+# Contents
 TheEye logs
 
 Events and actions performed by users and resources are constantly being saved and in some cases also notified.
