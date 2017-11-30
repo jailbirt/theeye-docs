@@ -2,10 +2,11 @@
 # Tasks Documentation
 ## Contents
 ### Create and modify tasks
-#### Script Task
-#### Script Task
+#### [Script Task](#script-task-linked-to-an-event)
+#### [Webhook or HTTP Request Task](#create-an-endpoint-api-web-task)
 ### [Task Management and Scheduler](#schedule-a-task)
 -------------------------------------
+
 ### Create and modify tasks
 Creating a task is simple, just go to the tasks section in the left "hamburger" menu, and click on "+ create New Task", select the task category from _Outgoing Webhook/HTTP Request_ and _Script_ and start writing your task.
 A task can be modified directly from the tasks' panel in the Dashboard or you can go to the tasks page in the left menu, and click the edit button over the task row.
@@ -14,7 +15,7 @@ A task can be modified directly from the tasks' panel in the Dashboard or you ca
 
 ![](https://github.com/patobas/docs/blob/master/task-script.gif)
 
-#### Create en endpoint API/WEB task.
+#### Create an endpoint API/WEB task.
 
 ### Schedule a task.
 
