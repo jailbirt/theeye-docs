@@ -19,7 +19,7 @@ or click on "advanced options" for further features.
 
 + **Copy Task**: select an already created task as template
 + **Name**: name your task
-+ **Host**: select the host where the task will run
++ **Host**: select the host where the script will run
 + **Script**: select the script to be executed by the task
 + **Run As**: write down any extra command needed for user impersonification
 + **More Info**: describe your task. What does it do, what's the expected output after execution
