@@ -28,13 +28,13 @@ For example, you'll find a _monitor_ action in ELK data as a monitor-crud topic.
 ##### Non-CRUD Events 
 This events can be identified as the following topics:
 
-agent-version: every time the agent version is updated.
-host-stats: every time host-status is updated**
-monitor-execution: every time the agent sends an update for a monitor execution **
-monitor-state: every time a monitor status changes (failure, recovery, stop, change-file) **
-triggered-webhook: every time a webhook is played **
-task-execution: every time a task is played
-task-result: every time a task excution ends
+- agent-version: every time the agent version is updated.
+- host-stats: every time host-status is updated**
+- monitor-execution: every time the agent sends an update for a monitor execution **
+- monitor-state: every time a monitor status changes (failure, recovery, stop, change-file) **
+- triggered-webhook: every time a webhook is played **
+- task-execution: every time a task is played
+- task-result: every time a task excution ends
 
 
 ###### Configuration
