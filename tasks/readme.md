@@ -1,10 +1,10 @@
 [![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
 # Tasks Documentation
 ## Contents
-### Create and modify tasks
+#### Create and modify tasks
 ##### [Script Task](#script-task-linked-to-an-event)
 ##### [Webhook or HTTP Request Task](#create-an-endpoint-api-web-task)
-### [Task Management and Scheduler](#schedule-a-task)
+#### [Task Management and Scheduler](#schedule-a-task)
 -------------------------------------
 
 ### Create and modify tasks
