@@ -21,7 +21,7 @@ _There're six user profiles, each one has different permissions._
 2. Full Access
     * Can view all the resources that belongs to the organization.
 3. View 
-    * Can view tasks and ouput logs.
+    * Can view monitors, tasks and ouput logs.
 4. Execution
     * Can view and execute tasks.
 5. Create and Modify
