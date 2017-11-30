@@ -32,3 +32,6 @@ Verifies that a process is running (e.g. daemon)
 ![](https://github.com/patobas/docs/blob/master/monitor_process.gif)
 
 + Monitor type: File
+
+A File monitor will provision a file to a server and ensure that the file remains as created in the destination path you provided.
+Most common use is to maintain a configuration file. The file can be updated at any time, directly from the monitor box.
