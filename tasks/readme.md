@@ -12,8 +12,11 @@ Creating a task is simple, just go to the tasks section in the left "hamburger" 
 A task can be modified directly from the tasks' panel in the Dashboard or you can go to the tasks page in the left menu, and click the edit button over the task row.
 
 #### Script task. Linked to an event.
+Use the quick input mode:
+[](images/quickinputtask.png)
+or click on "advanced options" for further features.
+[](images/advancedoptionstask.png)
 
-![](https://github.com/patobas/docs/blob/master/task-script.gif)
 
 #### Create an endpoint API/WEB task.
 
