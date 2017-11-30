@@ -5,7 +5,7 @@
 #### [Stats Monitor](#monitor-type-stats)
 #### [Script Monitor](#monitor-type-script)
 #### [API/Web Check Monitor](#monitor-type-api-web-check)
-#### [Process Monitor](#moniotor-type-process)
+#### [Process Monitor](#monitor-type-process)
 #### [File Monitor](#monitor-type-file)
 ------------------------------
 
