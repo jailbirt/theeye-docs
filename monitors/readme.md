@@ -2,11 +2,11 @@
 
 # Monitors Documentation
 ### Contents
-#### [Stats Monitor]()
-#### [Script Monitor]()
-#### [API/Web Check Monitor]()
-#### [Process Monitor]()
-#### [File Monitor]()
+#### [Stats Monitor](#monitor-type-stats)
+#### [Script Monitor](#monitor-type-script)
+#### [API/Web Check Monitor](#monitor-type-api-web-check)
+#### [Process Monitor](#moniotor-type-process)
+#### [File Monitor](#monitor-type-file)
 ------------------------------
 
 ##### Monitor type: Stats
