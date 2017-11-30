@@ -2,8 +2,8 @@
 # Tasks Documentation
 ## Contents
 ### Create and modify tasks
-#### [Script Task](#script-task-linked-to-an-event)
-#### [Webhook or HTTP Request Task](#create-an-endpoint-api-web-task)
+##### [Script Task](#script-task-linked-to-an-event)
+##### [Webhook or HTTP Request Task](#create-an-endpoint-api-web-task)
 ### [Task Management and Scheduler](#schedule-a-task)
 -------------------------------------
 
