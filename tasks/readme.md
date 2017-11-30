@@ -13,6 +13,7 @@ A task can be modified directly from the tasks' panel in the Dashboard or you ca
 
 #### Script task. Linked to an event.
 Use the quick input mode:
+![](images/FirstTimeLogin.jpg)
 ![](images/quickinputtask.jpg)
 or click on "advanced options" for further features.
 ![](images/advancedoptionstask.jṕg)
