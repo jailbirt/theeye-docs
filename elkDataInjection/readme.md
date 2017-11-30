@@ -1,20 +1,45 @@
- esto es todo lo que se esta mandando desde el supervisor a elasticsearch.
-También se usa para el envío de notificaciones y para la generación de eventos para el workflow. También se usa en los eventos que llegan por socket para actualizar la interfaz. Es automático y por eso admite pocas modificaciones en la lógica.
+TheEye Icon
+Contents
+TheEye logs
 
-Los que son CRUD se generan en cada endpoint cuando se hace POST , PUT o DELETE.
-El formato es API-crud (donde API es el nombre de cada endpoint que tiene esto implementado)
+Events and actions performed by users and resources are constantly being saved and in some cases also notified.
+The records are saved in _ElasticSearch_ by the _Supervisor_ for further analysis through _Kibana_ (Web UI).
 
-En su mayoría solo se están usando para elasticsearch. Pero se van a ir usando para todo. Detallo acá en que momento se genera cada uno.
+https://kibana.theeye.io
 
-Los que tienen ** revisar si tienen formato homogéneo o crud duplicado
+ElasticSearch stack
 
-agent-version: cuando se actualiza la versión de un agente
-host-stats: cada vez que llega update de stats de hosts **
-monitor-execution: cuando el agente manda update de ejecución de un monitor **
-monitor-state: cuando un monitor cambia de estado falla, recover, stop, change(file) **
-triggered-webhook: cuando se ejecuta un webhook **
+## Data sent to ELK by Event
+Every event that is logged in ELK can be identified by common fields as:
+- Date and time
+- Hostname
+- Organization (Customer)
+- Operation (e.g. CRUD)
+- Topic (event type description)
 
-Estos son los topics que están en el config. 
+#### Events that are actually stored
+
+##### CRUD Events
+Every time a CRUD action is performed (POST, PUT, DELETE) a record is saved as described herunder:
+
+The signature matches to API-crud, where API is the endpoint name that has the notification (data injection) implemented.
+For example, you'll find a _monitor_ action in ELK data as a monitor-crud topic.
+
+##### Non-CRUD Events 
+This events can be identified as the following topics:
+
+agent-version: every time the agent version is updated.
+host-stats: every time host-status is updated**
+monitor-execution: every time the agent sends an update for a monitor execution **
+monitor-state: every time a monitor status changes (failure, recovery, stop, change-file) **
+triggered-webhook: every time a webhook is played **
+task-execution: every time a task is played
+task-result: every time a task excution ends
+
+
+###### Configuration
+
+Topics configuration: 
 
 "agent": { 
   "version": "agent-version"
@@ -51,17 +76,10 @@ Estos son los topics que están en el config.
   "triggered": "triggered-webhook"
 }
 
-task-execution cuando arranca
-task-result cuando termina
 
-todo lo que es "algo-crud" es update en la db , se va a dispara para todos lados , en principio para notifications (acá se decide a quien y como mandar esta) , socket y elk.
+### Notifications
 
-para mas cosas particulares de elk hacemos el submit puntual , como el de task-execution, el task-restult o las stats o cosas así
-esta duplicado en algunos , pq llega el puntual  y además el crud automático después del udpate/replace/create en la db
-el puntual lo pongo a manopla como antes para elk , los otros ya están puestos en casi todo lo que hace cosas en la db y de a poco los tengo que ir mandando para las notificaciones. 
-4 hours ago via web   Notified 2 people   Applaud  Delete
-facundo gonzalezfacundo gonzalez
-los puntuales de ELK son los que estan arriba , en el primer comentario y además se sumaron
+Every CRUD event previously described is also notified as prefered by the user.
 
-task-execution , cuando se ejecuta la task
-task-result , cuando el agente termina y actualiza el resultado
+También se usa para el envío de notificaciones y para la generación de eventos para el workflow. También se usa en los eventos que llegan por socket para actualizar la interfaz. Es automático y por eso admite pocas modificaciones en la lógica.
+
