@@ -80,6 +80,3 @@ Topics configuration:
 ### Notifications
 
 Every CRUD event previously described is also notified as prefered by the user.
-
-También se usa para el envío de notificaciones y para la generación de eventos para el workflow. También se usa en los eventos que llegan por socket para actualizar la interfaz. Es automático y por eso admite pocas modificaciones en la lógica.
-
