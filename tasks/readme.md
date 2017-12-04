@@ -36,7 +36,7 @@ Select _Outgoing Webhook/HTTP Request_ on "+ create New Task" dialog to create t
 The main difference between a _Script_ task relies on:
 + **URL**: This is the endpoint URL for the request. If GET or POST method is used, the querystring must be provided (E.g. https://www.mysite.com?foo=foo&bar=bar)
 + **Method**:  HTTP method (GET, POST, PUT, DELETE, etc)
-+ **JSON Body**: Only JSON data is accepted as a request body, if checked, the next Request Body field will be used.
++ **JSON Body**: Only JSON data is accepted as a request body, if checked, the next _Request Body_ field will be used.
 + **Request Body**: Provide the JSON data to be used as the request body.
 + **Use HTTP Compression**: HTTP Compression flag.
 + **Req. Timeout**:  The time to wait for response before considering the request has failed.
