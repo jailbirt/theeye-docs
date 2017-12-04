@@ -97,27 +97,24 @@ All the resources from your source host will now be available on your destinatio
 ![](https://github.com/patobas/docs/blob/master/template.gif)
 
 #### Webhooks
+A webhook can be used to perform an action when an event occurs on other website. When that event occurs, the source site makes an HTTP request to the URL configured for the webhook.
 
-*FALTA DOCUMENTAR*
+To create a webhook (incoming webhook), just go to the _Webhooks_ section left menu, and clink on "_+ new Incoming webhook_". Name it and save it. Once you have saved it, expand it, by clicking over the webhook box, you'll be able to see the URL assigned to the webhook.
 
-Un incoming webhook es una forma de acceder desde otro sistema, a su vez genera un link que al llamar la instrucción puede ejecutarla, si es que está vinculada a una tarea (o serie de tareas)
+![](images/webhookexpanded.jpg)
 
-Las tareas se pueden ejecutar con trigger on y eso arma el Workflow.
+The webhook you created can be used as a trigger for other resources (e.g. You can set the webhook to be the trigger of a task) as shown hereunder.
 
 ![](https://github.com/patobas/docs/blob/master/webhook.gif)
 
 
 # Workflow
 
-*FALTA DOCUMENTAR*
-
-Un Workflow nos sirve para ver como está la estructura de las tareas, cómo se realizan y cuál es su orden correlativo.
-Por ej una tarea simple de un reinicio de servicio, el Workflow lo veremos de la siguiente manera:
+You can view how your resources are linked, using the workflow. TheEye enables you to trigger bind tasks using triggers, when at least two tasks are linked by a trigger, then a workflow is created.
 
 ![](https://github.com/patobas/docs/blob/master/workflow.gif)
 
 
-En cambio un Workflow del tipo Webhook, lo veremos totalmente diferente:
-
+A webhook workflow will look like this:
 
 ![](https://github.com/patobas/docs/blob/master/webhook_workflow.png)
