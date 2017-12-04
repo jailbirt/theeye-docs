@@ -3,7 +3,7 @@
 ## Contents
 #### Create and modify tasks
 ##### [Script Task](#script-task-linked-to-an-event)
-##### [Webhook or HTTP Request Task](#create-an-endpoint-api-web-task)
+##### [Webhook or HTTP Request Task](#create-an-endpoint-apiweb-task)
 #### [Task Management and Scheduler](#schedule-a-task)
 -------------------------------------
 
