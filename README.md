@@ -99,7 +99,7 @@ All the resources from your source host will now be available on your destinatio
 #### Webhooks
 A webhook can be used to perform an action when an event occurs on other website. When that event occurs, the source site makes an HTTP request to the URL configured for the webhook.
 
-To create a webhook (incoming webhook), just go to the _Webhooks_ section left menu, and clink on "_+ new Incoming webhook_". Name it and save it. Once you have saved it, expand it, by clicking over the webhook box, you'll be able to see the URL assigned to the webhook.
+To create a webhook (incoming webhook), just go to the _Webhooks_ section left menu, and click on "_+ new Incoming webhook_". Name it and save it. Once you have saved it, expand it, by clicking over the webhook box, you'll be able to see the URL assigned to the webhook.
 
 ![](images/webhookexpanded.jpg)
 
