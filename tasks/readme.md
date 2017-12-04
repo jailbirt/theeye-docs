@@ -11,7 +11,7 @@
 Creating a task is simple, just go to the tasks section in the left "hamburger" menu, and click on "+ create New Task", select the task category from _Outgoing Webhook/HTTP Request_ and _Script_ and start writing your task.
 A task can be modified directly from the tasks' panel in the Dashboard or you can go to the tasks page in the left menu, and click the edit button over the task row.
 
-#### Script task. Linked to an event.
+#### Create a Script task.
 Use the quick input mode
 ![](/images/quickinputtask.jpg)
 or click on "advanced options" for further features.
@@ -30,6 +30,8 @@ or click on "advanced options" for further features.
 + **Script Arguments**: If the script played by the task is meant to receive parameters you can set them from here. Mind the order as it will be used by the script. _Fixed_, _options_, and _input_ arguments are allowed. _Input_ and _options_ arguments will be asked to the user for execution. _Fixed_ arguments will not be displayed to the user at execution time.
 
 #### Create an endpoint API/WEB task.
+Select _Outgoing Webhook/HTTP Request_ on "+ create New Task" dialog to create tasks based on HTTP requests.
+![](/images/webrequesttask.jpg)
 
 ### Schedule a task.
 
