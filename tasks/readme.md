@@ -33,6 +33,16 @@ or click on "advanced options" for further features.
 Select _Outgoing Webhook/HTTP Request_ on "+ create New Task" dialog to create tasks based on HTTP requests.
 ![](/images/webrequesttask.jpg)
 
+The main difference between a _Script_ task relies on:
++ **URL**: This is the endpoint URL for the request. If GET or POST method is used, the querystring must be provided (E.g. https://www.mysite.com?foo=foo&bar=bar)
++ **Method**:  HTTP method (GET, POST, PUT, DELETE, etc)
++ **JSON Body**: Only JSON data is accepted as a request body, if checked, the next Request Body field will be used.
++ **Request Body**: Provide the JSON data to be used as the request body.
++ **Use HTTP Compression**: HTTP Compression flag.
++ **Req. Timeout**:  The time to wait for response before considering the request has failed.
++ **Success Status Code**: The HTTP code expected at response to consider it successful. Ref. https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
++ **Success Pattern**:  Expected HTTP body response. You can write plain HTML code or you can use a _Regular Expression_.
+
 ### Schedule a task.
 
 You can use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify.
