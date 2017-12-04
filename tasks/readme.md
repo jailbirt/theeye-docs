@@ -25,7 +25,7 @@ or click on "advanced options" for further features.
 + **More Info**: describe your task. What does it do, what's the expected output after execution
 + **Tags**: tag your task so you can find quickly through the application.
 + **ACL's**: select who can view your task (what can be done with the task depends on the user role)
-+ **Trigger on (_Triggered by_)**: If the task is part of a workflow, select what triggers the task. The task will be triggered by the resource you select in this field.
++ **Trigger on (_Triggered by_)**: If the task is part of a workflow, select what triggers the task. The task will be triggered by the resource you selected here.
 + **Grace Time**: enter the time TheEye should wait before cancelling the task execucion. No wait / Cancelation can be selected which leaves the responsibility of cancelling the task to the user.
 + **Script Arguments**: If the script played by the task is meant to receive parameters you can set them from here. Mind the order as it will be used by the script. _Fixed_, _options_, and _input_ arguments are allowed. _Input_ and _options_ arguments will be asked to the user for execution. _Fixed_ arguments will not be displayed to the user at execution time.
 
