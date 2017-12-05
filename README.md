@@ -78,6 +78,7 @@ You can always customize the time between checks.
 There're five kind of monitors you can set up from TheEye: Stats, Script, API/Web Check, Process and File.
 Check the [Monitors Documentation](monitors) for more details.
 
++ [Notifications](users/#acls-1)
 
 #### Tasks
 A task is like a job, it can be performed or executed on demand. You can also use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. Check the [Tasks Documentation](tasks) for more details.
