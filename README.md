@@ -70,6 +70,7 @@ TheEye provides six different user roles. You can create users on the go with th
 See the [Users Management Documentation](users) for more details.
 
 ### Resources
+TheEye provides a way to store technical knowledge in Resources that become usable in many different aspects. Each resource is explained hereunder.
 
 #### Monitors
 A monitor is used to check services' or resources' status. You can use this status information to take actions (e.g. run a task, send notification).
