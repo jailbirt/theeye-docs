@@ -81,7 +81,7 @@ Check the [Monitors Documentation](monitors) for more details.
 + Monitors will notify for events as desired. Check the Users ACLs' section for [Notifications](users#acls-1)
 
 #### Tasks
-A task is like a job, it can be performed or executed on demand. You can also use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. Check the [Tasks Documentation](tasks) for more details.
+A task is an action that can be performed or executed on demand. You can also use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. Check the [Tasks Documentation](tasks) for more details.
 
 
 #### Scripts
