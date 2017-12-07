@@ -75,7 +75,7 @@ See the [Users Management Documentation](users) for more details.
 A monitor is used to check services' or resources' status. You can use this status information to take actions (e.g. run a task, send notification).
 You can always customize the time between checks.
 
-There're five kind of monitors you can set up from TheEye: Stats, Script, API/Web Check, Process and File.
+There are five kind of monitors you can set up from TheEye: Stats, Script, API/Web Check, Process and File.
 Check the [Monitors Documentation](monitors) for more details.
 
 + Monitors will notify for events as desired. Check the Users ACLs' section for [Notifications](users#acls-1)
