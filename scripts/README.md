@@ -1,6 +1,6 @@
 
 [![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
-# Scripts Documentation (FALTA DOCUMENTAR)
+# Scripts Documentation
 ## Contents
 #### Create a Script
 ### Writing Scripts
