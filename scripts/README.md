@@ -8,8 +8,6 @@
 -------------------
 
 ### Create a Script
-![](https://github.com/patobas/docs/blob/master/script.gif)
-
 Scripts can be written directly from a live editor or can be uploaded, as simple as it gets, by dropping files over the _Files & Scripts_' creation window. 
 The live editor will recognize the notation language (interpreter) once you name the script file and set an extension (e.g. runme.sh).
 Bash, Python, Perl, Node and bat files are recognized, but any script can be executed as long as the interpreter is available in the destination host.
