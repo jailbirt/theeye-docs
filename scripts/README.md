@@ -11,7 +11,9 @@
 Scripts can be written directly from a live editor or can be uploaded by dropping files over the _Files & Scripts_' creation window. 
 The live editor will recognize the notation language (interpreter) once you name the script file and set an extension (e.g. runme.sh).
 Bash, Python, Perl, Node and bat files are recognized, but any script can be executed as long as the interpreter is available in the destination host.
+
 TheEye will carry out the script execution over tasks. Check this [tasks' documentation](/tasks/#create-a-script-task) to find out how scripts are used. 
+
 You can also use a script to create a _Monitor_, please take a look at the [monitors' documentation](/monitors/#monitor-type-script) to see how scripts are used.
 
 #### [Writing Scripts](write.md)
