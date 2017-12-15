@@ -12,7 +12,7 @@ Scripts can be written directly from a live editor or can be uploaded by droppin
 The live editor will recognize the notation language (interpreter) once you name the script file and set an extension (e.g. runme.sh).
 Bash, Python, Perl, Node and bat files are recognized, but any script can be executed as long as the interpreter is available in the destination host.
 
-TheEye will carry out the script execution over tasks. Check this [tasks' documentation](/tasks/#create-a-script-task) to find out how scripts are used. 
+TheEye will carry out the script execution over tasks. Check the [tasks' documentation](/tasks/#create-a-script-task) to find out how scripts are used. 
 
 You can also use a script to create a _Monitor_, please take a look at the [monitors' documentation](/monitors/#monitor-type-script) to see how scripts are used.
 
@@ -34,7 +34,7 @@ This is a simple check with success and failure states
 
 ```sh
 
-# Some comands and checks here
+# Some commands and checks here
 
 # ...
 
@@ -48,11 +48,11 @@ else
   exit
 fi
 
-# or you can keep doing more things, you can control the flow of your script and end it when anytime
+# or you can keep doing more things, you can control the flow of your script and end it anytime
 echo "success"
 ```
 
-If you need to report extra information to the api, you have to send the information to stdout in json format like this
+If you need to report extra information to the API, you'll have to print the information to the stdout in json format like this
 
 
 ```sh
@@ -60,8 +60,8 @@ If you need to report extra information to the api, you have to send the informa
 varUno="value1"
 varTwo="value2"
 
-# This will output valid JSON and will be parsed by the agent
-# Write JSON by hand is ugly, we will improve this in the feature
+# This will output a valid JSON and will be parsed by TheEye agent
+# Manually writing a JSON string is not quite pleasent, we know that and we will improve this in the future
 if [ true ]; then
   echo { \"state\":\"success\", \"data\":{ \"val1\":$varTwo, \"val2\":$varUno } }
 else
@@ -70,8 +70,7 @@ fi
 
 ```
 
-The JSON output needs to include a `state` property with the final state of your script, and a `data` property with any extra information you want to send to the api.
-
+The JSON output must have a `state` property with a the state value from your script execution, and a `data` property with any extra information you consider, TheEye will show the `data` value in the execution log.
 
 If you need to validate the JSON output of your scripts, you can use this simple nodejs script - there are also nice web sites that can validate JSON for you too. Change it for your case
 
