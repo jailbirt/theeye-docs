@@ -15,21 +15,20 @@ TheEye will carry out the script execution over tasks. Check this [tasks' docume
 You can also use a script to create a _Monitor_, please take a look at the monitors documentation to see how scripts are used.
 
 #### [Writing Scripts](write.md)
-TheEye will use the output from your scripts to determine if the execution was successful. The last line of the scripts will be parsed looking for a string which represents a `state` or a `json` result object.
+TheEye will use the output from your scripts to determine whether or not the execution was successful. The last line of the scripts will be parsed looking for a string which represents a `state` or a `json` result object. So it is mandatory to indicate the execution status when writing scripts.
 
 A `state` could be any state or event linked to the task or monitor of this script. Default build-in events are `success` and `failure`.
 
-So if your scripts ended ok, in bash you have to `echo "ok"` as the last output of your script. 
+So if you script ended as expected (success state), you will have to make it print "success" as the last output line of your script. 
 
 > `success`, `normal` and `ok` are valid `success` states.    
 
 > `failure` and `fail` are valid `failure` states.    
 
 
-## Some code
+## Let's see an example
 
-This is a simple check with success and failure 
-
+This is a simple check with success and failure states
 
 ```sh
 
