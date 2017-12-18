@@ -6,7 +6,7 @@
 * on Windows: setting the interpreter that should use the OS by the file extension.
 
 
-Script RunAs allows to ejecute the script in a specific way, by using a different binary interpreter o in Linux using sudo.
+Script RunAs allows to ejecute the script in a specific way, by using a different binary interpreter or in Linux using sudo.
 
 ### Notation
 
@@ -54,10 +54,10 @@ To execute a powershell script you should add this line to the "RunAs" tasks' fi
 ```
 powershell.exe -NonInteractive -ExecutionPolicy ByPass -File "%script%"
 ```
-#### sudo note.
+#### Sudo note.
 
 On Windows there are some alternatives to achieve the same result you can get using sudo.
 The native way is by using [runas](https://technet.microsoft.com/en-us/library/cc771525(v=ws.10).aspx).
-The main important different is that you should provide the user password at least once.
+The main important difference is that you should provide the user password at least once.
 
-There are other alternative tools and configurations you will have to find out for yourself.
+There are other alternative tools and configurations you will have to find out by yourself.
