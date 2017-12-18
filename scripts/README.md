@@ -3,8 +3,8 @@
 # Scripts Documentation
 ## Contents
 #### Create a Script
-### Writing Scripts
-### Scripts Run As
+##### [Writing Scripts](#writing-scripts)
+##### [Scripts Run As](#scripts-run-as)
 -------------------
 
 ### Create a Script
