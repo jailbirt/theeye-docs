@@ -1,7 +1,7 @@
 
 # Script RunAs
 
-### Scripts run by default as follow:
+### Scripts runs by default in this way:
 * on Linux: adding execution permission to the file and including the intepreter Hash in the first line.
 * on Windows: setting the interpreter that should use the OS by the file extension.
 
