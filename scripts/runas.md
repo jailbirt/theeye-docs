@@ -6,7 +6,7 @@
 * on Windows: setting the interpreter that should use the OS by the file extension.
 
 Script RunAs allows to ejecute the script in a specific way, by using a different binary interpreter or in Linux using sudo.
-*Remember that _RunAs_ is part of the _Tasks'_ configuration, as Tasks are responsible for Scripts' execution*
+**Remember that _RunAs_ is part of the _Tasks'_ configuration, as _Tasks_ are responsible for Scripts' execution**
 
 ### Notation
 
