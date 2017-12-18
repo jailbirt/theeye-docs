@@ -5,8 +5,8 @@
 * on Linux: adding execution permission to the file and including the intepreter Hash in the first line.
 * on Windows: setting the interpreter that should use the OS by the file extension.
 
-
 Script RunAs allows to ejecute the script in a specific way, by using a different binary interpreter or in Linux using sudo.
+*Remember that _RunAs_ is part of the _Tasks'_ configuration, as Tasks are responsible for Scripts' execution*
 
 ### Notation
 
