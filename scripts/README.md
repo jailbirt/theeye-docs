@@ -175,4 +175,5 @@ There are other alternative tools and configurations you will have to find out b
 + [PHP](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.php)
 + [Perl](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.pl)
 + [PowerShell](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.ps1)
++ [PowerShell](https://gist.github.com/theeye-io/ed1f2407b3d3aae90a69af064c3e204a)
 + [Bash](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.sh)
