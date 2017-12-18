@@ -4,7 +4,7 @@
 ## Contents
 #### Create a Script
 ##### [Writing Scripts](#writing-scripts)
-##### [Scripts Run As](#scripts-run-as)
+##### [Scripts Run As](#scripts-runas)
 -------------------
 
 ### Create a Script
