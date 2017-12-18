@@ -50,7 +50,7 @@ The same aproach to execute custom scripts with unregistered interpreters apply 
 You will have to provide the absolute path to script interpreter.
 
 ##### Powershell Scripts Execution
-To execute a powershell script you should add this line to the "RunAs" tasks' field.
+To execute a powershell script you must add this line to the "RunAs" tasks' field.
 ```
 powershell.exe -NonInteractive -ExecutionPolicy ByPass -File "%script%"
 ```
