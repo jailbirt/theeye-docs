@@ -169,10 +169,10 @@ The main important difference is that you should provide the user password at le
 There are other alternative tools and configurations you will have to find out by yourself.
 
 # Theeye Sample Scripts
-+ [Windows Batch](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/example.bat)
-+ [GO](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/example.go)
-+ [NODEJS | Javascript](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/example.js)
-+ [PHP](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/example.php)
-+ [Perl](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/example.pl)
-+ [PowerShell](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/example.ps1)
-+ [Bash](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/example.sh)
++ [Windows Batch](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.bat)
++ [GO](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.go)
++ [NODEJS | Javascript](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.js)
++ [PHP](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.php)
++ [Perl](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.pl)
++ [PowerShell](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.ps1)
++ [Bash](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.sh)
