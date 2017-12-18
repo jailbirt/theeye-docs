@@ -52,7 +52,7 @@ You will have to provide the absolute path to script interpreter.
 ##### Powershell Scripts Execution
 To execute a powershell script you should add this line to the "RunAs" tasks' field.
 ```
-powershell -command "& {&'Set-ExecutionPolicy' Unrestricted}" && powershell.exe -File %script% && powershell -command "& {&'Set-ExecutionPolicy' Restricted}"
+powershell.exe -NonInteractive -ExecutionPolicy ByPass -File "%script%"
 ```
 #### sudo note.
 
