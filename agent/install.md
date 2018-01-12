@@ -28,11 +28,11 @@ There you will found the agent credentials and the installation program.
 To install the agent you will only need the installation script or programm provided for your platform and operating system distribution.
 If you need to debug o manually install the agent, keep reading.
 
-## Manul Instalation from sources (binary for your platform is not available)
+## Manual Instalation from sources (binary for your platform is not available)
 
 ### Before Start
 
-+ Is not mandatory, but your will get more benefits if you install and give the agente admin privileges.   
++ Is not mandatory, but your will get more benefits if you install the agent with admin privileges.   
 + [NodeJS](https://nodejs.org/en/) ( minimal v0.12 or higher. v6 recomended )    
 + NPM (part of the node toolkit. version 3 or higher)    
 
