@@ -133,3 +133,6 @@ to set a custom hostname. this will be used to register the agent and the host a
 > THEEYE_CLIENT_HOSTNAME='the_hostname_you_want'
 
 
+### Offline Installation
+
+
