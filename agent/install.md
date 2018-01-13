@@ -135,4 +135,22 @@ to set a custom hostname. this will be used to register the agent and the host a
 
 ### Offline Installation
 
+### Step 1.
+
+download the sources (https://s3.amazonaws.com/theeye.agent/linux/theeye-agent64.tar.gz).    
+
+```sh
+cd /opt/; sudo tar -xvf ./theeye-agent64.tar.gz
+```
+
+### Step 2.
+
+create a configuration file using the default empty template
+
+```sh
+mkdir /etc/theeye; cp /opt/theeye-agent/misc/theeye/theeye.conf /etc/theeye/theeye.conf
+```
+
+
+
 
