@@ -152,5 +152,10 @@ mkdir /etc/theeye; cp /opt/theeye-agent/misc/theeye/theeye.conf /etc/theeye/thee
 ```
 
 
+### Step 3.
+
+```sh
+run /opt/theeye-agente/runBinary.sh
+```
 
 
