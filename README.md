@@ -41,7 +41,7 @@ Check this out [TheEye MindMap](https://atlas.mindmup.com/2017/11/7f1f2fb0d53611
 ### First Steps
 To start using TheEye you will need:
 1. A user account. (If you don't have one go to https://theeye.io/register)
-2. Install an agent on each server you would like to perform actions.
+2. Install an agent on each server you would like to perform actions or automate from.
 3. Create yor first resource from TheEye Web.
 
 Once you've activated your user account, you'll see this Dashboard after login:
