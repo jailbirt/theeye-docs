@@ -49,18 +49,24 @@ Once you've activated your user account, you'll see this Dashboard after login:
 
 The Tutorial will guide you to install an agent and create a task.
 
+In case you don't want to follow the Tutorial, you can directly install the agents following instructions from Settings->Installer in the side menu.
+
+![](images/Settings.jpg)
+
 #### Agent Installation
 If it is the first time you access TheEye Website, click the link in the monitors panel where says _"Click HERE to get the step by step instructions to install the Agent on Linux and Windows operating systems"_, otherwise go to _Settings_ in the left menu and get to the _Installation_ section. Installation instructions are provided for Linux and Windows systems.
 
 + Linux:
 
-![](https://github.com/patobas/docs/blob/master/install_agent.gif)
-
+![](images/LinuxAgentInstall.jpg)
 
 + Windows:
 
-![](images/WindowsAgentInstall.gif)
+![](images/WindowsAgentInstall.jpg)
 
++ Docker
+
+![](images/DockerAgentInstall.jpg)
 
 #### Check your first resource
 Check the Dashboard view after login, you should see "All up and running" in the monitors panel.
