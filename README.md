@@ -44,8 +44,10 @@ To start using TheEye you will need:
 2. Install an agent on each server you would like to perform actions.
 3. Create yor first resource from TheEye Web.
 
-Once you've activated your user account, you'll see this Dasboard after login:
+Once you've activated your user account, you'll see this Dashboard after login:
 ![](images/FirstTimeLogin.jpg)
+
+The wizard will guide you to install an agent and create a task.
 
 #### Agent Installation
 If it is the first time you access TheEye Website, click the link in the monitors panel where says _"Click HERE to get the step by step instructions to install the Agent on Linux and Windows operating systems"_, otherwise go to _Settings_ in the left menu and get to the _Installation_ section. Installation instructions are provided for Linux and Windows systems.
