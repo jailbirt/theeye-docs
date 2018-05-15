@@ -160,6 +160,12 @@ To execute a powershell script you must add this line to the "RunAs" tasks' fiel
 ```
 powershell.exe -NonInteractive -ExecutionPolicy ByPass -File "%script%"
 ```
+
+Use this line if you're using arguments in your script. Keep in mind that the filename of the ps1 script must not have white spaces.
+```
+powershell.exe -NonInteractive -ExecutionPolicy ByPass -File %script%
+```
+
 #### Sudo note.
 
 On Windows there are some alternatives to achieve the same result you can get using sudo.
