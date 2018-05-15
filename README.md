@@ -68,6 +68,8 @@ If it is the first time you access TheEye Website, click the link in the monitor
 
 ![](images/DockerAgentInstall.jpg)
 
+After each agent installation a new monitor is shown up in the Dashboard.
+
 #### Check your first resource
 Check the Dashboard view after login, you should see "All up and running" in the monitors panel.
 
