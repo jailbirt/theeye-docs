@@ -7,6 +7,7 @@
 #### [API/Web Check Monitor](#monitor-type-api-webcheck)
 #### [Process Monitor](#monitor-type-process)
 #### [File Monitor](#monitor-type-file)
+#### [Nested Monitor](#monitor-type-nested)
 ------------------------------
 
 ##### Monitor type: Stats
@@ -40,5 +41,11 @@ Verifies that a process is running (e.g. daemon)
 
 ##### Monitor type: File
 
-A File monitor will provision a file to a server and ensure that the file remains as created in the destination path you provided.
-Most common use is to push a configuration file. The file can be updated at any time, directly from the monitor box.
+A File monitor will upload a file to a server and ensure that the file remains as created in the destination path you provided.
+Most common use is to push a configuration file. The file can be updated at any time directly from the monitor box.
+
+##### Monitor type: Nested
+A nested monitor is a special monitor that contains other monitors. This kind of monitor will notify when all the contained monitors needs attention.
+You can create a nested monitor from the dashboard, using the "+" button. 
+
+![](https://github.com/patobas/docs/blob/master/monitor_process.gif)
