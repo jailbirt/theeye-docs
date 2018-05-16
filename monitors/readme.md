@@ -50,6 +50,6 @@ You can create a nested monitor from the dashboard, using the "+" button.
 
 ![](/images/NestedMonitors.jpg)
 
-Name your "nested Monitor" or copy an already created one. Add or remove the monitor you's like to nest.
+Name your "nested Monitor" or copy an already created one. Add or remove the monitor you'd like to nest.
 
 ![](/images/NestedMonitorsSetup.jpg)
