@@ -10,7 +10,7 @@ Name your workflow and select a trigger. (Task or monitor)
 
 ![](/images/workflow2.jpg)
 
-Add an event to connect tasks.
+Add an event to connect tasks, by clicking "Add Event".
 
 ![](/images/workflow5.jpg)
 
