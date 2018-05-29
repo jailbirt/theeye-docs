@@ -129,9 +129,4 @@ Workflow connects your tasks together to automate things.
 Which trigger would you like to use?
 You can start a workflow directly with a play button or you can use monitors or tasks as triggers.
 
-To create a Workflow
-![](https://github.com/patobas/docs/blob/master/workflow.gif)
-
-A workflow will look like this:
-
-![](https://github.com/patobas/docs/blob/master/webhook_workflow.png)
+Check the [Workflow Documentation](workflow) for more details.
