@@ -7,15 +7,15 @@ Create a new workflow from the dashboard by clicking the "+" button:
 
 ![](/images/workflow1.jpg)
 
-Name your workflow and select a trigger. (Task or monitor)
+Name your workflow and select a trigger (Task or monitor). In this example the trigger is a scrapper monitor that will report failure when the "transaction API" is down.
 
 ![](/images/workflow2.jpg)
 
-Add an event to connect tasks, by clicking "Add Event".
+Add an event to connect tasks, by clicking "Add Event". The examples shows how the success event of task "Get Pending Transactions" will execute the task "Execute Pending Transactions" by passing all the pending transactions to it.
 
 ![](/images/workflow5.jpg)
 
-You will see that your workflow graph is drawn. Select your starting task and confirm to save the workflow.
+Workflow graph is drawn. Select your starting task and confirm to save the workflow.
 
 ![](/images/workflow4.jpg)
 
