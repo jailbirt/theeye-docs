@@ -1,5 +1,5 @@
 # Workflow Documentation
-Workflow connects your tasks and monitors together to automate things. You can create IFTTT recipes that will be triggered when a workflow is run.
+Workflow connects your tasks and monitors together to automate things.
 
 ### Workflow Creation
 
