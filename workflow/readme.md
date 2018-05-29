@@ -1,5 +1,5 @@
 # Workflow Documentation
-Workflow connects your tasks and monitors together to automate things.
+Workflow connects your tasks together to automate things.
 
 ### Workflow Creation
 
