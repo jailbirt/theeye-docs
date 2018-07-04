@@ -1,28 +1,28 @@
 [![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
 
 # Contents
-  * #### [What is TheEye?](#what-is-theeye-1)
-  * #### [First Steps](#first-steps-1)
-    * ##### [Agent Installation](#agent-installation-1)
-    * ##### [Check your first resource](#check-your-first-resource-1)
+  * [What is TheEye?](#what-is-theeye-1)
+  * [First Steps](#first-steps-1)
+    * [Agent Installation](#agent-installation-1)
+    * [Check your first resource](#check-your-first-resource-1)
 
-  * #### [User Management](#users)
-  * #### [Organization](#organization)
-  * #### [Integrations](#integrations)
+  * [User Management](#users)
+  * [Organization](#organization)
+  * [Integrations](#integrations)
 
-  * #### Resources
-    * ##### [Monitors](#monitors)
-    * ##### [Tasks](#tasks)
-    * ##### [Provisioning](#provisioning-templates)
-    * ##### [Webhooks](#webhooks)
-    * ##### [Scripts](#scripts)
+  * Resources
+    * [Monitors](#monitors)
+    * [Tasks](#tasks)
+    * [Provisioning](#provisioning-templates)
+    * [Webhooks](#webhooks)
+    * [Scripts](#scripts)
 
-  * #### [Workflow](#workflow)
+  * [Workflow](#workflow)
 
-  * #### Other Tools
-    * ##### [TheEye_Cli Util](cli)
-    * ##### [Build Agent Binary](agent/binary_build.md)
-    * ##### [Agent Docs](agent)
+  * Other Tools
+    * [TheEye_Cli Util](cli)
+    * [Build Agent Binary](agent/binary_build.md)
+    * [Agent Docs](agent)
 
 ------------------
 
