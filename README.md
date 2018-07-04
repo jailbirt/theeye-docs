@@ -2,22 +2,22 @@
 
 # Contents
   * ### [What is TheEye?](#what-is-theeye)
-  * ### [First Steps](#first-steps-1)
-    * #### [Agent Installation](#agent-installation-1)
-    * #### [Check your first resource](#check-your-first-resource-1)
+  * ### [First Steps](#first-steps)
+    * #### [Agent Installation](#agent-installation)
+    * #### [Check your first resource](#check-your-first-resource)
 
   * #### [User Management](#users)
-  * #### [Organization](#organization-1)
-  * #### [Integrations](#integrations-1)
+  * #### [Organization](#organization)
+  * #### [Integrations](#integrations)
 
   * ### Resources
-    * #### [Monitors](#monitors-1)
-    * #### [Tasks](#tasks-1)
+    * #### [Monitors](#monitors)
+    * #### [Tasks](#tasks)
     * #### [Provisioning](#provisioning-templates)
-    * #### [Webhooks](#webhooks-1)
-    * #### [Scripts](#scripts-1)
+    * #### [Webhooks](#webhooks)
+    * #### [Scripts](#scripts)
 
-  * ### [Workflow](#workflow-1)
+  * ### [Workflow](#workflow)
 
   * ### Other Tools
     * #### [TheEye_Cli Util](cli)
