@@ -1,16 +1,15 @@
 # Contents
 
-* [What is TheEye?](README.md#what-is-theeye)
-
+* [What is TheEye?](#what-is-theeye)
 * [First Steps](README.md#first-steps)
-* [Agent Installation](#agent-installation)
-* [Check your first resource](#check-your-first-resource)
+  * [Agent Installation](#agent-installation)
+  * [Check your first resource](#check-your-first-resource)
 
 ----
 
-#### [User Management](#users)
-#### [Organization](#organization-1)
-#### [Integrations](#integrations-1)
+## [User Management](#users)
+## [Organization](#organization-1)
+## [Integrations](#integrations-1)
 
 ## Resources
 #### [Monitors](#monitors-1)
