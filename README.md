@@ -1,7 +1,7 @@
-[![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
 
 # Contents
-  * #### [What is TheEye?](#what-is-theeye-1)
+  * #### [What is TheEye?](#what-is-theeye)
   * #### [First Steps](#first-steps)
     * ##### [Agent Installation](#agent-installation)
     * ##### [Check your first resource](#check-your-first-resource)
