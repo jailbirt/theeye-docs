@@ -7,11 +7,11 @@
 
 At this moment the supported distributions by the instalation script are (we are working in a binary distribution)
 
-> ubuntu   
-> debian   
-> centos   
-> redhat   
-> fedora   
+> ubuntu
+> debian
+> centos
+> redhat
+> fedora
 
 
 ## Windows Installer.
@@ -157,5 +157,3 @@ mkdir /etc/theeye; cp /opt/theeye-agent/misc/theeye/theeye.conf /etc/theeye/thee
 ```sh
 run /opt/theeye-agente/runBinary.sh
 ```
-
-

@@ -47,12 +47,14 @@ To start using TheEye you will need to:
   2. Install an [Agent](agent/install.md) on each server you would like to perform actions or automate from.
   3. Create your first resource from TheEye Web.
 
+
 Once you've activated your user account, you'll see this Dashboard after login:
+
 ![first-time-login](images/FirstTimeLogin.jpg)
 
 The Tutorial will guide you through the install process of an [Agent](agent/install.md) and create a task.
 
-In case you don't want to follow the Tutorial, you can directly install the agents following instructions from Settings->Installer in the side menu.
+In case you don't want to follow the tutorial, you can install the agents on your own following instructions from Settings->Installer in the side menu.
 
 ![settings](images/Settings.jpg)
 
@@ -73,7 +75,11 @@ If it is the first time you access TheEye Website, click the link in the monitor
 
 After each agent installation a new monitor is shown up in the Dashboard.
 
+For detailed installation information check the [Agent:install document](agent/install.md)
+
+
 ### Check your first resource
+
 Check the Dashboard view after login, you should see "All up and running" in the monitors panel.
 
 ------------------------------
@@ -94,6 +100,7 @@ Check the [Monitors Documentation](monitors) for more details.
 
 + Monitors will notify for events as desired. Check the Users ACLs' section for [Notifications](users#acls-1)
 
+
 ### Tasks
 A task is an action that can be performed or executed on demand. You can also use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. Check the [Tasks Documentation](tasks) for more details.
 
@@ -111,7 +118,9 @@ All the resources from your source host will now be available on your destinatio
 
 ![](https://github.com/patobas/docs/blob/master/template.gif)
 
+
 ### Webhooks
+
 A webhook can be used to perform an action when an event occurs on other website. When that event occurs, the source site makes an HTTP request to the URL configured for the webhook.
 
 To create a webhook (incoming webhook), just go to the _Webhooks_ section left menu, and click on "_+ new Incoming webhook_". Name it and save it. Once you have saved it, expand it, by clicking over the webhook box, you'll be able to see the URL assigned to the webhook.
@@ -125,7 +134,7 @@ The webhook you created can be used as a trigger for other resources (e.g. You c
 
 ## Workflow
 
-Workflow connects your tasks together to automate things.
+Workflow connects your tasks together to automate complex or dependent processes.
 
 Which trigger would you like to use?
 You can start a workflow directly with a play button or you can use monitors or tasks as triggers.
