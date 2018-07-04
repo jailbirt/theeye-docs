@@ -47,28 +47,28 @@ To start using TheEye you will need:
 3. Create your first resource from TheEye Web.
 
 Once you've activated your user account, you'll see this Dashboard after login:
-![](images/FirstTimeLogin.jpg)
+![first-time-login](images/FirstTimeLogin.jpg)
 
-The Tutorial will guide you to install an agent and create a task.
+The Tutorial will guide you through the install process of an [Agent](agent/install.md) and create a task.
 
 In case you don't want to follow the Tutorial, you can directly install the agents following instructions from Settings->Installer in the side menu.
 
-![](images/Settings.jpg)
+![settings](images/Settings.jpg)
 
 ### Agent Installation
 If it is the first time you access TheEye Website, click the link in the monitors panel where says _"Click HERE to get the step by step instructions to install the Agent on Linux and Windows operating systems"_, otherwise go to _Settings_ in the left menu and get to the _Installation_ section. Installation instructions are provided for Linux and Windows systems.
 
 + Linux:
 
-![](images/LinuxAgentInstall.jpg)
+![linux-install](images/LinuxAgentInstall.jpg)
 
 + Windows:
 
-![](images/WindowsAgentInstall.jpg)
+![windows-install](images/WindowsAgentInstall.jpg)
 
 + Docker
 
-![](images/DockerAgentInstall.jpg)
+![docker-install](images/DockerAgentInstall.jpg)
 
 After each agent installation a new monitor is shown up in the Dashboard.
 
