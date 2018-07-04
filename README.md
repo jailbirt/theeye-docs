@@ -1,10 +1,10 @@
 [![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
 
 # Contents
-  * #### [What is TheEye?](#what-is-theeye)
-  * #### [First Steps](#first-steps)
-    * ##### [Agent Installation](#agent-installation)
-    * ##### [Check your first resource](#check-your-first-resource)
+  * ### [What is TheEye?](#what-is-theeye)
+  * ### [First Steps](#first-steps)
+    * #### [Agent Installation](#agent-installation)
+    * #### [Check your first resource](#check-your-first-resource)
 
   * #### [User Management](#users)
   * #### [Organization](#organization)
