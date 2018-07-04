@@ -1,41 +1,16 @@
 [![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
 
-# Contents
-#### [What is TheEye?](#what-is-theeye-1)
-#### [First Steps](#first-steps-1)
-  * ##### [Agent Installation](#agent-installation-1)
-  * ##### [Check your first resource](#check-your-first-resource-1)
-
-#### [User Management](#users)
-#### [Organization](#organization-1)
-#### [Integrations](#integrations-1)
-
-## Resources
-#### [Monitors](#monitors-1)
-#### [Tasks](#tasks-1)
-#### [Provisioning](#provisioning-templates)
-#### [Webhooks](#webhooks-1)
-#### [Scripts](#scripts-1)
-
-## [Workflow](#workflow-1)
-
-
-## Other Tools
-+ [TheEye_Cli Util](cli)
-+ [Build Agent Binary](agent/binary_build.md)
-+ [Agent Docs](agent)
-----
 
 ### What is TheEye
-    * A remote server managament and a monitoring tool (Devops)
-    * A server provisioning tool
-    * A task manager (with scheduler)
-    * A Workflow creation tool (IFTTT)
-    * A technical repository
-    * An integration and automation platform
-    * A Real time support tool
-    
-    
+  * A remote server managament and a monitoring tool (Devops)
+  * A server provisioning tool
+  * A task manager (with scheduler)
+  * A Workflow creation tool (IFTTT)
+  * A technical repository
+  * An integration and automation platform
+  * A Real time support tool
+
+
 If you want start from the scratch, there's a native integration with ELK and Docker.
 Check this out [TheEye MindMap](https://atlas.mindmup.com/2017/11/7f1f2fb0d53611e7a974c121a32f69bf/theeye_functional_mindmap_es/index.html)
 
@@ -44,7 +19,7 @@ Check this out [TheEye MindMap](https://atlas.mindmup.com/2017/11/7f1f2fb0d53611
 To start using TheEye you will need:
 1. A user account. (If you don't have one go to https://theeye.io/register)
 2. Install an agent on each server you would like to perform actions or automate from.
-3. Create yor first resource from TheEye Web.
+3. Create your first resource from TheEye Web.
 
 Once you've activated your user account, you'll see this Dashboard after login:
 ![](images/FirstTimeLogin.jpg)
@@ -105,8 +80,8 @@ Check the [Scripts Documentation](scripts) for more details.
 #### Provisioning (Templates)
 
 One of the main advantages brought by TheEye is the fact that all your technical stuff is stashed at the moment it is created (scripts, tasks, monitors). Provisioning allows you to reuse your stuff for other servers in the same way a template works.
-To reuse all the resources created for a server, go to _Povisioning_ in the left menu, select your source host in the _base template_ input box, set a name for the template and select your destination hosts in the _Hosts to add to the template_ input box. 
-All the resources from your source host will now be available on your destination hosts. 
+To reuse all the resources created for a server, go to _Povisioning_ in the left menu, select your source host in the _base template_ input box, set a name for the template and select your destination hosts in the _Hosts to add to the template_ input box.
+All the resources from your source host will now be available on your destination hosts.
 
 ![](https://github.com/patobas/docs/blob/master/template.gif)
 
