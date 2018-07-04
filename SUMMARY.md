@@ -10,7 +10,7 @@
 
 ----
 
-## [User Management](#users)
+## [User Management](users)
 ## [Organization](#organization-1)
 ## [Integrations](#integrations-1)
 
