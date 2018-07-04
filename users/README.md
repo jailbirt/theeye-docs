@@ -1,15 +1,17 @@
-[![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
 # User Management Documentation
 
-# Contents
+## Contents
 
-### User Roles
-#### Permissions
-#### Effective permissions per role type
-### [Members Page (CRUD Users)](#members-page-user-administration)
-### [ACLs](#acls-1)
+* [User Roles](#user-accounts-and-roles-eb-mobile-access)
+* [Permissions](#permissions)
+* [Effective permissions per role type](#effective-permissions-per-role)
+* [Members Page (CRUD Users)](#members-page-user-administration)
+* [ACLs](#acls)
+
 ----------
-User Accounts and Roles (Web/Mobile access)
+
+## User Accounts and Roles (Web/Mobile access)
 ======================================================
 
 _There're six user profiles, each one has different permissions._
@@ -20,7 +22,7 @@ _There're six user profiles, each one has different permissions._
     * Has all the permissions listed hereunder.
 2. Full Access
     * Can view all the resources that belongs to the organization.
-3. View 
+3. View
     * Can view monitors, tasks and ouput logs.
 4. Execution
     * Can view and execute tasks.
@@ -37,7 +39,7 @@ _Note:_ **Users will have access to resources provided by ACLs. Only user types 
 
 1. **root**
     * Full Control
-    
+
 2. **owner**
     * Full Access
     * Create and Modify
@@ -71,6 +73,6 @@ The user account must be activated by the activation link sent by email.
 
 ## ACLs
 In the previous section we've described user roles and user administration. ACLs applies directly to resources.
-Admin roles can make resources visible to other members by adding them to the input field labeled _ACL's_ available on _Tasks_ and _Monitors_. When a user is added to an ACL list, then the resource becomes available and accesible according to the member's role. Notifications are sent to all users within the ACL list, regardless the user role. E-mail addresses can also be added to ACLs lists in order to have them notified disregarding any account membership. 
+Admin roles can make resources visible to other members by adding them to the input field labeled _ACL's_ available on _Tasks_ and _Monitors_. When a user is added to an ACL list, then the resource becomes available and accesible according to the member's role. Notifications are sent to all users within the ACL list, regardless the user role. E-mail addresses can also be added to ACLs lists in order to have them notified disregarding any account membership.
 
 ![](/images/ACLs.png)

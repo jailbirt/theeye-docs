@@ -1,4 +1,7 @@
-# Contents
+# The Eye
+
+* [User management](users/README.md)
+
 
 ## * [What is TheEye?](README.md#what-is-theeye)
 ## * [First Steps](README.md#first-steps)
