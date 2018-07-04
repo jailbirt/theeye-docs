@@ -1,6 +1,5 @@
 # Contents
 
-### Intro
 * [What is TheEye?](README.md#what-is-theeye)
 
 * [First Steps](README.md#first-steps)
