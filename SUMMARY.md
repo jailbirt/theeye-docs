@@ -1,9 +1,9 @@
 # Contents
 
-* [What is TheEye?](#what-is-theeye)
+* [What is TheEye?](README.md#what-is-theeye)
 * [First Steps](README.md#first-steps)
-  * [Agent Installation](#agent-installation)
-  * [Check your first resource](#check-your-first-resource)
+  * [Agent Installation](README.md#agent-installation)
+  * [Check your first resource](README.md#check-your-first-resource)
 
 ----
 
