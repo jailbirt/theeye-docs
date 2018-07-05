@@ -1,7 +1,14 @@
 ### The Eye
 
 * [Introduction](README.md)
-* [TheEye Cli Util](cli)
+
+----
+
+### CLI
+
+* [TheEye Cli Util](cli/README.md)
+
+----
 
 ### Users
 
@@ -20,7 +27,6 @@
 
 ----
 
-### Resources
 * [Monitors](monitors)
 * [Tasks](tasks)
 * [Scripts](scripts)
