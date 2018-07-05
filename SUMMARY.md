@@ -1,6 +1,8 @@
 ### The Eye
 
 * [Introduction](README.md)
+* [TheEye Cli Util](cli)
+* [Agent Docs](agent)
 
 ### Users
 
