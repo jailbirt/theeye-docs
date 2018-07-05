@@ -4,7 +4,7 @@
 
 * [Users](users/README.md)
     * [User Roles](users/README.md#user-accounts-and-roles-web-mobile-access)
-    * [Permissions](users/README.md#permissions)
+    * [Permissions](users/users#permissions)
     * [Effective permissions per role type](users/README.md#effective-permissions-per-role)
     * [Members Page (CRUD Users)](users/README.md#members-page-user-administration)
     * [ACLs](users/README.md#acls)
