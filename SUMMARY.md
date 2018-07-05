@@ -1,8 +1,6 @@
 # Summary
 
-### Users
-
-* [Users](/)
+* [Users](users)
     * [Permissions](permissions)
     * [Effective permissions per role type](permissions.md#effective-permissions-per-role)
     * [Managing users](administration)
