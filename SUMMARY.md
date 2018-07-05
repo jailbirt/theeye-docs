@@ -1,7 +1,7 @@
 ### The Eye
 
 * [Introduction](README.md)
-* [CLI](cli)
+* [TheEye Cli Util](cli)
 
 ### Users
 
@@ -18,6 +18,18 @@
 * [Setup](agent/config.md)
 * [Debug](agent/debug.md)
 
+----
+
+### Resources
+* [Monitors](monitors)
+* [Tasks](tasks)
+* [Scripts](scripts)
+
+----
+
+### Workflow
+
+* [Get started](workflow)
 
 ----
 
