@@ -3,10 +3,10 @@
 ### Users
 
 * [Users](users/README.md)
-    * [Permissions](users/permissions)
-    * [Effective permissions per role type](users/permissions.md#effective-permissions-per-role)
-    * [Managing users](users/administration)
-    * [ACLs](users/README.md#acls)
+    * [Permissions](permissions)
+    * [Effective permissions per role type](permissions.md#effective-permissions-per-role)
+    * [Managing users](administration)
+    * [ACLs](acls)
 
 ----
 
