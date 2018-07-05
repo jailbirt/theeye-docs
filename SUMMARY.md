@@ -1,10 +1,12 @@
 # Summary
 
-* [Users](users/README.md)
-    * [Permissions](permissions.md)
-    * [Effective permissions per role type](permissions.md#effective-permissions-per-role)
-    * [Managing users](administration.md)
-    * [ACLs](/acls.md)
+### Users
+
+* [Users](README.md)
+* [Permissions](permissions.md)
+* [Effective permissions per role type](permissions.md#effective-permissions-per-role)
+* [Managing users](administration)
+* [ACLs](acls.md)
 
 ----
 
