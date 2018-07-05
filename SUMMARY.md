@@ -1,8 +1,7 @@
 # The Eye
 
-### User management
+### [Users](users/README.md)
 
-  * [Users](users/README.md)
   * [User Roles](./users/README.md#user-accounts-and-roles-web-mobile-access)
   * [Permissions](./users/README.md#permissions)
   * [Effective permissions per role type](users/README.md#effective-permissions-per-role)
