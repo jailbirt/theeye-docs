@@ -5,13 +5,13 @@
   * [Managing users](users/administration.md)
   * [ACLs](users/acls.md)
 * [The Eye Agent](agent/README.md)
-* [Installation](agent/install.md)
-* [Setup](agent/config.md)
-* [Debug](agent/debug.md)
-* [Monitors](monitors)
-* [Tasks](tasks)
-* [Scripts](scripts)
-* [Get started](workflow)
+  * [Installation](agent/install.md)
+  * [Setup](agent/config.md)
+  * [Debug](agent/debug.md)
+* [Monitors](monitors/README.md)
+* [Tasks](tasks/README.md)
+* [Scripts](scripts/README.md)
+* [Workflows](workflow/README.md)
 
 ----
 
