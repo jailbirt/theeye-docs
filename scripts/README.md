@@ -32,7 +32,7 @@ So if you script ended as expected (success state), you will have to make it pri
   * `failure` and `fail` are accepted `failure` states.
 
 
-#### Example
+### Example
 
 This is a simple check with `success` and `failure` states
 ```
@@ -100,7 +100,7 @@ echo { \"state\" : \"$state\" , \"data\" : { \"members\" : $members } }
 # this will echo { "state": "normal" , "data" : { "members": 1 } }
 ```
 
-### Scripts RunAs
+## Scripts RunAs
 
 Scripts run by default...
 * on Linux: adding execution permission to the file and including the intepreter Hash in the first line.
@@ -116,9 +116,9 @@ command or anything that agent user(by default theeye-a) can do within the defau
 We recommend to keep it simple and short. The only requirement is that the runas has to include the %script% KEYWORD.
 This KEYWORD indicates which part of the runas text will be replaced with the script path and its arguments.
 
-#### In Linux
+### In Linux
 
-##### SUDO
+#### SUDO
 
 To run the script using sudo, use one of the following runas syntax
 
@@ -132,7 +132,7 @@ sudo -u user -c "%script%" # (remember to add the " or the arguments won't be vi
 sudo -u user $(%script%)
 ```
 
-##### Custom binaries
+#### Custom binaries
 
 Some times is required to run the script with a binary which is not registered in the global or user paths.
 
@@ -144,13 +144,13 @@ To achive that include the full path to the interpreter in the `runas`
 /usr/local/lib/nodejs/v4/bin/node %script%
 ```
 
-#### In Windows
+### In Windows
 
 The same aproach to execute custom scripts with unregistered interpreters apply both to Windows and Linux.
 
 You will have to provide the absolute path to script interpreter.
 
-##### Powershell Scripts Execution
+#### Powershell Scripts Execution
 To execute a powershell script you must add this line to the "RunAs" tasks' field.
 ```
 powershell.exe -NonInteractive -ExecutionPolicy ByPass -File "%script%"
