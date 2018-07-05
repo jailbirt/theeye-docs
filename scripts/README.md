@@ -6,6 +6,8 @@
   * [Writing Scripts](#writing-scripts)
 * [Scripts Run As](#scripts-runas)
   * [Notation](#notation)
+  * [In Linux](#in-linux)
+  * [In Windows](#in-windows)
 -------------------
 
 # Create a Script
