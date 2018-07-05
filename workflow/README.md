@@ -1,7 +1,8 @@
 # Workflow Documentation
-Workflow connects your tasks together to automate things.
 
-### Workflow Creation
+Workflow connects your tasks together to automate complex or dependent processes.
+
+## Workflow Creation
 
 Create a new workflow from the dashboard by clicking the "+" button:
 
@@ -22,4 +23,3 @@ Workflow graph is drawn. Select your starting task and confirm to save the workf
 Once the workflow is confirmed you'll see it in the dashboard as shown hereunder.
 
 ![](/images/workflow6.jpg)
-
