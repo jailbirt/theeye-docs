@@ -4,7 +4,6 @@
 
 * [Users](users/README.md)
 * [Permissions](users/permissions.md)
-* [Effective permissions per role type](users/permissions.md#effective-permissions-per-role)
 * [Managing users](users/administration)
 * [ACLs](users/acls.md)
 
