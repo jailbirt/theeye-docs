@@ -14,16 +14,16 @@
 ## User Accounts and Roles (Web/Mobile access)
 ======================================================
 
-_There're six user profiles, each one has different permissions._
+There're six user permission profiles.
 
 ## Permissions
 1. Full Control
     * Can manage organizations.
-    * Has all the permissions listed hereunder.
+    * Has all the permissions listed below.
 2. Full Access
     * Can view all the resources that belongs to the organization.
 3. View
-    * Can view monitors, tasks and ouput logs.
+    * Can view monitors, tasks and output logs.
 4. Execution
     * Can view and execute tasks.
 5. Create and Modify

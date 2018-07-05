@@ -1,6 +1,7 @@
 [![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
 
-# Permissions
+# Permission profiles
+
 1. Full Control
     * Can manage organizations.
     * Has all the permissions listed hereunder.
@@ -16,10 +17,10 @@
     * Add and delete users
     * Set user credential (admin/manager/user/viewer)
 
-_Note:_ **Users will have access to resources provided by ACLs. Only user types with _Full Access_ permission will be able to see all resources.**
+_Note:_ **Users will have access to resources provided by ACLs. Only user with _Full Access_ profile will be able to see all resources.**
 
 
-## Effective permissions per role
+## Effective profile permissions
 
 1. **root**
     * Full Control
