@@ -6,7 +6,6 @@
 
 * [Users](users/README.md)
   * [Permission profiles](users/permissions.md)
-    * [Effective profile permissions](users/permissions.md#effective-profile-permissions)
   * [Managing users](users/administration.md)
   * [ACLs](users/acls.md)
 
