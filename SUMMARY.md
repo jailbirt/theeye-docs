@@ -3,9 +3,9 @@
 ### Users
 
 * [Users](users/README.md)
-* [Permissions](users/permissions.md)
-* [Managing users](users/administration)
-* [ACLs](users/acls.md)
+  * [Permissions](users/permissions.md)
+  * [Managing users](users/administration)
+  * [ACLs](users/acls.md)
 
 ----
 
