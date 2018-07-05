@@ -1,6 +1,6 @@
 ### The Eye
 
-* [Introduction](../README.md)
+* [Introduction](README.md)
 
 ### Users
 
