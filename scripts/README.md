@@ -1,5 +1,6 @@
 
-[![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
+
 # Scripts Documentation
 ## Contents
 #### Create a Script
@@ -8,11 +9,11 @@
 -------------------
 
 ### Create a Script
-Scripts can be written directly from a live editor or can be uploaded by dropping files over the _Files & Scripts_' creation window. 
+Scripts can be written directly from a live editor or can be uploaded by dropping files over the _Files & Scripts_' creation window.
 The live editor will recognize the notation language (interpreter) once you name the script file and set an extension (e.g. runme.sh).
 Bash, Python, Perl, Node and bat files are recognized, but any script can be executed as long as the interpreter is available in the destination host.
 
-TheEye will carry out the script execution over tasks. Check the [tasks' documentation](/tasks#create-a-script-task) to find out how scripts are used. 
+TheEye will carry out the script execution over tasks. Check the [tasks' documentation](/tasks#create-a-script-task) to find out how scripts are used.
 
 You can also use a script to create a _Monitor_, please take a look at the [monitors' documentation](/monitors#monitor-type-script) to see how scripts are used.
 
@@ -21,7 +22,7 @@ TheEye will use the output from your scripts to determine whether or not the exe
 
 A `state` could be any state or event linked to the task or monitor of this script. Default build-in events are `success` and `failure`.
 
-So if you script ended as expected (success state), you will have to make it print "success" as the last output line of your script. 
+So if you script ended as expected (success state), you will have to make it print "success" as the last output line of your script.
 
 > `success`, `normal` and `ok` are valid `success` states.    
 
@@ -116,7 +117,7 @@ Script RunAs allows to ejecute the script in a specific way, by using a differen
 
 ### Notation
 
-The runas text could be any command line combination, using fixed variables, environment settings, 
+The runas text could be any command line combination, using fixed variables, environment settings,
 command or anything that agent user(by default theeye-a) can do within the default shell (usually bash or cmd).
 We recommend to keep it simple and short. The only requirement is that the runas has to include the %script% KEYWORD.
 This KEYWORD indicates which part of the runas text will be replaced with the script path and its arguments.

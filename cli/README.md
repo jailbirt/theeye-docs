@@ -1,3 +1,5 @@
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
+
 How to use the CLI
 
 The CLI is a command line utility based on the Agent Core. Basically the CLI allows you to perform authenticated requests to the API and create custom clients or automated tasks from any command line shell.
@@ -34,7 +36,7 @@ A simple example
     -b, --body [jsonText]                          Request body params in json format
     -q, --query [jsonText]                         Request query string in json format
 ```
-    
+
 
 The following command will fetch all your available monitors
 

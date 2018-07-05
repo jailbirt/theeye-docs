@@ -6,9 +6,9 @@
     - [Agent Installation](#agent-installation)
     - [Check your first resource](#check-your-first-resource)
 
-  - [User Management](users)
-  - [Organization](#organization)
-  - [Integrations](#integrations)
+  - [User Management](users#contents)
+  - Organization
+  - [Integrations](integrations)
 
   - Resources
     - [Monitors](#monitors)
