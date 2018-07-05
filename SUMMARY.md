@@ -4,7 +4,7 @@
     * [Permissions](permissions.md)
     * [Effective permissions per role type](permissions.md#effective-permissions-per-role)
     * [Managing users](administration.md)
-    * [ACLs](acls.md)
+    * [ACLs](/acls.md)
 
 ----
 
