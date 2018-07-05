@@ -1,40 +1,16 @@
-### The Eye
-
 * [Introduction](README.md)
-
-----
-
-### CLI
-
 * [TheEye Cli Util](cli/README.md)
-
-----
-
-### Users
-
 * [User management](users/README.md)
-* [Permission profiles](users/permissions.md)
-* [Managing users](users/administration.md)
-* [ACLs](users/acls.md)
-
-----
-
-### Agent
-
+  * [Permission profiles](users/permissions.md)
+  * [Managing users](users/administration.md)
+  * [ACLs](users/acls.md)
+* [The Eye Agent](agent/README.md)
 * [Installation](agent/install.md)
 * [Setup](agent/config.md)
 * [Debug](agent/debug.md)
-
-----
-
 * [Monitors](monitors)
 * [Tasks](tasks)
 * [Scripts](scripts)
-
-----
-
-### Workflow
-
 * [Get started](workflow)
 
 ----
