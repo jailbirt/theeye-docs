@@ -1,5 +1,8 @@
-* [Introduction](README.md)
-* [TheEye Cli Util](cli/README.md)
+
+* [Overview](README.md)
+  * [TheEye Cli Util](cli/README.md)
+
+
 * [User management](users/README.md)
   * [Permission profiles](users/permissions.md)
   * [Managing users](users/administration.md)
