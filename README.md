@@ -50,7 +50,7 @@ To start using TheEye you will need to:
 
 Once you've activated your user account, you'll see this Dashboard after login:
 
-![first-time-login](images/FirstTimeLogin.jpg)
+![first time login](images/FirstTimeLogin.jpg)
 
 The Tutorial will guide you through the install process of an [Agent](agent/install.md) and create a task.
 
@@ -63,15 +63,15 @@ If it is the first time you access TheEye Website, click the link in the monitor
 
 + Linux:
 
-![linux-install](images/LinuxAgentInstall.jpg)
+![linux install](images/LinuxAgentInstall.jpg)
 
 + Windows:
 
-![windows-install](images/WindowsAgentInstall.jpg)
+![windows install](images/WindowsAgentInstall.jpg)
 
 + Docker
 
-![docker-install](images/DockerAgentInstall.jpg)
+![docker install](images/DockerAgentInstall.jpg)
 
 After each agent installation a new monitor is shown up in the Dashboard.
 
@@ -116,7 +116,7 @@ One of the main advantages brought by TheEye is the fact that all your technical
 To reuse all the resources created for a server, go to _Povisioning_ in the left menu, select your source host in the _base template_ input box, set a name for the template and select your destination hosts in the _Hosts to add to the template_ input box.
 All the resources from your source host will now be available on your destination hosts.
 
-![](https://github.com/patobas/docs/blob/master/template.gif)
+![template](https://raw.githubusercontent.com/patobas/docs/master/template.gif)
 
 
 ### Webhooks
@@ -125,11 +125,11 @@ A webhook can be used to perform an action when an event occurs on other website
 
 To create a webhook (incoming webhook), just go to the _Webhooks_ section left menu, and click on "_+ new Incoming webhook_". Name it and save it. Once you have saved it, expand it, by clicking over the webhook box, you'll be able to see the URL assigned to the webhook.
 
-![](images/webhookexpanded.jpg)
+![webhook expanded](https://raw.githubusercontent.com/theeye-io/theeye-docs/master/images/webhookexpanded.jpg)
 
 The webhook you created can be used as a trigger for other resources (e.g. You can set the webhook to be the trigger of a task) as shown hereunder.
 
-![](https://github.com/patobas/docs/blob/master/webhook.gif)
+![webhook](https://raw.githubusercontent.com/patobas/docs/master/webhook.gif)
 
 
 ## Workflow
