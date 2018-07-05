@@ -4,10 +4,10 @@
 
 ### Users
 
-* [Users](users/README.md)
-  * [Permission profiles](users/permissions.md)
-  * [Managing users](users/administration.md)
-  * [ACLs](users/acls.md)
+* [User management](users/README.md)
+* [Permission profiles](users/permissions.md)
+* [Managing users](users/administration.md)
+* [ACLs](users/acls.md)
 
 ----
 
