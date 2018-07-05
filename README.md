@@ -6,7 +6,7 @@
     - [Agent Installation](#agent-installation)
     - [Check your first resource](#check-your-first-resource)
 
-  - [User Management](users/README.md#contents)
+  - [User Management](#users)
   - Organization
   - [Integrations](integrations)
 
