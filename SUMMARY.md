@@ -1,10 +1,12 @@
 # Summary
 
+* [Introduction](README.md)
+
 ### Users
 
 * [Users](users/README.md)
   * [Permissions](users/permissions.md)
-  * [Managing users](users/administration)
+  * [Managing users](users/administration.md)
   * [ACLs](users/acls.md)
 
 ----
