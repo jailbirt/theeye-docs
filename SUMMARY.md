@@ -18,6 +18,7 @@
 ### Core Concepts
 
 * [The Eye](core-concepts/README.md)
+* [Resources](resources.md)
 
 ----
 
