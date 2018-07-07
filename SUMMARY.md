@@ -1,6 +1,13 @@
 # Table of contents
 
 * [The Eye](README.md)
+* [Core Concepts](core-concepts/README.md)
+  * [The Eye](core-concepts/the-eye.md)
+  * [Resources](core-concepts/resources.md)
+  * [Monitors](core-concepts/monitors.md)
+  * [Tasks](core-concepts/tasks.md)
+  * [Scripts](core-concepts/scripts.md)
+  * [Workflows](core-concepts/workflows.md)
 * [CLI Util](cli-util.md)
 * [User management](user-management/README.md)
   * [Permission profiles](user-management/permission-profiles.md)
@@ -14,11 +21,3 @@
 * [Tasks](tasks.md)
 * [Scripts](scripts.md)
 * [Workflows](workflows.md)
-* [Core Concepts](core-concepts/README.md)
-  * [The Eye](core-concepts/the-eye.md)
-  * [Resources](core-concepts/resources.md)
-  * [Monitors](core-concepts/monitors.md)
-  * [Tasks](core-concepts/tasks.md)
-  * [Scripts](core-concepts/scripts.md)
-  * [Workflows](core-concepts/workflows.md)
-
