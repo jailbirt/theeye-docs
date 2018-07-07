@@ -10,7 +10,7 @@
   * [Workflows](core-concepts/workflows.md)
 * [Getting started](getting-started/README.md)
   * [Agent installation](getting-started/agent-installation.md)
-  * [Your first resource](getting-started/first-resource.md)
+  * [Your first resource](getting-started/your-first-resource.md)
 * [User management](user-management/README.md)
   * [Permission profiles](user-management/permission-profiles.md)
   * [Managing users](user-management/managing-users.md)
@@ -24,3 +24,4 @@
 * [Scripts](scripts.md)
 * [Workflows](workflows.md)
 * [CLI Util](cli-util.md)
+
