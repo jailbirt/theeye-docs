@@ -15,6 +15,12 @@
 
 ----
 
+### Core Concepts
+
+* [The Eye](core-concepts/README.md)
+
+----
+
 ## * [What is TheEye?](README.md#what-is-theeye)
 ## * [First Steps](README.md#first-steps)
 #### * [Agent Installation](README.md#agent-installation)
