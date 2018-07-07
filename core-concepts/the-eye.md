@@ -20,7 +20,7 @@ The **bolded keywords** in the above paragraph are all core concepts of The Eye.
 
 The Eye consists on a **_core platform_** process running in a HA infrastructure. The **_core platform_** receives only **_agent_** and **_client_** connections. It keeps track of any **_resource_** for the **_user_** and stores **_tasks_**, **_scripts_**, files, **_workflows_** and **_customers_**.
 
-A **_resource_** is a wide concept on the **_core platform_**: it is whatever can report a status. Basically every **_resource_** is a **_monitor_**, but calling it a **_monitor_** doesn't quite cover it. A **_host_** is an abstract concept, when a **_host monitor_** reports it's status and health, then the **_host_** becomes a reliable, accountable **_resource_**. A **_web scrapper_** is a way of monitoring an external website or API, can report a status and, if needed, **_trigger_** **_tasks_** or **_workflows_**. It's an accountable **_resource_** to become a signaling **_monitor event_**. As you can see, the **_resource_** concept points to be any source of information (thus, decision) on your infrastructure. Complex and dependent processes can be setup though **_resources_**.
+A **_resource_** is a configured **_monitor_**, a reliable, accountable, signaling **_monitor event_**. [Read more about resources](./resources.md).
 
 An **_agent_** is an autonomous software installed on a **_user_** **_host_**. The **_agent_** keeps the **_host_** status and health updated (aka: **_host monitor_**) on the **_core platform_**. It will periodically retrieve any **_tasks_** the **_core platform_** could have pending for it. The **_agent_** will also report back to the **_core platform_** when it finishes a given **_task_**.
 
