@@ -1,0 +1,4 @@
+# Resources
+
+The resources page
+

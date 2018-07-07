@@ -4,8 +4,9 @@ The Eye supervises your infrastructure using Agents: a service daemon.
 
 The Agent is in charge of keeping track of your resources and the host health.
 
-[Installation](./install.md)
+[Installation](installation.md)
 
-[Setup](./config.md)
+[Setup](setup.md)
 
-[Debug](./debug.md)
+[Debug](debug.md)
+
