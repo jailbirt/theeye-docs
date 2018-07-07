@@ -22,7 +22,7 @@ The Eye consists on a _**core platform**_ process running in a HA infrastructure
 
 A _**resource**_ is a configured _**monitor**_, a reliable, accountable, signaling _**monitor event**_. [Read more about resources](resources.md).
 
-An _**agent**_ is an autonomous software installed on a _**user**_ _**host**_. The _**agent**_ keeps the _**host**_ status and health updated \(aka: _**host monitor**_\) on the _**core platform**_. It will periodically retrieve any _**tasks**_ the _**core platform**_ could have pending for it. The _**agent**_ will also report back to the _**core platform**_ when it finishes a given _**task**_.
+An _**agent**_ is an autonomous software installed on a _**user**_ _**host**_. The _**agent**_ keeps the _**host**_ status and health updated \(aka: _**host monitor**_\) on the _**core platform**_. The _**agent**_ will also report back to the _**core platform**_ when it finishes a given _**task**_.
 
 A _**client**_ is any means capable of connecting to the _**core platform**_ through a secure protocol and gain access with valid credentials. The Eye provides a web UI as it's main _**client**_, but alternative connection mechanisms can be implemented and any of them would fall under the _**client**_ category.
 
@@ -41,4 +41,3 @@ A _**monitor event**_ is...
 A _**trigger**_ is what happens when...
 
 A _**workflow**_ consists in a...
-
