@@ -14,7 +14,7 @@ To start using TheEye you will need to:
 
 Once you've activated your user account, you'll see this Dashboard after login:
 
-![first time login](images/firsttimelogin.jpg)
+![first time login](https://raw.githubusercontent.com/CGastrell/theeye-docs/master/images/FirstTimeLogin.jpg)
 
 An onboarding tutorial will guide you through the install process of an [Agent](the-eye-agent/installation.md) and create a task.
 
