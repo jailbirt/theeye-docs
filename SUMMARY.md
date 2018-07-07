@@ -15,8 +15,6 @@
 * [Scripts](scripts.md)
 * [Workflows](workflows.md)
 
-## Core Concepts
-
-* [The Eye](core-concepts/the-eye.md)
-* [Resources](core-concepts/resources.md)
-
+* [Core Concepts](core-concepts/README.md)
+  * [The Eye](core-concepts/the-eye.md)
+  * [Resources](core-concepts/resources.md)
