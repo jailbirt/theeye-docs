@@ -5,6 +5,7 @@
   * [The Eye](core-concepts/the-eye.md)
   * [Resources](core-concepts/resources.md)
   * [Monitors](core-concepts/monitors.md)
+  * [Monitor events](core-concepts/monitor-events.md)
   * [Tasks](core-concepts/tasks.md)
   * [Scripts](core-concepts/scripts.md)
   * [Workflows](core-concepts/workflows.md)
@@ -21,7 +22,8 @@
   * [Debug](the-eye-agent/debug.md)
 * [Monitors](monitors.md)
 * [Tasks](tasks.md)
-* [Scripts](scripts.md)
+* [Scripts](scripts/README.md)
+  * [Writing scripts](scripts/write.md)
+  * [Script permissions](scripts/runas.md)
 * [Workflows](workflows.md)
 * [CLI Util](cli-util.md)
-
