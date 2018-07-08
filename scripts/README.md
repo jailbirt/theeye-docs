@@ -58,13 +58,15 @@ varUno="value1"
 varTwo="value2"
 
 # This will output a valid JSON and will be parsed by TheEye agent
-# Manually writing a JSON string is not quite pleasent, we know that and we will improve this in the future
+# Manually writing a JSON string is not quite pleasant, we know that and we will improve this in the future
 if [ true ]; then
   echo { \"state\":\"success\", \"data\":{ \"val1\":$varTwo, \"val2\":$varUno } }
 else
   echo { \"state\":\"failure\", \"data\":{ \"val1\":$varTwo, \"val2\":$varUno } }
 fi
+
 ```
+
 
 The JSON output must have a `state` property with a the state value from your script execution, and a `data` property with any extra information you consider, TheEye will show the `data` value in the execution log.
 
@@ -102,8 +104,8 @@ echo { \"state\" : \"$state\" , \"data\" : { \"members\" : $members } }
 
 Scripts run by default...
 
-* on Linux: adding execution permission to the file and including the interpreter [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) in the first line.
-* on Windows: setting the interpreter that should use the OS by the file extension.
+* Linux: adding execution permission to the file and including the interpreter [shebang](https://en.wikipedia.org/wiki/Shebang_\(Unix\)) in the first line.
+* Windows: setting the interpreter that should use the OS by the file extension.
 
 Script RunAs allows to execute the script in a specific way, by using a different binary interpreter or in Linux using sudo. **Remember that** _**RunAs**_ **is part of the** _**Tasks'**_ **configuration, as** _**Tasks**_ **are responsible for Scripts' execution**. Please check the [Script Task Documentation](tasks.md#create-a-script-task) section for further details.
 
