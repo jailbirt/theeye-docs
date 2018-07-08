@@ -15,11 +15,11 @@
 
 Scripts can be written directly from a live editor or can be uploaded by dropping files over the _Files & Scripts_' creation window. The live editor will recognize the notation language \(interpreter\) once you name the script file and set an extension \(e.g. runme.sh\). Bash, Python, Perl, Node and bat files are recognized, but any script can be executed as long as the interpreter is available in the destination host.
 
-TheEye will carry out the script execution over tasks. Check the [tasks' documentation](tasks.md#create-a-script-task) to find out how scripts are used.
+TheEye will carry out the script execution over tasks. Check the [tasks' documentation](../tasks.md#create-a-script-task) to find out how scripts are used.
 
-You can also use a script to create a _Monitor_, please take a look at the [monitors' documentation](monitors.md#monitor-type-script) to see how scripts are used.
+You can also use a script to create a _Monitor_, please take a look at the [monitors' documentation](../monitors.md#monitor-type-script) to see how scripts are used.
 
-### [Writing Scripts](https://github.com/CGastrell/theeye-docs/tree/d293fbcbdf032c69af97cd33dc2a36bbabe617bc/scripts/write.md)
+### Writing Scripts
 
 TheEye will use the output from your scripts to determine whether or not the execution was successful. The last line of the scripts will be parsed looking for a string which represents a `state` or a `json` result object. So it is mandatory to indicate the execution status when writing scripts.
 
@@ -34,7 +34,7 @@ So if you script ended as expected \(success state\), you will have to make it p
 
 This is a simple check with `success` and `failure` states
 
-```text
+```bash
 # Some commands and checks here
 # ...
 # And at the end of the script...
@@ -53,7 +53,7 @@ echo "success"
 
 If you need to report extra information to the API, you'll have to print the information to the `stdout` in json format like this
 
-```text
+```bash
 varUno="value1"
 varTwo="value2"
 
@@ -70,9 +70,9 @@ The JSON output must have a `state` property with a the state value from your sc
 
 If you need to validate the JSON output of your scripts, you can use this simple nodejs script - there are also nice web sites that can validate JSON for you too. Change it for your case
 
-`test_json.js`
+`test_json.js`:
 
-```text
+```javascript
 // test.js
 var exec = require('child_process').exec;
 
@@ -86,7 +86,7 @@ exec('./test.sh', function(err, stdout, stderr){
 
 the `test.sh` script looks like this
 
-```text
+```bash
 #!/bin/bash
 
 state='normal'
@@ -102,7 +102,7 @@ echo { \"state\" : \"$state\" , \"data\" : { \"members\" : $members } }
 
 Scripts run by default...
 
-* on Linux: adding execution permission to the file and including the intepreter Hash in the first line.
+* on Linux: adding execution permission to the file and including the interpreter [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) in the first line.
 * on Windows: setting the interpreter that should use the OS by the file extension.
 
 Script RunAs allows to execute the script in a specific way, by using a different binary interpreter or in Linux using sudo. **Remember that** _**RunAs**_ **is part of the** _**Tasks'**_ **configuration, as** _**Tasks**_ **are responsible for Scripts' execution**. Please check the [Script Task Documentation](tasks.md#create-a-script-task) section for further details.
@@ -119,13 +119,13 @@ To run the script using sudo, use one of the following runas syntax
 
 1.
 
-```text
+```bash
 sudo -u user -c "%script%" # (remember to add the " or the arguments won't be visible by the script)
 ```
 
 2.
 
-```text
+```bash
 sudo -u user $(%script%)
 ```
 
@@ -135,7 +135,7 @@ Some times is required to run the script with a binary which is not registered i
 
 One case is to run a Nodejs script with a different interpreter version. To achive that include the full path to the interpreter in the `runas`
 
-```text
+```bash
 /usr/local/lib/nodejs/v4/bin/node %script%
 ```
 
@@ -149,13 +149,13 @@ You will have to provide the absolute path to script interpreter.
 
 To execute a powershell script you must add this line to the "RunAs" tasks' field.
 
-```text
+```cmd
 powershell.exe -NonInteractive -ExecutionPolicy ByPass -File "%script%"
 ```
 
 Use this line if you're using arguments in your script. Keep in mind that the filename of the ps1 script must not have white spaces.
 
-```text
+```cmd
 powershell.exe -NonInteractive -ExecutionPolicy ByPass -File %script%
 ```
 
@@ -175,4 +175,3 @@ There are other alternative tools and configurations you will have to find out b
 * [PowerShell](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.ps1)
 * [PowerShell](https://gist.github.com/theeye-io/ed1f2407b3d3aae90a69af064c3e204a)
 * [Bash](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.sh)
-
