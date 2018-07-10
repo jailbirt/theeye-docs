@@ -1,4 +1,4 @@
-# HOW TO DEBUG THE AGENT (LINUX)
+# Debug
 
 ## PREREQUISITES
 
@@ -21,3 +21,4 @@ source /etc/theeye/theeye.conf && DEBUG=*eye* ./bin/theeye-agent
 ```
 
 this will output all the agent activity to the terminal.
+

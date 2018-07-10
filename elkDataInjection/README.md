@@ -1,4 +1,4 @@
-[![](https://theeye.io/landpage/images/logo.png)](https://theeye.io)
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
 
 # Contents
 TheEye logs
@@ -26,7 +26,7 @@ Every time a CRUD action is performed (POST, PUT, DELETE) a record is saved as d
 The signature matches to API-crud, where API is the endpoint name that has the notification (data injection) implemented.
 For example, you'll find a _monitor_ action in ELK data as a monitor-crud topic.
 
-##### Non-CRUD Events 
+##### Non-CRUD Events
 This events can be identified as the following topics:
 
 - agent-version: every time the agent version is updated.
@@ -40,9 +40,9 @@ This events can be identified as the following topics:
 
 ###### Configuration
 
-Topics configuration: 
+Topics configuration:
 
->"agent": { 
+>"agent": {
 >  "version": "agent-version"
 >},
 >"host": {
