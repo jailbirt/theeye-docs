@@ -2,7 +2,7 @@
 
 [![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
 
-## Contents
+## Conteudo
 
 * [What is TheEye?](#what-is-theeye)
 * [First Steps](#first-steps)
