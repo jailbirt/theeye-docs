@@ -10,7 +10,7 @@
   * [Check your first resource](#check-your-first-resource)
 * [User Management](#users)
 * Organization
-* [Integrations](https://github.com/theeye-io/theeye-docs/tree/a8ecdc69ddb62245ee87264f24b9a6276e7083ab/integrations/README.md)
+* [Integrations](integrations/README.md)
 * Resources
   * [Monitors](#monitors)
   * [Tasks](#tasks)
@@ -79,7 +79,7 @@ Check the Dashboard view after login, you should see "All up and running" in the
 
 #### Users
 
-TheEye provides six different user roles. You can create users on the go with the appropiate role. See the [Users Management Documentation]() for more details.
+TheEye provides six different user roles. You can create users on the go with the appropiate role. See the [Users Management Documentation](user-management/readme.me) for more details.
 
 ### Resources
 
@@ -95,7 +95,7 @@ There are five kind of monitors you can set up from TheEye: Stats, Script, API/W
 
 #### Tasks
 
-A task is an action that can be performed or executed on demand. You can also use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. Check the [Tasks Documentation](tasks/README.md) for more details.
+A task is an action that can be performed or executed on demand. You can also use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. Check the [Tasks Documentation](tasks.md) for more details.
 
 #### Scripts
 
