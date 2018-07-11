@@ -125,4 +125,4 @@ Workflow connects your tasks together to automate complex or dependent processes
 
 Which trigger would you like to use? You can start a workflow directly with a play button or you can use monitors or tasks as triggers.
 
-Check the [Workflow Documentation](workflow/README.md) for more details.
+Check the [Workflow Documentation](workflows.md) for more details.
