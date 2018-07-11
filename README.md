@@ -79,7 +79,7 @@ Check the Dashboard view after login, you should see "All up and running" in the
 
 #### Users
 
-TheEye provides six different user roles. You can create users on the go with the appropiate role. See the [Users Management Documentation](user-management/readme.me) for more details.
+TheEye provides six different user roles. You can create users on the go with the appropiate role. See the [Users Management Documentation](user-management/readme.md) for more details.
 
 ### Resources
 
