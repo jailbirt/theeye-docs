@@ -6,7 +6,7 @@
 
 * [What is TheEye?](#what-is-theeye)
 * [First Steps](#first-steps)
-  * [Agent Installation](#agent-installation)
+  * [Bot Installation](#agent-installation)
   * [Check your first resource](#check-your-first-resource)
 * [User Management](#users)
 * Organization
@@ -20,8 +20,8 @@
 * [Workflow](#workflow)
 * Other Tools
   * [TheEye\_Cli Util](cli-util.md)
-  * [Build Agent Binary](binary_build.md)
-  * [Agent Docs](agent/README.md)
+  * [Build Bot Binary](binary_build.md)
+  * [Bot Docs](agent/README.md)
 
 ### What is TheEye
 
@@ -40,22 +40,22 @@ If you want start from the scratch, there's a native integration with ELK and Do
 To start using TheEye you will need to:
 
 1. Have a user account. If you don't have one go to [https://theeye.io/register](https://theeye.io/register) and create one.
-2. Install an [Agent](the-eye-agent/installation.md) on each server you would like to perform actions or automate from.
+2. Install an [Bot](the-eye-agent/installation.md) on each server you would like to perform actions or automate from.
 3. Create your first resource from TheEye Web.
 
 Once you've activated your user account, you'll see this Dashboard after login:
 
 ![first time login](.gitbook/assets/firsttimelogin.jpg)
 
-The Tutorial will guide you through the install process of an [Agent](the-eye-agent/installation.md) and create a task.
+The Tutorial will guide you through the install process of an [Bot](the-eye-agent/installation.md) and create a task.
 
 In case you don't want to follow the tutorial, you can install the agents on your own following instructions from Settings-&gt;Installer in the side menu.
 
 ![settings](.gitbook/assets/settings%20%281%29.jpg)
 
-#### Agent Installation
+#### Bot Installation
 
-If it is the first time you access TheEye Website, click the link in the monitors panel where says _"Click HERE to get the step by step instructions to install the Agent on Linux and Windows operating systems"_, otherwise go to _Settings_ in the left menu and get to the _Installation_ section. Installation instructions are provided for Linux and Windows systems.
+If it is the first time you access TheEye Website, click the link in the monitors panel where says _"Click HERE to get the step by step instructions to install the Bot on Linux and Windows operating systems"_, otherwise go to _Settings_ in the left menu and get to the _Installation_ section. Installation instructions are provided for Linux and Windows systems.
 
 * Linux:
 
@@ -71,7 +71,7 @@ If it is the first time you access TheEye Website, click the link in the monitor
 
 After each agent installation a new monitor is shown up in the Dashboard.
 
-For detailed installation information check the [Agent:install document](the-eye-agent/installation.md)
+For detailed installation information check the [Bot:install document](the-eye-agent/installation.md)
 
 #### Check your first resource
 
