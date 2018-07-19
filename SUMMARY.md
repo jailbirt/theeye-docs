@@ -2,9 +2,9 @@
 
 * [The Eye](README.md)
 * [What is TheEye](README.md)
-* [Core Concepts](core-concepts/README.md)
-  * [The Eye](core-concepts/the-eye.md)
-  * [Resources](core-concepts/resources.md)
+ [Core Concepts](core-concepts/README.md)
+   [The Eye](core-concepts/the-eye.md)
+   [Resources](core-concepts/resources.md)
 [Monitors](core-concepts/monitors.md)
 [Monitor events](core-concepts/monitor-events.md)
 [Tasks](core-concepts/tasks.md)
