@@ -4,7 +4,7 @@ Every time a Task is executed a new Job is added to the queue.
 To execute Tasks you need to create a Job for this Task.
 For doing that perform a POST request to the Job API.
 
-There are two ways available.
+There are two methods available.
 
 1. Using a user access token.
 
@@ -38,4 +38,20 @@ curl
   -H "Content-Type=application/json" \
   -b "{"task":"${task_id}","task_arguments":[]}" \
   "https://api.theeye.io/job/secret/${task_secret_key}?access_token=${access_token}&customer=${customer}"
+```
+
+## Job API payload (for task execution)
+
+Task Execution Payload 
+```
+{
+  task: "task id", (required)
+  customer: "customer name", (can also be provided via query string)
+  task_arguments: [
+    {
+      order: "argument numerical order",
+      value: "this execution value"
+    }
+  ] (required, if task has arguments)
+}
 ```
