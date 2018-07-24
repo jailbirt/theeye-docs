@@ -148,9 +148,9 @@ there are no more requisites for the instalation script. for the Manual Installa
 
   Use Case 1: if the same name is used for several agents/bots all will be consuming task from the same queue and will be reporting monitoring information to the same pool. Doing this way you will get load balancing (if multiple hosts are using)/multitasking (faster jobs feedback) and high havailability of jobs processing.
 
-#### THEEYE_AGENT_SCRAPER_SUBMIT_BODY (boolean)
+#### THEEYE_AGENT_SCRAPER_REGISTER_BODY (boolean)
 
-  prevent all task/monitor web request to submit response body to the api.
+  prevent all task and monitor of the web request kind to send the request response body to the api.
 
 #### THEEYE_AGENT_SCRIPT_PATH (string)
 
