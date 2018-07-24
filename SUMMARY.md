@@ -1,14 +1,7 @@
 # Table of contents
 
 * [The Eye](README.md)
-* [Core Concepts](core-concepts/README.md)
-  * [The Eye](core-concepts/the-eye.md)
-  * [Resources](core-concepts/resources.md)
-  * [Monitors](core-concepts/monitors.md)
-  * [Monitor events](core-concepts/monitor-events.md)
-  * [Tasks](core-concepts/tasks.md)
-  * [Scripts](core-concepts/scripts.md)
-  * [Workflows](core-concepts/workflows.md)
+* [What is TheEye](README.md)
 * [Getting started](getting-started/README.md)
   * [Agent installation](getting-started/agent-installation.md)
   * [Your first resource](getting-started/your-first-resource.md)

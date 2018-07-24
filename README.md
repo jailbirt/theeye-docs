@@ -2,26 +2,26 @@
 
 [![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
 
-## Contents
+## Content
 
-* [What is TheEye?](./#what-is-theeye)
-* [First Steps](./#first-steps)
-  * [Agent Installation](./#agent-installation)
-  * [Check your first resource](./#check-your-first-resource)
-* [User Management](./#users)
+* [What is TheEye?](#what-is-theeye)
+* [First Steps](#first-steps)
+  * [Bot Installation](#agent-installation)
+  * [Check your first resource](#check-your-first-resource)
+* [User Management](#users)
 * Organization
-* [Integrations](https://github.com/CGastrell/theeye-docs/tree/a8ecdc69ddb62245ee87264f24b9a6276e7083ab/integrations/README.md)
+* [Integrations](integrations/README.md)
 * Resources
-  * [Monitors](./#monitors)
-  * [Tasks](./#tasks)
-  * [Provisioning](./#provisioning-templates)
-  * [Webhooks](./#webhooks)
-  * [Scripts](./#scripts)
-* [Workflow](./#workflow)
+  * [Monitors](#monitors)
+  * [Tasks](#tasks)
+  * [Provisioning](#provisioning-templates)
+  * [Webhooks](#webhooks)
+  * [Scripts](#scripts)
+* [Workflow](#workflow)
 * Other Tools
-  * [TheEye\_Cli Util](https://github.com/CGastrell/theeye-docs/tree/a8ecdc69ddb62245ee87264f24b9a6276e7083ab/cli/README.md)
-  * [Build Agent Binary](https://github.com/CGastrell/theeye-docs/tree/a8ecdc69ddb62245ee87264f24b9a6276e7083ab/agent/binary_build.md)
-  * [Agent Docs](https://github.com/CGastrell/theeye-docs/tree/a8ecdc69ddb62245ee87264f24b9a6276e7083ab/agent/README.md)
+  * [TheEye\_Cli Util](cli-util.md)
+  * [Build Bot Binary](binary_build.md)
+  * [Bot Docs](agent/README.md)
 
 ### What is TheEye
 
@@ -40,22 +40,22 @@ If you want start from the scratch, there's a native integration with ELK and Do
 To start using TheEye you will need to:
 
 1. Have a user account. If you don't have one go to [https://theeye.io/register](https://theeye.io/register) and create one.
-2. Install an [Agent](the-eye-agent/installation.md) on each server you would like to perform actions or automate from.
+2. Install an [Bot](the-eye-agent/installation.md) on each server you would like to perform actions or automate from.
 3. Create your first resource from TheEye Web.
 
 Once you've activated your user account, you'll see this Dashboard after login:
 
 ![first time login](.gitbook/assets/firsttimelogin.jpg)
 
-The Tutorial will guide you through the install process of an [Agent](the-eye-agent/installation.md) and create a task.
+The Tutorial will guide you through the install process of an [Bot](the-eye-agent/installation.md) and create a task.
 
 In case you don't want to follow the tutorial, you can install the agents on your own following instructions from Settings-&gt;Installer in the side menu.
 
 ![settings](.gitbook/assets/settings%20%281%29.jpg)
 
-#### Agent Installation
+#### Bot Installation
 
-If it is the first time you access TheEye Website, click the link in the monitors panel where says _"Click HERE to get the step by step instructions to install the Agent on Linux and Windows operating systems"_, otherwise go to _Settings_ in the left menu and get to the _Installation_ section. Installation instructions are provided for Linux and Windows systems.
+If it is the first time you access TheEye Website, click the link in the monitors panel where says _"Click HERE to get the step by step instructions to install the Bot on Linux and Windows operating systems"_, otherwise go to _Settings_ in the left menu and get to the _Installation_ section. Installation instructions are provided for Linux and Windows systems.
 
 * Linux:
 
@@ -71,7 +71,7 @@ If it is the first time you access TheEye Website, click the link in the monitor
 
 After each agent installation a new monitor is shown up in the Dashboard.
 
-For detailed installation information check the [Agent:install document](the-eye-agent/installation.md)
+For detailed installation information check the [Bot:install document](the-eye-agent/installation.md)
 
 #### Check your first resource
 
@@ -79,7 +79,7 @@ Check the Dashboard view after login, you should see "All up and running" in the
 
 #### Users
 
-TheEye provides six different user roles. You can create users on the go with the appropiate role. See the [Users Management Documentation]() for more details.
+TheEye provides six different user roles. You can create users on the go with the appropiate role. See the [Users Management Documentation](user-management/README.md) for more details.
 
 ### Resources
 
@@ -89,17 +89,17 @@ TheEye provides a way to store technical knowledge in Resources that become usab
 
 A monitor is used to check services' or resources' status. You can use this status information to take actions \(e.g. run a task, send notification\). You can always customize the time between checks.
 
-There are five kind of monitors you can set up from TheEye: Stats, Script, API/Web Check, Process and File. Check the [Monitors Documentation](https://github.com/CGastrell/theeye-docs/tree/a8ecdc69ddb62245ee87264f24b9a6276e7083ab/monitors/README.md) for more details.
+There are five kind of monitors you can set up from TheEye: Stats, Script, API/Web Check, Process and File. Check the [Monitors Documentation](monitors/README.md) for more details.
 
 * Monitors will notify for events as desired. Check the Users ACLs' section for [Notifications]()
 
 #### Tasks
 
-A task is an action that can be performed or executed on demand. You can also use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. Check the [Tasks Documentation](https://github.com/CGastrell/theeye-docs/tree/a8ecdc69ddb62245ee87264f24b9a6276e7083ab/tasks/README.md) for more details.
+A task is an action that can be performed or executed on demand. You can also use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. Check the [Tasks Documentation](tasks.md) for more details.
 
 #### Scripts
 
-You can write scripts directly from TheEye web to your servers or you can create scripts to be used as API Calls or monitors. Check the [Scripts Documentation](https://github.com/CGastrell/theeye-docs/tree/a8ecdc69ddb62245ee87264f24b9a6276e7083ab/scripts/README.md) for more details.
+You can write scripts directly from TheEye web to your servers or you can create scripts to be used as API Calls or monitors. Check the [Scripts Documentation](scripts/README.md) for more details.
 
 #### Provisioning \(Templates\)
 
@@ -125,5 +125,4 @@ Workflow connects your tasks together to automate complex or dependent processes
 
 Which trigger would you like to use? You can start a workflow directly with a play button or you can use monitors or tasks as triggers.
 
-Check the [Workflow Documentation](https://github.com/CGastrell/theeye-docs/tree/a8ecdc69ddb62245ee87264f24b9a6276e7083ab/workflow/README.md) for more details.
-
+Check the [Workflow Documentation](workflows.md) for more details.
