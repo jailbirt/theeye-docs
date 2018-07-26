@@ -15,6 +15,7 @@
   * [Debug](the-eye-agent/debug.md)
 * [Monitors](monitors.md)
 * [Tasks](tasks.md)
+  * [Via API](tasks/run_tasks_via_api.md)
 * [Scripts](scripts/README.md)
   * [Writing scripts](scripts/write.md)
   * [Script permissions](scripts/runas.md)
