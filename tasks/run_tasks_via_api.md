@@ -14,7 +14,7 @@ There are two methods available.
   This method is recommended for testing purposes or to get information.
 
   ```
-  curl 
+  curl \
     -X POST \
     -H "Accept: application/json" \
     -H "Content-Type=application/json" \
@@ -33,7 +33,7 @@ There are two methods available.
 
 
   ```
-  curl 
+  curl \
     -X POST \
     -H "Accept: application/json" \
     -H "Content-Type=application/json" \
