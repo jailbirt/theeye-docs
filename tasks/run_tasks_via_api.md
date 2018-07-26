@@ -1,16 +1,17 @@
 # Run Tasks via API
 
-Every time a Task is executed a new Job is added to the queue.
-To execute Tasks you need to create a Job for this Task.
-For doing that perform a POST request to the Job API.
+For a **Task** to run, internally, a new **Job** is created and added to the queue.
+If you want to run a **task** you only need to create a **Job** manually and supply the task ID (and task options) you want to run.
+
+This is easily done with a POST request to the Job endpoint API.
 
 There are two methods available.
 
-  1. Using a user access token.
+  1. Using a user access token (recommended for tests and quick responses)
 
-  This method is not recomended since user access_token give access to execute task and also to obtain information of multiple resources of the system. 
-  Also the access_token has an expiration time (usually one hour). This is not handy to create custom integrations.
-  Only use this method for testing or to get information. 
+  This method is not recomended since a **user access_token** gives access to execute task and also to obtain information of **multiple resources of the system**. 
+  The access_token also has an expiration time (usually one hour), which makes it unstable to create custom integrations: once expired the integration will no longer work.
+  This method is recommended for testing purposes or to get information.
 
   ```
   curl 
@@ -26,9 +27,9 @@ There are two methods available.
 
   2. Using the Task secret key (recommended)
 
-  All tasks has a secret key to invoke it directly via API.
-  The secret gives the posibility to provide direct access to specific tasks only.
-  Access to tasks can be revoked any time by changing the secret key 
+  All tasks have a **secret key** which can be used to invoke them directly via API.
+  The secret key provides access to the task it belongs **and only to that task**.
+  **Secret keys** can be revoked any time by just changing them, which makes this the preferred method for it's implicit security.
 
 
   ```
@@ -45,13 +46,16 @@ There are two methods available.
 Task Execution Payload 
 ```
 {
-  task: "task id", (required)
-  customer: "customer name", (can also be provided via query string)
+  // (required)
+  task: "task id",
+  // (required, can also be provided via query string)
+  customer: "customer name",
+  // (required only if task has arguments)
   task_arguments: [
     {
       order: "argument numerical order",
       value: "this execution value"
     }
-  ] (required, if task has arguments)
+  ]
 }
 ```
