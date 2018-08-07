@@ -17,6 +17,9 @@
 
 Creating a task is simple, just go to the tasks section in the left "hamburger" menu, and click on "+ create New Task", select the task category from _Outgoing Webhook/HTTP Request_ and _Script_ and start writing your task. A task can be modified directly from the tasks' panel in the Dashboard or you can go to the tasks page in the left menu, and click the edit button over the task row.
 
+You can also create tasks from the dashboard by clicking on the "+" button:
+![](/images/newTaskDashboard.png)
+
 ### Approval Task
 Approval tasks handle approval requests in workflows. As breakpoints do, an approval task will pause the workflow execution until it is approved or rejected. 
 
