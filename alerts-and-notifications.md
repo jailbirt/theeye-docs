@@ -8,7 +8,7 @@ description: Understanding Alerts & Notifications
 
 Alerts are received every time an event occurs and are only visible from TheEye Dashboard on Web or on mobile.
 
-![Dashboard](../.gitbook/assets/alertsandnotifications.jpg)
+![Dashboard](.gitbook/assets/alertsandnotifications.jpg)
 
 ### Notifications
 
