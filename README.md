@@ -6,7 +6,7 @@
 
 * [What is TheEye?](./#what-is-theeye)
 * [First Steps](./#first-steps)
-  * [Bot Installation](./#agent-installation)
+  * [Bot Installation]()
   * [Check your first resource](./#check-your-first-resource)
 * [User Management](./#users)
 * Organization
@@ -59,7 +59,7 @@ Launch the self provided Bot, and begin automating processes.
 
 ![Settings --&amp;gt; Installer](.gitbook/assets/startbot.jpg)
 
-**Bot Installation**
+### **Bot Installation**
 
 If it is the first time you access TheEye Website, click the link in the monitors panel where says _"Click HERE to get the step by step instructions to install the Bot on Linux and Windows operating systems"_, otherwise go to _Settings_ in the left menu and get to the _Installation_ section. Installation instructions are provided for Linux and Windows systems.
 

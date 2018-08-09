@@ -1,4 +1,8 @@
-# The Eye Agent
+---
+description: Bot Features & configuration
+---
+
+# The Eye Bot
 
 The Eye supervises your infrastructure using Agents: a service daemon.
 

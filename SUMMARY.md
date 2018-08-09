@@ -1,15 +1,12 @@
 # Table of contents
 
 * [The Eye](README.md)
-* [What is TheEye](readme-1.md)
-* [Getting started](getting-started/README.md)
-  * [Agent installation](getting-started/agent-installation.md)
-  * [Your first resource](getting-started/your-first-resource.md)
+* [What is TheEye & First Steps](readme-1.md)
 * [User management](user-management/README.md)
   * [Permission profiles](user-management/permission-profiles.md)
   * [Managing users](user-management/managing-users.md)
   * [ACLs](user-management/acls.md)
-* [The Eye Agent](the-eye-agent/README.md)
+* [The Eye Bot](the-eye-agent/README.md)
   * [Installation](the-eye-agent/installation.md)
   * [Setup](the-eye-agent/setup.md)
   * [Debug](the-eye-agent/debug.md)

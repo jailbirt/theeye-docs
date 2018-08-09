@@ -1,4 +1,0 @@
-# Your first resource
-
-
-
