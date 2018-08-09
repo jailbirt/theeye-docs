@@ -40,20 +40,26 @@ If you want start from the scratch, there's a native integration with ELK and Do
 To start using TheEye you will need to:
 
 1. Have a user account. If you don't have one go to [https://theeye.io/register](https://theeye.io/register) and create one.
-2. Install an [Bot](the-eye-agent/installation.md) on each server you would like to perform actions or automate from.
+2. Start the self-provided Bot or Install [one on](the-eye-agent/installation.md) each server you would like to perform actions or automate from.
 3. Create your first resource from TheEye Web.
 
 Once you've activated your user account, you'll see this Dashboard after login:
 
 ![first time login](.gitbook/assets/firsttimelogin.jpg)
 
-The Tutorial will guide you through the install process of an [Bot](the-eye-agent/installation.md) and create a task.
+The Tutorial will guide you through the installation process of a [Bot](the-eye-agent/installation.md) and will show you how to create a task. 
 
-In case you don't want to follow the tutorial, you can install the agents on your own following instructions from Settings-&gt;Installer in the side menu.
+In case you don't want to follow the tutorial, you can install the Bots on your own following instructions from Settings-&gt;Installer in the side menu.
 
 ![settings](.gitbook/assets/settings-1.jpg)
 
-#### Bot Installation
+#### Quick start
+
+Launch the self provided Bot, and begin automating processes.
+
+![Self-Provided Bot Launch](.gitbook/assets/startbot.jpg)
+
+Bot Installation
 
 If it is the first time you access TheEye Website, click the link in the monitors panel where says _"Click HERE to get the step by step instructions to install the Bot on Linux and Windows operating systems"_, otherwise go to _Settings_ in the left menu and get to the _Installation_ section. Installation instructions are provided for Linux and Windows systems.
 
