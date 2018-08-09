@@ -1,27 +1,27 @@
-# The Eye
+# What is TheEye
 
 [![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
 
 ## Content
 
-* [What is TheEye?](./#what-is-theeye)
-* [First Steps](./#first-steps)
-  * [Bot Installation](./#agent-installation)
-  * [Check your first resource](./#check-your-first-resource)
-* [User Management](./#users)
+* [What is TheEye?](readme-1.md#what-is-theeye)
+* [First Steps](readme-1.md#first-steps)
+  * [Bot Installation](readme-1.md#agent-installation)
+  * [Check your first resource](readme-1.md#check-your-first-resource)
+* [User Management](readme-1.md#users)
 * Organization
-* [Integrations](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/integrations/README.md)
+* [Integrations](https://github.com/theeye-io/theeye-docs/tree/2ae6a80ebce5e116f9b38a8ff7b35115f5808868/integrations/README.md)
 * Resources
-  * [Monitors](./#monitors)
-  * [Tasks](./#tasks)
-  * [Provisioning](./#provisioning-templates)
-  * [Webhooks](./#webhooks)
-  * [Scripts](./#scripts)
-* [Workflow](./#workflow)
+  * [Monitors](readme-1.md#monitors)
+  * [Tasks](readme-1.md#tasks)
+  * [Provisioning](readme-1.md#provisioning-templates)
+  * [Webhooks](readme-1.md#webhooks)
+  * [Scripts](readme-1.md#scripts)
+* [Workflow](readme-1.md#workflow)
 * Other Tools
   * [TheEye\_Cli Util](cli-util.md)
-  * [Build Bot Binary](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/binary_build.md)
-  * [Bot Docs](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/agent/README.md)
+  * [Build Bot Binary](https://github.com/theeye-io/theeye-docs/tree/2ae6a80ebce5e116f9b38a8ff7b35115f5808868/binary_build.md)
+  * [Bot Docs](https://github.com/theeye-io/theeye-docs/tree/2ae6a80ebce5e116f9b38a8ff7b35115f5808868/agent/README.md)
 
 ### What is TheEye
 
@@ -89,9 +89,9 @@ TheEye provides a way to store technical knowledge in Resources that become usab
 
 A monitor is used to check services' or resources' status. You can use this status information to take actions \(e.g. run a task, send notification\). You can always customize the time between checks.
 
-There are five kind of monitors you can set up from TheEye: Stats, Script, API/Web Check, Process and File. Check the [Monitors Documentation](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/monitors/README.md) for more details.
+There are five kind of monitors you can set up from TheEye: Stats, Script, API/Web Check, Process and File. Check the [Monitors Documentation](https://github.com/theeye-io/theeye-docs/tree/2ae6a80ebce5e116f9b38a8ff7b35115f5808868/monitors/README.md) for more details.
 
-* Monitors will notify for events as desired. Check the Users ACLs' section for [Notifications](./)
+* Monitors will notify for events as desired. Check the Users ACLs' section for [Notifications](readme-1.md)
 
 #### Tasks
 

@@ -1,7 +1,7 @@
 # Table of contents
 
 * [The Eye](README.md)
-* [What is TheEye](README.md)
+* [What is TheEye](readme-1.md)
 * [Getting started](getting-started/README.md)
   * [Agent installation](getting-started/agent-installation.md)
   * [Your first resource](getting-started/your-first-resource.md)
@@ -14,10 +14,11 @@
   * [Setup](the-eye-agent/setup.md)
   * [Debug](the-eye-agent/debug.md)
 * [Monitors](monitors.md)
-* [Tasks](tasks.md)
+* [Tasks](tasks/README.md)
   * [Via API](tasks/run_tasks_via_api.md)
 * [Scripts](scripts/README.md)
   * [Writing scripts](scripts/write.md)
   * [Script permissions](scripts/runas.md)
 * [Workflows](workflows.md)
 * [CLI Util](cli-util.md)
+

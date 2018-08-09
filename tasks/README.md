@@ -7,28 +7,35 @@
 ### Contents
 
 * Create and modify tasks
-  * [Approval Task](tasks.md#approval-task)
-  * [Input Task](tasks.md#input-task)
-  * [Script Task](tasks.md#create-a-script-task)
-  * [Webhook or HTTP Request Task](tasks.md#create-an-endpoint-apiweb-task)
-* [Task Management and Scheduler](tasks.md#schedule-a-task)
+  * [Approval Task](./#approval-task)
+  * [Input Task](./#input-task)
+  * [Script Task](./#create-a-script-task)
+  * [Webhook or HTTP Request Task](./#create-an-endpoint-apiweb-task)
+* [Task Management and Scheduler](./#schedule-a-task)
 
 ### Create and modify tasks
 
 Creating a task is simple, just go to the tasks section in the left "hamburger" menu, and click on "+ create New Task", select the task category from _Outgoing Webhook/HTTP Request_ and _Script_ and start writing your task. A task can be modified directly from the tasks' panel in the Dashboard or you can go to the tasks page in the left menu, and click the edit button over the task row.
 
-You can also create tasks from the dashboard by clicking on the "+" button:
-![](/images/newTaskDashboard.png)
+You can also create tasks from the dashboard by clicking on the "+" button: 
+
+![](../.gitbook/assets/newtaskdashboard.png)
 
 ### Approval Task
-Approval tasks handle approval requests in workflows. As breakpoints do, an approval task will pause the workflow execution until it is approved or rejected. 
+
+Approval tasks handle approval requests in workflows. As breakpoints do, an approval task will pause the workflow execution until it is approved or rejected.
 
 ### Input Task
+
 An input task is a special task commonly used to start workflows. When executed, the input parameters will be submitted directly to the next chained task in the workflow.
 
 #### Script task.
 
-Use the quick input mode ![](.gitbook/assets/quickinputtask.jpg) or click on "advanced options" for further features. ![](.gitbook/assets/advancedoptionstask.jpg)
+Use the quick input mode  or click on "advanced options" for further features. 
+
+![](../.gitbook/assets/advancedoptionstask.jpg)
+
+![](../.gitbook/assets/quickinputtask.jpg)
 
 * **Copy Task**: select an already created task as template
 * **Name**: name your task
@@ -44,7 +51,7 @@ Use the quick input mode ![](.gitbook/assets/quickinputtask.jpg) or click on "ad
 
 #### Create an endpoint API/WEB task.
 
-Select _Outgoing Webhook/HTTP Request_ on "+ create New Task" dialog to create tasks based on HTTP requests. ![](.gitbook/assets/webrequesttask.jpg)
+Select _Outgoing Webhook/HTTP Request_ on "+ create New Task" dialog to create tasks based on HTTP requests. ![](../.gitbook/assets/webrequesttask.jpg)
 
 The main difference between a _Script_ task relies on:
 
@@ -56,7 +63,6 @@ The main difference between a _Script_ task relies on:
 * **Req. Timeout**:  The time to wait for response before considering the request has failed.
 * **Success Status Code**: The HTTP code expected at response to consider it successful. Ref. [https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
 * **Success Pattern**:  Expected HTTP body response. You can write plain HTML code or you can use a _Regular Expression_.
-
 
 ### Schedule a task.
 
