@@ -18,4 +18,5 @@
   * [Installation](the-eye-agent/installation.md)
   * [Setup](the-eye-agent/setup.md)
   * [Debug](the-eye-agent/debug.md)
+  * [Alerts and Notifications](the-eye-agent/alerts-and-notifications.md)
 
