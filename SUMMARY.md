@@ -1,7 +1,6 @@
 # Table of contents
 
-* [The Eye](README.md)
-* [What is TheEye & First Steps](readme-1.md)
+* [What is The Eye & First Steps](README.md)
 * [User management](user-management/README.md)
   * [Permission profiles](user-management/permission-profiles.md)
   * [Managing users](user-management/managing-users.md)
@@ -16,6 +15,7 @@
 * [Scripts](scripts/README.md)
   * [Writing scripts](scripts/write.md)
   * [Script permissions](scripts/runas.md)
-* [Workflows](workflows.md)
-* [CLI Util](cli-util.md)
+* [Workflows](workflows/README.md)
+  * [CLI Util](workflows/cli-util.md)
+  * [What is TheEye & First Steps](workflows/readme-old.md)
 

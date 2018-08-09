@@ -1,4 +1,8 @@
-# The Eye
+---
+description: First Steps
+---
+
+# What is The Eye & First Steps
 
 [![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
 
@@ -19,7 +23,7 @@
   * [Scripts](./#scripts)
 * [Workflow](./#workflow)
 * Other Tools
-  * [TheEye\_Cli Util](cli-util.md)
+  * [TheEye\_Cli Util](workflows/cli-util.md)
   * [Build Bot Binary](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/binary_build.md)
   * [Bot Docs](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/agent/README.md)
 
@@ -131,5 +135,5 @@ Workflow connects your tasks together to automate complex or dependent processes
 
 Which trigger would you like to use? You can start a workflow directly with a play button or you can use monitors or tasks as triggers.
 
-Check the [Workflow Documentation](workflows.md) for more details.
+Check the [Workflow Documentation](workflows/) for more details.
 
