@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What is The Eye & First Steps](README.md)
+* [What is The Eye](README.md)
 * [User management](user-management/README.md)
   * [Permission profiles](user-management/permission-profiles.md)
   * [Managing users](user-management/managing-users.md)

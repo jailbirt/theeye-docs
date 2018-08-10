@@ -1,8 +1,8 @@
 ---
-description: First Steps
+description: What is TheEye & First Steps
 ---
 
-# What is The Eye & First Steps
+# What is The Eye
 
 [![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
 
