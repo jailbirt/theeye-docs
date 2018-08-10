@@ -26,7 +26,9 @@ Click on "More Options" to completely disable Desktop and Mobile notifications.
 
 ![Settings --&amp;gt; Notifications](.gitbook/assets/image%20%281%29.png)
 
-### 
+Desktop Notifications are received when you're logged in TheEye's WebApp.
+
+Mobile Notifications \(Push Notifications\) are received once you've installed and logged in at least once to the mobile App.
 
 #### Mute Notifications for Monitors 
 
