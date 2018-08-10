@@ -51,7 +51,9 @@ Use the quick input mode  or click on "advanced options" for further features.
 
 #### Create an endpoint API/WEB task.
 
-Select _Outgoing Webhook/HTTP Request_ on "+ create New Task" dialog to create tasks based on HTTP requests. ![](../.gitbook/assets/webrequesttask.jpg)
+Select _Outgoing Webhook/HTTP Request_ on "+ create New Task" dialog to create tasks based on HTTP requests. 
+
+![](../.gitbook/assets/webrequesttask.jpg)
 
 The main difference between a _Script_ task relies on:
 
