@@ -18,7 +18,7 @@ Alerts are also notified. Click on the Notification's Bell to see the events log
 
 ![Notifications Panel](.gitbook/assets/image%20%282%29.png)
 
-The configuration ring in this panel will led you to the task Notification's settings where you can disable notifications for task events.
+The configuration ring in this panel will lead you to the task Notification's settings where you can disable notifications for task events.
 
 ![Notification Preferences](.gitbook/assets/image%20%283%29.png)
 
