@@ -70,5 +70,20 @@ The main difference between a _Script_ task relies on:
 
 You can use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. To view or perform an operation, go to the _Tasks_ section and click on the scheduler icon.
 
+### Export and Import Tasks
+
+Inside TheEye community you will hear that other people had already solved or automated typical common problems using the platform. When this automation was performed by a task, you will be able to import the solution or on the other hand export and share the tasks you have created.
+
+To export a task recipe, go to the task, click on the context menu, and then click on the "export recipe" icon as shown here:
+
+![Dashboard - Task Export](../.gitbook/assets/image%20%281%29.png)
+
+  
+
+
+
+
+
+
 ![](https://github.com/patobas/docs/blob/master/schedule.gif)
 
