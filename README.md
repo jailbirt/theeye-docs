@@ -18,7 +18,7 @@ description: What is TheEye & First Steps
 * Resources
   * [Monitors](./#monitors)
   * [Tasks](./#tasks)
-  * [Provisioning](./#provisioning-templates)
+  * [Templates](templates.md)
   * [Webhooks](./#webhooks)
   * [Scripts](./#scripts)
 * [Workflow](./#workflow)

@@ -6,13 +6,13 @@ description: Auto Provisioning of automation and configuration recipes
 
 When you automate with TheEye you create recipes that are executed by Bots. This recipes can be shared with other users or organizations by Templates.
 
-### Templates Menu
-
-From the templates menu, you will be able to work with templates. Go to the templates Menu in the left hamburguer menu:
+ Go to the templates Menu in the left hamburguer menu:
 
 ![Dashboard - Hamburguer Menu](.gitbook/assets/image.png)
 
 ### Create Template
+
+Templates are based on Tasks and Monitors that run on Bots and are therefore applied to Bots. When creating a template you will need to identify the Bot you would like to start from \(the one that is asigned to the tasks and monitors you would like to reuse\). 
 
 Click on "+ New Bot Template"
 
