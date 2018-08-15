@@ -19,4 +19,5 @@
   * [Setup](the-eye-agent/setup.md)
   * [Debug](the-eye-agent/debug.md)
 * [Alerts and Notifications](alerts-and-notifications.md)
+* [Templates](templates.md)
 
