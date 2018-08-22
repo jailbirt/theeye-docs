@@ -42,40 +42,58 @@ This events can be identified as the following topics:
 
 Topics configuration:
 
->"agent": {
->  "version": "agent-version"
->},
->"host": {
->  "stats": "host-stats",
->},
->"monitor": {
->  "crud": "monitor-crud",
->  "execution": "monitor-execution",
->  "state": "monitor-state",
->},
->"script": {
->  "crud": "script-crud"
->},
->"file": {
->  "crud": "file-crud"
->},
->"hostgroup": {
->  "crud": "provisioning-crud",
->},
->"host": {
->  "crud": "host-crud",
->  "stats": "host-stats"
->},
->"task": {
->  "crud": "task-crud"
->},
->"job": {
->  "crud": "job-crud"
->},
->"webhook": {
->  "crud": "webhook-crud",
->  "triggered": "triggered-webhook"
->}
+```json
+{
+   "monitor":{
+      "crud":"monitor-crud",
+      "execution":"monitor-execution",
+      "state":"monitor-state"
+   },
+   "script":{
+      "crud":"script-crud"
+   },
+   "agent":{
+      "version":"agent-version"
+   },
+   "file":{
+      "crud":"file-crud"
+   },
+   "hostgroup":{
+      "crud":"provisioning-crud"
+   },
+   "host":{
+      "integrations":{
+         "crud":"host-integrations-crud"
+      },
+      "crud":"host-crud",
+      "state":"host-state",
+      "processes":"host-processes",
+      "stats":"host-stats",
+      "registered":"host-registered"
+   },
+   "task":{
+      "crud":"task-crud",
+      "execution":"task-execution",
+      "sent":"task-sent",
+      "result":"task-result",
+      "cancelation":"task-cancelation",
+      "terminate":"task-terminate"
+   },
+   "workflow":{
+      "execution":"workflow-execution"
+   },
+   "job":{
+      "crud":"job-crud"
+   },
+   "webhook":{
+      "crud":"webhook-crud",
+      "triggered":"webhook-triggered"
+   },
+   "scheduler":{
+      "crud":"scheduler-crud"
+   }
+}
+```
 
 
 ### Notifications
