@@ -23,7 +23,7 @@ You can also create tasks from the dashboard by clicking on the "+" button:
 
 ### Approval Task
 
-Approval tasks handle approval requests in workflows. As breakpoints do, an approval task will pause the workflow execution until it is approved or rejected.
+Approval tasks handle approval requests in workflows. As breakpoints do, an approval task will pause the workflow execution until it is approved or rejected. Many approvers can be selected, only one approval is needed to continue workfow actions.
 
 ### Input Task
 

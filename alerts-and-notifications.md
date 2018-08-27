@@ -1,7 +1,3 @@
----
-description: Understanding Alerts & Notifications
----
-
 # Alerts and Notifications
 
 ### Alerts

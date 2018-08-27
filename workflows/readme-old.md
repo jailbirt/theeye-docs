@@ -1,7 +1,3 @@
----
-description: Start using TheEye
----
-
 # What is TheEye & First Steps
 
 [![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
