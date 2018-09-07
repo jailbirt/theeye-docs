@@ -6,7 +6,7 @@
 
 * [What is TheEye?](./#what-is-theeye)
 * [First Steps](./#first-steps)
-  * [Bot Installation](alerts-and-notifications/the-eye-agent/installation.md)
+  * [Bot Installation](the-eye-agent/installation.md)
   * [Check your first resource](./#check-your-first-resource)
 * [User Management](./#users)
 * Organization
@@ -40,14 +40,14 @@ If you want start from the scratch, there's a native integration with ELK and Do
 To start using TheEye you will need to:
 
 1. Have a user account. If you don't have one go to ****[https://theeye.io/register](https://theeye.io/register) and create one.
-2. Start the self-provided Bot or Install [one ](alerts-and-notifications/the-eye-agent/installation.md#manual-instalation-from-sources-binary-for-your-platform-is-not-available)on each server you would like to perform actions or automate from.
+2. Start the self-provided Bot or Install [one ](the-eye-agent/installation.md#manual-instalation-from-sources-binary-for-your-platform-is-not-available)on each server you would like to perform actions or automate from.
 3. Create your first resource from TheEye Web.
 
 Once you've activated your user account, you'll see this Dashboard after login:
 
 ![first time login](.gitbook/assets/firsttimelogin.jpg)
 
-The Tutorial will guide you through the installation process of a [Bot](alerts-and-notifications/the-eye-agent/installation.md) and will show you how to create a task. 
+The Tutorial will guide you through the installation process of a [Bot](the-eye-agent/installation.md) and will show you how to create a task. 
 
 In case you don't want to follow the tutorial, you can install the Bots on your own following instructions from Settings-&gt;Installer in the side menu.
 
@@ -77,7 +77,7 @@ If it is the first time you access TheEye Website, click the link in the monitor
 
 After each agent installation a new monitor is shown up in the Dashboard.
 
-For detailed installation information check the [Bot:install document](alerts-and-notifications/the-eye-agent/installation.md)
+For detailed installation information check the [Bot:install document](the-eye-agent/installation.md)
 
 #### Check your first resource
 
