@@ -10,13 +10,13 @@ You can launch tasks in different ways. On one hand you can start them directly 
 
 When Tasks are triggered by other tasks, the output of the triggering task can be used as input as well. The key is to match trigger output with triggered input.
 
-In this example we use the success event of the Task "Get Stalled Transaction" to trigger "Execute Transaction". The transaction number is passed over tasks.
+In this example we use the _success_ event of the Task "Get Stalled Transaction" to trigger "Execute Transaction". The transaction number is passed over tasks.
 
-Task "Execute Transaction" expects a transaction number and is triggered by "Get Stalled Transaction". The task configuration is shown below.
+Task "Execute Transaction" expects a transaction number and is **triggered by** "Get Stalled Transaction". The task configuration is shown below.
 
-![Task: Execute Transaction](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/triggeredbytask.jpg)
 
-When "Get Stalled Transaction" tasks finishes running, then "Execute Transaction" is launched. The output data from "Get Stalled Transaction" is then used as input.
+When "Get Stalled Transaction" tasks finishes running **successfuly**, then "Execute Transaction" is launched. The output data from "Get Stalled Transaction" is then used as input.
 
 ![&quot;Get Stalled Transaction&quot; output ](../.gitbook/assets/taskexecution.jpg)
 
