@@ -1,6 +1,7 @@
 # Table of contents
 
 * [What is The Eye](README.md)
+* [What is The Eye](README.md)
 * [Tasks](tasks/README.md)
   * [Task Triggers](tasks/triggers.md)
   * [Via API](tasks/run_tasks_via_api.md)
