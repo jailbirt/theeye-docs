@@ -23,19 +23,17 @@ You can also create tasks from the dashboard by clicking on the "+" button:
 
 ### Approval Task
 
-Approval tasks handle approval requests in workflows. As breakpoints do, an approval task will pause the workflow execution until it is approved or rejected. Many approvers can be selected, only one approval is needed to continue workfow actions.
+Approval tasks handle approval requests in workflows. As breakpoints do, an approval task will pause the workflow execution until it is approved or rejected. Many approvers can be selected, only one approval is needed to continue workflow actions.
 
 ### Input Task
 
 An input task is a special task commonly used to start workflows. When executed, the input parameters will be submitted directly to the next chained task in the workflow.
 
-#### Script task.
+### Script task.
 
 Use the quick input mode  or click on "advanced options" for further features. 
 
-![](../.gitbook/assets/advancedoptionstask.jpg)
-
-![](../.gitbook/assets/quickinputtask.jpg)
+![Script Task - advanced options](../.gitbook/assets/advancedoptionstask.jpg)
 
 * **Copy Task**: select an already created task as template
 * **Name**: name your task
@@ -84,6 +82,8 @@ To export a task recipe, go to the task, click on the context menu, and then cli
 
 
 
+
+![Script Task Creation Modal](../.gitbook/assets/quickinputtask.jpg)
 
 ![](https://github.com/patobas/docs/blob/master/schedule.gif)
 
