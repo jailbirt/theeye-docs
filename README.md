@@ -6,6 +6,7 @@
 
 * [What is TheEye?](./#what-is-theeye)
 * [First Steps](./#first-steps)
+  * Quick Start
   * [Bot Installation](the-eye-agent/installation.md)
   * [Check your first resource](./#check-your-first-resource)
 * [User Management](./#users)
