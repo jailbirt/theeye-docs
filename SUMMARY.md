@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What is The Eye](README.md)
+* [Documentation](README.md)
 * [What is The Eye](README.md)
 * [Tasks](tasks/README.md)
   * [Task Triggers](tasks/triggers.md)
