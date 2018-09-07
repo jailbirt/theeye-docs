@@ -1,7 +1,3 @@
----
-description: Trigger tasks using events from other resoures
----
-
 # Task Triggers
 
 You can launch tasks in different ways. On one hand you can start them directly using the play button, on the other hand you can use triggers. Tasks are also started by Workflows.
