@@ -12,7 +12,7 @@ When Tasks are triggered by other tasks, the output of the triggering task can b
 
 In this example we use the success event of the Task "Get Stalled Transaction" to trigger "Execute Transaction". The transaction number is passed over tasks.
 
-Tasks"Execute Transaction" expects a transaction number and is triggered by "Get Stalled Transaction". The task configuration is shown below.
+Task "Execute Transaction" expects a transaction number and is triggered by "Get Stalled Transaction". The task configuration is shown below.
 
 ![Task: Execute Transaction](../.gitbook/assets/image%20%288%29.png)
 
