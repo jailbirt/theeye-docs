@@ -7,6 +7,7 @@
   * [ACLs](user-management/acls.md)
 * [Monitors](monitors.md)
 * [Tasks](tasks/README.md)
+  * [Task Triggers](tasks/triggers.md)
   * [Via API](tasks/run_tasks_via_api.md)
 * [Scripts](scripts/README.md)
   * [Writing scripts](scripts/write.md)
