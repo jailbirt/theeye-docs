@@ -1,10 +1,34 @@
+---
+description: Automation of business processes
+---
+
 # Workflows
 
 Workflow connects your tasks together to automate complex or dependent processes.
 
+## Workflow Execution
+
+Workflows are launched in the same way tasks are. Each time a workflow is launched a new job is created. The selected starting task, will be executed when a workflow is triggered. In this example the Workflow "Start Expense Approval Process" is started:
+
+![Workflow &quot;Start Expense Process&quot; execution](../.gitbook/assets/workflow.gif)
+
 ## Workflow Creation
 
-Create a new workflow from the dashboard by clicking the "+" button:
+As workflows conects tasks, tasks must be designed and created in advance in order to use them in workflows. 
+
+In this example we wil connect 3 tasks  
+
+1. Start Expense Approval Process  \(Input task\)
+   * Receives an _text_, a _file_ and a _date._
+2. Approve Expense \(Approval task\)
+   * Expects an _text,_ a _file_ and a _date._
+   * Sends a _text,_ a _file_ and a _date_.
+3. Expense submission \(Script task\)
+   * Receives a _text_ a _file_ and a _date._
+
+Arguments are passed through tasks on each workflow job \(execution\)_._
+
+  Create a new workflow from the dashboard by clicking the "+" button:
 
 ![](../.gitbook/assets/workflow1.jpg)
 
