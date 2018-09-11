@@ -8,9 +8,9 @@ Workflow connects your tasks together to automate complex or dependent processes
 
 ## Workflow Execution
 
-Workflows are launched in the same way tasks are. Each time a workflow is launched a new job is created. The selected starting task, will be executed when a workflow is triggered. In this example the Workflow "Start Expense Approval Process" is started:
+Workflows are launched in the same way tasks are. Each time a workflow is launched a new job is created. The selected starting task, will be executed when a workflow is triggered. In this example the Workflow "Expense Management" is started:
 
-![Workflow &quot;Start Expense Process&quot; execution](../.gitbook/assets/workflow.gif)
+![Workflow &quot;Expense Management&quot; execution](../.gitbook/assets/workflow.gif)
 
 ## Workflow Creation
 
@@ -19,7 +19,7 @@ As workflows conects tasks, tasks must be designed and created in advance in ord
 In this example we wil connect 3 tasks  
 
 1. Start Expense Approval Process  \(Input task\)
-   * Receives an _text_, a _file_ and a _date._
+   * Receives a _text_, a _file_ and a _date._
 2. Approve Expense \(Approval task\)
    * Expects an _text,_ a _file_ and a _date._
    * Sends a _text,_ a _file_ and a _date_.
