@@ -32,6 +32,8 @@ In this video 3 tasks are conected to create "Expense Management" workflow:
 
 
 
+**Step by Step Creation**
+
 Create a new workflow from the dashboard by clicking the "+" button:
 
 ![](../.gitbook/assets/workflow1.jpg)
