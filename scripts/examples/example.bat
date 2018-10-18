@@ -15,6 +15,6 @@ IF ERRORLEVEL 1 GOTO End
 :: Done
 ENDLOCAL
 
-:: Print Arguments as JSON to be used on next task in Workflow 
+:: Print Output as JSON to be used on next task in Workflow 
 :End
 ECHO {"state":%state%, "data":["%~1", "%~2", "%~3"]}
