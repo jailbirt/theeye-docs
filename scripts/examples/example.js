@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/local/bin/node
 //For both Monitors and Tasks We need that your script ends by returning "normal" or "failure". 
 // WARNING : check your current path and name to node binary.
 
