@@ -1,10 +1,7 @@
 @ECHO OFF
-:: Start
- 
-SETLOCAL
  
 :: Initialize variables
-:Start
+
 SET state="success"
 
 :: Do your stuff
