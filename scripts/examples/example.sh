@@ -6,8 +6,8 @@ STATE="normal"
 # run your command. this will generate output , but we will only parse the last line
 echo "Hello World"
 
-#change state if its need it. 
-#print state. last line of this script will be the $STATE value
+# change state if needed.
+# print state. last line of this script will be the $STATE value
 if [ $? -ne 0 ]; then STATE="failure"; fi
 echo $STATE
 
@@ -17,4 +17,7 @@ echo $STATE
 # 
 # I.E :
 # echo "{\"state\":\"$STATE\",\"data\":[\"arg1\",\"arg2\",\"arg3\"]}"
-#
+# 
+# Alternative 
+# MYJSON=$(echo $1 | base64 -d)
+# echo "$MYJSON"
