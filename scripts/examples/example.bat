@@ -1,6 +1,20 @@
-REM Description: prints to stdout first parameter
-REM Execution: example.bat text
-echo %1
-echo "success"
+@ECHO OFF
+:: Start
+ 
+SETLOCAL
+ 
+:: Initialize variables
+:Start
+SET state="success"
 
-REM "{\"state\":\"$STATE\",\"data\":[\"arg1\",\"arg2\",\"arg3\"]}"
+:: Do your stuff
+
+IF ERRORLEVEL 1 SET state="failure"
+IF ERRORLEVEL 1 GOTO End
+ 
+:: Done
+ENDLOCAL
+
+:: Print Arguments as JSON to be used on next task in Workflow 
+:End
+ECHO {"state":%state%, "data":["%~1", "%~2", "%~3"]}
