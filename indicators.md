@@ -30,7 +30,7 @@ Indicators are shown at the top of the dashboard only when available.
 
 
 
-### Create, Update, Delete and Get Status of Indicators
+### Create, Update, Delete and Get Status from Indicators
 
 Indicators are managed via TheEye RESTfull API, they're not meant to be manipulated from the UI.
 
