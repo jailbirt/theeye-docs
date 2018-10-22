@@ -13,6 +13,7 @@
 * Organization
 * [Integrations](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/integrations/README.md)
 * Resources
+  * Indicators
   * [Monitors](readme-1.md#monitors)
   * [Tasks](readme-1.md#tasks)
   * [Templates](templates.md)

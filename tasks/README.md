@@ -74,7 +74,7 @@ Inside TheEye community you will hear that other people had already solved or au
 
 To export a task recipe, go to the task, click on the context menu, and then click on the "export recipe" icon as shown here:
 
-![Dashboard - Task Export](../.gitbook/assets/image%20%282%29.png)
+![Dashboard - Task Export](../.gitbook/assets/image%20%283%29.png)
 
   
 

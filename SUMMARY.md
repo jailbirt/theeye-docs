@@ -2,6 +2,7 @@
 
 * [Documentation](README.md)
 * [What is The Eye](readme-1.md)
+* [Indicators](indicators.md)
 * [Tasks](tasks/README.md)
   * [Task Triggers](tasks/triggers.md)
   * [Via API](tasks/run_tasks_via_api.md)
