@@ -28,7 +28,7 @@ If the output from the monitor is needed by the launched task, you will need to 
 
 Workflows triggers the task that is set as Starting Task, as shown below.
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 
  
 

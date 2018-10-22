@@ -6,7 +6,9 @@ description: >-
 
 # Indicators
 
-## Representation
+## Representation 
+
+![Indicator Icon](.gitbook/assets/image%20%284%29.png)
 
 ![Indicator&apos;s panel](.gitbook/assets/image%20%282%29.png)
 
@@ -23,12 +25,41 @@ Indicators are shown at the top of the dashboard only when available.
 
 * **Title:** The name that identifies the indicator
 * **Type:** Indicator kind \(Progress/Text\)
-* **Status**: Normal or Failure
+* **State**: Normal or Failure. Status determines wether it is green\(normal\) or red\(failure\).
 * **Value**: The factor or quantity to show
 
 
 
 ### Create, Update, Delete and Get Status of Indicators
 
-Indicators are managed via TheEye API, they're not meant to be manipulated from the UI.
+Indicators are managed via TheEye RESTfull API, they're not meant to be manipulated from the UI.
+
+In order to work with Indicators an API KEY is needed, find your own at the Credentials pane, under the Settings menu:
+
+![Settings-&amp;gt;Credentials](.gitbook/assets/image%20%287%29.png)
+
+#### API URL for Indicators
+
+```bash
+https://supervisor.theeye.io/indicator?access_token={token}&customer={customer}
+```
+
+#### Create an Indicator
+
+Method: `POST`
+
+Properties: t`itle, type, state, value.`
+
+URL: `API URL`
+
+Check the following example, used to create the text indicator shown at the begining of this page.
+
+```bash
+curl -X POST 'https://supervisor.theeye.io/indicator?access_token={API_access_token}&customer={customer_name}' --header 'Content-Type: application/json' --data '{"title":"Currency Exchange
+Dollar/Peso","state":"normal","type":"text","value":"39.56"}'
+```
+
+
+
+
 
