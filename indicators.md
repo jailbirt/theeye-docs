@@ -107,7 +107,7 @@ URL: `https://supervisor.theeye.io/indicator/title/{urlencoded_title}`
 
 Check the following example, used to update the text indicator value shown at the begining of this page.
 
-`curl -X PATCH 'https://supervisor.theeye.io/indicator/title/Currency Exchange Dollar%2fPeso?access_token={token}&customer={customer}' --header 'Content-Type: application/json' --data '{"value":"34"}'`
+`curl -X PATCH 'https://supervisor.theeye.io/indicator/title/Currency%20Exchange Dollar%2fPeso?access_token={token}&customer={customer}' --header 'Content-Type: application/json' --data '{"value":"34"}'`
 
 
 
