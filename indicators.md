@@ -44,6 +44,20 @@ In order to work with Indicators an API KEY is needed, find your own at the Cred
 https://supervisor.theeye.io/indicator?access_token={token}&customer={customer}
 ```
 
+#### 
+
+#### GET All indicators from an organization
+
+Method: `GET`
+
+URL: `https://supervisor.theeye.io/indicator?access_token={token}&customer={customer}`
+
+Example using cURL:
+
+`curl -X GET 'https://supervisor.theeye.io/indicator?access_token={token}&customer={customer}'`
+
+#### 
+
 #### Create an Indicator
 
 Method: `POST`
@@ -97,9 +111,7 @@ Check the following example, used to update the text indicator value shown at th
 
 
 
-#### GET All indicators from an organization
-
-`curl -X GET 'https://supervisor.theeye.io/indicator?access_token={token}&customer={customer}'`
+#### 
 
 \`\`
 
