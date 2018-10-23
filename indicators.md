@@ -95,3 +95,11 @@ Check the following example, used to update the text indicator value shown at th
 
 `curl -X PATCH 'https://supervisor.theeye.io/indicator/title/Currency Exchange Dollar%2fPeso?access_token={token}&customer={customer}' --header 'Content-Type: application/json' --data '{"value":"34"}'`
 
+
+
+#### GET All indicators from organization
+
+`curl -X GET 'https://supervisor.theeye.io/indicator?access_token=674097c2c77b27c109f44f48ee561a8ee4256f14&customer=CloudTechNet'`
+
+\`\`
+
