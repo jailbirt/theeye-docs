@@ -97,9 +97,9 @@ Check the following example, used to update the text indicator value shown at th
 
 
 
-#### GET All indicators from organization
+#### GET All indicators from an organization
 
-`curl -X GET 'https://supervisor.theeye.io/indicator?access_token=674097c2c77b27c109f44f48ee561a8ee4256f14&customer=CloudTechNet'`
+`curl -X GET 'https://supervisor.theeye.io/indicator?access_token={token}&customer={customer}'`
 
 \`\`
 
