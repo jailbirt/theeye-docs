@@ -63,7 +63,7 @@ The request response will look like this, where customer\_id, customer\_name, us
 
 
 
-#### Update an Indicator
+#### Update an Indicator by ID
 
 Method: `PATCH`
 
@@ -81,7 +81,17 @@ The request response will look like this, where customer\_id, customer\_name, us
 
 `{"enable":true,"acl":[],"severity":"HIGH","alerts":true,"state":"normal","sticky":false,"value":"39.96","type":"text","_type":"TextIndicator","creation_date":"2018-10-22T23:10:31.912Z","last_update":"2018-10-22T23:48:07.515Z","title":"Exchange Dollar/Peso","customer_id":"AAA","customer_name":"BBB","user_id":"CCC","id":"{indicator_id}"}`
 
+#### 
 
+#### Update an Indicator by Title
 
+Method: `PATCH`
 
+Properties: `title, state, value`
+
+URL: `https://supervisor.theeye.io/indicator/title/{urlencoded_title}`
+
+Check the following example, used to update the text indicator value shown at the begining of this page.
+
+`curl -X PATCH 'https://supervisor.theeye.io/indicator/title/Currency Exchange Dollar%2fPeso?access_token={token}&customer={customer}' --header 'Content-Type: application/json' --data '{"value":"34"}'`
 
