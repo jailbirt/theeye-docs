@@ -36,11 +36,11 @@ Indicators are shown at the top of the dashboard only when available.
 
 ### Create, Update, Delete and Get Status from Indicators
 
-Indicators are managed via TheEye RESTfull API, they're not meant to be manipulated from the UI.
+Indicators are managed via TheEye RESTfull API.
 
 In order to work with Indicators an API KEY is needed, find your own at the Credentials pane, under the Settings menu:
 
-![Settings-&amp;gt;Credentials](.gitbook/assets/image%20%287%29.png)
+![Settings-&amp;gt;Credentials](.gitbook/assets/image%20%288%29.png)
 
 #### API URL for Indicators
 
@@ -63,6 +63,12 @@ Example using cURL:
 #### 
 
 #### Create an Indicator
+
+Indicators can be created from dashboard from the "+"  button:
+
+![Dashboard - Create Indicator](.gitbook/assets/image%20%286%29.png)
+
+Or they can be created via API
 
 Method: `POST`
 
