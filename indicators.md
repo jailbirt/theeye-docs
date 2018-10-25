@@ -23,10 +23,14 @@ Indicators are shown at the top of the dashboard only when available.
 
 #### Indicators' properties:
 
-* **Title:** The name that identifies the indicator
-* **Type:** Indicator kind \(Progress/Text\)
-* **State**: Normal or Failure. Status determines wether it is green\(normal\) or red\(failure\).
-* **Value**: The factor or quantity to show
+* **title:** The name that identifies the indicator
+* **type:** Indicator kind \(Progress/Text\)
+* **state**: Normal or Failure. Status determines wether it is green\(normal\) or red\(failure\).
+* **value**: The factor or quantity to show
+* **read\_only**: true \| false. When set to false the indicator can be dismissed \(deleted\) from the Dashboard.
+* **acl**: users that will be able to see the indicator. Expects an array with users: \["email1","email2", ...\]
+* **severity:** high\| low. When set to HIGH the failure status will be shown in red, otherwise it will be shown in yellow.
+* **description**: description field that is not visible in the Dashboard.
 
 
 
