@@ -20,11 +20,13 @@ Indicators are shown at the top of the dashboard only when available.
   * The indicator value is shown in percent inside a bar, in the same way a progress bar does.
 * Text
   * The indicator value is shown as typed.
+* Counter
+  * A numeric value is shown starting at one. This indicator has special special methods to increase, decrease and restart the value.
 
 #### Indicators' properties:
 
 * **title:** The name that identifies the indicator
-* **type:** Indicator kind \(Progress/Text\)
+* **type:** Indicator kind \(Progress/Text/Counter\)
 * **state**: Normal or Failure. Status determines wether it is green\(normal\) or red\(failure\).
 * **value**: The factor or quantity to show
 * **read\_only**: true \| false. When set to false the indicator can be dismissed \(deleted\) from the Dashboard.
@@ -65,6 +67,8 @@ Example using cURL:
 #### Create an Indicator
 
 Indicators can be created from dashboard from the "+"  button:
+
+\`\`
 
 ![Dashboard - Create Indicator](.gitbook/assets/image%20%286%29.png)
 
@@ -121,7 +125,19 @@ Check the following example, used to update the text indicator value shown at th
 
 
 
-#### 
+**Update a Counter Indicator**
 
-\`\`
+Method: ****`PATCH`
+
+Actions: `increase, decrease, restart`
+
+URL: `https://supervisor.theeye.io/indicator/{indicator_id}/[action]`
+
+Check the following example, used to increase the value of a counter indicator.
+
+```text
+curl -X PATCH 'https://supervisor.theeye.io/indicator/{indicator_id}/increase?access_token={TOKEN}&customer={CUSTOMER}'
+```
+
+#### 
 
