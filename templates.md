@@ -12,9 +12,9 @@ Templates are based on Tasks and Monitors that run on Bots and are therefore app
 
 Click on "+ New Bot Template"
 
-![Templates Menu](.gitbook/assets/image%20%287%29.png)
+![Templates Menu](.gitbook/assets/image%20%289%29.png)
 
-![Templates Creation Window](.gitbook/assets/image%20%2814%29.png)
+![Templates Creation Window](.gitbook/assets/image%20%2816%29.png)
 
 ### Import a Template
 

@@ -68,6 +68,14 @@ The main difference between a _Script_ task relies on:
 
 You can use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. To view or perform an operation, go to the _Tasks_ section and click on the scheduler icon.
 
+Or Just schedule it from the Dasboard as shown here below
+
+![Dashboard - Task Menu](../.gitbook/assets/image%20%288%29.png)
+
+Your new schedule will be shown when the task row is expanded:
+
+![](../.gitbook/assets/image%20%286%29.png)
+
 ### Export and Import Tasks
 
 Inside TheEye community you will hear that other people had already solved or automated typical common problems using the platform. When this automation was performed by a task, you will be able to import the solution or on the other hand export and share the tasks you have created.

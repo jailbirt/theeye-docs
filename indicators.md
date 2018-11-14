@@ -42,7 +42,7 @@ Indicators are managed via TheEye RESTfull API.
 
 In order to work with Indicators an API KEY is needed, find your own at the Credentials pane, under the Settings menu:
 
-![Settings-&amp;gt;Credentials](.gitbook/assets/image%20%288%29.png)
+![Settings-&amp;gt;Credentials](.gitbook/assets/image%20%2810%29.png)
 
 #### API URL for Indicators
 
@@ -70,7 +70,7 @@ Indicators can be created from dashboard from the "+"  button:
 
 \`\`
 
-![Dashboard - Create Indicator](.gitbook/assets/image%20%286%29.png)
+![Dashboard - Create Indicator](.gitbook/assets/image%20%287%29.png)
 
 Or they can be created via API
 

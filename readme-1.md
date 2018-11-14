@@ -41,7 +41,7 @@ If you want start from the scratch, there's a native integration with ELK and Do
 
 To start using TheEye you will need to:
 
-1. Have a user account. If you don't have one go to _\*\*_[https://theeye.io/register](https://theeye.io/register) and create one.
+1. Have a user account. If you don't have one go to [https://theeye.io/register](https://theeye.io/register) and create one.
 2. Start the self-provided Bot or Install [one ](the-eye-agent/installation.md#manual-instalation-from-sources-binary-for-your-platform-is-not-available)on each server you would like to perform actions or automate from.
 3. Create your first resource from TheEye Web.
 

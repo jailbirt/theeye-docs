@@ -6,7 +6,7 @@ description: Automation of business processes
 
 Workflows connects your tasks together to automate complex or dependent processes. Workflow are visibile in the Dashboard and are identified with the icon 
 
-![Workflow Icon](../.gitbook/assets/image%20%2815%29.png)
+![Workflow Icon](../.gitbook/assets/image%20%2817%29.png)
 
 ## Workflow Execution
 
