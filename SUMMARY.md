@@ -23,3 +23,7 @@
   * [Setup](the-eye-agent/setup.md)
   * [Debug](the-eye-agent/debug.md)
 
+## Support
+
+* [Ask for support](support/ask-for-support.md)
+
