@@ -18,7 +18,7 @@ Every event that is logged in ELK can be identified by common fields as:
 - Operation (e.g. CRUD)
 - Index (event type description)
 
-Data is consistenly grouped in different indexes (tasks, monitors, hosts, file and agent).
+Data is consistenly organized in different indexes (tasks, monitors, hosts, file and agent).
 
 #### Events that are actually stored
 
