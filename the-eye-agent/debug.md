@@ -13,21 +13,18 @@ last version of the binary agent installed with the installation script
 1. login
 2. if the agent is running, stop it. most linux distros `service stop theeye-agent`
 3. change directory to the agent directory, usually `/opt/theeye-agent`
-4. start the agent manually
-
-a. binary agent
-
-```bash
-cd /opt/theeye-agent
-source /etc/theeye/theeye.conf && DEBUG=*eye* ./bin/theeye-agent
-```
-
-b. from sources
-
-```bash
-cd /opt/theeye-agent
-source /etc/theeye/theeye.conf && DEBUG=*eye* npm run core
-```
+4. start the agent manually      
+    * Binary agent       
+    ```bash
+    cd /opt/theeye-agent
+    source /etc/theeye/theeye.conf && DEBUG=*eye* ./bin/theeye-agent
+    ```    
+    * from sources       
+    
+    ```bash
+    cd /opt/theeye-agent
+    source /etc/theeye/theeye.conf && DEBUG=*eye* npm run core
+    ```
 
 
 
