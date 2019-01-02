@@ -22,6 +22,7 @@
   * [Installation](the-eye-agent/installation.md)
   * [Setup](the-eye-agent/setup.md)
   * [Debug](the-eye-agent/debug.md)
+  * [Raspberry](the-eye-agent/raspberry.md)
 
 ## Support
 
