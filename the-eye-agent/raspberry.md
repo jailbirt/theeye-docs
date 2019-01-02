@@ -76,7 +76,7 @@ cp /opt/theeye-agent/misc/theeye.conf /etc/theeye
 vim /etc/theeye/theeye.conf
 ```
 
-reemplazar el contenido del archivo de configuración con lo siguiente:
+modificar el contenido del archivo o reemplazarlo con lo siguiente:
 
 ```text
 #!/bin/bash
