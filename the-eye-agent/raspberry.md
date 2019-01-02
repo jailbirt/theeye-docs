@@ -121,4 +121,4 @@ shutdown -R now
 
 si todo fue configurado correctamente, el agente debería iniciarse junto con el raspberry y se podrá ver el estado en la interfaz.
 
-si no reporta podemos intentar el (inicio manul con debug)[https://github.com/theeye-io/theeye-docs/blob/master/the-eye-agent/debug.md]
+si no reporta podemos intentar el (inicio manual con debug)[https://github.com/theeye-io/theeye-docs/blob/master/the-eye-agent/debug.md]
