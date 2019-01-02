@@ -10,5 +10,5 @@ The Agent is in charge of keeping track of your resources and the host health.
 
 [Debug](debug.md)
 
-Raspberry
+[Raspberry](raspberry.md)
 
