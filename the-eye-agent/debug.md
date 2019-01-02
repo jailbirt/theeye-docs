@@ -15,10 +15,22 @@ last version of the binary agent installed with the installation script
 3. change directory to the agent directory, usually `/opt/theeye-agent`
 4. start the agent manually
 
+4.a) binary agent
+
 ```bash
 cd /opt/theeye-agent
 source /etc/theeye/theeye.conf && DEBUG=*eye* ./bin/theeye-agent
 ```
+
+4.b) from sources
+
+```bash
+cd /opt/theeye-agent
+source /etc/theeye/theeye.conf && DEBUG=*eye* npm run core
+```
+
+
+
 
 this will output all the agent activity to the terminal.
 
