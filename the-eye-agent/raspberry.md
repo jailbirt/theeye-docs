@@ -79,8 +79,25 @@ cp /opt/theeye-agent/misc/theeye.conf /etc/theeye
 vim /etc/theeye/theeye.conf
 ```
 
-el archivo de configuración tiene el siguiente contenido.
-los siguientes valores hay que extraerlos del archivo de credenciales
+reemplazar el contenido del archivo de configuración con lo siguiente:
+
+```
+#!/bin/bash
+set -a
+THEEYE_SUPERVISOR_CLIENT_ID=''
+THEEYE_SUPERVISOR_CLIENT_SECRET=''
+THEEYE_SUPERVISOR_CLIENT_CUSTOMER=''
+THEEYE_SUPERVISOR_API_URL=''
+THEEYE_AGENT_DEBUG='*eye:error*'
+THEEYE_AGENT_BINARIES_PATH='/opt/theeye-agent/bin'
+THEEYE_AGENT_SCRIPT_PATH='/opt/theeye-agent/scripts'
+THEEYE_CLIENT_HOSTNAME='raspberry'
+NODE_ENV='production'
+http_proxy=''
+https_proxy=''
+```
+
+los valores indicados a continuacin hay que extraerlos del archivo de credenciales y reemplazarlos en `theeye.conf`
 
 > THEEYE_SUPERVISOR_CLIENT_ID    
 > THEEYE_SUPERVISOR_CLIENT_SECRET     
@@ -88,24 +105,6 @@ los siguientes valores hay que extraerlos del archivo de credenciales
 > THEEYE_SUPERVISOR_API_URL      
 
 el resto de los valores no es necesario modificarlos. para mas info ver [Instalación Manual del Agente](https://github.com/theeye-io/theeye-docs/blob/master/the-eye-agent/installation.md#step-3)
-
-```
-#!/bin/bash
-# SAMPLE LINUX CONFIGURATION FILE
-set -a
-THEEYE_SUPERVISOR_CLIENT_ID='ring'
-THEEYE_SUPERVISOR_CLIENT_SECRET='sauron'
-THEEYE_SUPERVISOR_CLIENT_CUSTOMER='golum'
-THEEYE_AGENT_SCRIPT_PATH='/tmp/'
-THEEYE_AGENT_DEBUG='*eye:error*'
-THEEYE_AGENT_BINARIES_PATH='/opt/theeye-agent/bin'
-THEEYE_SUPERVISOR_API_URL='http://127.0.0.1:60080'
-#THEEYE_CLIENT_HOSTNAME=customHostname
-NODE_ENV='customer'
-http_proxy=''
-https_proxy=''
-
-```
 
 
 ## Configuración del servicio
@@ -118,4 +117,12 @@ copiar y pegar el contenido del siguiente archivo [etc_systemd_system_theeye-age
 crear el archivo `/etc/init.d/theeye-agent` .
 luego copiar y pegar el contenido de este link [etc_init.d_theeye-agent](etc_init.d_theeye-agent)
 
+## Paso Final
 
+reinicie el raspberry
+
+```
+shutdown -R now
+```
+
+si todo fue configurado correctamente, el agente debería iniciarse junto con el raspberry y se podrá ver el estado en la interfaz.
