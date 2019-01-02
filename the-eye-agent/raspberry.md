@@ -87,7 +87,7 @@ los siguientes valores hay que extraerlos del archivo de credenciales
 > THEEYE_SUPERVISOR_CLIENT_CUSTOMER       
 > THEEYE_SUPERVISOR_API_URL      
 
-el resto de los valores no es necesario modificarlos. para mas info ver [Instalación Manual del Agente](https://docs.theeye.io/the-eye-agent/installation#step-3)
+el resto de los valores no es necesario modificarlos. para mas info ver [Instalación Manual del Agente](https://github.com/theeye-io/theeye-docs/blob/master/the-eye-agent/installation.md#step-3)
 
 ```
 #!/bin/bash
