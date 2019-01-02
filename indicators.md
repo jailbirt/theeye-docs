@@ -1,9 +1,3 @@
----
-description: >-
-  Indicators are used as a representation of an associated factor or quantity.
-  They enable you to have information as handy as it gets in your Dashboard.
----
-
 # Indicators
 
 ## Representation 

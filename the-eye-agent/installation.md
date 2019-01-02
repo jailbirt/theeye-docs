@@ -4,25 +4,24 @@
 
 At this moment the supported distributions by the instalation script are
 
-> ubuntu    
-> debian   
+> ubuntu  
+> debian
 
 probably will work on
 
-> centos    
-> redhat    
-> fedora    
+> centos  
+> redhat  
+> fedora
 
 From the web panel you can download the binary agent and get the installation script for your distribution.
 
 ## Windows Installer.
 
-To get the last version of the Windows installer, please contact us.
-We will provide you an installer with last versión of the binary agent.
+To get the last version of the Windows installer, please contact us. We will provide you an installer with last versión of the binary agent.
 
 ### Prerequisites
 
-First, go to [TheEye Web Site](https://theeye.io) and create and account. After you receive you account credential , singin and go to the profile page. There you will found the agent credentials and the installation instructions and software (if available).
+First, go to [TheEye Web Site](https://theeye.io) and create and account. After you receive you account credential , singin and go to the profile page. There you will found the agent credentials and the installation instructions and software \(if available\).
 
 If you need to debug, develop or if you prefer the manual installation of the agent, keep reading.
 
@@ -30,8 +29,8 @@ If you need to debug, develop or if you prefer the manual installation of the ag
 
 ### Before Start
 
-* Is not mandatory, but your will get more benefits if you install the agent with admin privileges (root/administrator).   
-* [NodeJS](https://nodejs.org/en/) \( minimal v0.12 (can stopped working eventually). v8 recommended \)    
+* Is not mandatory, but your will get more benefits if you install the agent with admin privileges \(root/administrator\).   
+* [NodeJS](https://nodejs.org/en/) \( minimal v0.12 \(can stopped working eventually\). v8 recommended \)    
 * NPM \(part of the node toolkit. version 3 or higher\)    
 
 This how-to was written for Linux users. But if your platoform can run nodejs, then you can install the agente and will work. Please, contact us if you need support.

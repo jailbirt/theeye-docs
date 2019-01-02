@@ -1,7 +1,3 @@
----
-description: How to ask for support
----
-
 # Ask for support
 
 If you need help or support you can:
