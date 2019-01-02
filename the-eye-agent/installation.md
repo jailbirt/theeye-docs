@@ -4,9 +4,16 @@
 
 At this moment the supported distributions by the instalation script are
 
-> ubuntu debian centos redhat fedora
+> ubuntu    
+> debian   
 
-From the web panel you can download the binary agent and get a installation script for your distribution.
+probably will work on
+
+> centos    
+> redhat    
+> fedora    
+
+From the web panel you can download the binary agent and get the installation script for your distribution.
 
 ## Windows Installer.
 
