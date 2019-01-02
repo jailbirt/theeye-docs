@@ -62,7 +62,7 @@ con esto ya quedaría instalado el agente y listo para funcionar.
 
 ### crear archivo de configuracin del agente.
 
-primero hay que ingresar a la interfaz web de theeye [app.theeye.io](https://github.com/theeye-io/theeye-docs/tree/b13ed5d7b906be848ebd417b37c4624ca8caa803/the-eye-agent/app.theeye.io) y luego ingresar al siguiente link para obtener las credenciales de acceso.
+primero hay que ingresar a la interfaz web de theeye [app.theeye.io](https://app.theeye.io) y luego ingresar al siguiente link para obtener las credenciales de acceso.
 
 [link a credentials.json](https://app.theeye.io/api/agent/credentials)
 
