@@ -123,3 +123,13 @@ si todo fue configurado correctamente, el agente debería iniciarse junto con el
 
 si no reporta podemos intentar el \(inicio manul con debug\)\[[https://github.com/theeye-io/theeye-docs/blob/master/the-eye-agent/debug.md](https://github.com/theeye-io/theeye-docs/blob/master/the-eye-agent/debug.md)\]
 
+# Problemas Comunes
+
+1.  si hubo algún problema con npm lo mejor es, como root, borrar el directorio `node_modules` y volver a correr el comando `npm install`.
+
+```bash
+sudo su -
+cd /opt/theeye-agent
+rm -rf ./node_modules
+npm install
+```
