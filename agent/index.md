@@ -158,6 +158,6 @@ there are no more requisites for the instalation script. for the Manual Installa
 
   temporarily change scripts download path. set it perpamently via the config file 
   
-#### THEEYE_DISABLE_AUTOPROVISIONING (string)
+#### THEEYE_SKIP_AUTO_PROVISIONING (string)
 
   when "true", the agent will give the order to the api, to skip basic monitors creation during host registration. this will not skip provisioning via host templates. if a host template apply to the bot via the "hostname regular expression" matching, it will be still applied.
