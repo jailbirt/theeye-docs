@@ -30,6 +30,62 @@ So if you script ended as expected \(success state\), you will have to make it p
 * `success`, `normal` and `ok` are accepted `success` states.
 * `failure` and `fail` are accepted `failure` states.
 
+### Passing Arguments in Workflow.
+
+There are different ways of passing arguments from monitor to task and from task to task.
+
+
+#### Monitor to Task
+
+In this case the state is always required or a failure will be assumed. There are two options to provide output:
+
+* The first option is to print a JSON formatted string with two properties: state and data. data must be an array with the arguments list that need to be provided to the next triggered task in the workflow. Each index of the array will be mapped in order to each argument of the triggered task.
+
+```bash
+
+# do your things here...
+if [ true ]; then
+  echo { \"state\":\"success\", \"data\": [ \"val1\", \"val2\" ] }
+else
+  echo { \"state\":\"failure\", \"data\": [ \"val1\", \"val2\" ] }
+fi
+
+```
+
+* The second option is similar to the first one, but we use an object in the data property instead of an array. The difference is that the object will be passsed untouch as the firt argument of the next task.
+
+```bash
+
+# do your things here...
+if [ true ]; then
+  echo { \"state\":\"success\", \"data\":{ \"val1\":$varTwo, \"val2\":$varUno }  }
+else
+  echo { \"state\":\"failure\" }
+fi
+
+```
+
+#### Task to Task
+
+This scenario is the same as the previous, but as the state is not explicitly required and can be ignored, the output is quite more simple. In task the output state is always "success", unless a "failure" is provided to stop the workflow.
+
+Output can be an array (each index will be mapped to each argument of the triggered task):
+
+```
+  echo [\"arg1\",\"arg2\",\"arg3\"]
+```
+
+or an object (that will be the first argument of the triggered task):
+
+```
+  echo { \"val1\": $varTwo, \"val2\": $varUno }
+
+```
+
+#### Limitations.
+
+The only detected limitation so far is the size of the string used as output. Dependeding on the operating system, the output buffer varies. Be aware that if the string exceded the output buffer, some characters can be lost, a json error will be arise (due to parsing errors) and the output of the monitor/task will be a failure. This situation can be detected analizing the output of the monitor or task.
+
 #### Example
 
 This is a simple check with `success` and `failure` states
