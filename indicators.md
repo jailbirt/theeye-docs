@@ -10,17 +10,17 @@ Indicators are shown at the top of the dashboard only when available.
 
 #### Indicator kinds
 
-* Progress
-  * The indicator value is shown in percent inside a bar, in the same way a progress bar does.
 * Text
-  * The indicator value is shown as typed.
+  * The indicator value is shown as typed. value accepts strings
+* Progress
+  * The indicator value is shown in percent inside a bar, in the same way a progress bar does. value only accepts numbers
 * Counter
-  * A numeric value is shown starting at one. This indicator has special special methods to increase, decrease and restart the value.
+  * A numeric value is shown starting at one. This indicator has special special methods to increase, decrease and restart the value. value accepts only valid numbers
 
 #### Indicators' properties:
 
 * **title:** The name that identifies the indicator
-* **type:** Indicator kind \(Progress/Text/Counter\)
+* **type:** Indicator kind \(valid indicator types are: progress/text/counter\)
 * **state**: Normal or Failure. Status determines wether it is green\(normal\) or red\(failure\).
 * **value**: The factor or quantity to show
 * **read\_only**: true \| false. When set to false the indicator can be dismissed \(deleted\) from the Dashboard.
