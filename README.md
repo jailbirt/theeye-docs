@@ -13,13 +13,13 @@
 * Organization
 * [Integrations](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/integrations/README.md)
 * Resources
-  * [Indicators](./indicators)
-  * [Monitors](./#monitors)
-  * [Tasks](./#tasks)
-  * [Templates](templates.md)
-  * [Webhooks](./#webhooks)
-  * [Scripts](./#scripts)
-* [Workflow](./#workflow)
+  * [Indicators](./indicators.md)
+  * [Monitors](./monitors.md)
+  * [Tasks](./tasks.md)
+  * [Templates](./templates.md)
+  * [Webhooks](./webhooks.md)
+  * [Scripts](./scripts.md)
+* [Workflow](./workflow.md)
 * Other Tools
   * [TheEye\_Cli Util](workflows/cli-util.md)
   * [Build Bot Binary](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/binary_build.md)
