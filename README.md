@@ -19,7 +19,7 @@
   * [Templates](./templates.md)
   * [Webhooks](./)
   * [Scripts](./scripts)
-* [Workflow](./workflow.md)
+* [Workflow](./workflow)
 * Other Tools
   * [TheEye\_Cli Util](workflows/cli-util.md)
   * [Build Bot Binary](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/binary_build.md)
