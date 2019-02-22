@@ -15,10 +15,10 @@
 * Resources
   * [Indicators](./indicators.md)
   * [Monitors](./monitors.md)
-  * [Tasks](./tasks.md)
+  * [Tasks](./tasks)
   * [Templates](./templates.md)
-  * [Webhooks](./webhooks.md)
-  * [Scripts](./scripts.md)
+  * [Webhooks](./)
+  * [Scripts](./scripts)
 * [Workflow](./workflow.md)
 * Other Tools
   * [TheEye\_Cli Util](workflows/cli-util.md)
