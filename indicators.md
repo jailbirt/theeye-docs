@@ -133,5 +133,8 @@ Check the following example, used to increase the value of a counter indicator.
 curl -X PATCH 'https://supervisor.theeye.io/indicator/{indicator_id}/increase?access_token={TOKEN}&customer={CUSTOMER}'
 ```
 
-#### 
+#### More Examples
 
+Please, check out the indicators recipe example. After importing It, fulfill the api-key and then run it, It covers the most common requirements.
+
+URL: `https://github.com/theeye-io/theeye-docs/recipes/`
