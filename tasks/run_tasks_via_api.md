@@ -32,7 +32,7 @@ There are two methods available.
     -H "Accept: application/json" \
     -H "Content-Type=application/json" \
     -b "{"task":"${task_id}","task_arguments":[]}" \
-    "https://api.theeye.io/job/secret/${task_secret_key}?access_token=${access_token}&customer=${customer}"
+    "https://api.theeye.io/job/secret/${task_secret_key}?customer=${customer}"
 ```
 
 ## Job API payload \(for task execution\)
@@ -46,12 +46,7 @@ Task Execution Payload
   // (required, can also be provided via query string)
   customer: "customer name",
   // (required only if task has arguments)
-  task_arguments: [
-    {
-      order: "argument numerical order",
-      value: "this execution value"
-    }
-  ]
+  task_arguments: [  ]
 }
 ```
 
