@@ -12,6 +12,10 @@
   * [Script Task](./#create-a-script-task)
   * [Webhook or HTTP Request Task](./#create-an-endpoint-apiweb-task)
 * [Task Management and Scheduler](./#schedule-a-task)
+* Run task via API
+  * [Webhook method](./#webhook-method)
+  * [Using Access token](./#using-access-token)
+
 
 ### Create and modify tasks
 
@@ -95,3 +99,186 @@ To export a task recipe, go to the task, click on the context menu, and then cli
 
 ![](https://github.com/patobas/docs/blob/master/schedule.gif)
 
+## Run task via API
+
+### Webhook method
+
+A task can be triggered by an incoming webhook. To create a new incoming webhook just click in the left "hamburger" menu, and click on "webhooks" - “new incoming webhook”.
+Type the name of the new webhook, click save.
+
+Once it's created you can click on the icon on the left to copy the curl example.
+
+### Using access token
+
+Variables:
+**customer**: organization name
+
+**access token**: menu => settings => credentials => Integration Tokens
+
+**List all tasks**
+```curl -sS 'https://supervisor.theeye.io/$customer/task?access_token=$accesstoken'```
+
+**Search task id by name**
+
+```
+taskName="Task name"
+curl -sS 'https://supervisor.theeye.io/$customer/task?access_token=$accesstoken' | jq -r --arg name "$taskName" '.[] | select(.name==$name) | {"name": .name, "id": .id, "hostname": .hostname}' | jq -s '.'
+```
+
+Returns a json array with tasks, id and hostname:
+
+```
+[
+  {
+    "name": "Get IP Address",
+    "id": "5b1c65ee3c32bb1100c2920a",
+    "hostname": "Apache3"
+  },
+  {
+    "name": "Get IP Address",
+    "id": "5b1c65ee3c32bb1100c29210",
+    "hostname": "Apache1"
+  },
+  {
+    "name": "Get IP Address",
+    "id": "5b1c65efd421031000213bb8",
+    "hostname": "Apache4"
+  },
+  {
+    "name": "Get IP Address",
+    "id": "5b1c65efd421031000213bc6",
+    "hostname": "Apache2"
+  }
+]
+```
+
+### Run task via API using task id
+
+**Example:**
+
+```
+task_id="5b1c65ee3c32bb1100c2920a"
+customer="demo"
+access_token="foo"
+
+curl \
+-X POST \
+-H "Accept: application/json" \
+-H "Content-Type: application/json" \
+-d "{\"task\":\"${task_id}\",\"task_arguments\":[]}" \
+"https://supervisor.theeye.io/job?access_token=${access_token}&customer=${customer}"
+```
+
+**Response:**
+
+```
+{
+  "task_arguments_values": [],
+  "_type": "ScriptJob",
+  "output": null,
+  "creation_date": "2019-05-15T16:23:56.393Z",
+  "last_update": "2019-05-15T16:23:56.403Z",
+  "task": {
+    "id": "5cdb424d7dbdc0000fd3112a",
+    "task_arguments": [],
+    "output_parameters": []
+  },
+  "task_id": "5cdb424d7dbdc0000fd3112a",
+  "host_id": "5bb755f42f78660012bdd9a6",
+  "host": {
+    "enable": true,
+    "_id": "5bb755f42f78660012bdd9a6",
+    "customer_name": "demo",
+    "customer_id": "5562573181a2334537425eaf",
+    "creation_date": "2018-10-05T12:15:48.875Z",
+    "last_update": "2019-05-15T16:23:54.932Z",
+    "hostname": "demo",
+    "ip": "172.17.0.15",
+    "os_name": "Linux",
+    "os_version": "4.15.0-22-generic",
+    "agent_version": "v0.15.2",
+    "integrations": {
+      "ngrok": {
+        "active": false,
+        "url": "",
+        "last_job": null,
+        "last_job_id": "",
+        "last_update": "2018-10-05T12:15:48.877Z"
+      }
+    },
+    "id": "5bb755f42f78660012bdd9a6"
+  },
+  "name": "testing task",
+  "lifecycle": "ready",
+  "state": "in_progress",
+  "customer_id": "5562573181a2334537425eaf",
+  "customer_name": "demo",
+  "user_id": "5bf81d18ca5e7e000f80f8ef",
+  "user": {
+    "id": "5bf81d18ca5e7e000f80f8ef",
+    "username": "demo_d38d7c97f0cb9429b31533def69431f560624f44",
+    "email": "info+b96fcba81b8182356365f6c66163f4d69d898d67@theeye.io"
+  },
+  "notify": true,
+  "origin": "user",
+  "script_id": "5b8d45f31a047f12005fdb61",
+  "script_runas": "",
+  "id": "5cdc3d1c40f0bb000f8e9682"
+}
+```
+
+From this response we can save the job id and use it to query the job status.
+"id": "5cdc3d1c40f0bb000f8e9682"
+
+**Query job status:**
+
+```
+id=”5cdc3d1c40f0bb000f8e9682”
+curl -sS 'https://supervisor.theeye.io/$customer/job?access_token=$accesstoken' | jq -r --arg id "$id" '.[] | select(.id==$id)'
+
+Response:
+
+{
+  "task_arguments_values": [],
+  "_type": "ScriptJob",
+  "result": {
+    "code": 0,
+    "log": "\nnormal\n",
+    "lastline": "normal",
+    "signal": null,
+    "killed": false,
+    "times": {
+      "seconds": 0,
+      "nanoseconds": 7156981
+    }
+  },
+  "output": null,
+  "creation_date": "2019-05-15T15:55:30.914Z",
+  "last_update": "2019-05-15T15:55:38.194Z",
+  "task": {
+    "id": "5cdb424d7dbdc0000fd3112a",
+    "task_arguments": [],
+    "output_parameters": []
+  },
+  "task_id": "5cdb424d7dbdc0000fd3112a",
+  "host_id": "5bb755f42f78660012bdd9a6",
+  "host": "5bb755f42f78660012bdd9a6",
+  "name": "testing task",
+  "lifecycle": "finished",
+  "state": "normal",
+  "customer_id": "5562573181a2334537425eaf",
+  "customer_name": "demo",
+  "user_id": "5bf81d18ca5e7e000f80f8ef",
+  "user": {
+    "id": "5bf81d18ca5e7e000f80f8ef",
+    "username": "demo_d38d7c97f0cb9429b31533def69431f560624f44",
+    "email": "info+b96fcba81b8182356365f6c66163f4d69d898d67@theeye.io"
+  },
+  "notify": true,
+  "origin": "user",
+  "script_id": "5b8d45f31a047f12005fdb61",
+  "script_runas": "",
+  "trigger_name": "success",
+  "id": "5cdc367240f0bb000f8e9653"
+}
+```
