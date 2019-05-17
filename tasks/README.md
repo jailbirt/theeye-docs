@@ -233,8 +233,8 @@ From this response we can save the job id and use it to query the job status.
 **Query job status:**
 
 ```
-id=”5cdc3d1c40f0bb000f8e9682”
-curl -sS 'https://supervisor.theeye.io/$customer/job?access_token=$accesstoken' | jq -r --arg id "$id" '.[] | select(.id==$id)'
+task_id=”5cdc3d1c40f0bb000f8e9682”
+curl -sS 'https://supervisor.theeye.io/$customer/job/$task_id?access_token=$accesstoken' | jq -r .
 
 Response:
 
