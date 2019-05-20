@@ -154,9 +154,15 @@ Returns a json array with tasks, id and hostname:
 
 ### Run task via API using task id
 
+
+Note that in this example we are executing a task with no arguments, task_arguments is an empty array.
+To execute a task with arguments, provide the list of ordered arguments in the "task_arguments" parameter.
+Each argument must be a valid JSON escaped string.
+
+
 **Example:**
 
-```
+```bash
 task_id="5b1c65ee3c32bb1100c2920a"
 customer="demo"
 access_token="foo"
@@ -171,7 +177,7 @@ curl \
 
 **Response:**
 
-```
+```bash
 {
   "task_arguments_values": [],
   "_type": "ScriptJob",
@@ -227,10 +233,13 @@ curl \
 }
 ```
 
-From this response we can save the job id and use it to query the job status.
-"id": "5cdc3d1c40f0bb000f8e9682"
+The API response is a new created job. We can save the job id and use it later to query the job status.
+In this example the id is "5cdc3d1c40f0bb000f8e9682"
 
 **Query job status:**
+
+Once the job is created we can query it's status using the ID of the job. we can also fetch all the jobs and then filter the response.
+
 
 ```
 task_id=”5cdc3d1c40f0bb000f8e9682”
