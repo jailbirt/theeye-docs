@@ -15,7 +15,7 @@ There are two methods available.
    -X POST \
    -H "Accept: application/json" \
    -H "Content-Type=application/json" \
-   -b "{"task":"${task_id}","task_arguments":[]}" \
+   -b "{\"task\":\"${task_id}\",\"task_arguments\":[]}" \
    "https://api.theeye.io/job?access_token=${access_token}&customer=${customer}"
    ```
 
@@ -31,7 +31,7 @@ There are two methods available.
     -X POST \
     -H "Accept: application/json" \
     -H "Content-Type=application/json" \
-    -b "{"task":"${task_id}","task_arguments":[]}" \
+    -b "{\"task\":\"${task_id}\",\"task_arguments\":[]}" \
     "https://api.theeye.io/job/secret/${task_secret_key}?customer=${customer}"
 ```
 
