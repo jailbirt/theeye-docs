@@ -51,8 +51,6 @@ Task Execution Payload
 {
   // (required)
   task: "task id",
-  // (required, can also be provided via query string)
-  customer: "customer name",
   // (required only if task has arguments)
   task_arguments: []
 }
