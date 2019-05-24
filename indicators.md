@@ -70,7 +70,7 @@ Or they can be created via API
 
 Method: `POST`
 
-Properties: `title, type, state, value.`
+Properties: `title (required, unique), type (required), state, value, acl`
 
 Check the following example, used to create the text indicator shown at the begining of this page.
 
@@ -81,7 +81,7 @@ Dollar/Peso","state":"normal","type":"text","value":"37.56","acl":["example_user
 
 The request response will look like this, where customer\_id, customer\_name, user\_id and id values were replaced for security reasons:
 
-`{"enable":true,"acl":[],"severity":"HIGH","alerts":true,"state":"normal","sticky":false,"value":"37.56","type":"text","_type":"TextIndicator","title":"Currency Exchange Dollar/Peso","customer_id":"AAA","customer_name":"BBB","user_id":"CCC","creation_date":"2018-10-22T23:10:31.912Z","last_update":"2018-10-22T23:10:31.915Z","id":"{indicator_id}"}`
+`{"enable":true,"acl":["example_user_email@theeye.io"],"severity":"HIGH","alerts":true,"state":"normal","sticky":false,"value":"37.56","type":"text","_type":"TextIndicator","title":"Currency Exchange Dollar/Peso","customer_id":"AAA","customer_name":"BBB","user_id":"CCC","creation_date":"2018-10-22T23:10:31.912Z","last_update":"2018-10-22T23:10:31.915Z","id":"{indicator_id}"}`
 
 
 
