@@ -76,7 +76,7 @@ Check the following example, used to create the text indicator shown at the begi
 
 ```bash
 curl -X POST 'https://supervisor.theeye.io/indicator?access_token={API_access_token}&customer={customer_name}' --header 'Content-Type: application/json' --data '{"title":"Currency Exchange
-Dollar/Peso","state":"normal","type":"text","value":"37.56"}'
+Dollar/Peso","state":"normal","type":"text","value":"37.56","acl":["example_user_email@theeye.io"]}'
 ```
 
 The request response will look like this, where customer\_id, customer\_name, user\_id and id values were replaced for security reasons:
