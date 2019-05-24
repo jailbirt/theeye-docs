@@ -16,8 +16,6 @@ Creates a single copy of theeye-agent in the cluster. Allows to execute monitors
 
 * [Secrets](https://github.com/theeye-io-team/theeye-docs/blob/master/kubernetes/examples/theeye-agent-credentials.yaml)
 
-Creates a single copy of theeye-agent in the cluster. Allows to execute monitors/tasks that require connection to endpoints only accessible from within the kubernetes cluster.
-
 * Environmental Variables                                                                                                                                                    
 
 Required environmental variables to run the agent:
