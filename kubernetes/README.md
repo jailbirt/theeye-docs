@@ -5,7 +5,7 @@
 ## Theeye agent manifests examples
 
 
-* [DaemonSet](https://github.com/theeye-io-team/theeye-docs/blob/master/kubernetes/examples/theeye-agent-daemonset.yml)
+* [DaemonSet](https://github.com/theeye-io-team/theeye-docs/blob/master/kubernetes/examples/theeye-agent-daemonset.yaml)
 
 Ensures that all nodes in the cluster run a copy of theeye-agent. Allows monitoring of all hosts in the kubernetes cluster(cpu, mem, disk), run tasks.
 Each new host added to the cluster will have a copy of theeye-agent.
