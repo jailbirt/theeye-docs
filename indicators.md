@@ -46,7 +46,7 @@ https://supervisor.theeye.io/indicator?access_token={token}&customer={customer}
 
 #### 
 
-#### GET All indicators from an organization
+#### [GET All indicators from an organization](#get)
 
 Method: `GET`
 
@@ -58,7 +58,7 @@ Example using cURL:
 
 #### 
 
-#### Create an Indicator
+#### [Create an Indicator](#create)
 
 Indicators can be created from dashboard from the "+"  button:
 
@@ -85,7 +85,7 @@ The request response will look like this, where customer\_id, customer\_name, us
 
 
 
-#### Update an Indicator by ID
+#### [Update an Indicator by ID](#update)
 
 Method: `PATCH`
 
@@ -105,7 +105,7 @@ The request response will look like this, where customer\_id, customer\_name, us
 
 #### 
 
-#### Update an Indicator by Title
+#### [Update an Indicator by Title](#updateByTitle)
 
 Method: `PATCH`
 
