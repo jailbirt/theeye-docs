@@ -152,6 +152,32 @@ Returns a json array with tasks, id and hostname:
 ]
 ```
 
+**Task execution timeout**
+
+The default execution timeout for tasks is 10 minutes.
+
+**List tasks and timeout.** 
+(Timeout = null) means that the timeout is set to default (10 minutes).
+
+```
+#!/bin/bash                                                                                                                                                                  
+  
+customer=$1
+access_token=$2
+supervisor=$3
+if [ $3 == "" ];then supervisor='https://supervisor.theeye.io' ; fi
+if [ $# -ne 3 ];then echo "missing parameters" ; exit ; fi
+
+data=$(curl -s ${supervisor}/${customer}/task?access_token=${access_token})
+
+echo "${data}" | jq -j '.[] | "id: ", .id, "\ttask: ", .name, "\ttimeout: ", .timeout, "\n"'
+```
+
+**Set Task execution timeout**
+
+Now it's not possible to change the timeout via API. To modify the timeout for a task contact us.
+
+
 ### Run task via API using task id
 
 
