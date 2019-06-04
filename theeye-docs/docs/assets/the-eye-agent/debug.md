@@ -2,11 +2,9 @@
 
 ## PREREQUISITES
 
-access to the server
-
-root access
-
-last version of the binary agent installed with the installation script
+- access to the server
+- root access
+- last version of the binary agent installed with the installation script
 
 ## STEPS
 

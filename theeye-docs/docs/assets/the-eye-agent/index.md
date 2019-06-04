@@ -1,33 +1,37 @@
-# Installation
+# The Eye Bot
 
-## Linux How To
+The Eye supervises your infrastructure using Agents: a service daemon.
+
+The Agent is in charge of keeping track of your resources and the host health.
+
+## Installation
+
+### Linux How To
 
 At this moment the supported distributions by the instalation script are
 
-> ubuntu  
-> debian
-
-probably will work on
-
-> centos  
-> redhat  
-> fedora
+> ubuntu   
+> debian   
+> centos   
+> redhat   
+> fedora   
+> coreOs
 
 From the web panel you can download the binary agent and get the installation script for your distribution.
 
-## Windows Installer.
+### Windows Installer.
 
 To get the last version of the Windows installer, please contact us. We will provide you an installer with last versión of the binary agent.
 
-### Prerequisites
+#### Prerequisites
 
 First, go to [TheEye Web Site](https://theeye.io) and create and account. After you receive you account credential , singin and go to the profile page. There you will found the agent credentials and the installation instructions and software \(if available\).
 
 If you need to debug, develop or if you prefer the manual installation of the agent, keep reading.
 
-## Manual Instalation from sources
+### Manual Instalation from sources
 
-### Before Start
+#### Before Start
 
 * Is not mandatory, but your will get more benefits if you install the agent with admin privileges \(root/administrator\).   
 * [NodeJS](https://nodejs.org/en/) \( minimal v0.12 \(can stopped working eventually\). v8 recommended \)    
@@ -35,7 +39,7 @@ If you need to debug, develop or if you prefer the manual installation of the ag
 
 This how-to was written for Linux users. But if your platoform can run nodejs, then you can install the agente and will work. Please, contact us if you need support.
 
-### Step 1.
+#### Step 1.
 
 create a directory to contain the agent. we use `/opt/theeye-agent`
 
@@ -49,7 +53,7 @@ download the sources \(lastest - production version\).
 cd /opt/; git clone https://github.com/theeye-io/theeye-agent
 ```
 
-### Step 2.
+#### Step 2.
 
 create a configuration file using the default empty template
 
@@ -57,7 +61,7 @@ create a configuration file using the default empty template
 mkdir /etc/theeye; cp /opt/theeye-agent/misc/theeye/theeye.conf /etc/theeye/theeye.conf
 ```
 
-### Step 3.
+#### Step 3.
 
 setup the configuration file
 
@@ -104,7 +108,7 @@ THEEYE_SUPERVISOR_API_URL=''
 NODE_ENV='production'
 ```
 
-### Step 4.
+#### Step 4.
 
 install dependencies.
 
@@ -112,7 +116,7 @@ install dependencies.
 cd /opt/theeye; npm install
 ```
 
-### Step 5.
+#### Step 5.
 
 run the agent.
 
@@ -120,7 +124,7 @@ run the agent.
 cd /opt/theeye; ./run.sh
 ```
 
-## Optional Arguments.
+### Optional Arguments.
 
 optional arguments are passsed via shell environment.
 
@@ -128,15 +132,15 @@ optional arguments are passsed via shell environment.
 
 if you want to use any option as a default settings, you can set it in the config file.
 
-### More Options.
+#### More Options.
 
 to set a custom hostname. this will be used to register the agent and the host agains the api. hostname-customer combination **MUST** be unique.
 
 > THEEYE\_CLIENT\_HOSTNAME='the\_hostname\_you\_want'
 
-### Offline Installation
+#### Offline Installation
 
-### Step 1.
+##### Step 1.
 
 download the sources \([https://s3.amazonaws.com/theeye.agent/linux/theeye-agent64.tar.gz](https://s3.amazonaws.com/theeye.agent/linux/theeye-agent64.tar.gz)\).
 
@@ -144,7 +148,7 @@ download the sources \([https://s3.amazonaws.com/theeye.agent/linux/theeye-agent
 cd /opt/; sudo tar -xvf ./theeye-agent64.tar.gz
 ```
 
-### Step 2.
+##### Step 2.
 
 create a configuration file using the default empty template
 
@@ -152,7 +156,7 @@ create a configuration file using the default empty template
 mkdir /etc/theeye; cp /opt/theeye-agent/misc/theeye/theeye.conf /etc/theeye/theeye.conf
 ```
 
-### Step 3.
+##### Step 3.
 
 ```bash
 run /opt/theeye-agente/runBinary.sh

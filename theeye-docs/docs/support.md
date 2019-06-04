@@ -4,7 +4,7 @@ If you need help or support you can:
 
 ## Slack
 
-Join our Slack workspace at **theeye-community.slack.com** and directly talk to us.
+Join our Slack workspace at **[theeye-community.slack.com](http://theeye-community.slack.com)** and directly talk to us.
 
 ## Support Web Site
 
