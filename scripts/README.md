@@ -4,18 +4,18 @@
 
 ## Contents
 
-* [Create a Script](scripts.md#create-a-script)
-  * [Writing Scripts](scripts.md#writing-scripts)
-* [Scripts Run As](scripts.md#scripts-runas)
-  * [Notation](scripts.md#notation)
-  * [In Linux](scripts.md#in-linux)
-  * [In Windows](scripts.md#in-windows)
+* [Create a Script](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/scripts.md#create-a-script)
+  * [Writing Scripts](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/scripts.md#writing-scripts)
+* [Scripts Run As](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/scripts.md#scripts-runas)
+  * [Notation](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/scripts.md#notation)
+  * [In Linux](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/scripts.md#in-linux)
+  * [In Windows](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/scripts.md#in-windows)
 
 ## Create a Script
 
 Scripts can be written directly from a live editor or can be uploaded by dropping files over the _Files & Scripts_' creation window. The live editor will recognize the notation language \(interpreter\) once you name the script file and set an extension \(e.g. runme.sh\). Bash, Python, Perl, Node and bat files are recognized, but any script can be executed as long as the interpreter is available in the destination host.
 
-TheEye will carry out the script execution over tasks. Check the [tasks' documentation](../tasks.md#create-a-script-task) to find out how scripts are used.
+TheEye will carry out the script execution over tasks. Check the [tasks' documentation](../tasks/#create-a-script-task) to find out how scripts are used.
 
 You can also use a script to create a _Monitor_, please take a look at the [monitors' documentation](../monitors.md#monitor-type-script) to see how scripts are used.
 
@@ -29,6 +29,62 @@ So if you script ended as expected \(success state\), you will have to make it p
 
 * `success`, `normal` and `ok` are accepted `success` states.
 * `failure` and `fail` are accepted `failure` states.
+
+### Passing Arguments in Workflow.
+
+There are different ways of passing arguments from monitor to task and from task to task.
+
+
+#### Monitor to Task
+
+In this case the state is always required or a failure will be assumed. There are two options to provide output:
+
+* The first option is to print a JSON formatted string with two properties: state and data. data must be an array with the arguments list that need to be provided to the next triggered task in the workflow. Each index of the array will be mapped in order to each argument of the triggered task.
+
+```bash
+
+# do your things here...
+if [ true ]; then
+  echo { \"state\":\"success\", \"data\": [ \"val1\", \"val2\" ] }
+else
+  echo { \"state\":\"failure\", \"data\": [ \"val1\", \"val2\" ] }
+fi
+
+```
+
+* The second option is similar to the first one, but we use an object in the data property instead of an array. The difference is that the object will be passsed untouch as the firt argument of the next task.
+
+```bash
+
+# do your things here...
+if [ true ]; then
+  echo { \"state\":\"success\", \"data\":{ \"val1\":$varTwo, \"val2\":$varUno }  }
+else
+  echo { \"state\":\"failure\" }
+fi
+
+```
+
+#### Task to Task
+
+This scenario is the same as the previous, but as the state is not explicitly required and can be ignored, the output is quite more simple. In task the output state is always "success", unless a "failure" is provided to stop the workflow.
+
+Output can be an array (each index will be mapped to each argument of the triggered task):
+
+```
+  echo [\"arg1\",\"arg2\",\"arg3\"]
+```
+
+or an object (that will be the first argument of the triggered task):
+
+```
+  echo { \"val1\": $varTwo, \"val2\": $varUno }
+
+```
+
+#### Limitations.
+
+The only detected limitation so far is the size of the string used as output. Dependeding on the operating system, the output buffer varies. Be aware that if the string exceded the output buffer, some characters can be lost, a json error will be arise (due to parsing errors) and the output of the monitor/task will be a failure. This situation can be detected analizing the output of the monitor or task.
 
 #### Example
 
@@ -64,9 +120,7 @@ if [ true ]; then
 else
   echo { \"state\":\"failure\", \"data\":{ \"val1\":$varTwo, \"val2\":$varUno } }
 fi
-
 ```
-
 
 The JSON output must have a `state` property with a the state value from your script execution, and a `data` property with any extra information you consider, TheEye will show the `data` value in the execution log.
 
@@ -104,10 +158,10 @@ echo { \"state\" : \"$state\" , \"data\" : { \"members\" : $members } }
 
 Scripts run by default...
 
-* Linux: adding execution permission to the file and including the interpreter [shebang](https://en.wikipedia.org/wiki/Shebang_\(Unix\)) in the first line.
+* Linux: adding execution permission to the file and including the interpreter [shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29) in the first line.
 * Windows: setting the interpreter that should use the OS by the file extension.
 
-Script RunAs allows to execute the script in a specific way, by using a different binary interpreter or in Linux using sudo. **Remember that** _**RunAs**_ **is part of the** _**Tasks'**_ **configuration, as** _**Tasks**_ **are responsible for Scripts' execution**. Please check the [Script Task Documentation](tasks.md#create-a-script-task) section for further details.
+Script RunAs allows to execute the script in a specific way, by using a different binary interpreter or in Linux using sudo. **Remember that** _**RunAs**_ **is part of the** _**Tasks'**_ **configuration, as** _**Tasks**_ **are responsible for Scripts' execution**. Please check the [Script Task Documentation](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/tasks.md#create-a-script-task) section for further details.
 
 ### Notation
 
@@ -151,13 +205,13 @@ You will have to provide the absolute path to script interpreter.
 
 To execute a powershell script you must add this line to the "RunAs" tasks' field.
 
-```cmd
+```text
 powershell.exe -NonInteractive -ExecutionPolicy ByPass -File "%script%"
 ```
 
 Use this line if you're using arguments in your script. Keep in mind that the filename of the ps1 script must not have white spaces.
 
-```cmd
+```text
 powershell.exe -NonInteractive -ExecutionPolicy ByPass -File %script%
 ```
 
@@ -177,3 +231,4 @@ There are other alternative tools and configurations you will have to find out b
 * [PowerShell](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.ps1)
 * [PowerShell](https://gist.github.com/theeye-io/ed1f2407b3d3aae90a69af064c3e204a)
 * [Bash](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.sh)
+

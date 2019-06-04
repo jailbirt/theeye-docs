@@ -1,25 +1,25 @@
-# Documentation
+# What is The Eye
 
 [![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
 
 ## Content
 
-* [What is TheEye?](./#what-is-theeye)
-* [First Steps](./#first-steps)
-  * [Quick Start](./#quick-start)
+* [What is TheEye?](readme-1.md#what-is-theeye)
+* [First Steps](readme-1.md#first-steps)
+  * [Quick Start](readme-1.md#quick-start)
   * [Bot Installation](the-eye-agent/installation.md)
-  * [Check your first resource](./#check-your-first-resource)
-* [User Management](./#users)
+  * [Check your first resource](readme-1.md#check-your-first-resource)
+* [User Management](readme-1.md#users)
 * Organization
 * [Integrations](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/integrations/README.md)
 * Resources
-  * [Indicators](./indicators.md)
-  * [Monitors](./monitors.md)
-  * [Tasks](./tasks)
-  * [Templates](./templates.md)
-  * [Webhooks](./)
-  * [Scripts](./scripts)
-* [Workflows](./workflows)
+  * [Indicators](indicators.md)
+  * [Monitors](readme-1.md#monitors)
+  * [Tasks](readme-1.md#tasks)
+  * [Templates](templates.md)
+  * [Webhooks](readme-1.md#webhooks)
+  * [Scripts](readme-1.md#scripts)
+* [Workflow](readme-1.md#workflow)
 * Other Tools
   * [TheEye\_Cli Util](workflows/cli-util.md)
   * [Build Bot Binary](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/binary_build.md)
@@ -41,7 +41,7 @@ If you want start from the scratch, there's a native integration with ELK and Do
 
 To start using TheEye you will need to:
 
-1. Have a user account. If you don't have one go to _\*\*_[https://theeye.io/register](https://theeye.io/register) and create one.
+1. Have a user account. If you don't have one go to [https://theeye.io/register](https://theeye.io/register) and create one.
 2. Start the self-provided Bot or Install [one ](the-eye-agent/installation.md#manual-instalation-from-sources-binary-for-your-platform-is-not-available)on each server you would like to perform actions or automate from.
 3. Create your first resource from TheEye Web.
 
@@ -61,7 +61,9 @@ Launch the self provided Bot, and begin automating processes.
 
 ![Settings Menu \(Installer\)](.gitbook/assets/startbot.jpg)
 
-### **Bot Installation**
+### **Bot Installation** 
+
+#### **\(You can skip this section if you're using the self-provided Bot\)**
 
 If it is the first time you access TheEye Website, click the link in the monitors panel where says _"Click HERE to get the step by step instructions to install the Bot on Linux and Windows operating systems"_, otherwise go to _Settings_ in the left menu and get to the _Installation_ section. Installation instructions are provided for Linux and Windows systems.
 
@@ -99,7 +101,7 @@ A monitor is used to check services' or resources' status. You can use this stat
 
 There are five kind of monitors you can set up from TheEye: Stats, Script, API/Web Check, Process and File. Check the [Monitors Documentation](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/monitors/README.md) for more details.
 
-* Monitors will notify for events as desired. Check the Users ACLs' section for [Notifications](./)
+* Monitors will notify for events as desired. Check the Users ACLs' section for [Notifications](readme-1.md)
 
 #### Tasks
 

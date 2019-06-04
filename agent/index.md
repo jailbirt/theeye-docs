@@ -148,10 +148,16 @@ there are no more requisites for the instalation script. for the Manual Installa
 
   Use Case 1: if the same name is used for several agents/bots all will be consuming task from the same queue and will be reporting monitoring information to the same pool. Doing this way you will get load balancing (if multiple hosts are using)/multitasking (faster jobs feedback) and high havailability of jobs processing.
 
-#### THEEYE_AGENT_SCRAPER_REGISTER_BODY (boolean)
+#### THEEYE_AGENT_SCRAPER_REGISTER_BODY (string)
 
-  prevent all task and monitor of the web request kind to send the request response body to the api.
+  This option will prevent that all task and monitor of the kind "web request" to send the response body of the originated request to the api.
 
+  posible values are the strings "true" or "false"
+  
 #### THEEYE_AGENT_SCRIPT_PATH (string)
 
-  temporarily change scripts download path. set it perpamently via config file 
+  temporarily change scripts download path. set it perpamently via the config file 
+  
+#### THEEYE_SKIP_AUTO_PROVISIONING (string)
+
+  when "true", the agent will give the order to the api, to skip basic monitors creation during host registration. this will not skip provisioning via host templates. if a host template apply to the bot via the "hostname regular expression" matching, it will be still applied.

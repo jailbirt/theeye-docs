@@ -12,6 +12,7 @@
 * [Process Monitor](monitors.md#monitor-type-process)
 * [File Monitor](monitors.md#monitor-type-file)
 * [Nested Monitor](monitors.md#monitor-type-nested)
+* [List monitors/bots via API](monitors.md#list-monitors-via-api)
 
 ### Monitor type: Stats
 
@@ -51,3 +52,49 @@ Name your "nested Monitor" or copy an already created one. Add or remove the mon
 
 ![nested monitor setup](.gitbook/assets/nestedmonitorssetup.jpg)
 
+### List monitors via API
+
+Variables:
+**customer**: organization name
+
+**access token**: menu => settings => credentials => Integration Tokens
+
+`curl -sS https://supervisor.theeye.io/${customer}/monitor?access_token=${access_token}`
+
+**Search monitor by name**
+
+```
+monName="demo"
+curl -sS https://supervisor.theeye.io/${customer}/monitor?access_token=${access_token} | \
+  jq -r --arg name "$monName" '.[] | select(.name==$name) | {"name": .name, "id": .id, "state": .resource.state}' | jq -s '.'
+```
+
+**Show bot stats**
+
+```
+botName="demo"
+curl -sS https://supervisor.theeye.io/${customer}/monitor?access_token=${access_token} | \
+  jq -r --arg name "$botName" '.[] | select((.name==$name) and (.type=="dstat")) | {"name": .name, "id": .id, "stats": .resource.last_event.data}' | jq -s '.'
+```
+
+**Response:**
+
+```
+[
+  {
+    "name": "demo",
+    "id": "5bb755f42f78660012bdd9af",
+    "stats": {
+      "cpu": 3,
+      "mem": 36.73548113271163,
+      "cache": 4.689083037753453,
+      "disk": [
+        {
+          "name": "xvda2",
+          "value": 84.84461326890819
+        }
+      ]
+    }
+  }
+]
+```

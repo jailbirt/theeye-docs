@@ -16,7 +16,9 @@ Every event that is logged in ELK can be identified by common fields as:
 - Hostname
 - Organization (Customer)
 - Operation (e.g. CRUD)
-- Topic (event type description)
+- Index (event type description)
+
+Data is consistenly organized in different indexes (tasks, monitors, hosts, file and agent).
 
 #### Events that are actually stored
 
@@ -27,7 +29,7 @@ The signature matches to API-crud, where API is the endpoint name that has the n
 For example, you'll find a _monitor_ action in ELK data as a monitor-crud topic.
 
 ##### Non-CRUD Events
-This events can be identified as the following topics:
+This events can be identified as follows:
 
 - agent-version: every time the agent version is updated.
 - host-stats: every time host-status is updated**
@@ -42,40 +44,58 @@ This events can be identified as the following topics:
 
 Topics configuration:
 
->"agent": {
->  "version": "agent-version"
->},
->"host": {
->  "stats": "host-stats",
->},
->"monitor": {
->  "crud": "monitor-crud",
->  "execution": "monitor-execution",
->  "state": "monitor-state",
->},
->"script": {
->  "crud": "script-crud"
->},
->"file": {
->  "crud": "file-crud"
->},
->"hostgroup": {
->  "crud": "provisioning-crud",
->},
->"host": {
->  "crud": "host-crud",
->  "stats": "host-stats"
->},
->"task": {
->  "crud": "task-crud"
->},
->"job": {
->  "crud": "job-crud"
->},
->"webhook": {
->  "crud": "webhook-crud",
->  "triggered": "triggered-webhook"
->}
+```json
+{
+   "monitor":{
+      "crud":"monitor-crud",
+      "execution":"monitor-execution",
+      "state":"monitor-state"
+   },
+   "script":{
+      "crud":"script-crud"
+   },
+   "agent":{
+      "version":"agent-version"
+   },
+   "file":{
+      "crud":"file-crud"
+   },
+   "hostgroup":{
+      "crud":"provisioning-crud"
+   },
+   "host":{
+      "integrations":{
+         "crud":"host-integrations-crud"
+      },
+      "crud":"host-crud",
+      "state":"host-state",
+      "processes":"host-processes",
+      "stats":"host-stats",
+      "registered":"host-registered"
+   },
+   "task":{
+      "crud":"task-crud",
+      "execution":"task-execution",
+      "sent":"task-sent",
+      "result":"task-result",
+      "cancelation":"task-cancelation",
+      "terminate":"task-terminate"
+   },
+   "workflow":{
+      "execution":"workflow-execution"
+   },
+   "job":{
+      "crud":"job-crud"
+   },
+   "webhook":{
+      "crud":"webhook-crud",
+      "triggered":"webhook-triggered"
+   },
+   "scheduler":{
+      "crud":"scheduler-crud"
+   }
+}
+```
 
 
 ### Notifications

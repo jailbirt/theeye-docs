@@ -2,33 +2,42 @@
 
 ## Linux How To
 
-At this moment the supported distributions by the instalation script are \(we are working in a binary distribution\)
+At this moment the supported distributions by the instalation script are
 
-> ubuntu debian centos redhat fedora
+> ubuntu  
+> debian
+
+probably will work on
+
+> centos  
+> redhat  
+> fedora
+
+From the web panel you can download the binary agent and get the installation script for your distribution.
 
 ## Windows Installer.
 
-To get the last version of the Windows installer , please contact us. We will provide you a installer of the last versión for you platform.
+To get the last version of the Windows installer, please contact us. We will provide you an installer with last versión of the binary agent.
 
 ### Prerequisites
 
-First, go to [TheEye Web Site](https://theeye.io) and create and account. After you receive you account credential , singin and go to the profile page. There you will found the agent credentials and the installation program.
+First, go to [TheEye Web Site](https://theeye.io) and create and account. After you receive you account credential , singin and go to the profile page. There you will found the agent credentials and the installation instructions and software \(if available\).
 
-To install the agent you will only need the installation script or programm provided for your platform and operating system distribution. If you need to debug o manually install the agent, keep reading.
+If you need to debug, develop or if you prefer the manual installation of the agent, keep reading.
 
-## Manual Instalation from sources \(binary for your platform is not available\)
+## Manual Instalation from sources
 
 ### Before Start
 
-* Is not mandatory, but your will get more benefits if you install the agent with admin privileges.   
-* [NodeJS](https://nodejs.org/en/) \( minimal v0.12 or higher. v6 recomended \)    
+* Is not mandatory, but your will get more benefits if you install the agent with admin privileges \(root/administrator\).   
+* [NodeJS](https://nodejs.org/en/) \( minimal v0.12 \(can stopped working eventually\). v8 recommended \)    
 * NPM \(part of the node toolkit. version 3 or higher\)    
 
-This how to was writen in Linux. If your platoform can run NodeJS, then you can go ahead and try to install the agente. Please, contact us if you need any support.
+This how-to was written for Linux users. But if your platoform can run nodejs, then you can install the agente and will work. Please, contact us if you need support.
 
 ### Step 1.
 
-create a directory to contain the agent. eg.
+create a directory to contain the agent. we use `/opt/theeye-agent`
 
 ```bash
 mkdir /opt/theeye-agent
@@ -37,7 +46,7 @@ mkdir /opt/theeye-agent
 download the sources \(lastest - production version\).
 
 ```bash
-cd /opt/; git clone https://github.com/interactar/theeye-agent
+cd /opt/; git clone https://github.com/theeye-io/theeye-agent
 ```
 
 ### Step 2.
@@ -71,18 +80,23 @@ THEEYE_SUPERVISOR_CLIENT_CUSTOMER=''
 # were to put the downloaded scripts
 THEEYE_AGENT_SCRIPT_PATH='/opt/theeye-agent/scripts'
 
-# log level. do not change to log only errors.
-# use * only for debug , or the log file will fill very fast
+#
+# Execution logging level. Don't change in production unless you know what are doing.
+# If you need to increase debug level check this link for more information
+# Link: https://www.npmjs.com/package/debug
+# 
+# default is to output only errors
+#THEEYE_AGENT_DEBUG='eye:*:error'
 THEEYE_AGENT_DEBUG='eye:*:error'
 
-# you probably want this to be reported.
-# if you download the source get the version with `git describe`
+# You will probably need this to be reported.
+# If you download the source get the version with `git describe` and update
 THEEYE_AGENT_VERSION=''
 
-# this is the theeye api url.
+# This is the api url. You will need one. https://app.theeye.io
 THEEYE_SUPERVISOR_API_URL=''
 
-# if you need a proxy it is time to set it
+# If you need to use a proxy, it is time to set it
 #http_proxy=""
 #https_proxy=""
 
