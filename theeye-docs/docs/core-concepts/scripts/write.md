@@ -1,5 +1,9 @@
 # Writing scripts
 
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+
+## Script responses
+
 The agent will parse the last line of the scripts looking for a string which represents a `state` or a `json` result object.
 
 A `state` could be any state or event linked to the task or monitor of this script. Default build-in events are `success` and `failure`.
@@ -84,10 +88,6 @@ There are a lot of sample scripts, written in different languages wich are in pr
 
 Check our [TheEye-io gist](https://gist.github.com/theeye-io) scripts page.
 
-Some samples
+## TheEye Sample Scripts
 
-> [Powershell](https://gist.github.com/theeye-io/ed1f2407b3d3aae90a69af064c3e204a)  
-> [NodeJS](https://gist.github.com/theeye-io/6435db167f4a681d1e9a7359d87aef6d)  
-> [Bash](https://gist.github.com/theeye-io/4435b229ad06d3fd166a0818ef271029)  
-> [Batch](https://gist.github.com/theeye-io/ebefc07b69eedb0a7c67d5626b0d76d7)
-
+Check the [Assets script for samples](/assets/scripts/) for more details.

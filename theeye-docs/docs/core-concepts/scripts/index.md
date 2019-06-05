@@ -1,15 +1,6 @@
-# Scripts
+# Working with Scripts
 
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
-
-## Contents
-
-* [Create a Script](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/scripts.md#create-a-script)
-  * [Writing Scripts](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/scripts.md#writing-scripts)
-* [Scripts Run As](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/scripts.md#scripts-runas)
-  * [Notation](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/scripts.md#notation)
-  * [In Linux](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/scripts.md#in-linux)
-  * [In Windows](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/scripts.md#in-windows)
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
 
 ## Create a Script
 
@@ -33,7 +24,6 @@ So if you script ended as expected \(success state\), you will have to make it p
 ### Passing Arguments in Workflow.
 
 There are different ways of passing arguments from monitor to task and from task to task.
-
 
 #### Monitor to Task
 
@@ -154,81 +144,10 @@ echo { \"state\" : \"$state\" , \"data\" : { \"members\" : $members } }
 # this will echo { "state": "normal" , "data" : { "members": 1 } }
 ```
 
-## Scripts RunAs
+### TheEye Sample Scripts
 
-Scripts run by default...
+Check the [Assets script for samples](/assets/scripts/) for more details.
 
-* Linux: adding execution permission to the file and including the interpreter [shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29) in the first line.
-* Windows: setting the interpreter that should use the OS by the file extension.
+### TheEye-io gist in Github
 
-Script RunAs allows to execute the script in a specific way, by using a different binary interpreter or in Linux using sudo. **Remember that** _**RunAs**_ **is part of the** _**Tasks'**_ **configuration, as** _**Tasks**_ **are responsible for Scripts' execution**. Please check the [Script Task Documentation](https://github.com/theeye-io/theeye-docs/tree/b1a4582d36b3d5ffdd57440032c656c275f9bce5/scripts/tasks.md#create-a-script-task) section for further details.
-
-### Notation
-
-The runas text could be any command line combination, using fixed variables, environment settings, command or anything that agent user\(by default theeye-a\) can do within the default shell \(usually bash or cmd\). We recommend to keep it simple and short. The only requirement is that the runas has to include the %script% KEYWORD. This KEYWORD indicates which part of the runas text will be replaced with the script path and its arguments.
-
-### In Linux
-
-#### SUDO
-
-To run the script using sudo, use one of the following runas syntax
-
-1.
-
-```bash
-sudo -u user -c "%script%" # (remember to add the " or the arguments won't be visible by the script)
-```
-
-2.
-
-```bash
-sudo -u user $(%script%)
-```
-
-#### Custom binaries
-
-Some times is required to run the script with a binary which is not registered in the global or user paths.
-
-One case is to run a Nodejs script with a different interpreter version. To achive that include the full path to the interpreter in the `runas`
-
-```bash
-/usr/local/lib/nodejs/v4/bin/node %script%
-```
-
-### In Windows
-
-The same aproach to execute custom scripts with unregistered interpreters apply both to Windows and Linux.
-
-You will have to provide the absolute path to script interpreter.
-
-#### Powershell Scripts Execution
-
-To execute a powershell script you must add this line to the "RunAs" tasks' field.
-
-```text
-powershell.exe -NonInteractive -ExecutionPolicy ByPass -File "%script%"
-```
-
-Use this line if you're using arguments in your script. Keep in mind that the filename of the ps1 script must not have white spaces.
-
-```text
-powershell.exe -NonInteractive -ExecutionPolicy ByPass -File %script%
-```
-
-#### Sudo note.
-
-On Windows there are some alternatives to achieve the same result you can get using sudo. The native way is by using \[runas\]\([https://technet.microsoft.com/en-us/library/cc771525\(v=ws.10\).aspx](https://technet.microsoft.com/en-us/library/cc771525%28v=ws.10%29.aspx)\). The main important difference is that you should provide the user password at least once.
-
-There are other alternative tools and configurations you will have to find out by yourself.
-
-### Theeye Sample Scripts
-
-* [Windows Batch](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.bat)
-* [GO](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.go)
-* [NODEJS \| Javascript](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.js)
-* [PHP](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.php)
-* [Perl](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.pl)
-* [PowerShell](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.ps1)
-* [PowerShell](https://gist.github.com/theeye-io/ed1f2407b3d3aae90a69af064c3e204a)
-* [Bash](https://github.com/theeye-io-team/theeye-docs/blob/master/scripts/examples/example.sh)
-
+Check our [TheEye-io gist](https://gist.github.com/theeye-io) scripts page.
