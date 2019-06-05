@@ -1,5 +1,7 @@
 # Setup
 
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+
 By default no configuration is provided.
 
 Configuration can be set from environment variables or provided with configuration file.

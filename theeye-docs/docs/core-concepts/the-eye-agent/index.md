@@ -1,5 +1,7 @@
 # The Eye Bot
 
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+
 The Eye supervises your infrastructure using Agents: a service daemon.
 
 The Agent is in charge of keeping track of your resources and the host health.

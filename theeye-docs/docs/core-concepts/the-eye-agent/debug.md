@@ -1,5 +1,7 @@
 # Debug
 
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+
 ## PREREQUISITES
 
 - access to the server
