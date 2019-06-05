@@ -1,6 +1,6 @@
 # Webhooks
 
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 ## Working with Webhooks
 A webhook in The Eye is a method of augmenting or altering the behavior of a workflow, or scripts, with custom callbacks. These callbacks may be maintained, modified, and managed by third-party users and developers who may not necessarily be affiliated with the originating website or application. 

@@ -1,6 +1,6 @@
 # Resources
 
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 A _**resource**_ is an open concept on the **The Eye**. If you head to the web UI they are the first thing you'll see, they are whatever can report a status and for that, as this concept, they deserve the main view of the UI dashboard. Basically every _**resource**_ is a _**monitor**_ watching things out for you.
 

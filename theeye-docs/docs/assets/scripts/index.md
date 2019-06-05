@@ -1,13 +1,13 @@
 # Assets Scripts
 
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](/images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 ## TheEye Sample
 
-* [Windows Batch](/assets/scripts/example.bat)
-* [GO](/assets/scripts/example.go)
-* [NODEJS \| Javascript](/assets/scripts/example..js)
-* [PHP](/assets/scripts/example..php)
-* [Perl](/assets/scripts/example..pl)
-* [PowerShell](/assets/scripts/example.ps1)
-* [Bash](/assets/scripts/example..sh)
+* [Windows Batch](./example.bat)
+* [GO](./example.go)
+* [NODEJS \| Javascript](./example.js)
+* [PHP](./example.php)
+* [Perl](./example.pl)
+* [PowerShell](./example.ps1)
+* [Bash](./example.sh)

@@ -1,6 +1,6 @@
 # Introduction to The Eye
 
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](/images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 ## What is TheEye?
 
@@ -22,7 +22,7 @@ The **bolded keywords** in the above paragraph are all core concepts of The Eye.
 
 The Eye consists on a _**core platform**_ process running in a HA infrastructure. The _**core platform**_ receives only _**agent**_ and _**client**_ connections. It keeps track of any _**resource**_ for the _**user**_ and stores _**tasks**_, _**scripts**_, files, _**workflows**_ and _**customers**_.
 
-A _**resource**_ is a configured _**monitor**_, a reliable, accountable, signaling _**monitor event**_. [Read more about resources](resources.md).
+A _**resource**_ is a configured _**monitor**_, a reliable, accountable, signaling _**monitor event**_. [Read more about resources](core-concepts/index.md).
 
 An _**agent**_ is an autonomous software installed on a _**user**_ _**host**_. The _**agent**_ keeps the _**host**_ status and health updated \(aka: _**host monitor**_\) on the _**core platform**_. The _**agent**_ will also report back to the _**core platform**_ when it finishes a given _**task**_.
 

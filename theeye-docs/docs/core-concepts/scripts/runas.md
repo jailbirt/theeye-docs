@@ -1,6 +1,6 @@
 # Scripts Run As... and permissions
 
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](/images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 ## Scripts runs by default in this way:
 

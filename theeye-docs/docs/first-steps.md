@@ -1,10 +1,10 @@
 # First Steps
 
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](/images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 ## To start using TheEye you will need to:
 
-1. Have a user account. If you don't have one go to [https://theeye.io/register](https://theeye.io/register) and create one.
+1. Have a user account. If you don't have one go to [https://app.theeye.io/register](https://app.theeye.io/register) and create one.
 2. Organization
     An organization in The Eye is an entity that comprises multiple objects, such as multiple hosts or a sequence of automated tasks and triggers, that has a particular purpose.
 3. Start the self-provided Bot or Install [one ](/core-concepts/the-eye-agent/)on each server you would like to perform actions or automate from.

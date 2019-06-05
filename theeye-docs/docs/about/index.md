@@ -1,6 +1,6 @@
 # About us
 
-[![theeye.io](/images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 TheEye is the simplest tool ever made to centralize the knowledge of your backend operations in just one place.
 

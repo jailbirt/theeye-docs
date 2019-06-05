@@ -1,6 +1,6 @@
 # Task Triggers
 
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](/images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 You can launch tasks in different ways. On one hand you can start them directly using the play button, on the other hand you can use triggers. Tasks are also started by Workflows.
 
@@ -30,7 +30,7 @@ If the output from the monitor is needed by the launched task, you will need to 
 
 Workflows triggers the task that is set as Starting Task, as shown below.
 
-![](..//images/image%20%285%29.png)
+![](/images/image%20%285%29.png)
 
  
 

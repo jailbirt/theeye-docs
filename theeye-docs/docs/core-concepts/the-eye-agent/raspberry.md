@@ -1,6 +1,6 @@
 # Raspberry
 
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](/images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 To get the theeye agent to work on Raspberry, you need to install node and download the source code from github.
 
