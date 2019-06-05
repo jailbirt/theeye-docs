@@ -1,10 +1,12 @@
 # Indicators
 
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+
 ## Representation 
 
-![Indicator Icon](.gitbook/assets/image%20%284%29.png)
+![Indicator Icon](/images/image%20%284%29.png)
 
-![Indicator&apos;s panel](.gitbook/assets/image%20%282%29.png)
+![Indicator&apos;s panel](/images/image%20%282%29.png)
 
 Indicators are shown at the top of the dashboard only when available.
 
@@ -36,7 +38,7 @@ Indicators are managed via TheEye RESTfull API.
 
 In order to work with Indicators an API KEY is needed, find your own at the Credentials pane, under the Settings menu:
 
-![Settings-&amp;gt;Credentials](.gitbook/assets/image%20%2810%29.png)
+![Settings-&amp;gt;Credentials](/images//image%20%2810%29.png)
 
 #### API URL for Indicators
 
@@ -64,7 +66,7 @@ Indicators can be created from dashboard from the "+"  button:
 
 \`\`
 
-![Dashboard - Create Indicator](.gitbook/assets/image%20%287%29.png)
+![Dashboard - Create Indicator](/images//image%20%287%29.png)
 
 Or they can be created via API
 
@@ -137,4 +139,4 @@ curl -X PATCH 'https://supervisor.theeye.io/indicator/{indicator_id}/increase?ac
 
 Please, check out the indicators recipe example. After importing It, fulfill the api-key and then run it, It covers the most common requirements.
 
-URL: `https://github.com/theeye-io/theeye-docs/recipes/`
+Check the [Recipes Documentation](/assets/recipes/) for more details.

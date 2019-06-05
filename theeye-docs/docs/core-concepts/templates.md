@@ -1,10 +1,12 @@
 # Templates
 
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+
 When you automate with TheEye you create recipes that are executed by Bots. This recipes can be shared with other users or organizations by Templates.
 
  Go to the templates Menu in the left hamburguer menu:
 
-![Dashboard - Hamburguer Menu](.gitbook/assets/image.png)
+![Dashboard - Hamburguer Menu](/images/image.png)
 
 ### Create Template
 
@@ -12,9 +14,9 @@ Templates are based on Tasks and Monitors that run on Bots and are therefore app
 
 Click on "+ New Bot Template"
 
-![Templates Menu](.gitbook/assets/image%20%289%29.png)
+![Templates Menu](/images/image%20%289%29.png)
 
-![Templates Creation Window](.gitbook/assets/image%20%2816%29.png)
+![Templates Creation Window](/images/image%20%2816%29.png)
 
 ### Import a Template
 
