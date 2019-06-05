@@ -1,8 +1,10 @@
-# Kubernetes manifests
+# Theeye Integrations
 
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
 
-## Theeye agent manifests examples
+## Kubernetes manifests
+
+### Theeye agent manifests examples
 
 * [DaemonSet](examples/kubernetes-examples-theeye-agent-daemonset.yaml)
 
