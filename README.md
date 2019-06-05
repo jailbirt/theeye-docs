@@ -27,14 +27,16 @@ pipenv shell
   pipenv install mkdocs mkdocs-material
 
 ### tree projects
-.
-├── docs                ---> files sueltos o en folder
-│   └── imagenes        ---> assest
-├── mkdocs.yml          ---> mkdocs, yml, genera el sitio
-├── Pipfile             ---> python mkdocs
-├── Pipfile.lock        ---> python mkdocs
-├── README.md           ---> este documento que lees
-└── site                ---> almacena el build
+theeye-docs
+  ├── docs                ---> files sueltos o en folder
+  │   └── imagenes        ---> assest
+  ├── mkdocs.yml          ---> mkdocs, yml, genera el sitio
+  ├── Pipfile             ---> python mkdocs
+  ├── Pipfile.lock        ---> python mkdocs
+  ├── README.md           ---> este documento que lees
+  └── site                ---> almacena el build
+  └── Dockerfile          ---> docker enviroment
+
 
 ### up for preview
 * para evitar problemas, trabajar siempre desde pipenv
@@ -50,3 +52,19 @@ mkdocs build
 
 ### clean old files in sites
 mkdocs build --clean
+
+---
+
+### Docker enviroment
+
+
+#### Start development server on http://localhost:8000
+
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
+
+#### Build sitio estatico
+
+docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build
+
+##### Test sitio estatico
+docker run -dit  -p 8080:80 -v "$PWD"/site/:/usr/local/apache2/htdocs/ httpd
