@@ -1,24 +1,12 @@
-# User management
+# User Management Documentation
 
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
 
-## User Management Documentation
-
-### Contents
-
-* [User Roles](./#user-accounts-and-roles-web-mobile-access)
-* [Permissions](./#permissions)
-* [Effective permissions per role type](./#effective-permissions-per-role)
-* [Members Page \(CRUD Users\)](./#members-page-user-administration)
-* [ACLs](./#acls)
-
-### User Accounts and Roles \(Web/Mobile access\)
-
-======================================================
+## User Accounts and Roles \(Web/Mobile access\)
 
 There're six user permission profiles.
 
-### Permissions
+## Permissions
 
 1. Full Control
    * Can manage organizations.
@@ -37,7 +25,7 @@ There're six user permission profiles.
 
 _Note:_ **Users will have access to resources provided by ACLs. Only user types with** _**Full Access**_ **permission will be able to see all resources.**
 
-#### Effective permissions per role
+### Effective permissions per role
 
 1. **root**
    * Full Control
@@ -60,17 +48,17 @@ _Note:_ **Users will have access to resources provided by ACLs. Only user types 
    * View
    * Execution
 
-### Members Page \(User administration\)
+## Members Page \(User administration\)
 
 To Create, modify or delete users, go to _Settings_ from the left menu and then go to _Members_ section.
 
-![](../.gitbook/assets/user_members-1.jpg)
+![](/images/user_members-1.jpg)
 
 When you invite a new user, you will be prompted to select the user's role \(admin/user/viewer/manager\). The role can be changed at any time by a user manager. The user account must be activated by the activation link sent by email.
 
-### ACLs
+## ACLs
 
 In the previous section we've described user roles and user administration. ACLs applies directly to resources. Admin roles can make resources visible to other members by adding them to the input field labeled _ACL's_ available on _Tasks_ and _Monitors_. When a user is added to an ACL list, then the resource becomes available and accesible according to the member's role. Notifications are sent to all users within the ACL list, regardless the user role. E-mail addresses can also be added to ACLs lists in order to have them notified disregarding any account membership.
 
-![](../.gitbook/assets/acls-1.png)
+![](/images/acls-1.png)
 
