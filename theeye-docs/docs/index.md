@@ -1,137 +1,47 @@
-# Documentation
+# Introduction to The Eye
 
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
 
-## Content
+## What is TheEye?
 
-* [What is TheEye?](./#what-is-theeye)
-* [First Steps](./#first-steps)
-  * [Quick Start](./#quick-start)
-  * [Bot Installation](the-eye-agent/installation.md)
-  * [Check your first resource](./#check-your-first-resource)
-* [User Management](./#users)
-* Organization
-* [Integrations](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/integrations/README.md)
-* Resources
-  * [Indicators](./indicators.md)
-  * [Monitors](./monitors.md)
-  * [Tasks](./tasks)
-  * [Templates](./templates.md)
-  * [Webhooks](./)
-  * [Scripts](./scripts)
-* [Workflows](./workflows)
-* Other Tools
-  * [TheEye\_Cli Util](workflows/cli-util.md)
-  * [Build Bot Binary](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/binary_build.md)
-  * [Bot Docs](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/agent/README.md)
+**The Eye** works as an _automation platform_. Depending on your use case it can be both an _automation platform as a service_ or an _automation service platform,_. You may use it as:
 
-### What is TheEye
-
-* A remote server managament and a monitoring tool \(Devops\)
+* A remote server management and a monitoring tool \(Devops\)
 * A server provisioning tool
 * A task manager \(with scheduler\)
 * A Workflow creation tool \(IFTTT\)
-* A technical repository
+* A technical knowledge base repository
 * An integration and automation platform
 * A Real time support tool
 
-If you want start from the scratch, there's a native integration with ELK and Docker. Check this out [TheEye MindMap](https://atlas.mindmup.com/2017/11/7f1f2fb0d53611e7a974c121a32f69bf/theeye_functional_mindmap_es/index.html)
+It allows you to **monitor** and manage **resources**, launch and **schedule** **tasks**, write and/or upload **scripts**, build **workflows** through a series of **task** results or even **trigger** specific **tasks** or **workflows** as a response to one of your **monitor events**. All this is done from the web interface or the mobile app.
 
-### First Steps
+The **bolded keywords** in the above paragraph are all core concepts of The Eye.
 
-To start using TheEye you will need to:
+## Domain vocabulary
 
-1. Have a user account. If you don't have one go to _\*\*_[https://theeye.io/register](https://theeye.io/register) and create one.
-2. Start the self-provided Bot or Install [one ](the-eye-agent/installation.md#manual-instalation-from-sources-binary-for-your-platform-is-not-available)on each server you would like to perform actions or automate from.
-3. Create your first resource from TheEye Web.
+The Eye consists on a _**core platform**_ process running in a HA infrastructure. The _**core platform**_ receives only _**agent**_ and _**client**_ connections. It keeps track of any _**resource**_ for the _**user**_ and stores _**tasks**_, _**scripts**_, files, _**workflows**_ and _**customers**_.
 
-Once you've activated your user account, you'll see this Dashboard after login:
+A _**resource**_ is a configured _**monitor**_, a reliable, accountable, signaling _**monitor event**_. [Read more about resources](resources.md).
 
-![first time login](.gitbook/assets/firsttimelogin.jpg)
+An _**agent**_ is an autonomous software installed on a _**user**_ _**host**_. The _**agent**_ keeps the _**host**_ status and health updated \(aka: _**host monitor**_\) on the _**core platform**_. The _**agent**_ will also report back to the _**core platform**_ when it finishes a given _**task**_.
 
-The Tutorial will guide you through the installation process of a [Bot](the-eye-agent/installation.md) and will show you how to create a task.
+A _**client**_ is any means capable of connecting to the _**core platform**_ through a secure protocol and gain access with valid credentials. The Eye provides a web UI as it's main _**client**_, but alternative connection mechanisms can be implemented and any of them would fall under the _**client**_ category.
 
-In case you don't want to follow the tutorial, you can install the Bots on your own following instructions from Settings-&gt;Installer in the side menu.
+A _**host**_ is any instance, server or machine the _**user**_ wants to _**monitor**_ or control. The _**host**_ must have internet access, the _**agent**_ installed and configured and be able to reach the _**core platform**_.
 
-![settings](.gitbook/assets/settings-1.jpg)
+A _**user**_ is any valid identification registered on the _**core platform**_. Active _**users**_ have a unique email address and are responsible for their own passwords to be strong and secure.
 
-#### Quick start
+Once a _**user**_ registers, a unique key/secret pair is assigned to his/her account. This key/secret pair must be used to configure any _**agent**_ installed by the _**user**_ so the _**core platform**_ can secure the encrypted communication between the _**host**_, the _**client**_ and the _**core platform**_ itself.
 
-Launch the self provided Bot, and begin automating processes.
+_**Tasks**_ are, well, _**tasks**_. They are the means of the _**core platform**_ to instruct _**agents**_ to execute _**scripts**_ and routines. When a _**user**_ creates a _**task**_ the _**core platform**_ stores any _**scripts**_ and/or options for the _**task**_ and assigns it to the _**host**_. _**Tasks**_ can be launched, _**scheduled**_ for one time or periodic execution, or even be _**triggered**_ by some _**monitor event**_ or _**workflow**_.
 
-![Settings Menu \(Installer\)](.gitbook/assets/startbot.jpg)
+The _**user**_ can upload or write _**scripts**_. _**Scripts**_ are stored on the _**core platform**_ and provided to the _**agent**_ when a _**task**_ needs to be executed.
 
-### **Bot Installation**
+A _**monitor event**_ is...
 
-If it is the first time you access TheEye Website, click the link in the monitors panel where says _"Click HERE to get the step by step instructions to install the Bot on Linux and Windows operating systems"_, otherwise go to _Settings_ in the left menu and get to the _Installation_ section. Installation instructions are provided for Linux and Windows systems.
+A _**trigger**_ is what happens when...
 
-* Linux:
+A _**workflow**_ consists in a...
 
-![linux install](.gitbook/assets/linuxagentinstall-1.jpg)
-
-* Windows:
-
-![windows install](.gitbook/assets/windowsagentinstall-1.jpg)
-
-* Docker
-
-![docker install](.gitbook/assets/dockeragentinstall.jpg)
-
-After each agent installation a new monitor is shown up in the Dashboard.
-
-For detailed installation information check the [Bot:install document](the-eye-agent/installation.md)
-
-#### Check your first resource
-
-Check the Dashboard view after login, you should see "All up and running" in the monitors panel.
-
-#### Users
-
-TheEye provides six different user roles. You can create users on the go with the appropiate role. See the [Users Management Documentation](user-management/) for more details.
-
-### Resources
-
-TheEye provides a way to store technical knowledge in Resources that become usable in many different aspects. Each resource is explained hereunder.
-
-#### Monitors
-
-A monitor is used to check services' or resources' status. You can use this status information to take actions \(e.g. run a task, send notification\). You can always customize the time between checks.
-
-There are five kind of monitors you can set up from TheEye: Stats, Script, API/Web Check, Process and File. Check the [Monitors Documentation](https://github.com/theeye-io/theeye-docs/tree/2f190a3ad234ff94c05da22e1127c8d522191558/monitors/README.md) for more details.
-
-* Monitors will notify for events as desired. Check the Users ACLs' section for [Notifications](./)
-
-#### Tasks
-
-A task is an action that can be performed or executed on demand. You can also use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. Check the [Tasks Documentation](tasks/) for more details.
-
-#### Scripts
-
-You can write scripts directly from TheEye web to your servers or you can create scripts to be used as API Calls or monitors. Check the [Scripts Documentation](scripts/) for more details.
-
-#### Templates \(Provisioning\)
-
-One of the main advantages brought by TheEye is the fact that all your technical stuff is stashed at the moment it is created \(scripts, tasks, monitors\). Provisioning allows you to reuse your stuff for other servers in the same way a template works. To reuse all the resources created for a server, go to _Templates_ in the left menu, select your source host in the _base template_ input box, set a name for the template and select your destination hosts in the _Hosts to add to the template_ input box. All the resources from your source host will now be available on your destination hosts. Templates can be exported to be used on other organizations, in the same way they can be imported. Check the Templates Documentation for more details.
-
-![template](https://raw.githubusercontent.com/patobas/docs/master/template.gif)
-
-#### Webhooks
-
-A webhook can be used to perform an action when an event occurs on other website. When that event occurs, the source site makes an HTTP request to the URL configured for the webhook.
-
-To create a webhook \(incoming webhook\), just go to the _Webhooks_ section left menu, and click on "_+ new Incoming webhook_". Name it and save it. Once you have saved it, expand it, by clicking over the webhook box, you'll be able to see the URL assigned to the webhook.
-
-![webhook expanded](https://raw.githubusercontent.com/theeye-io/theeye-docs/master/images/webhookexpanded.jpg)
-
-The webhook you created can be used as a trigger for other resources \(e.g. You can set the webhook to be the trigger of a task\) as shown hereunder.
-
-![webhook](https://raw.githubusercontent.com/patobas/docs/master/webhook.gif)
-
-### Workflow
-
-Workflow connects your tasks together to automate complex or dependent processes.
-
-Which trigger would you like to use? You can start a workflow directly with a play button or you can use monitors or tasks as triggers.
-
-Check the [Workflow Documentation](workflows/) for more details.
 
