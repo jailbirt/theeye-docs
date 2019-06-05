@@ -58,7 +58,6 @@ nav:
 - About:
     - 'About us': './about/index.md'
     - 'Terms and Conditions': './about/terms.md'
-    - 'Summary': './about/summary.md'
 
 # Footer
 copyright: 'TheEye.io | Copyright &copy; 2019 - All rights reserved'
