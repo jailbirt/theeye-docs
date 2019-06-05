@@ -1,5 +1,7 @@
 # Table of contents
 
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+
 * [Documentation](README.md)
 * [What is The Eye](readme-1.md)
 * [Indicators](indicators.md)
