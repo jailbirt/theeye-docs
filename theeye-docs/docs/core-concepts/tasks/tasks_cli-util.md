@@ -1,6 +1,6 @@
 # CLI Util
 
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
 
 How to use the CLI
 
