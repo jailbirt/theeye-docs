@@ -1,6 +1,8 @@
-[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io)
+# Theeye Integrations
 
-# Contents
+[![theeye.io](https://theeye.io/img/logo2.png)](https://theeye.io/en/index.html)
+
+## Elastic Search Kibana (ELK stack)
 TheEye logs
 
 Events and actions performed by users and resources are constantly being saved and in some cases also notified.
@@ -8,9 +10,7 @@ The records are saved in _ElasticSearch_ by the _Supervisor_ for further analysi
 
 https://kibana.theeye.io
 
-ElasticSearch stack
-
-## Data sent to ELK by Event
+### Data sent to ELK by Event
 Every event that is logged in ELK can be identified by common fields as:
 - Date and time
 - Hostname
