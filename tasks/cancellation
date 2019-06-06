@@ -1,2 +1,0 @@
-The task execution never finished.
-This would happen for example if your script runs a daemon wich takes control of your tty.

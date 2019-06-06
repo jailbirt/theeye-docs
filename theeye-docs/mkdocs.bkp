@@ -1,0 +1,94 @@
+# Configuration site theme
+theme:
+  name: material
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  logo: 'images/logo.svg'
+  favicon: 'assets/images/favicon.ico'
+
+# Project information
+site_name: 'The Eye'
+site_description: 'A Material Design theme for MkDocs'
+site_url: 'https://squidfunk.github.io/mkdocs-material/'
+
+# Menu
+nav:
+- Home: 'index.md'
+- Core concepts:
+    - 'What is TheEye?': 'index.md'
+    - 'Resources': 'index.md'
+- First steps:
+    - 'Organization': 'index.md'
+    - 'Bot Installation': 'index.md'
+- TheEye agent:
+    - 'Installation': 'index.md'
+    - 'Raspberry': 'index.md'
+    - 'Binary build': 'index.md'
+    - 'Debug': 'index.md'
+    - 'Example, etc/init.d': 'index.md'
+    - 'Example, etc/systemd/system': 'index.md'
+- Integrations:
+    - 'AWS': 'index.md'
+    - 'ELK': 'index.md'
+    - 'Kubernetes': 'index.md'
+    - 'API for developers': 'index.md'
+- Resources:
+    - 'Concepts': 'index.md'
+    - 'Indicators': 'index.md'
+    - 'Monitors': 'index.md'
+    - 'Tasks': 'index.md'
+    - 'Templates': 'index.md'
+    - 'Webhooks': 'index.md'
+    - 'Scripts': 'index.md'
+- Workflows:
+    - 'Connecting tasks': 'index.md'
+    - 'Tasks with CLI': 'index.md'
+    - 'Alerts and Notifications': 'index.md'
+- Recipes:
+    - 'indicatorExample.json': 'index.md'
+- Scripts:
+    - 'Scripting with theeye': 'index.md'
+    - 'Run as...': 'index.md'
+    - 'Write': 'index.md'
+    - 'Example .bat': 'index.md'
+    - 'Example .go': 'index.md'
+    - 'Example .js': 'index.md'
+    - 'Example .php': 'index.md'
+    - 'Example .pl': 'index.md'
+    - 'Example .ps1': 'index.md'
+    - 'Example .sh': 'index.md'
+    - 'Writing': 'index.md'
+    - 'Writing': 'index.md'
+    - 'Writing': 'index.md'
+    - 'Writing': 'index.md'
+    - 'Writing': 'index.md'
+    - 'Writing': 'index.md'
+- Management:
+    - 'User management': 'index.md'
+    - 'ACLS': 'index.md'
+    - 'Managing users': 'index.md'
+    - 'Permission profiles': 'index.md'
+- Support: 'index.md'
+- Other tools:
+    - 'CLI documentation': 'index.md'
+    - 'TheEye agent documentation': 'index.md'
+- User:
+    - 'Writing your docs': 'index.md'
+    - 'Styling your docs': 'index.md'
+- About:
+    - 'License': 'index.md'
+    - 'Release Notes': 'index.md'
+
+# Footer
+copyright: 'Copyright &copy; * - 2019 The Eye'
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/squidfunk'
+    - type: 'twitter'
+      link: 'https://twitter.com/squidfunk'
+    - type: 'linkedin'
+      link: 'https://linkedin.com/in/squidfunk'
+
