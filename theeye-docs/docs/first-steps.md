@@ -1,46 +1,53 @@
-# First Steps
+# First Steps to start using TheEye:
 
 [![theeye.io](/images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
-## To start using TheEye you will need to:
+##  You will need a User account and organization
+1. If you have an user account, enter in [https://app.theeye.io/login](https://app.theeye.io/login)
+2. If you do not have a user account, enter here [https://app.theeye.io/register](https://app.theeye.io/register) and register one.
+      1. After registering your account we send you a confirmation email.
+      2. Activate your account and start automating with TheEye. 
+         1. Register your account username.
+         2. Register the name of your organization.
 
-1. Have a user account. If you don't have one go to [https://app.theeye.io/register](https://app.theeye.io/register) and create one.
-2. Organization
-    An organization in The Eye is an entity that comprises multiple objects, such as multiple hosts or a sequence of automated tasks and triggers, that has a particular purpose.
-3. Start the self-provided Bot or Install [one ](/core-concepts/the-eye-agent/)on each server you would like to perform actions or automate from.
-4. Create your first resource from TheEye Web.
+An **organization** in The Eye is an entity that comprises multiple objects, such as multiple hosts or a sequence of automated tasks and triggers, that has a particular purpose.
 
 Once you've activated your user account, you'll see this Dashboard after login:
 
-![first time login](/images/firsttimelogin.jpg)
+![first time login](/images/FirstTimeLogin.jpg)
 
-The Tutorial will guide you through the installation process of a [Bot](/core-concepts/the-eye-agent/) and will show you how to create a task.
+## Build your playground
+The Tutorial will guide you through the installation process of a **Bots** and will show you how to create a **task**.
 
+### I came for the **bots**!
+In The Eye you would like to perform actions or automate with **bots**
+
+Start the self-provided Bot or Install one on each server.
+
+#### Just give me a bot!
 In case you don't want to follow the tutorial, you can install the Bots on your own following instructions from Settings-&gt;Installer in the side menu.
 
-![settings](/images/settings-1.jpg)
-
-#### Quick start
+![settings](/images/Settings.jpg)
 
 Launch the self provided Bot, and begin automating processes.
 
 ![Settings Menu \(Installer\)](/images/startbot.jpg)
 
-### **Bot Installation** 
+#### Install your own bot, and then a hive!!
 
-#### **\(You can skip this section if you're using the self-provided Bot\)**
+**\(You can skip this section if you're using the self-provided Bot\)**
 
 If it is the first time you access TheEye Website, click the link in the monitors panel where says _"Click HERE to get the step by step instructions to install the Bot on Linux and Windows operating systems"_, otherwise go to _Settings_ in the left menu and get to the _Installation_ section. Installation instructions are provided for Linux and Windows systems.
 
-* Linux:
+##### Linux install:
 
 ![linux install](/images/linuxagentinstall-1.jpg)
 
-* Windows:
+##### Windows install:
 
 ![windows install](/images/windowsagentinstall-1.jpg)
 
-* Docker
+##### Docker install:
 
 ![docker install](/images/dockeragentinstall.jpg)
 
@@ -48,11 +55,79 @@ After each agent installation a new monitor is shown up in the Dashboard.
 
 For detailed installation information check the [Bot:install document](/core-concepts/the-eye-agent/)
 
-#### Check your first resource
+### Play with bots
+
+Let's do a small task just to play a little.
+
+We're going to have our bot report information to us. For this we will send information with a parameter, and the bot will make a query to a webservice to get the rest.
+
+** As a prerequisite you need a bots, so if you do not have one, install one following the steps above. **
+
+For this task we will follow the following steps from the dashboard:
+
+#### We create the resources
+- We create a task and the script associated with it
+    - Name: check_weather
+    - Bots: bots
+    - We create the argument
+        - type: Fixed Value
+        - value: Madrid
+            - This should be the name of the city on which we are going to check the weather.
+
+![tasks create](/images/firtsStepsTaskCreate.jpg)
+
+- Now we select to create scripts
+    - File name: check_weather.sh
+    - Copy the following code into the script editing window and save the changes.
+
+```
+#!/usr/bin/env bash
+
+## TheEye
+## For both Monitors and Tasks We need that your script ends by returning "normal" or "failure". 
+STATE="normal"
+
+# Our script
+REGION=$1;
+WEATHER=$(curl wttr.in/$REGION?format=3)
+echo "$WEATHER"
+
+## TheEye
+# Report state. Last line of this script will be the $STATE value
+if [ $? -ne 0 ]; then STATE="failure"; fi
+echo $STATE
+```
+
+![scripts create](/images/firtsStepsScriptsCreate.jpg)
+
+#### Let them run!
+
+Now in the Dashboard we will see our resources. We should have something like this:
+
+![scripts create](/images/resourcesList.jpg)
+
+If this is the case, let's play the "check_weather" script inside the workflow.
+
+Then we will be able to see the results report of the task.
+
+![tasks report](/images/taskReport.jpg)
+
+In this report we can see the STATE result as well as the parameters sent.
+
+We will be able to have an extended repote by clicking on "More info"
+
+![tasks report more](/images/taskReportMore.jpg)
+
+We hope this document has been helpful. You can find more information in the documentation system. In case you need assistance, contact our support team.
+
+Check the [Support team information](/support/) for more details.
+
+## Understanding the parts
+### Dashboard: Check your first resource
 
 Check the Dashboard view after login, you should see "All up and running" in the monitors panel.
 
-#### Users
+### Users
 
 TheEye provides six different user roles. You can create users on the go with the appropiate role. See the [Users Management Documentation](/user-management/) for more details.
 
@@ -94,7 +169,7 @@ The webhook you created can be used as a trigger for other resources \(e.g. You 
 
 ![webhook](/images/webhook.gif)
 
-### Workflow
+#### Workflow
 
 Workflow connects your tasks together to automate complex or dependent processes.
 
