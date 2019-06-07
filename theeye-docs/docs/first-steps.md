@@ -1,6 +1,6 @@
 # First Steps to start using TheEye:
 
-[![theeye.io](/images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 ##  You will need a User account and organization
 1. If you have an user account, enter in [https://app.theeye.io/login](https://app.theeye.io/login)
@@ -14,7 +14,7 @@ An **organization** in The Eye is an entity that comprises multiple objects, suc
 
 Once you've activated your user account, you'll see this Dashboard after login:
 
-![first time login](/images/FirstTimeLogin.jpg)
+![first time login](images/FirstTimeLogin.jpg)
 
 ## Build your playground
 The Tutorial will guide you through the installation process of a **Bots** and will show you how to create a **task**.
@@ -27,11 +27,11 @@ Start the self-provided Bot or Install one on each server.
 #### Just give me a bot!
 In case you don't want to follow the tutorial, you can install the Bots on your own following instructions from Settings-&gt;Installer in the side menu.
 
-![settings](/images/Settings.jpg)
+![settings](images/Settings.jpg)
 
 Launch the self provided Bot, and begin automating processes.
 
-![Settings Menu \(Installer\)](/images/startbot.jpg)
+![Settings Menu \(Installer\)](images/startbot.jpg)
 
 #### Install your own bot, and then a hive!!
 
@@ -41,15 +41,15 @@ If it is the first time you access TheEye Website, click the link in the monitor
 
 ##### Linux install:
 
-![linux install](/images/linuxagentinstall-1.jpg)
+![linux install](images/linuxagentinstall-1.jpg)
 
 ##### Windows install:
 
-![windows install](/images/windowsagentinstall-1.jpg)
+![windows install](images/windowsagentinstall-1.jpg)
 
 ##### Docker install:
 
-![docker install](/images/dockeragentinstall.jpg)
+![docker install](images/dockeragentinstall.jpg)
 
 After each agent installation a new monitor is shown up in the Dashboard.
 
@@ -74,7 +74,7 @@ For this task we will follow the following steps from the dashboard:
         - value: Madrid
             - This should be the name of the city on which we are going to check the weather.
 
-![tasks create](/images/firtsStepsTaskCreate.jpg)
+![tasks create](images/firtsStepsTaskCreate.jpg)
 
 - Now we select to create scripts
     - File name: check_weather.sh
@@ -98,25 +98,25 @@ if [ $? -ne 0 ]; then STATE="failure"; fi
 echo $STATE
 ```
 
-![scripts create](/images/firtsStepsScriptsCreate.jpg)
+![scripts create](images/firtsStepsScriptsCreate.jpg)
 
 #### Let them run!
 
 Now in the Dashboard we will see our resources. We should have something like this:
 
-![scripts create](/images/resourcesList.jpg)
+![scripts create](images/resourcesList.jpg)
 
 If this is the case, let's play the "check_weather" script inside the workflow.
 
 Then we will be able to see the results report of the task.
 
-![tasks report](/images/taskReport.jpg)
+![tasks report](images/taskReport.jpg)
 
 In this report we can see the STATE result as well as the parameters sent.
 
 We will be able to have an extended repote by clicking on "More info"
 
-![tasks report more](/images/taskReportMore.jpg)
+![tasks report more](images/taskReportMore.jpg)
 
 We hope this document has been helpful. You can find more information in the documentation system. In case you need assistance, contact our support team.
 
@@ -157,7 +157,7 @@ Check our [TheEye-io gist](https://gist.github.com/theeye-io) scripts page.
 
 One of the main advantages brought by TheEye is the fact that all your technical stuff is stashed at the moment it is created \(scripts, tasks, monitors\). Provisioning allows you to reuse your stuff for other servers in the same way a template works. To reuse all the resources created for a server, go to _Templates_ in the left menu, select your source host in the _base template_ input box, set a name for the template and select your destination hosts in the _Hosts to add to the template_ input box. All the resources from your source host will now be available on your destination hosts. Templates can be exported to be used on other organizations, in the same way they can be imported. Check the Templates Documentation for more details.
 
-![template](/images/template.gif)
+![template](images/template.gif)
 
 #### Webhooks
 
@@ -165,11 +165,11 @@ A webhook can be used to perform an action when an event occurs on other website
 
 To create a webhook \(incoming webhook\), just go to the _Webhooks_ section left menu, and click on "_+ new Incoming webhook_". Name it and save it. Once you have saved it, expand it, by clicking over the webhook box, you'll be able to see the URL assigned to the webhook.
 
-![webhook expanded](/images/webhookexpanded.jpg)
+![webhook expanded](images/webhookexpanded.jpg)
 
 The webhook you created can be used as a trigger for other resources \(e.g. You can set the webhook to be the trigger of a task\) as shown hereunder.
 
-![webhook](/images/webhook.gif)
+![webhook](images/webhook.gif)
 
 #### Workflow
 
