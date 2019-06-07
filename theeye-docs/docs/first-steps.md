@@ -149,7 +149,9 @@ A task is an action that can be performed or executed on demand. You can also us
 
 #### Scripts
 
-You can write scripts directly from TheEye web to your servers or you can create scripts to be used as API Calls or monitors. Check the [Scripts Documentation](/core-concepts/scripts/) for more details.
+You can write scripts directly from TheEye web to your servers or you can create scripts to be used as API Calls or monitors. 
+
+Check our [TheEye-io gist](https://gist.github.com/theeye-io) scripts page.
 
 #### Templates \(Provisioning\)
 

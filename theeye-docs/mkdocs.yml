@@ -53,7 +53,6 @@ nav:
         - '...get list monitors': './integrations/api/api_list_monitors.md'
 - Assets:
     - Recipes: './assets/recipes/index.md'
-    - Example Scripts: './assets/scripts/index.md'
 - Support: 'support.md'
 - About:
     - 'About us': './about/index.md'
