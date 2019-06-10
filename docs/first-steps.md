@@ -25,11 +25,8 @@ In The Eye you would like to perform actions or automate with **bots**
 Start the self-provided Bot or Install one on each server.
 
 #### Just give me a bot!
-In case you don't want to follow the tutorial, you can install the Bots on your own following instructions from Settings-&gt;Installer in the side menu.
-
-![settings](images/Settings.jpg)
-
-Launch the self provided Bot, and begin automating processes.
+For launch the self provided Bot, and begin automating processes. Go to
+the web panel ([settings -> installer](https://app.theeye.io/dashboard#installer))
 
 ![Settings Menu \(Installer\)](images/startbot.jpg)
 
@@ -37,23 +34,15 @@ Launch the self provided Bot, and begin automating processes.
 
 **\(You can skip this section if you're using the self-provided Bot\)**
 
-If it is the first time you access TheEye Website, click the link in the monitors panel where says _"Click HERE to get the step by step instructions to install the Bot on Linux and Windows operating systems"_, otherwise go to _Settings_ in the left menu and get to the _Installation_ section. Installation instructions are provided for Linux and Windows systems.
+If it is the first time you access TheEye Website, from the web panel ([settings -> installer](https://app.theeye.io/dashboard#installer)) you can download the binary agent and get the installation script for your host.
 
-##### Linux install:
+![settings](images/Settings.jpg)
 
-![linux install](images/linuxagentinstall-1.jpg)
+##### List of installers:
 
-##### Windows install:
+![full list for install](images/TheEye-Agent-Full-list.jpg)
 
-![windows install](images/windowsagentinstall-1.jpg)
-
-##### Docker install:
-
-![docker install](images/dockeragentinstall.jpg)
-
-After each agent installation a new monitor is shown up in the Dashboard.
-
-For detailed installation information check the [Bot:install document](/core-concepts/the-eye-agent/)
+For more information please check the installation documentation in ([Bot Installer](/core-concepts/the-eye-agent/)) you can download the binary agent and get the installation script for your host.
 
 ### Play with bots
 
