@@ -44,9 +44,9 @@ nav:
             - 'Example systemd': './core-concepts/the-eye-agent/examples/etc_systemd_system_theeye-agent.service'
 - User management: 'user-management.md'
 - Integrations:
-    - 'AWS': './integrations/aws-EC2.md'
-    - 'ELK': './integrations/elk-Data-Injection.md'
-    - 'Kubernetes': './integrations/kubernetes.md'
+    - 'AWS': './integrations/aws/index.md'
+    - 'ELK': './integrations/elk/index.md'
+    - 'Kubernetes': './integrations/kubernetes/index.md'
     - API for developers:
         - 'Integration through API': './integrations/api/index.md'
         - '...run task using id': './integrations/api/api_run_tasks_by_id.md'
