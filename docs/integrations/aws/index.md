@@ -12,7 +12,7 @@ Steps:
 
   * 1- go to your profile and copy theeye installation script: https://theeye.io/profile
 
-![](../../images/theeye-agentInstallation.png)
+![](../../images/TheEye-Agent-AWS-Install.jpg)
 
 
   * 2- launch a new EC2 instance, hold on step number 3, you will fullfill advanced settings with the following script (watch out to full fille both hostnameFunction and theeyeInstall variables to fit your settings)
