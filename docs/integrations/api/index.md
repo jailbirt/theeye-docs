@@ -1,38 +1,54 @@
 # Integration through API
 
-[![theeye.io](/images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
-
-## Method
-
-### Webhook
-
-A task can be triggered by an incoming webhook. To create a new incoming webhook just click in the left "hamburger" menu, and click on "webhooks" - “new incoming webhook”.
-Type the name of the new webhook, click save.
-
-Once it's created you can click on the icon on the left to copy the curl example.
-
-Check the [Webhooks Documentation](/core-concepts/webhooks/) for more details.
+[![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 
-### Access token
 
-Variables:
-**customer**: organization name
+## Enable access to APIs
 
-**access token**: menu => settings => credentials => Integration Tokens
+### Integration Tokens
+An Access Token is a credential that can be used by an application to access an API. Access Tokens can be either an opaque string or a JSON web token. They inform the API that the bearer of the token has been authorized to access the API and perform specific actions specified by the scope that has been granted.
 
-**List all tasks**
-```curl -sS 'https://supervisor.theeye.io/$customer/task?access_token=$accesstoken'```
+To verify that access to the APIs has been enabled:
+- Log in to TheEye Administration Console.
+- You must use an administrator account.
+     - On the main page of the administration console, go to setting then to credentials. You can see the list of "Integration Tokens".
 
-**Search task id by name**
+![dashboard_settings_credentials](../../images/dashboard_setting_credentials.png)
 
+## Tasks;
+
+*Task execution timeout*
+
+The default execution timeout for tasks is 10 minutes.
+
+Now it's not possible to change the timeout via API. To modify the timeout for a task contact us.
+
+
+
+### list all...
+
+*Resquest*
+```bash
+customer="lastranikos"
+accesstoken="25011765c0a7f2ca03559c39f141a2afe306e6f1"
+
+curl -sS "https://supervisor.theeye.io/$customer/task?access_token=$accesstoken"
 ```
-taskName="Task name"
-curl -sS 'https://supervisor.theeye.io/$customer/task?access_token=$accesstoken' | jq -r --arg name "$taskName" '.[] | select(.name==$name) | {"name": .name, "id": .id, "hostname": .hostname}' | jq -s '.'
+
+### search task id by name
+
+*Request*
+```bash
+customer="lastranikos"
+accesstoken="25011765c0a7f2ca03559c39f141a2afe306e6f1"
+taskName="HelloWorld Task"
+
+curl -sS "https://supervisor.theeye.io/$customer/task?access_token=$accesstoken" | jq -r --arg name "$taskName" '.[] | select(.name==$name) | {"name": .name, "id": .id, "hostname": .hostname}' | jq -s '.'
 ```
 
+*Response*
 Returns a json array with tasks, id and hostname:
-
 ```
 [
   {
@@ -58,16 +74,12 @@ Returns a json array with tasks, id and hostname:
 ]
 ```
 
-**Task execution timeout**
-
-The default execution timeout for tasks is 10 minutes.
-
-**List tasks and timeout.** 
+### list and timeout
 (Timeout = null) means that the timeout is set to default (10 minutes).
 
-```
-#!/bin/bash                                                                                                                                                                  
-  
+```bash
+#!/bin/bash
+
 customer=$1
 access_token=$2
 supervisor=$3
@@ -78,9 +90,5 @@ data=$(curl -s ${supervisor}/${customer}/task?access_token=${access_token})
 
 echo "${data}" | jq -j '.[] | "id: ", .id, "\ttask: ", .name, "\ttimeout: ", .timeout, "\n"'
 ```
-
-**Set Task execution timeout**
-
-Now it's not possible to change the timeout via API. To modify the timeout for a task contact us.
 
 
