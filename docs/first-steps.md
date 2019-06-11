@@ -78,13 +78,14 @@ STATE="normal"
 
 # Our script
 REGION=$1;
-WEATHER=$(curl wttr.in/$REGION?format=3)
+WEATHER=$(curl -sS wttr.in/$REGION?format=3)
 echo "$WEATHER"
 
 ## TheEye
 # Report state. Last line of this script will be the $STATE value
 if [ $? -ne 0 ]; then STATE="failure"; fi
-echo $STATE
+
+echo { \"state\":\"$STATE\", \"data\":{ \"data1\":$WEATHER}  }
 ```
 
 ![scripts create](images/firtsStepsScriptsCreate.jpg)
