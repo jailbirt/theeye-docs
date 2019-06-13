@@ -1,6 +1,72 @@
-# Tasks by API
+# API for Monitors
 
-[![theeye.io](/images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
+
+## API URL for Monitors
+
+URL: `https://supervisor.theeye.io/monitor?access_token={token}&customer={organization_name}`
+
+
+## Examples
+### List monitors
+
+###Variables:
+  **customer**: organization name
+
+  **access token**: menu => settings => credentials => Integration Tokens
+
+### Request example:
+
+```bash
+  customer=""
+  access_token=""
+
+  curl -sS https://supervisor.theeye.io/${customer}/monitor?access_token=${access_token}
+```
+#### **Search monitor by name**
+
+```bash
+  customer=""
+  access_token=""
+  monName="demo"
+
+  curl -sS https://supervisor.theeye.io/${customer}/monitor?access_token=${access_token} | \
+    jq -r --arg name "$monName" '.[] | select(.name==$name) | {"name": .name, "id": .id, "state": .resource.state}' | jq -s '.'
+```
+
+#### **Show bot stats**
+
+```bash
+customer=""
+access_token=""
+botName="demo"
+
+curl -sS https://supervisor.theeye.io/${customer}/monitor?access_token=${access_token} | \
+jq -r --arg name "$botName" '.[] | select((.name==$name) and (.type=="dstat")) | {"name": .name, "id": .id, "stats": .resource.last_event.data}' | jq -s '.'
+```
+
+### **Response example:**
+
+```json
+[
+  {
+    "name": "demo",
+    "id": "5bb755f42f78660012bdd9af",
+    "stats": {
+      "cpu": 3,
+      "mem": 36.73548113271163,
+      "cache": 4.689083037753453,
+      "disk": [
+        {
+          "name": "xvda2",
+          "value": 84.84461326890819
+        }
+      ]
+    }
+  }
+]
+```
+
 
 ## Run task by id
 
@@ -20,18 +86,18 @@ There are two methods available.
 
 #### **Request:**
 
-   ```bash
-   task_id=""
-   access_token=""
-   customer=""
-   
-   curl \
-      -X POST \
-      -H "Accept: application/json" \
-      -H "Content-Type: application/json" \
-      -b "{\"task\":\"${task_id}\",\"task_arguments\":[]}" \
-      "https://supervisor.theeye.io/job?access_token=${access_token}&customer=${customer}"
-   ```
+```bash
+task_id=""
+access_token=""
+customer=""
+
+curl \
+  -X POST \
+  -H "Accept: application/json" \
+  -H "Content-Type: application/json" \
+  -b "{\"task\":\"${task_id}\",\"task_arguments\":[]}" \
+  "https://supervisor.theeye.io/job?access_token=${access_token}&customer=${customer}"
+```
 
    > NOTE 1: customer is REQUIRED. can also be included in the body as "customer"  
    > NOTE 2: access token can be provided vía Authorization header \( Authorization: Bearer ${token} \)
@@ -39,7 +105,7 @@ There are two methods available.
 
 #### **Response:**
 
-```bash
+```json
 {
   "task_arguments_values": [],
   "_type": "ScriptJob",
@@ -102,7 +168,7 @@ In this example the id is "************************"
    All tasks have a **secret key** which can be used to invoke them directly via API. The secret key provides access to the task it belongs **and only to that task**. **Secret keys** can be revoked any time by just changing them, which makes this the preferred method for it's implicit security.
 
 #### **Request:**
-```text
+```bash
    task_id=""
    access_token=""
    customer=""
@@ -122,11 +188,13 @@ Once the job is created we can query it's status using the ID of the job. we can
 #### **Request:**
 ```bash
 task_id=”5cdc3d1c40f0bb000f8e9682”
-curl -sS 'https://supervisor.theeye.io/$customer/job/$task_id?access_token=$accesstoken' | jq -r .
+access_token=""
+customer=""
+curl -sS 'https://supervisor.theeye.io/$customer/job/$task_id?access_token=$token' | jq -r .
 ```
 
 #### **Response:**
-```
+```json
 {
   "task_arguments_values": [],
   "_type": "ScriptJob",
