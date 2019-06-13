@@ -21,12 +21,16 @@ From the web panel ([settings -> installer](https://app.theeye.io/dashboard#inst
 At this moment the supported distributions by the instalation script are
 
 The Bot is fully funtional in:
-    Redhat/Centos 6+
-    Ubuntu 12+
 
-It should works out of the box on every Linux with a kernel version 3.x+. For Linux with Kernel 2.x could require aditional actions.
+    - Redhat/Centos 6+
+    - Ubuntu 12+
 
-NOTE: The installation script assumes that root access is granted.
+
+NOTE: 
+
+    - The installation script assumes that root access is granted.
+    - It should works out of the box on every Linux with a kernel version 3.x+. For Linux with Kernel 2.x could require aditional actions.
+
 
 #### To install the Bot on Linux
 
@@ -37,9 +41,10 @@ Check the documentation.
 
 ### Windows Bot Installer
 
-To get the last version of the Windows installer, please contact us. We will provide you an installer with last versión of the binary agent.
+NOTE: 
 
-NOTE: The installation script assumes that administrator access is granted and that Powershell V5.0 or greater is installed.
+    - The installation script assumes that administrator access is granted
+    - Powershell V5.0 or greater is installed.
 
 If you need to debug, develop or if you prefer the manual installation of the agent, keep reading.
 
