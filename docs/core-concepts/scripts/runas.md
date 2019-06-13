@@ -21,13 +21,14 @@ The runas text could be any command line combination, using fixed variables, env
 
 To run the script using sudo, use one of the following runas syntax
 
-1.
+1. Sending arguments to the script to execute
+   -  Remember to add the " or the arguments won't be visible by the script
 
 ```bash
-sudo -u user -c "%script%" # (remember to add the " or the arguments won't be visible by the script)
+sudo -u user -c "%script%"
 ```
 
-2.
+2. Run script without arguments
 
 ```bash
 sudo -u user $(%script%)
@@ -49,18 +50,76 @@ The same aproach to execute custom scripts with unregistered interpreters apply 
 
 You will have to provide the absolute path to script interpreter.
 
-#### Powershell Scripts Execution
+### Understanding the Windows scenario ("Run as ..." and the interpreter)
 
-To execute a powershell script you must add this line to the "RunAs" tasks' field.
+NOTE: 
 
-```text
+  - The language of the script must always be considered before loading the interpreter's pareameters.
+  - Unlike linux, where the script and its interpreter are defined in its first line of code with the path and the interpreter (https://bash.cyberciti.biz/guide/Shebang). In Windows the inpreprete is a parameter inside the command executed in CMD.
+
+**Scripts**
+
+  - The interpreter is the "engine" that executes scripts.
+  - Scripting languages in Windows:
+    - Native options:
+        - PowerShell
+        - Windows Scripting Host
+            - VBScript
+            - JScript
+        - Batch Files
+    - Other options:
+        - Javascript/NODE
+        - Python
+        - PHP
+        - Perl
+        - and more...
+
+**Interpreter**
+
+  - Windows interpreter (BAT/PS1)
+    - It is installed by default on Windows 7 and Server 2008 R2 and later.
+      - It can be downloaded for Windows XP SP3, Windows Server 2003 SP2, Windows Vista SP1 and Windows Server 2008 SP2 (you may need to uninstall older versions of PowerShell first).
+  - Other options:
+    - The correct interpreter must be installed for the scripting language. And both its location and environment variables are correctly set to call the interpreter.
+
+#### Example calling running scripts on a Windows host
+
+NOTE: if you forget to load the parameters of "Run as ..." in TheEye.
+  - The script can not be executed with "Run as".
+  - The deafult interpreter: CMD and Powershell
+    - Only run scripts for the Windows interpreter
+
+NOTE: To execute a powershell script you must add this line to the "RunAs" tasks' field.
+
+![Run as default](../../images/scriptsRunAsDefault.png)
+
+##### "Run as" or execute a script with another interpreter
+
+Use the following line if you are using arguments in your script. Note that the file name of the ps1 script should not have spaces in it.
+
+```powershell
 powershell.exe -NonInteractive -ExecutionPolicy ByPass -File "%script%"
 ```
+If you do not use arguments in the scripts, you can use the following line. Note that the file name of the ps1 script should not have spaces in it.
 
-Use this line if you're using arguments in your script. Keep in mind that the filename of the ps1 script must not have white spaces.
-
-```text
+```powershell
 powershell.exe -NonInteractive -ExecutionPolicy ByPass -File %script%
+```
+
+![Run as powershell](../../images/scriptsRunAsPowershell.png)
+
+**Some examples executing script with other interpreters**
+
+```python
+python.exe "%script%"
+```
+
+```js
+node "%script%"
+```
+
+```perl
+perl "%script%"
 ```
 
 #### Sudo note.
