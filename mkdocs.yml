@@ -7,7 +7,9 @@ theme:
     accent: 'indigo'
   logo: './images/logo-theeye-circle.png'
   favicon: './images/logo-theeye-docu-glasses.png'
-
+markdown_extensions:
+  - codehilite
+  
 # Project information
 site_name: 'TheEye'
 site_description: 'TheEye is a platform for Robot automation Processes and Systems'
@@ -48,9 +50,10 @@ nav:
     - 'ELK': './integrations/elk/index.md'
     - 'Kubernetes': './integrations/kubernetes/index.md'
     - API for developers:
-        - 'Integration through API': './integrations/api/index.md'
-        - '...run task using id': './integrations/api/api_run_tasks_by_id.md'
-        - '...get list monitors': './integrations/api/api_list_monitors.md'
+        - 'Enable access to APIs': './integrations/api/index.md'
+        - '...indicator': './integrations/api/api_resources_indicator.md'
+        - '...task': './integrations/api/api_resources_task.md'
+        - '...monitor': './integrations/api/api_resources_monitor.md'
 - Assets:
     - Recipes: './assets/recipes/index.md'
 - Support: 'support.md'
