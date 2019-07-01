@@ -56,7 +56,9 @@ nav:
         - '...monitor': './integrations/api/api_resources_monitor.md'
 - Assets:
     - Recipes: './assets/recipes/index.md'
+    - Scripts: './assets/scripts/index.md'
 - Support: 'support.md'
+- FAQ's: './faqs_pages/index.md'
 - About:
     - 'About us': './about/index.md'
     - 'Terms and Conditions': './about/terms.md'
