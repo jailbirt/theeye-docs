@@ -143,7 +143,3 @@ members=1
 echo { \"state\" : \"$state\" , \"data\" : { \"members\" : $members } }
 # this will echo { "state": "normal" , "data" : { "members": 1 } }
 ```
-
-### TheEye-io gist in Github
-
-Check our [TheEye-io gist](https://gist.github.com/theeye-io) scripts page.
