@@ -8,21 +8,19 @@ You can also search all TheEye's help pages using the search box to the right, o
 
 # FAQs from ours users about:
 
-## Varios
+## Cloud providers
 
-### Como consultar estado de monitor / indicador / ejecutar tarea o wf.
+### AWS
 
+#### Count restarts in ECS/Fargate:
 
-## AWS
+*Consult with the support team, for a recipe and updated script.*
 
-### Restarts en ECS/Fargate:
-TODO, falta esta receta
-
-Las metric expuestas por ECS/Fargate no poseen actualmente conteo de restart.
-ECS solo envía a cloudwatch el uso de cpu, mem de cada cluster/service. Por otro lado de la api de ECS se pueden extraer estos datos de cada cluster/service por ejemplo:
+The metric exposed by ECS / Fargate do not currently have a restart count.
+ECS only sends to cloudwatch the use of cpu, mem of each cluster / service. On the other side of the ECS api, these data can be extracted from each cluster / service, for example:
 
  
-```
+```json
 {
   "status": "ACTIVE",
   "statistics": [],
@@ -36,52 +34,44 @@ ECS solo envía a cloudwatch el uso de cpu, mem de cada cluster/service. Por otr
 }
 ```
 
-Además se puede consultar toda la información de deployments, containers, events, etc.
+You can also check all the information of deployments, containers, events, etc.
 
-#### Monitor ejemplo: "ECS clusters status monitor"
-TODO, falta esta receta
+##### Monitor ejemplo: "ECS clusters status monitor"
 
-Les arme un monitor de ejemplo que chequea en todos los clusters ECS y alerta cuando encuentra uno con pendingTasksCount > 0 por más de 3 checks (con un check cada 90s).
+*Consult with the support team, for a recipe and updated script.*
 
-Este monitor les sirve para encontrar rápido por ejemplo: cuando un cluster no terminó correctamente un deployment y quedó trabado intentando iniciar un nuevo container.
+This monitor helps you find fast, for example: when a cluster did not correctly complete a deployment and was stuck trying to start a new container.
 
-El monitor pasa por todos los clusters sean fargate o ecs, avisame si querés le puedo agregar un filter para mostrar solo fargate.
+The monitor goes through all the clusters are fargate or ecs, you can add a filter to show only fargate.
 
-Les voy armando otro monitor de ejemplo para alertar cuando el uso de cpu/mem de un cluster supera cierto limite y se los paso.
-
+You could also make another monitor to alert when the use of cpu / mem of a cluster exceeds a certain limit.
 
 ## Resources
 
-
-### Task
-
-#### cómo pasar parámetros entre tareas
-
 ### Monitors
 
-#### Monitor enviando alertas duplicadas
-Te quería consultar por una alerta (Monitor Estado) que se disparó 3 veces en un minuto si está puesto que revise la disponibilidad cada 30 seg.?. Además, si está en alerta el monitor porque sigue avisando? No debería esperar a estar normal para volver a notificar una falla?
+#### Monitor sending duplicate alerts
 
-Esto puede ocurrir porque el monitor se estuvo ejecutando por un tiempo mayor a la frecuencia de chequeo del monitor (en este caso 30s)
+*We have an alert (Status Monitor) that is triggered 3 times in a minute if it is set to check availability every 30 sec.*
 
-En las últimas lineas del log se puede observar un curl que se ejecutó por casi 120s
- 
-  0     0    0     0    0     0      0      0 --:--:--  0:01:53 --:--:--     0
-curl: (56) Recv failure: Connection reset by peer
-Failure
+This may occur because the monitor was running for a longer time than the monitor's check frequency (in this case 30s)
                
-Les recomiendo que si van a correr el monitor con frecuencia de 30s le agreguen un timeout < a 30s para asegurarse que termine su ejecución antes que entre en queue el siguiente chequeo. 
-Para esto pueden agregar al comando curl: -m 10 (espera de 10s).
-De esta forma deberían evitar esos casos de repetición de las alertas.
+If it is required to run a monitor with frequency of 30s. It is recommended to add a timeout < to 30s, to ensure that it finishes its execution before it enters queue the next check.
+For example, for this you can add to the command curl: -m 10 (wait for 10s).
+In this way they should avoid those cases of repetition of alerts.
+
+#### Load balancers: tomcat
+
+A monitor that alerts when some tomcat of the pools: HBI, HBE are failing.
 
 
 ### Scripts
 
-#### Cambié el script de un monitor/tarea y se modificó en todos los que referenciaban a ese script.
+#### I changed the script of a monitor / task and it was modified in all those that referred to that script.
 
-si vos cambias un script y varios tienen asociado ese script, lo cambias para todos.
-si querés hacer un "fork" entonces creas uno nuevo
-sigue la lógica de cambios en un solo lugar.
-entonces vos podes tener 20 monitores o tareas que solo se diferencian de los argumentos y usan el mismo script, de esa forma mantenes un solo script
+If you change a script and several have associated that script, you change it for everyone.
+If you want to make a "fork" then you create a new one
+Follow the logic of changes in one place.
+then you can have 20 monitors or tasks that only differ from the arguments and use the same script, that way you keep a single script
 
 
