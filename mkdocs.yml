@@ -26,6 +26,7 @@ nav:
     - 'Monitors': './core-concepts/monitors.md'
     - 'Tasks':
         - 'Tasks': './core-concepts/tasks/index.md'
+        - 'Notifications': './core-concepts/tasks/taskNotifications.md'
         - 'Triggers': './core-concepts/tasks/triggers.md'
         - 'Workflows': './core-concepts/tasks/tasks_workflows.md'
         - 'Tasks with CLI': './core-concepts/tasks/tasks_cli-util.md'

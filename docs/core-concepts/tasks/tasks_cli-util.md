@@ -2,7 +2,7 @@
 
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
-How to use the CLI
+## How to use the CLI
 
 The CLI is a command line utility based on the Agent Core. Basically the CLI allows you to perform authenticated requests to the API and create custom clients or automated tasks from any command line shell.
 

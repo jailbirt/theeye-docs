@@ -10,15 +10,9 @@ You can also create tasks from the dashboard by clicking on the "+" button:
 
 ![](../../images/newTaskDashboard.png)
 
-### Approval Task
+### Types of tasks:
 
-Approval tasks handle approval requests in workflows. As breakpoints do, an approval task will pause the workflow execution until it is approved or rejected. Many approvers can be selected, only one approval is needed to continue workflow actions.
-
-### Input Task
-
-An input task is a special task commonly used to start workflows. When executed, the input parameters will be submitted directly to the next chained task in the workflow.
-
-### Script task.
+#### Script:
 
 Use the quick input mode  or click on "advanced options" for further features. 
 
@@ -36,11 +30,23 @@ Use the quick input mode  or click on "advanced options" for further features.
 * **Grace Time**: enter the time period TheEye should wait before running the task. _No wait / Cancelation_ can be selected which means the task will run inmediately after triggered. \(only applicable for triggered tasks\). **To cancel the task execution during the grace period, go to tasks panel, expand the task and delete the schedule created by the trigger.**
 * **Script Arguments**: If the script played by the task is meant to receive parameters you can set them from here. Mind the order as it will be used by the script. _Fixed_, _options_, and _input_ arguments are allowed. _Input_ and _options_ arguments will be asked to the user for execution. _Fixed_ arguments will not be displayed to the user at execution time.
 
-### Outgoing Webhooks/HTTP Request Task.
+#### Webhooks or HTTP Request
 
 Check the [Webhooks](/core-concepts/webhooks/) for more details.
 
-### Schedule a task.
+#### Approval:
+
+Approval tasks handle approval requests in workflows. As breakpoints do, an approval task will pause the workflow execution until it is approved or rejected. Many approvers can be selected, only one approval is needed to continue workflow actions.
+
+#### Input:
+
+An input task is a special task commonly used to start workflows. When executed, the input parameters will be submitted directly to the next chained task in the workflow.
+
+#### Notification:
+
+Check the [Task Notifications](/core-concepts/tasks/taskNotifications) for more details.
+
+## Schedule a task.
 
 You can use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. To view or perform an operation, go to the _Tasks_ section and click on the scheduler icon.
 
@@ -52,7 +58,7 @@ Your new schedule will be shown when the task row is expanded:
 
 ![](../../images/image-06.png)
 
-### Export and Import Tasks
+## Export and Import Tasks
 
 Inside TheEye community you will hear that other people had already solved or automated typical common problems using the platform. When this automation was performed by a task, you will be able to import the solution or on the other hand export and share the tasks you have created.
 
