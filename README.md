@@ -14,18 +14,6 @@ Consequently, a static web page displays the same information for all users, fro
 
 ## Paso a paso:
 
-### instalar paquetes requeridos:
-sudo apt install python python-pip
-pip install pipenv
-
-### crear "virtual environment"
-mkdir ~/proyecto
-cd ~/proyecto
-pipenv install
-pipenv shell
-(pyramid-someHash) $
-  pipenv install mkdocs mkdocs-material
-
 ### tree projects
 theeye-docs
   ├── docs                ---> files sueltos o en folder
@@ -37,26 +25,7 @@ theeye-docs
   └── site                ---> almacena el build
   └── Dockerfile          ---> docker enviroment
 
-
-### up for preview
-* para evitar problemas, trabajar siempre desde pipenv
-mkdocs serve
-INFO    -  Building documentation...
-INFO    -  Cleaning site directory
-[I 160402 15:50:43 server:271] Serving on http://127.0.0.1:8000
-[I 160402 15:50:43 handlers:58] Start watching changes
-[I 160402 15:50:43 handlers:60] Start detecting changes
-
-### Building the site
-mkdocs build
-
-### clean old files in sites
-mkdocs build --clean
-
----
-
 ### Docker enviroment
-
 
 #### Start development server on http://localhost:8000
 
