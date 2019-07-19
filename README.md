@@ -15,6 +15,8 @@ Consequently, a static web page displays the same information for all users, fro
 ## Paso a paso:
 
 ### tree projects
+
+```bash
 theeye-docs
   ├── docs                ---> files sueltos o en folder
   │   └── imagenes        ---> assest
@@ -24,6 +26,7 @@ theeye-docs
   ├── README.md           ---> este documento que lees
   └── site                ---> almacena el build
   └── Dockerfile          ---> docker enviroment
+```
 
 ### Docker enviroment
 
