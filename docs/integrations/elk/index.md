@@ -2,6 +2,20 @@
 
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
+## TheEye official Dashboard compatible with Kibana 6.7.2
+
+** Steps of activation of the integration **
+
+- Go to Settings, then Integrations, activate Kibana and Elasticsearch.
+- In both cases you must configure the URL of the services.
+- Check that Elasticsearch is receiving information.
+- Then import (kibanaTheEyeDefaultDashboard.json) to display the official dashboard kibanaTheEye.
+
+[json Kibana](../../assets/kibanaTheEyeDefaultDashboard.json)
+
+![theeye.io](../../images/dashboard_setting_intergation_kibana.png)
+
+
 ## Elastic Search Kibana (ELK stack)
 TheEye logs
 
