@@ -218,11 +218,6 @@ This technique could be combined with an HTML form to generate an action button.
       <input type="submit" value="ACEPTO">
     </form>
   </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function(event) { 
-      // some javascript could be placed here
-    });
-  </script>
 </html>
 
 ```
