@@ -97,9 +97,12 @@ This is easily done with a POST request to the Job endpoint API.
 
 There are two methods available.
 
-### 1. Using a user access token \(recommended for tests and quick responses\)
+### 1. Using Integration Token (beta)
 
-   This method is not recomended since a **user access\_token** gives access to execute task and also to obtain information of **multiple resources of the system**. The access\_token also has an expiration time \(usually one hour\), which makes it unstable to create custom integrations: once expired the integration will no longer work. This method is recommended for testing purposes or to get information.
+Integration Tokens can be obtained only by admin users.
+
+Accessing to the web interfaz *Menu > Settings > Credentials > Integration Tokens*.
+
 
 #### **Request:**
 
@@ -177,14 +180,17 @@ curl \
   "id": "************************"
 }
 ```
+
 The API response is a new created job. We can save the job id and use it later to query the job status.
 In this example the id is "************************"
 
-### 2. Using the Task secret key \(recommended\)
+### 2. Using the Task secret key. Integration Feature \(recommended\)
 
    All tasks have a **secret key** which can be used to invoke them directly via API. The secret key provides access to the task it belongs **and only to that task**. **Secret keys** can be revoked any time by just changing them, which makes this the preferred method for it's implicit security.
 
 #### **Request:**
+
+
 ```bash
    task_id=""
    access_token=""
@@ -198,11 +204,36 @@ In this example the id is "************************"
       "https://supervisor.theeye.io/job/secret/${task_secret_key}?customer=${customer}"
 ```
 
+#### HTML Button
+
+This technique could be combined with an HTML form to generate an action button. This results very handy when it is needed to perform actions from email bodies or static web pages.
+
+```html
+<html>
+  <div>
+    <form action="http://api.theeye.io/job/secret/b9d0b89439866987e818d5299ba61df0a32ccb38d81d996f46b9ce7af0720058" method="POST">
+      <input type="hidden" name="customer" value="organization_name">
+      <input type="hidden" name="task" value="5c49157cdb340a4d0444195a">
+      <input type="hidden" name="task_arguments[]" value="arg1">
+      <input type="submit" value="ACEPTO">
+    </form>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(event) { 
+      // some javascript could be placed here
+    });
+  </script>
+</html>
+
+```
+
 ### 3. Query job status
 
 Once the job is created we can query it's status using the ID of the job. we can also fetch all the jobs and then filter the response.
 
 #### **Request:**
+
+
 ```bash
 task_id=”5cdc3d1c40f0bb000f8e9682”
 access_token=""
@@ -211,6 +242,8 @@ curl -sS 'https://supervisor.theeye.io/$customer/job/$task_id?access_token=$toke
 ```
 
 #### **Response:**
+
+
 ```json
 {
   "task_arguments_values": [],
@@ -262,7 +295,7 @@ curl -sS 'https://supervisor.theeye.io/$customer/job/$task_id?access_token=$toke
 
 Task Execution Payload
 
-```text
+```javascript
 {
   // (required)
   task: "task id",
