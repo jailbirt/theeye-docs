@@ -9,7 +9,7 @@ URL: `https://supervisor.theeye.io/task?access_token={token}&customer={organizat
 
 ## Examples
 
-### Tasks;
+### Tasks
 
 *Task execution timeout*
 
@@ -19,7 +19,7 @@ Now it's not possible to change the timeout via API. To modify the timeout for a
 
 
 
-### list all...
+### List all
 
 *Resquest*
 ```bash
@@ -29,7 +29,7 @@ token="integrationToken"
 curl -sS "https://supervisor.theeye.io/$customer/task?access_token=$token"
 ```
 
-### search task id by name
+### Search task id by name
 
 *Request*
 ```bash
@@ -67,7 +67,7 @@ Returns a json array with tasks, id and hostname:
 ]
 ```
 
-### list and timeout
+### List and timeout
 (Timeout = null) means that the timeout is set to default (10 minutes).
 
 ```bash
@@ -193,15 +193,15 @@ In this example the id is "************************"
 
 ```bash
    task_id=""
-   access_token=""
+   task_secret_key=""
    customer=""
-   
+
    curl \
       -X POST \
       -H "Accept: application/json" \
       -H "Content-Type: application/json" \
-      -b "{\"task\":\"${task_id}\",\"task_arguments\":[]}" \
-      "https://supervisor.theeye.io/job/secret/${task_secret_key}?customer=${customer}"
+      -b "{\"customer\":\"${customer}\",\"task\":\"${task_id}\",\"task_arguments\":[]}" \
+      "https://supervisor.theeye.io/job/secret/${task_secret_key}"
 ```
 
 #### HTML Button
@@ -218,6 +218,40 @@ This technique could be combined with an HTML form to generate an action button.
       <input type="submit" value="ACEPTO">
     </form>
   </div>
+</html>
+
+```
+
+You can also invoke a **Workflow** using its **secret key**.
+
+#### **Request:**
+
+```bash
+workflow_id=""
+workflow_secret_key=""
+customer=""
+
+curl \
+   -X POST \
+   -H "Accept: application/json" \
+   -H "Content-Type: application/json" \
+   -b "{\"customer\":\"${customer}\",\"task_arguments\":[]}" \
+   "https://supervisor.theeye.io/workflows/${workflow_id}/secret/${workflow_secret_key}/job"
+```
+
+#### HTML Button
+
+And also, build an HTML form for the same purposes.
+
+```html
+<html>
+<div>
+ <form action="http://api.theeye.io/workflows/5d5ee18e809501000fb1435b/secret/b9d0b89439866987e818d5299ba61df0a32bbb38d81d996f46b9ce7af0720058" method="POST">
+   <input type="hidden" name="customer" value="organization_name">
+   <input type="hidden" name="task_arguments[]" value="arg1">
+   <input type="submit" value="ACEPTO">
+ </form>
+</div>
 </html>
 
 ```
@@ -298,4 +332,3 @@ Task Execution Payload
   task_arguments: []
 }
 ```
-
