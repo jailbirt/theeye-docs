@@ -241,7 +241,7 @@ curl \
 
 #### HTML Button
 
-And also, build an HTML form for the same purposes.
+Can also use an HTML form for the same purposes.
 
 ```html
 <html>
