@@ -197,10 +197,10 @@ In this example the id is "************************"
    customer=""
 
    curl \
-      -X POST \
-      -H "Accept: application/json" \
-      -H "Content-Type: application/json" \
-      -b "{\"customer\":\"${customer}\",\"task\":\"${task_id}\",\"task_arguments\":[]}" \
+      --request POST \
+      --header "Accept: application/json" \
+      --header "Content-Type: application/json" \
+      --data "{\"customer\":\"${customer}\",\"task\":\"${task_id}\",\"task_arguments\":[]}" \
       "https://supervisor.theeye.io/job/secret/${task_secret_key}"
 ```
 
@@ -232,10 +232,10 @@ workflow_secret_key=""
 customer=""
 
 curl \
-   -X POST \
-   -H "Accept: application/json" \
-   -H "Content-Type: application/json" \
-   -b "{\"customer\":\"${customer}\",\"task_arguments\":[]}" \
+   --request POST \
+   --header "Accept: application/json" \
+   --header "Content-Type: application/json" \
+   --data "{\"customer\":\"${customer}\",\"task_arguments\":[]}" \
    "https://supervisor.theeye.io/workflows/${workflow_id}/secret/${workflow_secret_key}/job"
 ```
 
