@@ -222,7 +222,7 @@ This technique could be combined with an HTML form to generate an action button.
 
 ```
 
-You can also invoke a **Workflow** using its **secret key**.
+You can invoke a **Workflow** using its **secret key**.
 
 #### **Request:**
 
