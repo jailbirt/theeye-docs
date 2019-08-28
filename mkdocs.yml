@@ -9,7 +9,7 @@ theme:
   favicon: './images/logo-theeye-docu-glasses.png'
 markdown_extensions:
   - codehilite
-  
+
 # Project information
 site_name: 'TheEye'
 site_description: 'TheEye is a platform for Robot automation Processes and Systems'
@@ -52,9 +52,9 @@ nav:
     - 'Kubernetes': './integrations/kubernetes/index.md'
     - API for developers:
         - 'Enable access to APIs': './integrations/api/index.md'
-        - '...indicator': './integrations/api/api_resources_indicator.md'
-        - '...task': './integrations/api/api_resources_task.md'
-        - '...monitor': './integrations/api/api_resources_monitor.md'
+        - 'Indicators': './integrations/api/api_resources_indicator.md'
+        - 'Tasks': './integrations/api/api_resources_task.md'
+        - 'Monitors': './integrations/api/api_resources_monitor.md'
 - Assets:
     - Recipes: './assets/recipes/index.md'
     - Scripts: './assets/scripts/index.md'
@@ -76,4 +76,3 @@ extra:
       link: 'https://twitter.com/theeye_io'
     - type: 'linkedin'
       link: 'https://www.linkedin.com/company/theeye.io/'
-
