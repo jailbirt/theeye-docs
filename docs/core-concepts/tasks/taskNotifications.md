@@ -24,20 +24,24 @@ The notifications can have different origins:
 
 ### Notification Task details.
 
+![notification task form](../../images/form_notification.png "Notification Form")
+
+
+
 *This type of task is responsible for sending messages inside and outside theeye*
 
 | UI Property | API Property | Type        | Description |
 | ---         | ---          | ---         | --- |
 | Name        | name         | text        | an identification name for the task |
+| Subject     | subject      | text        | subject to include in all the of notifications |
+| Send Email notification | notificationTypes.email | boolean | whether or not to send notification via email |
+| Send Desktop notification (theeye desktop app) | notificationTypes.desktop | boolean | whether or not to create an internal notification to theeye app desktop and mobile. If checked (true), this will create a new Notification in the App Notifications panel |
+| Send To     | recipients   | text array  | the list of recipients. should be valid user emails and must be registered in theeeye |
 | Tags        | tags         | text array  | list of tags. this is usefull to filte and search in theeye app |
 | Description | description  | text        | a description. this is added in workflows documentation and in the app ui |
 | Triggers    | triggers     | Event array | chain tasks events to create workflows |
 | ACL's       | acl          | text array  |  | 
-| Subject     | subject      | text        | subject to include in all the of notifications |
-| Email Body  | body         | text, html formatted allowed | this field is used if the *send email* is checked (true). else is ignored |
-| Send To     | recipients   | text array  | the list of recipients. should be valid user emails and must be registered in theeeye |
-| Send Email notification | notificationTypes.email | boolean | whether or not to send notification via email |
-| Send Desktop notification (theeye desktop app) | notificationTypes.desktop | boolean | whether or not to create an internal notification to theeye app desktop and mobile. If checked (true), this will create a new Notification in the App Notifications panel |
+| Email Body  | body         | text, html formatted allowed | this field is used if the *send email* is checked (true). else is ignored and won't be visible in the task form |
 | Send Push notification (mobile) | notificationTypes.push | boolean | whether or not to send mobile notification |
 
 
