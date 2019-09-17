@@ -1,4 +1,4 @@
-# TheEye Notifications :
+# TheEye Notification Task
 
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
@@ -18,7 +18,8 @@ The notifications can have different origins:
 - Workflows allows to send customized notifications with dynamicazlly generated content. 
 
 
-* If you need assistance, contact us *
+
+*If you need assistance, contact us*
 
 
 ### Notification Task details.
@@ -28,40 +29,63 @@ The notifications can have different origins:
 | UI Property | API Property | Type        | Description |
 | ---         | ---          | ---         | --- |
 | Name        | name         | text        | an identification name for the task |
-| Subject     | subject      | text        | subject to include in all the of notifications |
-| Email Body  | body         | text, html formatted allowed | this field is used if the *send email* is checked (true). else is ignored |
 | Tags        | tags         | text array  | list of tags. this is usefull to filte and search in theeye app |
 | Description | description  | text        | a description. this is added in workflows documentation and in the app ui |
 | Triggers    | triggers     | Event array | chain tasks events to create workflows |
-| ACL's       | acl          | text array  | list of users email. should be valid and registered in theeeye | 
+| ACL's       | acl          | text array  |  | 
+| Subject     | subject      | text        | subject to include in all the of notifications |
+| Email Body  | body         | text, html formatted allowed | this field is used if the *send email* is checked (true). else is ignored |
+| Send To     | recipients   | text array  | the list of recipients. should be valid user emails and must be registered in theeeye |
 | Send Email notification | notificationTypes.email | boolean | whether or not to send notification via email |
 | Send Desktop notification (theeye desktop app) | notificationTypes.desktop | boolean | whether or not to create an internal notification to theeye app desktop and mobile. If checked (true), this will create a new Notification in the App Notifications panel |
 | Send Push notification (mobile) | notificationTypes.push | boolean | whether or not to send mobile notification |
 
 
-*Example:* 
-You can download the following sample recipe right now to integrate into your workflow
-[Task type: notification](../../assets/recipes/task_type-notification-send_notification.json)
+### Basic Usage
 
-#### Types of tasks: Input
+[Click to download a sample Notification Task recipe to import into your workflow](../../assets/recipes/task_type-notification-send_notification.json)
 
-*This type of task is responsible for request parameters from an operator.*
+#### Trigger by _Input_ task
+
+This task is responsible of requesting notification data from an operator.
 
 Check the [Task input](/core-concepts/tasks/) for more details.
 
-*Example:* 
-You can download the following sample recipe right now to integrate into your workflow
-[Task type: Input](../../assets/recipes/task_type-input-send_notification.json)
+[Click to download the sample Input Task recipe to send notification](../../assets/recipes/task_type-input-send_notification.json)
 
-#### Types of tasks: Scripts
+#### Trigger by _Script_ task
 
-*This type of task is responsible for execute processes and functions, and finally deliver reports. The format of the output parameters allows the integration with the task type notification.*
+This task is responsible of executing a piece of code to generate the required parameters by the notification task.
 
 Check the [Task scripts](/core-concepts/tasks/) for more details.
 
-*Example:* 
-You can download the following sample recipe right now to integrate into your workflow
-[Task type: Scripts](../../assets/recipes/task_type-script-send_notification.json)
+
+#### Tasks Arguments
+
+In order to work with dynamic arguments for a notification task, the script task must generated the output with the following format.
+
+```json
+["subject","the email body raw text or html","info@theeye.io"]
+```
+
+The 3 arguments are required. If you need to ignore one argument or prioritize the once set in the task definition, use an empty string ""
+
+In this example, the third argument is ignored and the recipients from the task definition will be used.
+
+```json
+["subject","the email body raw text or html",""]
+```
+
+
+| Name | Format | Description |
+| ---- | ---- | ---- |
+| subject | plain text | this is the subject for all notifications configured to send in the task definition |
+| body | plain text/html | this is the email body |
+| recipients | text | the destination user emails registered in theeye |
+
+
+
+[Click to download the sample Script Task to send notifications](../../assets/recipes/task_type-script-send_notification.json)
 
 ### Sample tasks for sending notifications
 
