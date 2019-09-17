@@ -85,7 +85,7 @@ In this example, the third argument is ignored and the recipients from the task 
 | ---- | ---- | ---- |
 | subject | plain text | this is the subject for all notifications configured to send in the task definition |
 | body | plain text/html | this is the email body |
-| recipients | text | the destination user emails registered in theeye |
+| recipients | text | the destination user emails registered in theeye. could be a single email or an array of multiples emails |
 
 
 
