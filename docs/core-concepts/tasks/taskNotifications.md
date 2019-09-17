@@ -2,21 +2,17 @@
 
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
-## How to work with task and notifications.
+## How to work with tasks and notifications.
 
 The toolkit allows you to streamline the flow of notifications and trigger them.
 
 The notifications can have different origins:
 
+- A script task, you can send your output parameters as input for a notification task.
 
-- A task by script, you can send your output parameters, as an input in a notification task.
+- An input task, allows an operator to load the parameters of the msg that will receive the notification task.
 
-- A task by input, allows an operator to load the parameters of the msg that will receive the notification task.
-
-- A notification can be part of workflows
-
-- Workflows allows to send customized notifications with dynamicazlly generated content. 
-
+- A notification can be part of a workflow.
 
 
 *If you need assistance, contact us*
@@ -28,7 +24,7 @@ The notifications can have different origins:
 
 
 
-*This type of task is responsible for sending messages inside and outside theeye*
+*This type of tasks are responsible for sending messages inside and outside theeye*
 
 | UI Property | API Property | Type        | Description |
 | ---         | ---          | ---         | --- |
@@ -49,24 +45,27 @@ The notifications can have different origins:
 
 [Click to download a sample Notification Task recipe to import into your workflow](../../assets/recipes/task_type-notification-send_notification.json)
 
-#### Trigger by _Input_ task
+### Triggered by events
+The notification task can be triggered by other task or monitor as shown below:
 
-This task is responsible of requesting notification data from an operator.
+#### Triggered by _Input_ task
+
+The input task is responsible for getting the data that will be delivered to the notification task.
 
 Check the [Task input](/core-concepts/tasks/) for more details.
 
 [Click to download the sample Input Task recipe to send notification](../../assets/recipes/task_type-input-send_notification.json)
 
-#### Trigger by _Script_ task
+#### Triggered by _Script_ task or monitor
 
-This task is responsible of executing a piece of code to generate the required parameters by the notification task.
+This task is responsible for executing the code that generates the output required as input parameters for the notification task.
 
 Check the [Task scripts](/core-concepts/tasks/) for more details.
 
 
-#### Tasks Arguments
+#### Notification task's arguments
 
-In order to work with dynamic arguments for a notification task, the script task must generated the output with the following format.
+In order to work with dynamic arguments for a notification task, the script task must generate the output with the following format.
 
 ```json
 ["subject","the email body raw text or html","info@theeye.io"]
