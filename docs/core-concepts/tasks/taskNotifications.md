@@ -1,37 +1,43 @@
-# Notifications outside of TheEye:
+# TheEye Notifications :
 
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
-## How to work with task and notifications
+## How to work with task and notifications.
 
 The toolkit allows you to streamline the flow of notifications and trigger them.
-The notifications sent can have different origins:
-- A task by script, you can send your output paramters, as an input in a notification task.
-- A task of type input, allows an operator to load the parameters of the msg that will receive the notification task.
-- You can also build workflow to measure, to generate personalized notifications:
-- in different stages
-- to different teams
-- and with different reports
 
-* If you need assistance, check with the support team to receive advice on the design of the best possible workflow for your project *
+The notifications can have different origins:
 
-### Sample tasks for sending notifications
 
-#### Types of tasks: Notification
+- A task by script, you can send your output parameters, as an input in a notification task.
 
-*This type of task is responsible for sending messages*
+- A task by input, allows an operator to load the parameters of the msg that will receive the notification task.
 
-* **Name**: name your task
-* **Subject**: message subject
-* **Send email**: if the function is activated, the notification will be sent by email
-    * **Email body**: Complete with the email body. This field is only visible if the sending of email is enabled.
-* **Send desktop notification**: if the function is activated, the notification will be sent by desktop notification
-* **Tags**: tag your task so you can find quickly through the application.
-* *Advanced Options*
-    * **Copy Task**: select an already created task as template
-    * **Description**: a description
-    * **Trigger on \(**_**Triggered by**_**\)**: If the task is part of a workflow, select what triggers the task. The task will be triggered by the resource you selected here.
-    * **ACL's**: select who can view your task \(what can be done with the task depends on the user role\)
+- A notification can be part of workflows
+
+- Workflows allows to send customized notifications with dynamicazlly generated content. 
+
+
+* If you need assistance, contact us *
+
+
+### Notification Task details.
+
+*This type of task is responsible for sending messages inside and outside theeye*
+
+| UI Property | API Property | Type        | Description |
+| ---         | ---          | ---         | --- |
+| Name        | name         | text        | an identification name for the task |
+| Subject     | subject      | text        | subject to include in all the of notifications |
+| Email Body  | body         | text, html formatted allowed | this field is used if the *send email* is checked (true). else is ignored |
+| Tags        | tags         | text array  | list of tags. this is usefull to filte and search in theeye app |
+| Description | description  | text        | a description. this is added in workflows documentation and in the app ui |
+| Triggers    | triggers     | Event array | chain tasks events to create workflows |
+| ACL's       | acl          | text array  | list of users email. should be valid and registered in theeeye | 
+| Send Email notification | notificationTypes.email | boolean | whether or not to send notification via email |
+| Send Desktop notification (theeye desktop app) | notificationTypes.desktop | boolean | whether or not to create an internal notification to theeye app desktop and mobile. If checked (true), this will create a new Notification in the App Notifications panel |
+| Send Push notification (mobile) | notificationTypes.push | boolean | whether or not to send mobile notification |
+
 
 *Example:* 
 You can download the following sample recipe right now to integrate into your workflow
