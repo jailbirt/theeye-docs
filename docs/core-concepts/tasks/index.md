@@ -94,3 +94,13 @@ To export a task recipe, go to the task, click on the context menu, and then cli
 ## Integration through API
 
 Check the [Integration through API documentation](/api/) for more details.
+
+## Executing Tasks
+
+Tasks can be executed using different methods.
+
+* UI Play Button
+* Integration API Call
+* Workflows
+* Triggers
+* Webhooks
