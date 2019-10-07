@@ -18,13 +18,25 @@ Use the quick input mode  or click on "advanced options" for further features.
 
 ![Script Task - advanced options](../../images/advancedoptionstask.jpg)
 
-* **Copy Task**: select an already created task as template
 * **Name**: name your task
-* **Host**: select the host where the script will run
+* **Bots**: One or more bots can be selected
 * **Script**: select the script to be executed by the task
+* **Tags**: tag your task so you can find quickly through the application.
+* **Add Arguments**: If you need to add input values in the Script, enter here and choose the options you need.
+    * **Fixed Value** : We use an already predefined value, used in all executions.
+    * **Text Input**: We use an already predefined value used in all executions. It receives a value, always requested when executing        the task.
+    * **Options Selection**: Choose between a set of predefined values.
+    * **Remote Options**:It Allows to choose a set of values, obtained from a file hosted from an external cloud (with public                access) and also reads JSON files.
+    * **Date Options**:It allows to enter to a type date parameter.
+    * **File Inputs**: Also to enter to a file type parameter and saves it on bot.
+    
+* **Copy Task**: select an already created task as template
+
+* **Host**: select the host where the script will run
+
 * **Run As**: write down any extra command needed for user impersonification
 * **More Info**: describe your task. What does it do, what's the expected output after execution
-* **Tags**: tag your task so you can find quickly through the application.
+
 * **ACL's**: select who can view your task \(what can be done with the task depends on the user role\)
 * **Trigger on \(**_**Triggered by**_**\)**: If the task is part of a workflow, select what triggers the task. The task will be triggered by the resource you selected here.
 * **Grace Time**: enter the time period TheEye should wait before running the task. _No wait / Cancelation_ can be selected which means the task will run inmediately after triggered. \(only applicable for triggered tasks\). **To cancel the task execution during the grace period, go to tasks panel, expand the task and delete the schedule created by the trigger.**
@@ -58,6 +70,8 @@ Your new schedule will be shown when the task row is expanded:
 
 ![](../../images/image-06.png)
 
+![](../../images/schedule.gif)
+
 ## Export and Import Tasks
 
 Inside TheEye community you will hear that other people had already solved or automated typical common problems using the platform. When this automation was performed by a task, you will be able to import the solution or on the other hand export and share the tasks you have created.
@@ -68,7 +82,7 @@ To export a task recipe, go to the task, click on the context menu, and then cli
 
 ![Script Task Creation Modal](../../images/quickinputtask.jpg)
 
-![](../../images/schedule.gif)
+
 
 
 ## Integration through API
