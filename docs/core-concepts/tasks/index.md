@@ -1,3 +1,4 @@
+
 # Tasks Documentation
 
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
@@ -8,20 +9,20 @@ Creating a task is simple, just go to the tasks section in the left "hamburger" 
 
 You can also create tasks from the dashboard by clicking on the "+" button: 
 
-![](../../images/newTaskDashboard.png)
+![](https://github.com/theeye-io/documents_docs/blob/master/docs/UpdateDocTheEye/Task1_vAlpha.jpg)
 
 ### Types of tasks:
 
 #### Script:
-
 Use the quick input mode  or click on "advanced options" for further features. 
 
-![Script Task - advanced options](../../images/advancedoptionstask.jpg)
+![Script Task - advanced options](https://github.com/theeye-io/documents_docs/blob/master/docs/UpdateDocTheEye/Task2_vAlpha.jpg)
 
-* **Name**: name your task
+* **Name**: name your task.
 * **Bots**: One or more bots can be selected
 * **Script**: select the script to be executed by the task
 * **Tags**: tag your task so you can find quickly through the application.
+![Script Task - advanced options](https://github.com/theeye-io/documents_docs/blob/master/docs/UpdateDocTheEye/TaskArguments3_vAlpha.jpg)
 * **Add Arguments**: If you need to add input values in the Script, enter here and choose the options you need.
     * **Fixed Value** : We use an already predefined value, used in all executions.
     * **Text Input**: We use an already predefined value used in all executions. It receives a value, always requested when executing        the task.
@@ -30,17 +31,14 @@ Use the quick input mode  or click on "advanced options" for further features.
     * **Date Options**:It allows to enter to a type date parameter.
     * **File Inputs**: Also to enter to a file type parameter and saves it on bot.
     
-* **Copy Task**: select an already created task as template
+* **Copy Task**: select an already created task as template.
+* **Run As**: write down any extra command needed for user impersonification.
+* **Description**:
+* **ACL's**: select who can view your task \(what can be done with the task depends on the user role\).
+* **Triggered by**:Select a task, monitor or webhook event that will trigger this task automagically.
+* **Trigger on-hold time**:If you select to Trigger with an event, you can choose a grace time to delay the execution of this action and    have some time to cancel it via email if necessary.
+* **Execution Timeout**:How much time to wait for the server's response before giving up. Default timeout is 5 seconds.
 
-* **Host**: select the host where the script will run
-
-* **Run As**: write down any extra command needed for user impersonification
-* **More Info**: describe your task. What does it do, what's the expected output after execution
-
-* **ACL's**: select who can view your task \(what can be done with the task depends on the user role\)
-* **Trigger on \(**_**Triggered by**_**\)**: If the task is part of a workflow, select what triggers the task. The task will be triggered by the resource you selected here.
-* **Grace Time**: enter the time period TheEye should wait before running the task. _No wait / Cancelation_ can be selected which means the task will run inmediately after triggered. \(only applicable for triggered tasks\). **To cancel the task execution during the grace period, go to tasks panel, expand the task and delete the schedule created by the trigger.**
-* **Script Arguments**: If the script played by the task is meant to receive parameters you can set them from here. Mind the order as it will be used by the script. _Fixed_, _options_, and _input_ arguments are allowed. _Input_ and _options_ arguments will be asked to the user for execution. _Fixed_ arguments will not be displayed to the user at execution time.
 
 #### Webhooks or HTTP Request
 
@@ -64,23 +62,17 @@ You can use the task scheduler to create and manage tasks that TheEye will carry
 
 Or Just schedule it from the Dasboard as shown here below
 
-![Dashboard - Task Menu](../../images/image-08.png)
 
-Your new schedule will be shown when the task row is expanded:
-
-![](../../images/image-06.png)
-
-![](../../images/schedule.gif)
-
+![](https://github.com/theeye-io/documents_docs/blob/master/docs/UpdateDocTheEye/scheduletask.gif)
 ## Export and Import Tasks
 
 Inside TheEye community you will hear that other people had already solved or automated typical common problems using the platform. When this automation was performed by a task, you will be able to import the solution or on the other hand export and share the tasks you have created.
 
 To export a task recipe, go to the task, click on the context menu, and then click on the "export recipe" icon as shown here:
 
-![Dashboard - Task Export](../../images/image-03.png)
+![Dashboard - Task Export](https://github.com/theeye-io/documents_docs/blob/master/docs/UpdateDocTheEye/ExportTask.jpg)
 
-![Script Task Creation Modal](../../images/quickinputtask.jpg)
+![Script Task Creation Modal](https://github.com/theeye-io/documents_docs/blob/master/docs/UpdateDocTheEye/ExportTask2.jpg)
 
 
 
