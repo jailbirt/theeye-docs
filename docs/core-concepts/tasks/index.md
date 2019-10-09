@@ -10,9 +10,9 @@ You can also create tasks from the dashboard by clicking on the "+" button:
 
 ![](../../images/newTaskDashboard.png)
 
-### Types of tasks:
+## Types of Task
 
-#### Script:
+### Script
 
 Click on "advanced options" for further features. 
 
@@ -35,27 +35,42 @@ Click on "advanced options" for further features.
 | Multitasking | multitasking | boolean | enable or disable parallel execution of the task. When this is enable assigned bot will be able to run multiple instances of the Job at same time. this is important to check when running DesktopBots |
 | Environment (env) | env | string | Define extra environment variables that will be present during script execution |
 
-#### Webhooks or HTTP Request
+### Webhooks or HTTP Request
 
 Check the [Webhooks](/core-concepts/webhooks/) for more details.
 
-#### Approval:
+### Approval:
 
 Approval tasks handle approval requests in workflows. As breakpoints do, an approval task will pause the workflow execution until it is approved or rejected. Many approvers can be selected, only one approval is needed to continue workflow actions.
 
-#### Input:
+### Input:
 
 An input task is a special task commonly used to start workflows. When executed, the input parameters will be submitted directly to the next chained task in the workflow.
 
-#### Notification:
+### Notification:
 
 Check the [Task Notifications](/core-concepts/tasks/taskNotifications) for more details.
 
-## Schedule a task.
+## Task Arguments.
 
-You can use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. To view or perform an operation, go to the _Tasks_ section and click on the scheduler icon.
+To received input values into tasks it is required to define the Task Arguments.
+It is important to define the arguments in the same order in which they will be used in the script.
 
-Or Just schedule it from the Dasboard as shown here below
+| Type | UI Usage | Workflow Usage |
+| ----- | ----- | ----- |
+| Fixed | will not be visible to users into forms | this is a fixed value that will be always the same. cannot be rewrited or replaced |
+| Text | a free text input | it is usefull to receive dynamic values from outputs to inputs |
+| Options | create an options element | behave as Text Argument |
+| Remote Options | create an options element using the response of a Remote API. It is posible to include the email of the user executing the task at the momento of the fetch. This will be achived including the keyword %THEEYE_USER_EMAIL% in the queystring of the url of remote api. Example url http://tracking-tool.domain.com/tickets?user=%THEEYE_USER_EMAIL% | behave as Text Argument |
+| Date | create a Date Picker element | behave as Text Argument |
+| File | create a File Selection element | when it is used with Script Tasks the uploaded file will be downloaded and the argument will contain the local path to the file. |
+
+## Task Scheduler.
+
+You can use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. 
+Task Scheduler can be created using natural language or cron expressions. The main difference between them is that cron expressions is executed always at the exact same date and time. On the other hand, natural language could produce some time shift on successive executions.
+
+Schedules can be created from the Dasboard as shown here below
 
 ![Dashboard - Task Menu](../../images/image-08.png)
 
