@@ -43,8 +43,8 @@ When Tasks belongs to Workflows, this constains information of the Workflow.
 
 ###  Get THEEYE_JOB_USER information from DOS / BAT scripts
 
-The following script shows how to get user id and email information:
-[Download Recipe](../../../docs/assets/recipes/check_theeye_env_vars.json)
+The following script shows how to get user id and email information, it can be replicated to get information for THEEYE_JOB and THEEYE_JOB_WORKFLOW:
+[Download Recipe](https://github.com/theeye-io/theeye-docs/blob/master/docs/assets/recipes/check_theeye_env_vars.json)
 
 
 
