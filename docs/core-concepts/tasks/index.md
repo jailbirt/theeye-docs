@@ -32,7 +32,7 @@ Click on "advanced options" for further features.
 | Triggered by | triggers | array | If the task is part of a workflow, select what triggers the task. The task will be triggered by the resource you selected here. |
 | Trigger on-hold time | grace_time | number | enter the time period TheEye should wait before running the task. _No wait / Cancelation_ can be selected which means the task will run inmediately after triggered. \(only applicable for triggered tasks\). **To cancel the task execution during the grace period, go to tasks panel, expand the task and delete the schedule created by the trigger.** |
 | Execution Timeout | timeout | number | This is the number of seconds the Bot will wait for the script to complete the execution. If the timeout is exceeded the Bot will try to terminate(kill) the script, sending SIGTERM/SIGKILL signal |
-| Multitasking | multitasking | enable or disable parallel execution of the task. When this is enable assigned bot will be able to run multiple instances of the Job at same time. this is important to check when running DesktopBots |
+| Multitasking | multitasking | boolean | enable or disable parallel execution of the task. When this is enable assigned bot will be able to run multiple instances of the Job at same time. this is important to check when running DesktopBots |
 | Environment (env) | env | string | Define extra environment variables that will be present during script execution |
 
 #### Webhooks or HTTP Request
