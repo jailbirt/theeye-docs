@@ -3,7 +3,9 @@
 ##  Runtime Information
 
 During runtime, you can access basic information of the job being executed via environment variables.
-The information is JSON encoded. All the environment variables belonging to theeye runtime are prefixed with THEEYE_ keyword
+
+The information is a Key-Value structure encoded as JSON.
+All the environment variables belonging to TheEye runtime are prefixed with *THEEYE_* keyword
 
 ### THEEYE_JOB
 
