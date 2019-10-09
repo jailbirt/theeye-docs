@@ -37,3 +37,9 @@ When Tasks belongs to Workflows, this constains information of the Workflow.
 | ---  | --- | --- |
 | id | string | the workflow schema id |
 | job_id | string | the workflow job execution instance |
+
+
+# Examples
+
+##  Get THEEYE_JOB_USER information from DOS / BAT scripts
+
