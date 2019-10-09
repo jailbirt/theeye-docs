@@ -43,5 +43,7 @@ When Tasks belongs to Workflows, this constains information of the Workflow.
 
 ###  Get THEEYE_JOB_USER information from DOS / BAT scripts
 
+The following script shows how to get user id and email information:
+
 
 
