@@ -7,7 +7,7 @@ During runtime, you can access basic information of the job being executed via e
 The information is storead as JSON Strings or as JSON encoded Key-Value structures.
 All the environment variables belonging to TheEye runtime are prefixed with *THEEYE_* keyword
 
-### THEEYE_JOB
+### THEEYE_JOB (object)
 
 Contains information of the current job.
 
@@ -16,7 +16,7 @@ Contains information of the current job.
 | id | string | the id of the job. you can fetch the API with it |
 | task_id | string | task definition id. can fetch the API with it |
 
-### THEEYE_JOB_USER
+### THEEYE_JOB_USER (object)
 
 This is the uses that executes the Task. This env can take diferent form depending on how the task was executed.
 
@@ -29,7 +29,7 @@ This is the uses that executes the Task. This env can take diferent form dependi
 | id | string | the user id |
 | email | string | the user email |
 
-### THEEYE_JOB_WORKFLOW
+### THEEYE_JOB_WORKFLOW (object)
 
 When Tasks belongs to Workflows, this constains information of the Workflow.
 
