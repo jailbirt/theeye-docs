@@ -1,8 +1,9 @@
+
 # Why JSON?
 
-## What is JSON? 
+Do you know what it is? Are you familiarized with JSON? If not <a target="_blank" href="https://www.google.com/search?q=json">check some of this links</a>
 
-Do you know what it is? Are you familiarized with JSON? If not [check some of this links](https://www.google.com/search?q=json)
+******
 
 We expect JSON output when running script. We use JSON to encode every environment variables, even strings, that will be available within scripts.
 
@@ -27,3 +28,24 @@ Almost every modern programming language has tools to encode/decode JSON and con
  | Javascript      | JSON.encode/JSON.decode   | <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON">Mozilla Docs</a> |
  | PHP             | json_encode / json_decode | <a target="_blank" href="https://www.php.net/manual/en/ref.json.php">PHP.net Manual</a> |
  | Python          | json lib                  | <a target="_blank" href="https://docs.python.org/3/library/json.html">Python Docs</a> |
+
+## Reserved characters. Escape/Unescape
+
+Some characters are reserved in JSON and must be properly escaped to be used in strings.
+Unproperly escaped strings could prevent the data to be correctly parsed generating errors.
+
+### List of special characters in JSON
+
+| Character                 | Escape sequence                | 
+| -----                     | -----                          | 
+| Backspace (ascii code 08) | \b                             | 
+| Form feed (ascii code 0C) | \f                             | 
+| New line                  | \n                             | 
+| Carriage return           | \r                             | 
+| Tab                       | \t                             | 
+| Unicode hex               | \u followed by four-hex-digits | 
+| Double quote              | \"                             | 
+| Backslash character       | \\                             | 
+| Slash character           | \/                             | 
+
+![JSON](../images/SHLOB.gif)
