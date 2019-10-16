@@ -6,7 +6,7 @@ Do you know what it is? Are you familiarized with JSON? If not [check some of th
 
 We expect JSON output when running script. We use JSON to encode every environment variables, even strings, that will be available within scripts.
 
-The exception is for Task Inputs, when bypassing values from one task to another, we try to decode string values before using them as arguments of scripts.
+The exception is when passing values from one task to another. In this case we try to convert values from JSON to string before using them as arguments.
 
 We do this to keep every output and environment variable consistent between each other and with the same encoding.
 This will make it easy to parse and transfer data, and eventually automate the extraction and storage of the data.
