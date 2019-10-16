@@ -18,7 +18,7 @@ Contains information of the current job.
 
 ### THEEYE_JOB_USER (object)
 
-This is the uses that executes the Task. This env can take diferent form depending on how the task was executed.
+This is the user that executes the Task. This env can take diferent form depending on how the task was executed.
 
 * Automatic Execution: the user will be always an internal user.      
 * Play Button: When the task is executed via User Interface, this will be the user that pushed the Play Button.
