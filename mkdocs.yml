@@ -38,6 +38,7 @@ nav:
         - Working with Scripts: './core-concepts/scripts/index.md'
         - Run as...: './core-concepts/scripts/runas.md'
         - Write: './core-concepts/scripts/write.md'
+    - Arguments: './core-concepts/arguments.md'
 - Bot Agent:
     - Installation: './core-concepts/the-eye-agent/index.md'
     - Source Code: './core-concepts/the-eye-agent/sources_install.md'
