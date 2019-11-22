@@ -32,13 +32,13 @@ nav:
         - Types:
           - Notification: './core-concepts/tasks/notification_type.md'
           - Script: './core-concepts/tasks/script_type.md'
+        - Arguments: './core-concepts/tasks/arguments.md'
     - Templates: './core-concepts/templates.md'
     - Webhooks: './core-concepts/webhooks.md'
     - Scripts:
         - Working with Scripts: './core-concepts/scripts/index.md'
         - Run as...: './core-concepts/scripts/runas.md'
         - Write: './core-concepts/scripts/write.md'
-    - Arguments: './core-concepts/arguments.md'
 - Bot Agent:
     - Installation: './core-concepts/the-eye-agent/index.md'
     - Source Code: './core-concepts/the-eye-agent/sources_install.md'
