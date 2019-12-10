@@ -97,7 +97,94 @@ This is easily done with a POST request to the Job endpoint API.
 
 There are two methods available.
 
-### 1. Using Integration Token (beta)
+### Task and Workflow execution payload via API
+
+When creating Task Jobs via API you will have to provide the Task ID and the Task Arguments.
+
+```javascript
+{
+  // (required)
+  task: "task id",
+  // (required only if task has arguments)
+  task_arguments: []
+}
+```
+
+### Using task secret key. Integration Feature \(recommended\)
+
+All tasks have a **secret key** which can be used to invoke them directly via API. The secret key provides access to the task it belongs **and only to that task**. **Secret keys** can be revoked any time by just changing them, which makes this the preferred method for it's implicit security.
+
+#### CURL sample Request
+
+
+```bash
+task_id=""
+task_secret_key=""
+customer=""
+
+curl \
+  --request POST \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data "{\"task\":\"${task_id}\",\"task_arguments\":[]}" \
+  "https://supervisor.theeye.io/job/secret/${task_secret_key}?customer=${customer}"
+```
+
+#### Task HTML Button
+
+This technique could be combined with an HTML form to generate an action button. This results very handy when it is needed to perform actions from email bodies or static web pages.
+
+```html
+<html>
+  <div>
+    <form action="http://api.theeye.io/job/secret/b9d0b89439866987e818d5299ba61df0a32ccb38d81d996f46b9ce7af0720058" method="POST">
+      <input type="hidden" name="customer" value="organization_name">
+      <input type="hidden" name="task" value="5c49157cdb340a4d0444195a">
+      <input type="hidden" name="task_arguments[]" value="arg1">
+      <input type="submit" value="ACEPTO">
+    </form>
+  </div>
+</html>
+
+```
+
+### Using workflow secret key.
+
+You can invoke a **Workflow** using its **secret key**.
+
+#### CURL Sample Request
+
+```bash
+workflow_id=""
+workflow_secret_key=""
+customer=""
+
+curl \
+   --request POST \
+   --header "Accept: application/json" \
+   --header "Content-Type: application/json" \
+   --data "{\"task_arguments\":[]}" \
+   "https://supervisor.theeye.io/workflows/${workflow_id}/secret/${workflow_secret_key}/job?customer=${customer}"
+```
+
+#### Tasks Workflow HTML Button
+
+Can also use an HTML form for the same purposes.
+
+```html
+<html>
+<div>
+ <form action="http://api.theeye.io/workflows/5d5ee18e809501000fb1435b/secret/b9d0b89439866987e818d5299ba61df0a32bbb38d81d996f46b9ce7af0720058" method="POST">
+   <input type="hidden" name="customer" value="organization_name">
+   <input type="hidden" name="task_arguments[]" value="arg1">
+   <input type="submit" value="ACEPTO">
+ </form>
+</div>
+</html>
+
+```
+
+### 2. Using API integration token (beta)
 
 Integration Tokens can be obtained only by admin users.
 
@@ -184,77 +271,6 @@ curl \
 The API response is a new created job. We can save the job id and use it later to query the job status.
 In this example the id is "************************"
 
-### 2. Using the Task secret key. Integration Feature \(recommended\)
-
-   All tasks have a **secret key** which can be used to invoke them directly via API. The secret key provides access to the task it belongs **and only to that task**. **Secret keys** can be revoked any time by just changing them, which makes this the preferred method for it's implicit security.
-
-#### **Request:**
-
-
-```bash
-   task_id=""
-   task_secret_key=""
-   customer=""
-
-   curl \
-      --request POST \
-      --header "Accept: application/json" \
-      --header "Content-Type: application/json" \
-      --data "{\"customer\":\"${customer}\",\"task\":\"${task_id}\",\"task_arguments\":[]}" \
-      "https://supervisor.theeye.io/job/secret/${task_secret_key}"
-```
-
-#### HTML Button
-
-This technique could be combined with an HTML form to generate an action button. This results very handy when it is needed to perform actions from email bodies or static web pages.
-
-```html
-<html>
-  <div>
-    <form action="http://api.theeye.io/job/secret/b9d0b89439866987e818d5299ba61df0a32ccb38d81d996f46b9ce7af0720058" method="POST">
-      <input type="hidden" name="customer" value="organization_name">
-      <input type="hidden" name="task" value="5c49157cdb340a4d0444195a">
-      <input type="hidden" name="task_arguments[]" value="arg1">
-      <input type="submit" value="ACEPTO">
-    </form>
-  </div>
-</html>
-
-```
-
-You can invoke a **Workflow** using its **secret key**.
-
-#### **Request:**
-
-```bash
-workflow_id=""
-workflow_secret_key=""
-customer=""
-
-curl \
-   --request POST \
-   --header "Accept: application/json" \
-   --header "Content-Type: application/json" \
-   --data "{\"customer\":\"${customer}\",\"task_arguments\":[]}" \
-   "https://supervisor.theeye.io/workflows/${workflow_id}/secret/${workflow_secret_key}/job"
-```
-
-#### HTML Button
-
-Can also use an HTML form for the same purposes.
-
-```html
-<html>
-<div>
- <form action="http://api.theeye.io/workflows/5d5ee18e809501000fb1435b/secret/b9d0b89439866987e818d5299ba61df0a32bbb38d81d996f46b9ce7af0720058" method="POST">
-   <input type="hidden" name="customer" value="organization_name">
-   <input type="hidden" name="task_arguments[]" value="arg1">
-   <input type="submit" value="ACEPTO">
- </form>
-</div>
-</html>
-
-```
 
 ### 3. Query job status
 
@@ -316,19 +332,5 @@ curl -sS 'https://supervisor.theeye.io/$customer/job/$task_id?access_token=$toke
   "script_runas": "",
   "trigger_name": "success",
   "id": "5cdc367240f0bb000f8e9653"
-}
-```
-
-
-## Job API payload \(for task execution\)
-
-Task Execution Payload
-
-```javascript
-{
-  // (required)
-  task: "task id",
-  // (required only if task has arguments)
-  task_arguments: []
 }
 ```

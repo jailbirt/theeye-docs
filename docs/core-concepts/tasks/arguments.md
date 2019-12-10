@@ -99,7 +99,13 @@ echo [ $(echo ${2} | jq -c '.') ]
 
 ```
 
-## Direct Task and Workflows invocation
+## Task and Workflows. API execution
 
-Another alternative is to directly execute tasks and workflows vía API.
+There are alternatives to directly execute tasks and workflows vía API.
 
+Check the following Documentation Sections
+
+
+[Run Task and Workflow using Integration Secret (recomended)](/integrations/api/api_resources_task/#1-using-task-secret-key-integration-feature-40recommended41)
+
+[Run Task and Workflow using Integration Token (beta)](/integrations/api/api_resources_task/#2-using-api-integration-token-beta)
