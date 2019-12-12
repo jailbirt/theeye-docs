@@ -21,18 +21,17 @@ nav:
 - First steps: 'first-steps.md'
 - Core concepts:
     - JSON: './core-concepts/json.md'
+    - Tasks:
+      - Basics: './core-concepts/tasks/index.md'
+      - Triggers: './core-concepts/tasks/triggers.md'
+      - Workflows: './core-concepts/tasks/workflows.md'
+      - Types:
+        - Notification: './core-concepts/tasks/notification_type.md'
+        - Script: './core-concepts/tasks/script_type.md'
     - Resources: './core-concepts/index.md'
     - Alerts and Notifications: './core-concepts/alerts-and-notifications.md'
     - Indicators: './core-concepts/indicators.md'
     - Monitors: './core-concepts/monitors.md'
-    - Tasks:
-        - Basics: './core-concepts/tasks/index.md'
-        - Triggers: './core-concepts/tasks/triggers.md'
-        - Workflows: './core-concepts/tasks/workflows.md'
-        - Types:
-          - Notification: './core-concepts/tasks/notification_type.md'
-          - Script: './core-concepts/tasks/script_type.md'
-        - Arguments: './core-concepts/tasks/arguments.md'
     - Templates: './core-concepts/templates.md'
     - Webhooks: './core-concepts/webhooks.md'
     - Scripts:
@@ -54,11 +53,13 @@ nav:
     - AWS: './integrations/aws/index.md'
     - ELK: './integrations/elk/index.md'
     - Kubernetes: './integrations/kubernetes/index.md'
-    - API for developers:
-        - Enable access to APIs: './integrations/api/index.md'
-        - Indicators: './integrations/api/api_resources_indicator.md'
-        - Tasks: './integrations/api/api_resources_task.md'
-        - Monitors: './integrations/api/api_resources_monitor.md'
+- API for developers:
+    - Enable access to APIs: './api/auth.md'
+    - Indicators: './api/indicators/index.md'
+    - Tasks:
+      - Basics: './api/tasks/index.md'
+      - Arguments: './api/tasks/arguments.md'
+    - Monitors: './api/monitors/index.md'
 - Assets:
     - Recipes: './assets/recipes/index.md'
     - Scripts: './assets/scripts/index.md'

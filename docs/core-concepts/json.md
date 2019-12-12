@@ -1,16 +1,19 @@
 
 # Why JSON?
 
-Do you know what it is? Are you familiarized with JSON? If not <a target="_blank" href="https://www.google.com/search?q=json">check some of this links</a>
+[![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
+
+**JSON**. Do you know what it is? Are you familiarized with JSON? If you are not, <a target="_blank" href="https://www.google.com/search?q=json">please check some of this links</a>
 
 ******
 
-We expect JSON output when running script. We use JSON to encode every environment variables, even strings, that will be available within scripts.
+TheEye expected JSON as output of tasks scripts. At this moment, JSON is the only supported format as input of our API.
+Also we use JSON to encode every environment variables, even strings, that will be available within scripts.
+
+We use JSON to keep every output and environment variable consistent between each other and with the same encoding.
+This will make it easy to parse and transfer data, and eventually automate the extraction and storage of the data.
 
 The exception is when passing values from one task to another. In this case we try to convert values from JSON to string before using them as arguments.
-
-We do this to keep every output and environment variable consistent between each other and with the same encoding.
-This will make it easy to parse and transfer data, and eventually automate the extraction and storage of the data.
 
 Every string, in JSON format, is surrounded by doble quotes.
 So when a var is only a string, you will have to decode it first or, in other words, remove doble quotes.

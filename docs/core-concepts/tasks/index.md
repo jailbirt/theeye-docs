@@ -18,7 +18,7 @@ Click on "advanced options" for further features.
 
 ![Script Task - advanced options](../../images/advancedoptionstask.jpg)
 
-| Property | Api Property | Type | Description |
+| UI Property | Api Property | Type | Description |
 | ----- | ----- | ----- | ----- |
 | Name | name | string | name your task |
 | Bots | host_id | string | select the host where the script will run |
@@ -93,4 +93,4 @@ To export a task recipe, go to the task, click on the context menu, and then cli
 
 ## Integration through API
 
-Check the [Integration through API documentation](/integrations/api/) for more details.
+Check the [Integration through API documentation](/api/) for more details.

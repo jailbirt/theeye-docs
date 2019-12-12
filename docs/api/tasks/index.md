@@ -184,9 +184,11 @@ Can also use an HTML form for the same purposes.
 
 ```
 
-### 2. Using API integration token (beta)
+### Using API integration token (beta)
 
 Integration Tokens can be obtained only by admin users.
+
+<h2 style="color:red"> WARNING ! Integration Tokens has full admin privileges. Use with care</h2>
 
 Accessing to the web interfaz *Menu > Settings > Credentials > Integration Tokens*.
 
@@ -206,8 +208,9 @@ curl \
   "https://supervisor.theeye.io/job?access_token=${access_token}&customer=${customer}"
 ```
 
-   > NOTE 1: customer is REQUIRED. can also be included in the body as "customer"  
-   > NOTE 2: access token can be provided vía Authorization header \( Authorization: Bearer ${token} \)
+> NOTE 1: customer is REQUIRED. can also be included in the body as "customer"  
+
+> NOTE 2: access token can be provided vía Authorization header \( Authorization: Bearer ${token} \)
 
 
 #### **Response:**

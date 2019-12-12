@@ -1,5 +1,6 @@
-
 # Run Tasks with Arguments
+
+[![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 ## Using Webhooks
 
@@ -106,6 +107,6 @@ There are alternatives to directly execute tasks and workflows vía API.
 Check the following Documentation Sections
 
 
-[Run Task and Workflow using Integration Secret (recomended)](/integrations/api/task/#1-using-task-secret-key-integration-feature-40recommended41)
+[Run Task and Workflow using Integration Secret (recomended)](/api/tasks/#using-task-secret-key-integration-feature-40recommended41)
 
-[Run Task and Workflow using Integration Token (beta)](/integrations/api/task/#2-using-api-integration-token-beta)
+[Run Task and Workflow using Integration Token (beta)](/api/tasks/#using-api-integration-token-beta)
