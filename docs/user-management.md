@@ -1,54 +1,37 @@
-# User Management Documentation
+# User Management
 
 [![theeye.io](images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
-## User Accounts and Roles (Web/Mobile access)
+## Roles
 
-There're six user permission profiles.
+1. **owner**
+    * full access
+    * full control of organizations
+    * create and modify
+    * tasks execution
+    * acls administration
+    * members control
 
-## Permissions
+2. **admin**
+    * full access
+    * create and modify
+    * tasks execution
+    * acls administration
 
-1. Full Control
-   * Can manage organizations.
-   * Has all the permissions listed below.
-2. Full Access
-   * Can view all the resources that belongs to the organization.
-3. View
-   * Can view monitors, tasks and output logs.
-4. Execution
-   * Can view and execute tasks.
-5. Create and Modify
-   * Can create and modify resources \(e.g. create scripts, create tasks, assign ACLs to tasks\)
-6. User Admin
-   * Add and delete users
-   * Set user credential \(admin/manager/user/viewer\)
-
-_Note:_ **Users will have access to resources provided by ACLs. Only user types with** _**Full Access**_ **permission will be able to see all resources.**
-
-### Effective permissions per role
-
-1. **root**
-   * Full Control
-2. **owner**
-   * Full Access
-   * Create and Modify
-   * Execution
-   * User Admin
-3. **admin**
-   * Full Access
-   * Create and Modify
-   * Execution
+3. **manager**
+    * members control
+    * view (ACL's required)
+    * tasks execution (ACL's required)
+      
 4. **user**
-   * View
-   * Execution
-5. **viewer**
-   * View
-6. **manager**
-   * User Admin
-   * View
-   * Execution
+    * view (ACL's required)
+    * tasks execution (ACL's required)
 
-## Members Page \(User administration\)
+5. **viewer**
+    * view (ACL's required)
+
+
+## Members control
 
 To Create, modify or delete users, go to _Settings_ from the left menu and then go to _Members_ section.
 
