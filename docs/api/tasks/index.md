@@ -1,11 +1,10 @@
-# API for Tasks
+# Tasks API
 
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
-## API URL for Task
+## API URL
 
 URL: `https://supervisor.theeye.io/task?access_token={token}&customer={organization_name}`
-
 
 ## Examples
 
@@ -275,18 +274,21 @@ The API response is a new created job. We can save the job id and use it later t
 In this example the id is "************************"
 
 
-### 3. Query job status
+### Querying job status
 
 Once the job is created we can query it's status using the ID of the job. we can also fetch all the jobs and then filter the response.
 
 #### **Request:**
 
 
-```bash
-task_id=”5cdc3d1c40f0bb000f8e9682”
+```shell
+
+task_id=””
 access_token=""
 customer=""
-curl -sS 'https://supervisor.theeye.io/$customer/job/$task_id?access_token=$token' | jq -r .
+
+curl -sS "https://supervisor.theeye.io/${customer}/job/${task_id}?access_token=${token}" | jq -r .
+
 ```
 
 #### **Response:**
@@ -325,9 +327,9 @@ curl -sS 'https://supervisor.theeye.io/$customer/job/$task_id?access_token=$toke
   "customer_name": "demo",
   "user_id": "5bf81d18ca5e7e000f80f8ef",
   "user": {
-    "id": "5bf81d18ca5e7e000f80f8ef",
-    "username": "demo_d38d7c97f0cb9429b31533def69431f560624f44",
-    "email": "info+b96fcba81b8182356365f6c66163f4d69d898d67@theeye.io"
+    "id": "demouserid",
+    "username": "demouser",
+    "email": "demouser@theeye.io"
   },
   "notify": true,
   "origin": "user",

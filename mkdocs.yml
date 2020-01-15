@@ -60,6 +60,8 @@ nav:
       - Basics: './api/tasks/index.md'
       - Arguments: './api/tasks/arguments.md'
     - Monitors: './api/monitors/index.md'
+    - Jobs:
+      - Basics: './api/jobs/index.md'
 - Assets:
     - Recipes: './assets/recipes/index.md'
     - Scripts: './assets/scripts/index.md'

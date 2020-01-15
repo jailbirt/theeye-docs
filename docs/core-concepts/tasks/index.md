@@ -1,18 +1,24 @@
-# Tasks Documentation
+# Tasks
 
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
+With TheEye we can create different types of Tasks.
+A Task can also be considered as a template for a Job.
+
 ## Create and modify tasks
 
-Creating a task is simple, just go to the tasks section in the left "hamburger" menu, and click on "+ create New Task", select the task category from _Outgoing Webhook/HTTP Request_ and _Script_ and start writing your task. A task can be modified directly from the tasks' panel in the Dashboard or you can go to the tasks page in the left menu, and click the edit button over the task row.
-
-You can also create tasks from the dashboard by clicking on the "+" button: 
+Creating a task is simple, from the dashboard, click in the "+" button to open the resources menu > click the "Task Button" (Play Icon) to create a new task.
+Then select the task type you want to create. A task can be modified directly from the Dashboard.
 
 ![](../../images/newTaskDashboard.png)
+
+You can also create, edit and delete tasks from the Tasks Admin page.
 
 ## Types of Task
 
 ### Script
+
+Script Tasks requires a BOT to run. This task defines the set of orders and actions that the Bot must do. Actions are described as basic scripts.
 
 Click on "advanced options" for further features. 
 
