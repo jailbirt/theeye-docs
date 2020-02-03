@@ -1,6 +1,6 @@
 # Integration through API
 
-[![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 ## Enable access to APIs
 
@@ -15,5 +15,5 @@ To verify that access to the APIs has been enabled:
 - You must use an administrator account.
   - On the main page of the administration console, go to setting then to credentials. You can see the list of "Integration Tokens".
 
-![dashboard_settings_credentials](../../images/dashboard_setting_credentials.png)
+![dashboard_settings_credentials](../images/dashboard_setting_credentials.png)
 

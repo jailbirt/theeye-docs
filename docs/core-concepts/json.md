@@ -1,7 +1,7 @@
 
 # Why JSON?
 
-[![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 **JSON**. Do you know what it is? Are you familiarized with JSON? If you are not, <a target="_blank" href="https://www.google.com/search?q=json">please check some of this links</a>
 

@@ -42,7 +42,7 @@ If it is the first time you access TheEye Website, from the web panel ([settings
 
 ![full list for install](images/TheEye-Agent-Full-list.jpg)
 
-For more information please check the installation documentation in ([Bot Installer](/core-concepts/the-eye-agent/)) you can download the binary agent and get the installation script for your host.
+For more information please check the installation documentation in ([Bot Installer](/core-concepts/agent/)) you can download the binary agent and get the installation script for your host.
 
 ### Play with bots
 
