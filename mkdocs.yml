@@ -21,6 +21,7 @@ nav:
 - First steps: 'first-steps.md'
 - Core concepts:
     - JSON: './core-concepts/json.md'
+    - Events: './core-concepts/events.md'
     - Tasks:
       - Basics: './core-concepts/tasks/index.md'
       - Triggers: './core-concepts/tasks/triggers.md'
@@ -28,7 +29,6 @@ nav:
       - Types:
         - Notification: './core-concepts/tasks/notification_type.md'
         - Script: './core-concepts/tasks/script_type.md'
-    - Resources: './core-concepts/index.md'
     - Alerts and Notifications: './core-concepts/alerts-and-notifications.md'
     - Indicators: './core-concepts/indicators.md'
     - Monitors: './core-concepts/monitors.md'
@@ -50,6 +50,7 @@ nav:
         - Example systemd: './core-concepts/the-eye-agent/examples/etc_systemd_system_theeye-agent.service'
 - User management: 'user-management.md'
 - Integrations:
+    - Logger: './integrations/logger/index.md'
     - AWS: './integrations/aws/index.md'
     - ELK: './integrations/elk/index.md'
     - Kubernetes: './integrations/kubernetes/index.md'
@@ -59,6 +60,7 @@ nav:
     - Tasks:
       - Basics: './api/tasks/index.md'
       - Arguments: './api/tasks/arguments.md'
+      - Execution: './api/tasks/run.md'
     - Monitors: './api/monitors/index.md'
     - Jobs:
       - Basics: './api/jobs/index.md'
