@@ -20,35 +20,35 @@ nav:
 - Home: 'index.md'
 - First steps: 'first-steps.md'
 - Core concepts:
-    - JSON: './core-concepts/json.md'
-    - Events: './core-concepts/events.md'
-    - Tasks:
-      - Basics: './core-concepts/tasks/index.md'
-      - Triggers: './core-concepts/tasks/triggers.md'
-      - Workflows: './core-concepts/tasks/workflows.md'
-      - Types:
-        - Notification: './core-concepts/tasks/notification_type.md'
-        - Script: './core-concepts/tasks/script_type.md'
-    - Alerts and Notifications: './core-concepts/alerts-and-notifications.md'
-    - Indicators: './core-concepts/indicators.md'
-    - Monitors: './core-concepts/monitors.md'
-    - Templates: './core-concepts/templates.md'
-    - Webhooks: './core-concepts/webhooks.md'
-    - Scripts:
-        - Working with Scripts: './core-concepts/scripts/index.md'
-        - Run as...: './core-concepts/scripts/runas.md'
-        - Write: './core-concepts/scripts/write.md'
-    - User Management: './core-concepts/user-management.md'
-- Bot Agent:
-    - Installation: './core-concepts/agent/index.md'
-    - Source Code: './core-concepts/agent/sources_install.md'
-    - Binary build: './core-concepts/agent/binary_build.md'
-    - Setup: './core-concepts/agent/setup.md'
-    - Debug: './core-concepts/agent/debug.md'
-    - Raspberry: './core-concepts/agent/raspberry.md'
-    - Services in Linux:
-        - Example init.d: './core-concepts/agent/examples/etc_init.d_theeye-agent'
-        - Example systemd: './core-concepts/agent/examples/etc_systemd_system_theeye-agent.service'
+  - Bot Agent:
+      - Installation: './core-concepts/agent/index.md'
+      - Source Code: './core-concepts/agent/sources_install.md'
+      - Binary build: './core-concepts/agent/binary_build.md'
+      - Setup: './core-concepts/agent/setup.md'
+      - Debug: './core-concepts/agent/debug.md'
+      - Raspberry: './core-concepts/agent/raspberry.md'
+      - Services in Linux:
+          - Example init.d: './core-concepts/agent/examples/etc_init.d_theeye-agent'
+          - Example systemd: './core-concepts/agent/examples/etc_systemd_system_theeye-agent.service'
+  - JSON: './core-concepts/json.md'
+  - Events: './core-concepts/events.md'
+  - Tasks:
+    - Basics: './core-concepts/tasks/index.md'
+    - Triggers: './core-concepts/tasks/triggers.md'
+    - Workflows: './core-concepts/tasks/workflows.md'
+    - Types:
+      - Notification: './core-concepts/tasks/notification_type.md'
+      - Script: './core-concepts/tasks/script_type.md'
+  - Alerts and Notifications: './core-concepts/alerts-and-notifications.md'
+  - Indicators: './core-concepts/indicators.md'
+  - Monitors: './core-concepts/monitors.md'
+  - Templates: './core-concepts/templates.md'
+  - Webhooks: './core-concepts/webhooks.md'
+  - Scripts:
+      - Working with Scripts: './core-concepts/scripts/index.md'
+      - Run as...: './core-concepts/scripts/runas.md'
+      - Write: './core-concepts/scripts/write.md'
+  - User Management: './core-concepts/user-management.md'
 - Integrations:
     - Logger: './integrations/logger/index.md'
     - AWS: './integrations/aws/index.md'
