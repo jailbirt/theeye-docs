@@ -33,11 +33,12 @@
 
 ## Members control
 
-To Create, modify or delete users, go to _Settings_ from the left menu and then go to _Members_ section.
+To add, modify or revoke users for the current organization, go to the left hamburguer menu , then go to _Settings_ > _Members_ section.
 
 ![](../images/members.png)
 
-When you invite a new user, you will be prompted to select the user's role \(admin/user/viewer/manager\). The role can be changed at any time by a user manager. The user account must be activated by the activation link sent by email.
+When you invite a new member, it will be prompted to select the user's role \(admin/user/viewer/manager\).
+The role can be changed at any time by a manager or the owner of the account.
 
 ## ACLs
 
