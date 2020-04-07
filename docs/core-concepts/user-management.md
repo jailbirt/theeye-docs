@@ -58,7 +58,6 @@ Once the integration is configured, the system will authenticate every user by d
 Follow this steps to register users
 
 1. Into the Domain Controller, search the user profile and add the desired group.
-
 To correctly register a user it must be assigned to a recognized Group by theeye.
 One of the following groups must be used
 
@@ -68,8 +67,11 @@ One of the following groups must be used
   * theeye_users   
   * theeye_viewers or none to assign to viewers group
 
+
+
 2. Login into TheEye to complete the registration.
 
 3. After successful registration the user can be invited to any organization by the Owner.
 
-By default the user will be assigned to one on-premise organization.
+
+By default all new users will be assigned to a default on-premise organization. This is a core integration setting.
