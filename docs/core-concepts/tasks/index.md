@@ -69,7 +69,9 @@ It is important to define the arguments in the same order in which they will be 
 | Options | create an options element | behave as Text Argument |
 | Remote Options | create an options element using the response of a Remote API. It is posible to include the email of the user executing the task at the momento of the fetch. This will be achived including the keyword %THEEYE_USER_EMAIL% in the queystring of the url of remote api. Example url http://tracking-tool.domain.com/tickets?user=%THEEYE_USER_EMAIL% | behave as Text Argument |
 | Date | create a Date Picker element | behave as Text Argument |
+| Email | a email text input | It is a field in which you can only write an email |
 | File | create a File Selection element | when it is used with Script Tasks the uploaded file will be downloaded and the argument will contain the local path to the file. |
+| RegExp | insert a sequence of characters that define a search pattern | Regular expressions are used to perform pattern-matching and "search-and-replace" functions on text |
 
 ## Task Scheduler.
 
