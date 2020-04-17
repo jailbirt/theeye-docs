@@ -66,7 +66,7 @@ If the user was not invited, it is allowed to login and register to TheEye. By d
 To correctly register a user it must be assigned to a recognized Group by theeye.
 On the Domain Controller, one of the following groups must be assigned to the user
 
-  * theeye_owner
+  * theeye_owners
   * theeye_admins
   * theeye_managers
   * theeye_users
