@@ -33,41 +33,45 @@
 
 ## Members control
 
-To Create, modify or delete users, go to _Settings_ from the left menu and then go to _Members_ section.
+To add, modify or revoke users for the current organization, go to the left hamburguer menu , then go to _Settings_ > _Members_ section.
 
-![](../images/user_members-1.jpg)
+![](../images/members.png)
 
-When you invite a new user, you will be prompted to select the user's role \(admin/user/viewer/manager\). The role can be changed at any time by a user manager. The user account must be activated by the activation link sent by email.
+When you invite a new member, it will be prompted to select the user's role \(admin/user/viewer/manager\).
+The role can be changed at any time by a manager or the owner of the account.
 
 ## ACLs
 
 In the previous section we've described user roles and user administration.
 ACLs applies directly to resources.
-Admin roles can make resources visible to other members by adding them to the input field labeled _ACL's_ available on _Tasks_ and _Monitors_.
+Admin users can make resources visible to other members by adding them to the input field labeled _ACL's_ available on _Tasks_ and _Monitors_.
 When a user is added to an ACL list, then the resource becomes available and accesible according to the member's role.
 Notifications are sent to all users within the ACL list, regardless the user role.
-E-mail addresses can also be added to ACLs lists in order to have them notified disregarding any account membership.
 
 ![](../images/acls-1.png)
 
 ## Users Domain Controller
 
-On-premise installations allows to integrate the core authorization and access control to a Domain Controller.
+On-premise installations allows to integrate the core authorization and user access control to a Domain Controller.
 
-Once the integration is configured, the system will connect by default to the Domain Controller to authenticate every user.
-The procedure to accept users is the same
+Once the integration is configured, the system will authenticate every user by default throught the Domain Controller.
+Follow this steps to register users
 
-1. Invite (Members control) a user to the decired organization using the user internal organization email.
-2. The user will receive an invitation email with an Activation Link.
-3. Throw the Activation the core will verify the user against the Domain Controller.
-
-If the user was not invited, it is allowed to login and register to TheEye. By default the user will be assigned to the main on-premise organization and with the lowest allowed security credential, which is viewer.
-
+1. Into the Domain Controller, search the user profile and add the desired group.
 To correctly register a user it must be assigned to a recognized Group by theeye.
-On the Domain Controller, one of the following groups must be assigned to the user
+One of the following groups must be used
 
   * theeye_owners
   * theeye_admins
   * theeye_managers
   * theeye_users
   * theeye_viewers or none to assign to viewers group
+
+
+
+2. Login into TheEye to complete the registration.
+
+3. After successful registration the user can be invited to any organization by the Owner.
+
+
+By default all new users will be assigned to a default on-premise organization. This is a core integration setting.
