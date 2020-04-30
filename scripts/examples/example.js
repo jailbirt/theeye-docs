@@ -2,7 +2,7 @@
 //For both Monitors and Tasks We need that your script ends by returning "normal" or "failure". 
 // WARNING : check your current path and name to node binary.
 
-var state = 'normal';
+var state = 'success';
 
  // check state
 if( false ) { 
