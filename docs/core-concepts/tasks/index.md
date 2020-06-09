@@ -10,7 +10,7 @@ A Task can also be considered as a template for a Job.
 Creating a task is simple, from the dashboard, click in the "+" button to open the resources menu > click the "Task Button" (Play Icon) to create a new task.
 Then select the task type you want to create. A task can be modified directly from the Dashboard.
 
-![](../../images/newTaskDashboard.png)
+![](../../images/newTaskDashboard.gif)
 
 You can also create, edit and delete tasks from the Tasks Admin page.
 
@@ -84,7 +84,7 @@ Schedules can be created from the Dasboard as shown here below
 
 Your new schedule will be shown when the task row is expanded:
 
-![](../../images/image-06.png)
+![](../../images/schedule.gif)
 
 ## Export and Import Tasks
 
@@ -92,11 +92,8 @@ Inside TheEye community you will hear that other people had already solved or au
 
 To export a task recipe, go to the task, click on the context menu, and then click on the "export recipe" icon as shown here:
 
-![Dashboard - Task Export](../../images/image-03.png)
+![Dashboard - Task Export](../../images/exportecipe.gif)
 
-![Script Task Creation Modal](../../images/quickinputtask.jpg)
-
-![](../../images/schedule.gif)
 
 
 ## Integration through API
