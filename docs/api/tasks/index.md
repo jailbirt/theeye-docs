@@ -203,7 +203,7 @@ curl \
   -X POST \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" \
-  -b "{\"task\":\"${task_id}\",\"task_arguments\":[]}" \
+  -d "{\"task\":\"${task_id}\",\"task_arguments\":[]}" \
   "https://supervisor.theeye.io/job?access_token=${access_token}&customer=${customer}"
 ```
 
