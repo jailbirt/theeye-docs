@@ -19,7 +19,7 @@ Los siguientes pasos permiten descubrir si se tiene acceso a la API de TheEye
 
 ## Ejemplos de los scripts:
 
-### CURL
+### Usando BASH
 
 #### Método HTTP y URL:
 
@@ -27,7 +27,7 @@ Los siguientes pasos permiten descubrir si se tiene acceso a la API de TheEye
 curl -i -X GET http://theeye:60080/status
 ```
 
-### Ejemplo CMD
+### Usando CMD
 
 #### Método HTTP y URL:
 
@@ -35,7 +35,7 @@ curl -i -X GET http://theeye:60080/status
 curl http://theeye:60080/status
 ```
 
-### Ejemplo NodeJs
+### Usando NodeJs
 
 #### Script para validar si hay acceso a la API de TheEye
 
@@ -110,6 +110,8 @@ main ()
 ```
 
 > En el caso de NodeJS se debe utilizas "http" y no "https" 
+
+#### Respuesta correcta de la API
 
 Si la solicitud se completa de forma correcta, el servidor muestra un código de estado HTTP 200 OK y la respuesta en formato JSON.
 
