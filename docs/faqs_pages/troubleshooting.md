@@ -131,7 +131,7 @@ Por lo general cuando el protocol es HTTPS intervienen componentes adicionales q
 Por lo tanto no se esta accediendo directamente al servicio.
 Se se utilizar la direccin IP del servidor, debe ser la del Proxy.
 
-Al utilizar protocolo HTTP la dirección IP y el PUERTO suelen ser diferentes. Cada componente puede estar escuchando en un puerto diferente y distribuido en diferentes instancias.
+Al utilizar protocolo HTTP la dirección IP y el PUERTO suelen ser diferentes. Cada componente puede estar escuchando en un puerto diferente y distribuido en diferentes instancias, por lo tanto utilizar diferentes direcciones ip.
 
 
 #### Respuesta correcta de la API
