@@ -1,7 +1,7 @@
 
 # TheEye Troubleshooting
 
-![theeye.io](../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
+[![theeye.io](../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 This page provides troubleshooting to the most common issues about TheEye.
 
