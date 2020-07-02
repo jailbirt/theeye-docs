@@ -20,7 +20,7 @@ In this case, the **Organization**  already has a **Bot** with the **hostname** 
 
 ![theeye.io](../images/dashboard.png)
 
-If you try to install an **Agent** with this **Hostname** on **Docker**, you will see the image locally installed and running correctly, but you won't see it reflected in the **Dashboard**
+If you try to install an **Agent** with the same **Hostname** on **Docker**, you will see the image locally installed and running correctly, but you won't see it reflected in the **Dashboard**
 
 
 ![theeye.io](../images/install_docker.png)
