@@ -9,7 +9,7 @@ This page provides troubleshooting to the most common issues about TheEye.
 
 ### DUPLICATE THEEYE_CLIENT_HOSTNAME
 
-The **Agent** will not install correctly, if the parameter name "THEEYE_CLIENT_HOSTNAME" is equal of any existing **Hostname** on the  **Organization**.
+The **Agent** won't install correctly, if the parameter name "THEEYE_CLIENT_HOSTNAME" is equal to any existing **Hostname** on the  **Organization**.
 
 If you have installed the **Agent** on **Docker**, you must remove the image and reinstall it with a different **Hostname**.
 
@@ -27,7 +27,9 @@ If you try to install an **Agent** with the same **Hostname** on **Docker**, you
 ![theeye.io](../images/dashboard.png)
 
 
-You must stop and remove the image and reinstall it with a different **Hostname**, and you see the bot installed correctly in the **Dashboard**.
+You must stop and remove the image, then reinstall it with a different **Hostname**, and you'll see the bot installed correctly in the **Dashboard**.
+
+
 
 ![theeye.io](../images/remove_docker.png)
 ![theeye.io](../images/new_dashboard.png)
