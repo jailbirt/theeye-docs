@@ -40,7 +40,7 @@ curl http://theeye:60080/status
 #### Script para validar si hay acceso a la API de TheEye
 
 ```javascript
-const http = require('http')
+const http = require('https')
 const token = process.env.ACCESS_TOKEN
 
 if (!token) {
@@ -79,7 +79,7 @@ const fetch = (customer, where) => {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: 'theeye',
-      port: 60080,
+      port: 443,
       path: `/${queryCustomer}/job?${qs}`,
       method: 'GET'
     }
@@ -109,7 +109,30 @@ const fetch = (customer, where) => {
 main ()
 ```
 
-> En el caso de NodeJS se debe utilizas "http" y no "https" 
+
+## HTTP VS HTTPS
+
+
+En node se debe elegir entre usar http o https según la api a consultar.
+
+* Para HTTPS se suele utilizar el puerto 443.   
+
+* Para HTTP se suele utilizar el puerto 80.
+
+
+Por lo general cuando el protocol es HTTPS intervienen componentes adicionales que se encuentran antes del servicio que estamos intentando consultar.
+
+* Un dominio (fqdn) - DNS   
+
+* Un cerficado SSL válido    
+
+* Un sevidor Proxy como Apache o NGINX     
+
+Por lo tanto no se esta accediendo directamente al servicio.
+Se se utilizar la direccin IP del servidor, debe ser la del Proxy.
+
+Al utilizar protocolo HTTP la dirección IP y el PUERTO suelen ser diferentes. Cada componente puede estar escuchando en un puerto diferente y distribuido en diferentes instancias.
+
 
 #### Respuesta correcta de la API
 
