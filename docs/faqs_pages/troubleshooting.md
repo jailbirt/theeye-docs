@@ -18,18 +18,18 @@ Example:
 
 In this case, the **Organization**  already has a **Bot** with the **hostname** AppTesting
 
-[![theeye.io](../images/dashboard.png)]
+[![theeye.io](../images/dashboard.png)];
 
 If you try to install an **Agent** with this **Hostname** on **Docker**, you will see the image locally installed and running correctly, but you won't see it reflected in the **Dashboard**
 
 
-[![theeye.io](../images/installdocker.png)]
-[![theeye.io](../images/dashboard.png)]
+[![theeye.io](../images/installdocker.png)];
+[![theeye.io](../images/dashboard.png)];
 
 
 You must stop and remove the image and reinstall it with a different **Hostname**, and you see the bot installed correctly in the **Dashboard**.
 
-[![theeye.io](../images/removedocker.png)]
-[![theeye.io](../images/newdashboard.png)]
+[![theeye.io](../images/removedocker.png)];
+[![theeye.io](../images/newdashboard.png)];
 
 
