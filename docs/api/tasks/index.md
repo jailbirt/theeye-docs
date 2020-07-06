@@ -22,21 +22,22 @@ Now it's not possible to change the timeout via API. To modify the timeout for a
 
 *Resquest*
 ```bash
-customer="customer"
-token="integrationToken"
+customer=$THEEYE_ORGANIZATION_NAME
 
-curl -sS "https://supervisor.theeye.io/$customer/task?access_token=$token"
+curl -sS "https://supervisor.theeye.io/$customer/task?access_token=$THEYE_TOKEN"
 ```
 
 ### Search task id by name
 
 *Request*
 ```bash
-customer="customer"
-token="integrationToken"
-taskName="HelloWorld Task"
+customer=$THEEYE_ORGANIZATION_NAME
+taskid=$(echo $THEEYE_JOB | jq -r '.task_id')
+echo "task id: ${taskid}"
 
-curl -sS "https://supervisor.theeye.io/$customer/task?access_token=$token" | jq -r --arg name "$taskName" '.[] | select(.name==$name) | {"name": .name, "id": .id, "hostname": .hostname}' | jq -s '.'
+result=$(curl -sS "https://supervisor.theeye.io/${customer}/task/${taskid}?access_token=${THEEYE_TOKEN}")
+
+echo $result | jq -c '. | {"name": .name, "id": .id, "hostname": .hostname}'
 ```
 
 *Response*
@@ -73,10 +74,10 @@ Returns a json array with tasks, id and hostname:
 #!/bin/bash
 
 customer=$1
-access_token=$2
-supervisor=$3
-if [ $3 == "" ];then supervisor='https://supervisor.theeye.io' ; fi
-if [ $# -ne 3 ];then echo "missing parameters" ; exit ; fi
+access_token=$THEEYE_TOKEN
+supervisor=$2
+if [ $2 == "" ]; then supervisor='https://supervisor.theeye.io' ; fi
+if [ $# -ne 2 ]; then echo "missing parameters" ; exit ; fi
 
 data=$(curl -s ${supervisor}/${customer}/task?access_token=${access_token})
 
@@ -117,16 +118,18 @@ All tasks have a **secret key** which can be used to invoke them directly via AP
 
 
 ```bash
-task_id=""
-task_secret_key=""
-customer=""
+echo $TASK_SECRET
+task_id=$TASK_ID
+task_secret_key=$TASK_SECRET
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
 
-curl \
+
+curl -i -sS \
   --request POST \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
-  --data "{\"task\":\"${task_id}\",\"task_arguments\":[]}" \
-  "https://supervisor.theeye.io/job/secret/${task_secret_key}?customer=${customer}"
+  --data "{\"task_arguments\":[]}" \
+  "https://supervisor.theeye.io/job/secret/${task_secret_key}?customer=${customer}&task=${task_id}"
 ```
 
 #### Task HTML Button
@@ -154,16 +157,15 @@ You can invoke a **Workflow** using its **secret key**.
 #### CURL Sample Request
 
 ```bash
-workflow_id=""
-workflow_secret_key=""
-customer=""
+workflow=$WORKFLOW_ID
+secret=$SECRET_WORKFLOW
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
 
-curl \
-   --request POST \
-   --header "Accept: application/json" \
-   --header "Content-Type: application/json" \
-   --data "{\"task_arguments\":[]}" \
-   "https://supervisor.theeye.io/workflows/${workflow_id}/secret/${workflow_secret_key}/job?customer=${customer}"
+echo $THEEYE_ORGANIZATION_NAME
+
+curl -i -sS -X POST "https://supervisor.theeye.io/workflows/${workflow}/secret/${secret}/job" \
+  --header 'Content-Type: application/json' \
+  --data '{"customer":"'${customer}'","task_arguments":["'${parametro-1}'","'${parametro-2}'","'${parametro-3}'"]}'
 ```
 
 #### Tasks Workflow HTML Button
@@ -195,16 +197,16 @@ Accessing to the web interfaz *Menu > Settings > Credentials > Integration Token
 #### **Request:**
 
 ```bash
-task_id=""
-access_token=""
-customer=""
+task_id=$TASK_ID
+access_token=$ACCESS_TOKEN
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
 
-curl \
-  -X POST \
+
+curl -X POST \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" \
-  -b "{\"task\":\"${task_id}\",\"task_arguments\":[]}" \
-  "https://supervisor.theeye.io/job?access_token=${access_token}&customer=${customer}"
+  -d "{\"task_arguments\":[]}" \
+  "https://supervisor.theeye.io/job?access_token=${access_token}&customer=${customer}&task=${task_id}"
 ```
 
 > NOTE 1: customer is REQUIRED. can also be included in the body as "customer"  
@@ -283,11 +285,13 @@ Once the job is created we can query it's status using the ID of the job. we can
 
 ```shell
 
-task_id=””
-access_token=""
-customer=""
+access_token=$THEEYE_ACCESS_TOKEN
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+job_id=$1
 
-curl -sS "https://supervisor.theeye.io/${customer}/job/${task_id}?access_token=${token}" | jq -r .
+echo "using: $customer"
+
+curl -sS "https://supervisor.theeye.io/${customer}/job/${job_id}?access_token=${access_token}"| jq -r .
 
 ```
 

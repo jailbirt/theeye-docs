@@ -5,23 +5,24 @@
 ## application/json
 
 ```shell
-secret=''
-customer=''
-task=''
+secret=$SECRET_ID
+task=$TASK_ID
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
 
 curl -i -sS \
   --request POST \
   --url "https://supervisor.theeye.io/job/secret/${secret}?customer=${customer}&task=${task}" \
   --header 'Content-Type: application/json' \
   --data '{"task_arguments":["arg1","arg2"]}'
+
 ```
 
 ## application/x-www-form-urlencoded
 
 ```shell
-secret=''
-customer=''
-task=''
+secret=$SECRET_ID
+task=$TASK_ID
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
 
 curl -i -sS \
   --request POST \
@@ -29,6 +30,7 @@ curl -i -sS \
   --header 'Content-Type: application/x-www-form-urlencoded' \
   --data-urlencode task_arguments="arg1" \
   --data-urlencode task_arguments="arg2"
+  --data-urlencode task_arguments="arg3"
 
 ```
 
@@ -36,9 +38,9 @@ curl -i -sS \
 
 ```shell
 
-secret=''
-customer=''
-task=''
+secret=$SECRET_ID
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+task=$TASK_ID
 
 curl -i -sS \
   --request POST \
