@@ -1,16 +1,4 @@
 
-# TheEye FAQ
-
-[![theeye.io](../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
-
-This page provides help with the most common questions about TheEye.
-
-You can also search all TheEye's help pages using the search box to the right, or browse the Nav menu or the Help directory.
-
-# FAQs from ours users about:
-
-## Descubrir API HTTP usando TheEye y herramientas básicas
-
 Los siguientes pasos permiten descubrir si se tiene acceso a la API de TheEye
 
 1. Crear una tarea en TheEye tipo CMD, Bash o Javascript

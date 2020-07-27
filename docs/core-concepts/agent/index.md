@@ -2,9 +2,12 @@
 
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
-The Eye supervises your infrastructure using Agents: a service daemon.
+An **Agent** is an autonomous software installed on an **Organization** **Host**, it is also known as Bot.
+It main responsibility is to execute **Tasks** and complex **Workflows** and report the execution result back to the **orchestrator**.
+It also report the **Host** status and health \(aka: **Health Monitor** or dstat\) to the **orchestrator**.
+The **Agent** works as interface and comunication between the Host and TheEye Core
 
-The Agent is in charge of keeping track of your resources and the host health.
+The recommenden is to install and configure the Agent as Service/Daemon.
 
 ## Installation
 
@@ -23,6 +26,7 @@ At this moment the supported distributions by the instalation script are
 The Bot is fully funtional in:
 
     - Redhat/Centos 6+
+
     - Ubuntu 12+
 
 

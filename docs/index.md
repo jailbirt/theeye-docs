@@ -20,11 +20,19 @@ The **bolded keywords** in the above paragraph are all core concepts of The Eye.
 
 ## Domain vocabulary
 
-The Eye consists on a _**core platform**_ process running in a HA infrastructure. The _**core platform**_ receives only _**agent**_ and _**client**_ connections. It keeps track of any _**resource**_ for the _**user**_ and stores _**tasks**_, _**scripts**_, files, _**workflows**_ and _**customers**_.
+The Eye consists on the core _**orchestation**_ platform running in a SaaS infrastructure. The _**orchestrator**_ receives _**bots**_ and _**clients**_ connections.
+It works as a finite-state machine to keeps track of _**monitors**_ and _**indicators**_ states, _**tasks**_ and _**workflows**_ execution results,
+and trigger _**notifications**_ on _**events**_.
+It helps maintains _**scripts**_ and _**files**_.
 
-A _**resource**_ is a configured _**monitor**_, a reliable, accountable, signaling _**monitor event**_. [Read more about resources](core-concepts/index.md).
+[Monitors](core-concepts/monitors/).
 
-An _**agent**_ is an autonomous software installed on a _**user**_ _**host**_. The _**agent**_ keeps the _**host**_ status and health updated \(aka: _**host monitor**_\) on the _**core platform**_. The _**agent**_ will also report back to the _**core platform**_ when it finishes a given _**task**_.
+[Bots/Agents](core-concepts/agent/).
+
+[Tasks](core-concepts/tasks/).
+
+[Workflows](core-concepts/tasks/workflows/).
+
 
 A _**client**_ is any means capable of connecting to the _**core platform**_ through a secure protocol and gain access with valid credentials. The Eye provides a web UI as it's main _**client**_, but alternative connection mechanisms can be implemented and any of them would fall under the _**client**_ category.
 
