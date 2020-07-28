@@ -6,6 +6,26 @@
 
 URL: `https://supervisor.theeye.io/task?access_token={token}&customer={organization_name}`
 
+### Properties
+
+| UI Property | Api Property | Type | Description |
+| ----- | ----- | ----- | ----- |
+| Name | name | string | name your task |
+| Bots | host_id | string | select the host where the script will run |
+| Script | script_id | string | select the script to be executed by the task |
+| Tags | tags | strings array | tag your task so you can find quickly through the application. |
+| Task Arguments | task_arguments | array | If the script played by the task is meant to receive parameters you can set them from here. Mind the order as it will be used by the script. _Fixed_, _options_, and _input_ arguments are allowed. _Input_ and _options_ arguments will be asked to the user for execution. _Fixed_ arguments will not be displayed to the user at execution time. |
+| Copy Task |  |  | select an already created task as template |
+| Run As | run_as | string | write down any extra command or argument needed to run the script. Windows users must declare here which interpreter to use. Linux users could prepend sudo |
+| Description | description | text | describe your task. What does it do, what's the expected output after execution |
+| ACL's | acls | array | select who can view your task \(what can be done with the task depends on the user role\) |
+| Triggered by | triggers | array | If the task is part of a workflow, select what triggers the task. The task will be triggered by the resource you selected here. |
+| Trigger on-hold time | grace_time | number | enter the time period TheEye should wait before running the task. _No wait / Cancelation_ can be selected which means the task will run inmediately after triggered. \(only applicable for triggered tasks\). **To cancel the task execution during the grace period, go to tasks panel, expand the task and delete the schedule created by the trigger.** |
+| Execution Timeout | timeout | number | This is the number of seconds the Bot will wait for the script to complete the execution. If the timeout is exceeded the Bot will try to terminate(kill) the script, sending SIGTERM/SIGKILL signal |
+| Multitasking | multitasking | boolean | enable or disable parallel execution of the task. When this is enable assigned bot will be able to run multiple instances of the Job at same time. this is important to check when running DesktopBots |
+| Environment (env) | env | string | Define extra environment variables that will be present during script execution |
+
+
 ## Examples
 
 ### Tasks

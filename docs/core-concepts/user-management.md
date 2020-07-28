@@ -4,7 +4,26 @@
 
 ## Roles
 
+### NOTES
+
+
+
+*IAM*: Identity and Access Management
+*CRUD*: Resources Create, Read, Update and Delete
+\* Access to the task should be provided via ACL's
+
+
+ | Rol     | Task       | IAM   | CRUD  | ACL's | 
+ | -----   | -----      | ----- | ----- | ----- | 
+ | Onwer   | - [x]      | - [x] | - [x] | - [x] | 
+ | Admin   | - [x]      |       | - [x] | - [x] | 
+ | Manager | \* view    | - [x] |       |       | 
+ | User    | \* execute |       |       |       | 
+ | Viewer  | \* view    |       |       |       | 
+
+
 1. **owner**
+
     * full access
     * full control of organizations
     * create and modify
@@ -13,21 +32,25 @@
     * members control
 
 2. **admin**
+
     * full access
     * create and modify
     * tasks execution
     * acls administration
 
 3. **manager**
+
     * members control
     * view (ACL's required)
     * tasks execution (ACL's required)
       
 4. **user**
+
     * view (ACL's required)
     * tasks execution (ACL's required)
 
 5. **viewer**
+
     * view (ACL's required)
 
 
