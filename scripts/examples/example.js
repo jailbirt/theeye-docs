@@ -1,18 +1,47 @@
 #!/usr/local/bin/node
-//For both Monitors and Tasks We need that your script ends by returning "normal" or "failure". 
-// WARNING : check your current path and name to node binary.
 
-var state = 'success';
-
- // check state
-if( false ) { 
-  var state = 'false';
+// NodeJs boilerplate
+const main = async () => {
+ try  {
+  let data = []
+  // add code here.
+  // let data = await httpPromiseCall()
+  successOutput(data)
+ } catch (err) {
+  failureOutput(err)
+ }
 }
 
-console.log( state );
+/**
+ * @param {Array} data
+ */
+const successOutput = (data) => {
+  let output = { state: "success", data }
+  console.log(JSON.stringify(output)) 
+}
 
-//You can even retrieve more information by sending json formated string.
-//I.E
-//console.log( JSON.stringify({ state:state, data:{responseTime:responseTime} }) ); 
+/**
+ * @param {Error} err
+ */
+const failureOutput = (err) => {
+  let output = { state: "failure", data: [ err.message, err.data ] }
+  console.error(JSON.stringify(output))
+}
 
-process.exit;
+const aFunctionCall = await () => {
+ // do async things here
+}
+
+/**
+ * @return {Promise}
+ */
+const aHTTPPromiseCall = () => {
+ return new Promise ( (resolve, reject) => {
+  // async call with callback. seudo code
+  // http.request('http://google.com')
+  // http.on('error', err => reject(err))
+  // http.on('end', data => resolve(data))
+ })
+}
+
+main()
