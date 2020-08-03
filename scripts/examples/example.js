@@ -5,7 +5,8 @@ const main = async () => {
  try  {
   let data = []
   // add code here.
-  // let data = await httpPromiseCall()
+  // let response = await aHTTPPromiseCall()
+  // data.push( response )
   successOutput(data)
  } catch (err) {
   failureOutput(err)
