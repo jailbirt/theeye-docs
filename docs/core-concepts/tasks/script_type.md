@@ -2,6 +2,116 @@
 
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
+## Components
+
+When working with workflows, you can use the components object on a task result to override the behavior of the next task:
+
+### Modify an Option selection argument: input_option
+
+You can use the input_option component from a task to modify the available options on an option selection argument of the next task.
+Let's check this example:
+
+#### task A
+Task A is the task that will modify the arguments of the next task. It's script output should be as follows:
+
+```javascript
+
+#!/usr/bin/node
+
+try {
+  const optionsArray = [{id:'1', label: 'Option 1'},{id:'2', label: 'Option 2'}]
+  const components = {
+    "input_option": [
+      {
+        "order": 1,
+        "options": optionsArray
+      }
+    ]
+  }
+  console.log(JSON.stringify({
+    state: 'success',
+    data: [],
+    components: components
+  }))
+} catch (e) {
+  console.error(e)
+  console.error('failure')
+  process.exit(2)
+}
+
+```
+
+#### task B
+Task B is the task that will have its arguments modified.
+To enable this on task B:
+
+1. Add an **Option Selection** argument on the same position as the **Order** property set on Task A output.
+
+2. Open the task edition/creation form
+
+3. Go to the bottom and click **Advanced Options**
+
+4. The **Require user interaction** option must be checked
+
+
+## Modify an Remote Options argument: input_remote_option
+
+You can use the input_remote_option component from a task to modify the params of the Remote options argument if the next task.
+You can pass all this params or just the one you need to everride. The available params to modify are:
+
+* endpointUrl: The endpoint from where the components gets the array of options
+* idAttribute: The options property used as ID.
+* textAttribute: The options property to show on the select input.
+
+Let's check this example:
+
+#### task A
+Task A is the task that will modify the remote options argument of the next task. It's script output should be as follows:
+
+```javascript
+
+#!/usr/bin/node
+
+try {
+  const endpointUrl = 'https://github.com/theeye-io/theeye-docs/blob/master/docs/assets/remote_example.json'
+  const idAttribute = 'id'
+  const textAttribute = 'username'
+  const components = {
+    "input_remote_options": [
+      {
+        "order": 1,
+        "endpointUrl": endpointUrl,
+        "idAttribute": idAttribute,
+        "textAttribute": textAttribute
+      }
+    ]
+  }
+  console.log(JSON.stringify({
+    state: 'success',
+    data: [],
+    components: components
+  }))
+} catch (e) {
+  console.error(e)
+  console.error('failure')
+  process.exit(2)
+}
+
+```
+
+#### task B
+Task B is the task that will have its arguments modified.
+To enable this on task B:
+
+1. Add an **Remote Options** argument on the same position as the **Order** property set on Task A output.
+
+2. Open the task edition/creation form
+
+3. Go to the bottom and click **Advanced Options**
+
+4. The **Require user interaction** option must be checked
+
+
 ## Popup Message
 
 The Web Popup Message allows to display a friendly message to the users when a task completes the execution.
@@ -17,28 +127,36 @@ The message can be any string defined within the script. At this moment there ar
 The Popup Message will also interprete web links and will make them clickeable.
 
 
-To emit a plain text message using the popup message box, the task result should be defined as follow
+To emit a plain text message using the popup message box, the task output should be defined as follow
 
 ```json
 
-  [{
-    "popup_component": "Message with a clickable link: https://documentation.theeye.io" 
-  }]
+  {
+    "state": "success",
+    "data": [],
+    "components": {
+      "popup": "Message with a clickable link: https://documentation.theeye.io"
+    }
+  }
 
 ```
 
-To display a list, the value for popup_component property should be changed to an array
+To display a list, the value for popup property should be changed to an array
 
 ```json
 
-  [{
-    "popup_component": [
-      "Item 1",
-      "Item 2",
-      "info@theeye.io",
-      "https://documentation.theeye.io"
-    ] 
-  }]
+  {
+    "state": "success",
+    "data": [],
+    "components": {
+      "popup": [
+        "Item 1",
+        "Item 2",
+        "info@theeye.io",
+        "https://documentation.theeye.io"
+      ]
+    }
+  }
 
 ```
 
@@ -51,11 +169,14 @@ Let's try some code
 
 try {
   const name = process.argv[2]
-  const data = [{
-    "popup_component": "Hi " + name + ", visit our documentation for more information! https://documentation.theeye.io"
-  }]
-
-  console.log( JSON.stringify( data ) )
+  const components = {
+    "popup": "Hi " + name + ", visit our documentation for more information! https://documentation.theeye.io"
+  }
+  console.log(JSON.stringify({
+    state: 'success',
+    data: [],
+    components: components
+  }))
 } catch (e) {
   console.error(e)
   console.error('failure')
@@ -71,9 +192,9 @@ You can download the recipe from this link.
 
 ### Enable Popup
 
-To enable this feature 
+To enable this feature
 
-1. Open the task edition/creation form 
+1. Open the task edition/creation form
 
 2. Go to the bottom and click **Advanced Options**
 
@@ -133,4 +254,3 @@ This is the organization name or project running the current script.
 
 The following script shows how to get user id and email information, it can be replicated to get information for THEEYE_JOB and THEEYE_JOB_WORKFLOW:
 [Download Recipe](https://github.com/theeye-io/theeye-docs/blob/master/docs/assets/recipes/check_theeye_env_vars.json)
-
