@@ -14,7 +14,14 @@ const successOutput = (data) => {
  * @param {Error} err
  */
 const failureOutput = (err) => {
-  let output = { state: "failure", data: [ err.message, err.data ] }
+  let output = {
+    state: "failure",
+    data: {
+      message: err.message,
+      code: err.code,
+      data: err.data 
+    }
+  }
   console.error(JSON.stringify(output))
 }
 
