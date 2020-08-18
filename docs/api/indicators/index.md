@@ -4,7 +4,7 @@
 
 ## API URL for Indicators
 
-URL: `https://supervisor.theeye.io/indicator?access_token={token}&customer={organization_name}`
+URL: `https://supervisor.theeye.io/indicator?access_token=${token}&customer=${organization_name}`
 
 
 ## Examples
@@ -13,14 +13,14 @@ URL: `https://supervisor.theeye.io/indicator?access_token={token}&customer={orga
 
 Method: `GET`
 
-URL: `https://supervisor.theeye.io/indicator?access_token={token}&customer={organization_name}`
+URL: `https://supervisor.theeye.io/indicator?access_token=${token}&customer=${organization_name}`
 
 *Request*
 ```bash
-customer="customer"
-token="integrationToken"
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+token=$THEEYE_ACCESS_TOKEN
 
-curl -X GET 'https://supervisor.theeye.io/indicator?access_token={token}&customer={organization_name}'
+curl -X GET "https://supervisor.theeye.io/indicator?access_token=${token}&customer=${organization_name}"
 ```
 
 #### [Create an Indicator](#create)
@@ -33,11 +33,13 @@ Check the following example, used to create the text indicator shown at the begi
 
 *Request*
 ```bash
-customer="customer"
-token="integrationToken"
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+token=$THEEYE_ACCESS_TOKEN
 
-curl -X POST 'https://supervisor.theeye.io/indicator?access_token={token}&customer={organization_name}' --header 'Content-Type: application/json' --data '{"title":"Currency Exchange
-Dollar/Peso","state":"normal","type":"text","value":"37.56","acl":["example_user_email@theeye.io"]}'
+
+curl -X POST "https://supervisor.theeye.io/indicator?access_token=${token}&customer=${customer}" \
+--header 'Content-Type: application/json' \
+--data "{\"title\":\"Currency Exchange Dollar/Peso\",\"state\":\"normal\",\"type\":\"text\",\"value\":\"37.56\",\"acl\":[\"example_user_email@theeye.io\"]}"
 ```
 
 The request response will look like this, where customer\_id, customer\_name, user\_id and id values were replaced for security reasons:
@@ -73,13 +75,19 @@ Method: `PATCH`
 
 Properties: `title, state, value`
 
-URL: `https://supervisor.theeye.io/indicator/{indicator_id}`
+URL: `https://supervisor.theeye.io/indicator/${indicator_id}`
 
 Check the following example, used to update the text indicator value shown at the begining of this page.
 
 *Request*
 ```bash
-curl -X PATCH 'https://supervisor.theeye.io/indicator/{indicator_id}?access_token={token}&customer={organization_name}' --header 'Content-Type: application/json' --data '{"value":"39.99"}'
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+token=$THEEYE_ACCESS_TOKEN
+indicator_id=$ID_INDICATOR
+
+curl -X PATCH "https://supervisor.theeye.io/indicator/${indicator_id}?access_token=${token}&customer=${customer}" \
+--header 'Content-Type: application/json' \
+--data "{\"value\":\"59.99\"}"
 ```
 
 The request response will look like this, where customer\_id, customer\_name, user\_id and id values were replaced for security reasons:
@@ -122,8 +130,13 @@ URL: `https://supervisor.theeye.io/indicator/title/{urlencoded_title}`
 Check the following example, used to update the text indicator value shown at the begining of this page.
 
 *Request*
-```
-curl -X PATCH 'https://supervisor.theeye.io/indicator/title/Currency%20Exchange Dollar%2fPeso?access_token={token}&customer={organization_name}' --header 'Content-Type: application/json' --data '{"value":"34"}'
+```bash
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+token=$THEEYE_ACCESS_TOKEN
+
+curl -X PUT "https://supervisor.theeye.io/indicator/title/ejemplodeprueba?access_token=${token}&customer=${customer}"\
+--header 'Content-Type: application/json' \
+--data "{\"value\":\"15\"}"
 ```
 
 
@@ -139,8 +152,55 @@ Check the following example, used to increase the value of a counter indicator.
 
 *Request*
 ```bash
-curl -X PATCH 'https://supervisor.theeye.io/indicator/{indicator_id}/increase?access_token={TOKEN}&customer={organization_name}'
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+token=$THEEYE_ACCESS_TOKEN
+indicator_id=$ID_INDICATOR
+
+curl -X PATCH "https://supervisor.theeye.io/indicator/${indicator_id}/increase?access_token=${token}&customer=${customer}"
 ```
+
+#### [create an indicator with admin](#update)
+
+Method: `POST`
+
+Properties: `title, state, value`
+
+URL: `https://supervisor.theeye.io/indicator/${indicator_id}`
+
+Check the following example, used to update the text indicator value shown at the begining of this page.
+
+*Request*
+```bash
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+token=$THEEYE_ACCESS_TOKEN
+
+curl -X POST "https://supervisor.theeye.io/indicator?access_token=${token}&customer=${customer}" \
+--header 'Content-Type: application/json' \
+--data "{\"title\":\"poblacion\",\"state\":\"normal\",\"type\":\"text\",\"value\":\"44millones\",\"acl\":[\"example_user@theeye.io\",\"example_viewer@theeye.io\"]}"
+```
+
+
+#### [Delete indicator by titlen](#update)
+
+Method: `DELETE`
+
+Properties: `title, state, value`
+
+URL: `https://supervisor.theeye.io/indicator/${indicator_id}`
+
+Check the following example, used to update the text indicator value shown at the begining of this page.
+
+*Request*
+```bash
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+token=$THEEYE_ACCESS_TOKEN
+title=$TITLE_INDICATOR
+
+curl -X DELETE "https://supervisor.theeye.io/indicator/title/${TITLE_INDICATOR}?access_token=${token}&customer=${customer}"
+```
+
+
+
 
 #### More Examples
 

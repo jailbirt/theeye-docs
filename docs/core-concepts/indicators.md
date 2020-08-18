@@ -34,4 +34,5 @@ Indicators are shown at the top of the dashboard only when available.
 
 Indicators can be created from dashboard from the "+"  button:
 
-![Dashboard - Create Indicator](../images//image-07.png)
+![Dashboard - Create Indicator](../images//createIndicator.gif)
+
