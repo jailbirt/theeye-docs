@@ -18,8 +18,8 @@ A `state` could be any state or event linked to the task or monitor of this scri
 
 So if you script ended as expected \(success state\), you will have to make it print "success" as the last output line of your script.
 
-* `success`, `normal` and `ok` are accepted `success` states.
-* `failure` and `fail` are accepted `failure` states.
+* `success` when everythin is ok
+* `failure` in abnormal situations
 
 ### Passing Arguments in Workflow.
 
