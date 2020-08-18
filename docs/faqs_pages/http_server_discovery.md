@@ -1,8 +1,4 @@
 
-# Descubrir API HTTP usando TheEye y herramientas básicas
-
-[![theeye.io](../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
-
 Los siguientes pasos permiten descubrir si se tiene acceso a la API de TheEye
 
 1. Crear una tarea en TheEye tipo CMD, Bash o Javascript
