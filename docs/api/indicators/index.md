@@ -180,7 +180,7 @@ curl -X POST "https://supervisor.theeye.io/indicator?access_token=${token}&custo
 ```
 
 
-#### [Delete indicator by titlen](#update)
+#### Delete indicator by title
 
 Method: `DELETE`
 
