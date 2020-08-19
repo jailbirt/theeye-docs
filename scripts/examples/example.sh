@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ## For both Monitors and Tasks We need that your script ends by returning "normal" or "failure". 
-STATE="normal"
+STATE="success"
 
 # run your command. this will generate output , but we will only parse the last line
 echo "Hello World"

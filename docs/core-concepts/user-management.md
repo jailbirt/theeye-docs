@@ -1,10 +1,23 @@
-# User Management
+# IAM - Identity and Access Management
 
 [![theeye.io](../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
 ## Roles
 
+\* Access to the task should be provided via ACL's
+
+
+ | Rol     | Task       | IAM   | CRUD  | ACL's | 
+ | -----   | -----      | ----- | ----- | ----- | 
+ | Onwer   |       | x | x | x | 
+ | Admin   | x      |       |  x | x | 
+ | Manager | \* view    | x |       |       | 
+ | User    | \* execute |       |       |       | 
+ | Viewer  | \* view    |       |       |       | 
+
+
 1. **owner**
+
     * full access
     * full control of organizations
     * create and modify
@@ -13,21 +26,25 @@
     * members control
 
 2. **admin**
+
     * full access
     * create and modify
     * tasks execution
     * acls administration
 
 3. **manager**
+
     * members control
     * view (ACL's required)
     * tasks execution (ACL's required)
       
 4. **user**
+
     * view (ACL's required)
     * tasks execution (ACL's required)
 
 5. **viewer**
+
     * view (ACL's required)
 
 
@@ -36,6 +53,7 @@
 To add, modify or revoke users for the current organization, go to the left hamburguer menu , then go to _Settings_ > _Members_ section.
 
 ![](../images/members.png)
+
 
 When you invite a new member, it will be prompted to select the user's role \(admin/user/viewer/manager\).
 The role can be changed at any time by a manager or the owner of the account.
@@ -48,7 +66,6 @@ Admin users can make resources visible to other members by adding them to the in
 When a user is added to an ACL list, then the resource becomes available and accesible according to the member's role.
 Notifications are sent to all users within the ACL list, regardless the user role.
 
-![](../images/acls-1.png)
 
 ## Users Domain Controller
 
@@ -65,6 +82,7 @@ One of the following groups must be used
   * theeye_admins     
   * theeye_managers    
   * theeye_users   
+
   * theeye_viewers or none to assign to viewers group
 
 
