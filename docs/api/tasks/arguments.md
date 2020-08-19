@@ -17,9 +17,10 @@ Asuming that your webhook is a trigger of a task with 4 arguments, this is a sam
 #!/bin/bash
 
 # this params should be changed to use your webhook.
-customer=''
-id=''
-secret=''
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+id=$ID_WEBHOOK
+secret=$SECRET
+
 
 url="https://supervisor.theeye.io/${customer}/webhook/${id}/trigger/secret/${secret}"
 method='POST'
@@ -42,9 +43,9 @@ In that case, to avoid manually JSON encoding/decoding, we can use a temporary f
 #!/bin/bash
 
 # this params should be changed to use your webhook.
-customer=''
-id=''
-secret=''
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+id=$ID_WEBHOOK
+secret=$SECRET
 
 url="https://supervisor.theeye.io/${customer}/webhook/${id}/trigger/secret/${secret}"
 method='POST'

@@ -32,6 +32,8 @@ Verifies that a process is running \(e.g. daemon\)
 
 A File monitor will upload a file to a server and ensure that the file remains as created in the destination path you provided. Most common use is to push a configuration file. The file can be updated at any time directly from the monitor box.
 
+![file monitor](../images/createMonitorFile.gif)
+
 ### Nested
 
 A nested monitor is a special monitor that contains other monitors. This kind of monitor will notify when all the contained monitors needs attention. You can create a nested monitor from the dashboard, using the "+" button.
