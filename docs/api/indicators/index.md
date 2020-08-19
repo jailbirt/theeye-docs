@@ -159,7 +159,7 @@ indicator_id=$ID_INDICATOR
 curl -X PATCH "https://supervisor.theeye.io/indicator/${indicator_id}/increase?access_token=${token}&customer=${customer}"
 ```
 
-#### [create an indicator with admin](#update)
+#### create an indicator with admin
 
 Method: `POST`
 
