@@ -14,17 +14,17 @@ Alerts are received every time an event occurs and are only visible from TheEye 
 
 ### Notifications
 
-Alerts are also notified. Click on the Notification's Bell to see the events log. Events are retained for 3 days and you can always purge them all by clicking the trash icon.
+Alerts are also notified. Click on the Notification's Tab to see the events log. Events are retained for 3 days and you can always purge them all by clicking the trash icon.
 
-![Notifications Panel](../images/image-12.png)
+![Notifications Panel](../images/notificationstab.jpg)
 
 The configuration ring in this panel will lead you to the task Notification's settings where you can disable notifications for task events.
 
-![Notification Preferences](../images/image-13.png)
+![Notification Preferences](../images/settingsnotification1.jpg)
 
-Click on "More Options" to completely disable Desktop and Mobile notifications.
+Click on "+" and "Settings" to completely disable Desktop and Mobile notifications.
 
-![Settings --&amp;gt; Notifications](../images/image-11.png)
+![Settings --&amp;gt; Notifications](../images/settingsnotification2.jpg)
 
 Desktop Notifications are received when you're logged in TheEye's WebApp.
 
@@ -34,7 +34,7 @@ Mobile Notifications \(Push Notifications\) are received once you've installed a
 
 You can disable email notifications for Monitors by muting them from the dashboard as shown below:
 
-![](../images/mute-monitors.jpg)
+![](../images/mute-monitors.gif)
 
 ## Notifications outside of TheEye:
 

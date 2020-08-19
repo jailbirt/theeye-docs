@@ -18,31 +18,31 @@ URL: `https://supervisor.theeye.io/monitor?access_token={token}&customer={organi
 ### Request example:
 
 ```bash
-  customer=""
-  access_token=""
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+token=$THEEYE_ACCESS_TOKEN
 
-  curl -sS https://supervisor.theeye.io/${customer}/monitor?access_token=${access_token}
+ curl -sS "https://supervisor.theeye.io/monitor?access_token=${token}&customer=${customer}"
 ```
 #### **Search monitor by name**
 
 ```bash
-  customer=""
-  access_token=""
-  monName="demo"
+  customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+  token=$THEEYE_ACCESS_TOKEN
+  monName=$1
 
-  curl -sS https://supervisor.theeye.io/${customer}/monitor?access_token=${access_token} | \
-    jq -r --arg name "$monName" '.[] | select(.name==$name) | {"name": .name, "id": .id, "state": .resource.state}' | jq -s '.'
+  curl -sS "https://supervisor.theeye.io/monitor?access_token=${token}&customer=${customer}" | \
+		jq -r --arg name "${monName}" '.[] | select(.name==$name) | {"name": .name, "id": .id, "state": .resource.state}' | jq -s '.'
 ```
 
 #### **Show bot stats**
 
 ```bash
-customer=""
-access_token=""
-botName="demo"
+  customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+  token=$THEEYE_ACCESS_TOKEN
+  botName=$1
 
-curl -sS https://supervisor.theeye.io/${customer}/monitor?access_token=${access_token} | \
-jq -r --arg name "$botName" '.[] | select((.name==$name) and (.type=="dstat")) | {"name": .name, "id": .id, "stats": .resource.last_event.data}' | jq -s '.'
+  curl -sS "https://supervisor.theeye.io/monitor?access_token=${token}&customer=${customer}"  | \
+  jq -r --arg name "${botName}" '.[] | select((.name==$name) and (.type=="dstat")) | {"name": .name, "id": .id, "stats": .resource.last_event.data}' | jq -s '.'
 ```
 
 ### **Response example:**

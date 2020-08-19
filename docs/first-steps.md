@@ -14,7 +14,7 @@ An **organization** in The Eye is an entity that comprises multiple objects, suc
 
 Once you've activated your user account, you'll see this Dashboard after login:
 
-![first time login](images/FirstTimeLogin.jpg)
+![first time login](images/FirstTimeLogin.png)
 
 ## Build your playground
 The Tutorial will guide you through the installation process of a **Bots** and will show you how to create a **task**.
@@ -36,11 +36,8 @@ the web panel ([settings -> installer](https://app.theeye.io/dashboard#installer
 
 If it is the first time you access TheEye Website, from the web panel ([settings -> installer](https://app.theeye.io/dashboard#installer)) you can download the binary agent and get the installation script for your host.
 
-![settings](images/Settings.jpg)
+![settings](images/settingsinstaller.gif)
 
-##### List of installers:
-
-![full list for install](images/TheEye-Agent-Full-list.jpg)
 
 For more information please check the installation documentation in ([Bot Installer](/core-concepts/agent/)) you can download the binary agent and get the installation script for your host.
 
@@ -63,7 +60,7 @@ For this task we will follow the following steps from the dashboard:
         - value: Madrid
             - This should be the name of the city on which we are going to check the weather.
 
-![tasks create](images/firtsStepsTaskCreate.jpg)
+![tasks create](images/fixedarg.gif)
 
 - Now we select to create scripts
     - File name: check_weather.sh
@@ -94,7 +91,7 @@ echo { \"state\":\"$STATE\", \"data\":{ \"data1\":$WEATHER}  }
 
 Now in the Dashboard we will see our resources. We should have something like this:
 
-![scripts create](images/resourcesList.jpg)
+![scripts create](images/resourcesList.png)
 
 If this is the case, let's play the "check_weather" script inside the workflow.
 
@@ -136,6 +133,8 @@ There are five kind of monitors you can set up from TheEye: Stats, Script, API/W
 #### Tasks
 
 A task is an action that can be performed or executed on demand. You can also use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. Check the [Tasks Documentation](/core-concepts/tasks/) for more details.
+
+![create tasks](images/createtask.gif)
 
 #### Scripts
 
