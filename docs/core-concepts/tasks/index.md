@@ -40,6 +40,23 @@ An input task is a special task commonly used to start workflows. When executed,
 
 Check the [Task Notifications](/core-concepts/tasks/taskNotifications) for more details.
 
+## Task Arguments.
+
+To received input values into tasks it is required to define the Task Arguments.
+It is important to define the arguments in the same order in which they will be used in the script.
+
+| Type | UI Usage | Workflow Usage |
+| ----- | ----- | ----- |
+| Fixed | will not be visible to users into forms | this is a fixed value that will be always the same. cannot be rewrited or replaced |
+| Text | a free text input | it is usefull to receive dynamic values from outputs to inputs |
+| Options | create an options element | behave as Text Argument |
+| Remote Options | create an options element using the response of a Remote API. It is posible to include the email of the user executing the task at the momento of the fetch. This will be achived including the keyword %THEEYE_USER_EMAIL% in the queystring of the url of remote api. Example url http://tracking-tool.domain.com/tickets?user=%THEEYE_USER_EMAIL% | behave as Text Argument |
+| Date | create a Date Picker element | behave as Text Argument |
+| Email | creates a text input that only accepts email strings | behaves as Text Argument |
+| File | create a File Selection element | when it is used with Script Tasks the uploaded file will be downloaded and the argument will contain the local path to the file. |
+| RegExp | creates a text input that only accepts regular expression and validate the format | behave as Text Argument |
+
+
 ## Task Scheduler.
 
 You can use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. 
