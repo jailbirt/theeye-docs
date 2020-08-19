@@ -24,7 +24,7 @@ Now it's not possible to change the timeout via API. To modify the timeout for a
 ```bash
 customer=$THEEYE_ORGANIZATION_NAME
 
-curl -sS "https://supervisor.theeye.io/$customer/task?access_token=$THEYE_TOKEN"
+curl -sS "https://supervisor.theeye.io/${customer}/task?access_token=$THEEYE_TOKEN"
 ```
 
 ### Search task id by name
