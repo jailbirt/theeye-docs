@@ -9,9 +9,9 @@
 
  | Rol     | Task       | IAM   | CRUD  | ACL's | 
  | -----   | -----      | ----- | ----- | ----- | 
- | Onwer   |       | x | x | x | 
- | Admin   | x      |       |  x | x | 
- | Manager | \* view    | x |       |       | 
+ | Onwer   | x          | x     | x     | x     | 
+ | Admin   | x          |       |       | x     | 
+ | Manager | \* view    | x     |       |       | 
  | User    | \* execute |       |       |       | 
  | Viewer  | \* view    |       |       |       | 
 
