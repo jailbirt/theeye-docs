@@ -23,7 +23,7 @@ token=$THEEYE_ACCESS_TOKEN
 curl -X GET "https://supervisor.theeye.io/indicator?access_token=${token}&customer=${organization_name}"
 ```
 
-#### [Create an Indicator](#create)
+#### Create an Indicator
 
 Method: `POST`
 
