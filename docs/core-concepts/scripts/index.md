@@ -135,7 +135,7 @@ the `test.sh` script looks like this
 ```bash
 #!/bin/bash
 
-state='normal'
+state='success'
 POOL='pool'
 members=1
 
