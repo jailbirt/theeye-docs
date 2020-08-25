@@ -36,3 +36,59 @@ Consider replacing the `${customer}` keyword with your organization name
 
 NodeJS Api helper: <a target="_black" href="https://github.com/theeye-io/recipes/tree/master/api/jobs">Fetch and Cancel jobs using TheEye API</a>
 
+## EXAMPLES
+
+#### **Get Job by id**
+
+```bash
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+token=$THEEYE_ACCESS_TOKEN
+id=$!
+
+curl -sS --request GET "https://supervisor.theeye.io/${customer}/job/${id}?access_token=${token}"
+```
+
+
+#### **Get all jobs by id**
+```bash
+access_token=$THEEYE_ACCESS_TOKEN
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+task_id=$1
+
+echo "using: $customer"
+
+curl -sS "https://supervisor.theeye.io/${customer}/job?access_token=${access_token}&where\[task_id\]=${task_id}&include\[state\]=1&include\[creation_date\]=1&include\[lifecycle\]=1"
+```
+
+#### **Get job lifecycle**
+
+```bash
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+token=$THEEYE_ACCESS_TOKEN
+id=$1
+
+curl -sS --request GET "https://supervisor.theeye.io/${customer}/job/${id}/lifecycle?access_token=${token}"
+```
+
+#### **Cancel Job**
+
+```bash
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+token=$THEEYE_ACCESS_TOKEN
+id="5eff3019f3707500121284a8"
+
+curl -sS --request PUT "https://supervisor.theeye.io/${customer}/job/${id}/cancel?access_token=${token}"
+```
+
+
+#### **Cancel Job**
+
+```bash
+access_token=$THEEYE_ACCESS_TOKEN
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+task_id=$1
+
+echo "using: $customer"
+
+curl -sS  --request DELETE "https://supervisor.theeye.io/${customer}/job?access_token=${access_token}&where\[task_id\]=${task_id}"
+```
