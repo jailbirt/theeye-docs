@@ -86,7 +86,6 @@ One of the following groups must be used
   * theeye_viewers or none to assign to viewers group
 
 
-
 2. Login into TheEye to complete the registration.
 
 3. After successful registration the user can be invited to any organization by the Owner.

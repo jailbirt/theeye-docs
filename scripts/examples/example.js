@@ -1,18 +1,46 @@
 #!/usr/local/bin/node
-//For both Monitors and Tasks We need that your script ends by returning "normal" or "failure". 
-// WARNING : check your current path and name to node binary.
 
-var state = 'success';
+// error and output handlers must go first.
 
- // check state
-if( false ) { 
-  var state = 'false';
+/**
+ * @param {Array} data
+ */
+const successOutput = (data) => {
+  let output = { state: "success", data }
+  console.log(JSON.stringify(output)) 
 }
 
-console.log( state );
+/**
+ * @param {Error} err
+ */
+const failureOutput = (err) => {
+  let output = {
+    state: "failure",
+    data: {
+      message: err.message,
+      code: err.code,
+      data: err.data 
+    }
+  }
+  console.error(JSON.stringify(output))
+}
 
-//You can even retrieve more information by sending json formated string.
-//I.E
-//console.log( JSON.stringify({ state:state, data:{responseTime:responseTime} }) ); 
+process.on('unhandledRejection', (reason, p) => {
+  console.error(reason, 'Unhandled Rejection at Promise', p)
+  failureOutput(reason)
+})
 
-process.exit;
+process.on('uncaughtException', err => {
+  console.error(err, 'Uncaught Exception thrown')
+  failureOutput(err)
+})
+
+// NodeJs boilerplate
+const main = async () => {
+  let data = []
+  // add your code here.
+  return data
+}
+
+// invoke main and capture result output
+main().then(successOutput).catch(failureOutput)
