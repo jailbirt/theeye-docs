@@ -56,6 +56,7 @@ It is important to define the arguments in the same order in which they will be 
 | File | create a File Selection element | when it is used with Script Tasks the uploaded file will be downloaded and the argument will contain the local path to the file. |
 | RegExp | creates a text input that only accepts regular expression and validate the format | behave as Text Argument |
 
+
 ## Task Scheduler.
 
 You can use the task scheduler to create and manage tasks that TheEye will carry out automatically at the times you specify. 
