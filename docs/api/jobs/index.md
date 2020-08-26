@@ -101,9 +101,37 @@ customer=$(echo ${THEEYE_ORGANIZATION_NAME} | jq -r '.')
 token="${THEEYE_ACCESS_TOKEN}"
 id="${1}"
 
-#env | grep THEEYE
-
 curl -X PUT "https://supervisor.theeye.io/${customer}/job/${id}/approve?access_token=${token}"
 ```
 
+#### **Create a new job instance using the task secret key**
 
+```bash
+task="${1}"
+secret="${2}"
+customer=$(echo ${THEEYE_ORGANIZATION_NAME} | jq -r '.')
+
+curl -i -sS -X POST "https://supervisor.theeye.io/job/secret/${secret}" \
+  --header 'Content-Type: application/json' \
+  --data '{"customer":"'${customer}'","task":"'${task}'","task_arguments":["'${PDF}'","'${Imagen}'","'${Link a XLS}'","'${Link Web}'","'${Una página externa}'"]}'
+```
+
+#### **Reject Approval job**
+
+```bash
+customer=$(echo ${THEEYE_ORGANIZATION_NAME} | jq -r '.')
+token="${THEEYE_ACCESS_TOKEN}"
+id="${1}"
+
+curl -X PUT "https://supervisor.theeye.io/${customer}/job/${id}/reject?access_token=${token}"
+```
+
+#### **Submit script job input**
+
+```bash
+customer=$(echo ${THEEYE_ORGANIZATION_NAME} | jq -r '.')
+token="${THEEYE_ACCESS_TOKEN}"
+id="${1}"
+
+curl -X PUT "https://supervisor.theeye.io/${customer}/job/${id}/input?access_token=${token}"
+```
