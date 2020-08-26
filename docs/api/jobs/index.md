@@ -92,3 +92,18 @@ echo "using: $customer"
 
 curl -sS  --request DELETE "https://supervisor.theeye.io/${customer}/job?access_token=${access_token}&where\[task_id\]=${task_id}"
 ```
+
+
+#### **Approve Approval job**
+
+```bash
+customer=$(echo ${THEEYE_ORGANIZATION_NAME} | jq -r '.')
+token="${THEEYE_ACCESS_TOKEN}"
+id="${1}"
+
+#env | grep THEEYE
+
+curl -X PUT "https://supervisor.theeye.io/${customer}/job/${id}/approve?access_token=${token}"
+```
+
+
