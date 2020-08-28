@@ -14,6 +14,8 @@ const successOutput = (data) => {
  * @param {Error} err
  */
 const failureOutput = (err) => {
+  console.error(err)
+  
   let output = {
     state: "failure",
     data: {
