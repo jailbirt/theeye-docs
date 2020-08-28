@@ -40,6 +40,8 @@ NodeJS Api helper: <a target="_black" href="https://github.com/theeye-io/recipes
 
 #### **Example 1**
 
+##### Get job by id
+
 ```bash
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
 token=$THEEYE_ACCESS_TOKEN
@@ -49,7 +51,8 @@ curl -sS --request GET "https://supervisor.theeye.io/${customer}/job/${id}?acces
 ```
 
 
-#### **Get all jobs of specific task**
+#### **Example 2**
+##### Get all jobs of specific task
 ```bash
 access_token=$THEEYE_ACCESS_TOKEN
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
@@ -60,8 +63,8 @@ echo "using: $customer"
 curl -sS "https://supervisor.theeye.io/${customer}/job?access_token=${access_token}&where\[task_id\]=${task_id}&include\[state\]=1&include\[creation_date\]=1&include\[lifecycle\]=1"
 ```
 
-#### **Get job lifecycle**
-
+#### **Example 3**
+#### Get job lifecycle
 ```bash
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
 token=$THEEYE_ACCESS_TOKEN
@@ -70,7 +73,8 @@ id=$1
 curl -sS --request GET "https://supervisor.theeye.io/${customer}/job/${id}/lifecycle?access_token=${token}"
 ```
 
-#### **Cancel Job**
+#### **Example 4**
+##### Cancel Job
 
 ```bash
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
@@ -81,7 +85,23 @@ curl -sS --request PUT "https://supervisor.theeye.io/${customer}/job/${id}/cance
 ```
 
 
-#### **Cancel Job**
+#### **Example 6**
+##### Create a new job instance using the task secret key
+
+```bash
+task="${1}"
+secret="${2}"
+customer=$(echo ${THEEYE_ORGANIZATION_NAME} | jq -r '.')
+
+curl -i -sS -X POST "https://supervisor.theeye.io/job/secret/${secret}" \
+  --header 'Content-Type: application/json' \
+  --data '{"customer":"'${customer}'","task":"'${task}'","task_arguments":["'${PDF}'","'${Imagen}'","'${Link a XLS}'","'${Link Web}'","'${Una página externa}'"]}'
+```
+
+
+
+#### **Example 7**
+#### Delete completed jobs history
 
 ```bash
 access_token=$THEEYE_ACCESS_TOKEN
@@ -94,7 +114,8 @@ curl -sS  --request DELETE "https://supervisor.theeye.io/${customer}/job?access_
 ```
 
 
-#### **Approve Approval job**
+#### **Example 8**
+##### Approve Approval job
 
 ```bash
 customer=$(echo ${THEEYE_ORGANIZATION_NAME} | jq -r '.')
@@ -104,19 +125,10 @@ id="${1}"
 curl -X PUT "https://supervisor.theeye.io/${customer}/job/${id}/approve?access_token=${token}"
 ```
 
-#### **Create a new job instance using the task secret key**
 
-```bash
-task="${1}"
-secret="${2}"
-customer=$(echo ${THEEYE_ORGANIZATION_NAME} | jq -r '.')
 
-curl -i -sS -X POST "https://supervisor.theeye.io/job/secret/${secret}" \
-  --header 'Content-Type: application/json' \
-  --data '{"customer":"'${customer}'","task":"'${task}'","task_arguments":["'${PDF}'","'${Imagen}'","'${Link a XLS}'","'${Link Web}'","'${Una página externa}'"]}'
-```
-
-#### **Reject Approval job**
+#### **Example 9**
+##### Reject Approval job
 
 ```bash
 customer=$(echo ${THEEYE_ORGANIZATION_NAME} | jq -r '.')
@@ -126,7 +138,8 @@ id="${1}"
 curl -X PUT "https://supervisor.theeye.io/${customer}/job/${id}/reject?access_token=${token}"
 ```
 
-#### **Submit script job input**
+#### **Example 10**
+##### Submit script job input
 
 ```bash
 customer=$(echo ${THEEYE_ORGANIZATION_NAME} | jq -r '.')
