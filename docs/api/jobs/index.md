@@ -12,7 +12,7 @@ Consider replacing the `${customer}` keyword with your organization name
 
 | Method | Path | Description | ACL |
 | ----- | ----- | ----- | ----- |
-| GET  | /${customer}/job/${id} | [Get job by id](example-1)                | viewer |
+| GET  | /${customer}/job/${id} | [Get job by id](#example-1)                | viewer |
 | GET  | /${customer}/job       | Get all jobs | viewer |
 | PUT  | /${customer}/job/${id} | Finish a job, update execution status | *agent |
 | POST | /${customer}/job | Create a new job instance | user | task id |
