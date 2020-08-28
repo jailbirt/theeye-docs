@@ -12,8 +12,8 @@ Consider replacing the `${customer}` keyword with your organization name
 
 | Method | Path | Description | ACL |
 | ----- | ----- | ----- | ----- |
-| GET  | /${customer}/job/${id} | Get job by id                | viewer |
-| GET  | /${customer}/job       | Get all the jobs information | viewer |
+| GET  | /${customer}/job/${id} | [Get job by id](example-1)                | viewer |
+| GET  | /${customer}/job       | Get all jobs | viewer |
 | PUT  | /${customer}/job/${id} | Finish a job, update execution status | *agent |
 | POST | /${customer}/job | Create a new job instance | user | task id |
 | GET  | /${customer}/job/${id}/lifecycle | Get job lifecycle | user |
@@ -38,18 +38,18 @@ NodeJS Api helper: <a target="_black" href="https://github.com/theeye-io/recipes
 
 ## EXAMPLES
 
-#### **Get Job by id**
+#### **Example 1**
 
 ```bash
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
 token=$THEEYE_ACCESS_TOKEN
-id=$!
+id=$1
 
 curl -sS --request GET "https://supervisor.theeye.io/${customer}/job/${id}?access_token=${token}"
 ```
 
 
-#### **Get all jobs by id**
+#### **Get all jobs of specific task**
 ```bash
 access_token=$THEEYE_ACCESS_TOKEN
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
@@ -75,7 +75,7 @@ curl -sS --request GET "https://supervisor.theeye.io/${customer}/job/${id}/lifec
 ```bash
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
 token=$THEEYE_ACCESS_TOKEN
-id="5eff3019f3707500121284a8"
+id=$1
 
 curl -sS --request PUT "https://supervisor.theeye.io/${customer}/job/${id}/cancel?access_token=${token}"
 ```
