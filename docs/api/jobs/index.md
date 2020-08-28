@@ -13,11 +13,11 @@ Consider replacing the `${customer}` keyword with your organization name
 | Method | Path | Description | ACL |
 | ----- | ----- | ----- | ----- |
 | GET  | /${customer}/job/${id} | [Get job by id](#example-1)                | viewer |
-| GET  | /${customer}/job       | Get all jobs | viewer |
+| GET  | /${customer}/job       | [Get all jobs](#example-2) | viewer |
 | PUT  | /${customer}/job/${id} | Finish a job, update execution status | *agent |
 | POST | /${customer}/job | Create a new job instance | user | task id |
-| GET  | /${customer}/job/${id}/lifecycle | Get job lifecycle | user |
-| PUT  | /${customer}/job/${id}/cancel | Cancel job | user |
+| GET  | /${customer}/job/${id}/lifecycle | [Get job lifecycle](#example-3) | user |
+| PUT  | /${customer}/job/${id}/cancel | [Cancel job](#example-4) | user |
 
 ### API V2 URL
 
@@ -25,12 +25,12 @@ Consider replacing the `${customer}` keyword with your organization name
 
 | Method | Path | Description | ACL |
 | ----- | ----- | ----- | ----- |
-| POST | /job | Create a new job instance | user |
+| POST | /job | [Create a new job instance](#example-5) | user |
 | POST | /job/secret/:secret | Create a new job instance using the task secret key | anonymous |
-| DELETE | /job/finished | Delete completed jobs history | admin |
-| PUT  | /job/${id}/approve | Approve Approval job | viewer |
-| PUT  | /job/${id}/reject | Reject Approval job | viewer |
-| PUT  | /job/${id}/input | Submit script job input | user |
+| DELETE | /job/finished | [Delete completed jobs history](#example-6) | admin |
+| PUT  | /job/${id}/approve | [Approve Approval job](#example-7) | viewer |
+| PUT  | /job/${id}/reject | [Reject Approval job](#example-8) | viewer |
+| PUT  | /job/${id}/input | [Submit script job input](#example-9) | user |
 
 ### Sample API Usage
 
@@ -85,7 +85,7 @@ curl -sS --request PUT "https://supervisor.theeye.io/${customer}/job/${id}/cance
 ```
 
 
-#### **Example 6**
+#### **Example 5**
 ##### Create a new job instance using the task secret key
 
 ```bash
@@ -100,7 +100,7 @@ curl -i -sS -X POST "https://supervisor.theeye.io/job/secret/${secret}" \
 
 
 
-#### **Example 7**
+#### **Example 6**
 #### Delete completed jobs history
 
 ```bash
@@ -114,7 +114,7 @@ curl -sS  --request DELETE "https://supervisor.theeye.io/${customer}/job?access_
 ```
 
 
-#### **Example 8**
+#### **Example 7**
 ##### Approve Approval job
 
 ```bash
@@ -127,7 +127,7 @@ curl -X PUT "https://supervisor.theeye.io/${customer}/job/${id}/approve?access_t
 
 
 
-#### **Example 9**
+#### **Example 8**
 ##### Reject Approval job
 
 ```bash
@@ -138,7 +138,7 @@ id="${1}"
 curl -X PUT "https://supervisor.theeye.io/${customer}/job/${id}/reject?access_token=${token}"
 ```
 
-#### **Example 10**
+#### **Example 9**
 ##### Submit script job input
 
 ```bash
