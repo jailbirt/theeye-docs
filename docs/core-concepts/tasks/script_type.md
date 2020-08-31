@@ -16,29 +16,21 @@ Task A is the task that will modify the arguments of the next task. It's script 
 
 ```javascript
 
-#!/usr/bin/node
-
-try {
-  const optionsArray = [{id:'1', label: 'Option 1'},{id:'2', label: 'Option 2'}]
+// place this piece of code within the NodeJS Boilerplate
+const main = async () => {
+  const options = [
+    {id:'1', label: 'Agustin'},
+    {id:'2', label: 'Facundo'},
+    {id:'3', label: 'Tomas'},
+    {id:'4', label: 'Santiago'}
+  ]
   const components = {
-    "input_option": [
-      {
-        "order": 1,
-        "options": optionsArray
-      }
-    ]
+    input_options: [{ order: 1, options }]
   }
-  console.log(JSON.stringify({
-    state: 'success',
-    data: [],
-    components: components
-  }))
-} catch (e) {
-  console.error(e)
-  console.error('failure')
-  process.exit(2)
+  return { data: [], components }
 }
 
+//...
 ```
 
 #### task B
