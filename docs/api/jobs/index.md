@@ -30,7 +30,7 @@ Consider replacing the `${customer}` keyword with your organization name
 | DELETE | /job/finished | [Delete completed jobs history](#example-6) | admin |
 | PUT  | /job/${id}/approve | [Approve Approval job](#example-7) | viewer |
 | PUT  | /job/${id}/reject | [Reject Approval job](#example-8) | viewer |
-| PUT  | /job/${id}/input | [Submit script job input](#example-9) | user |
+| PUT  | /job/${id}/input | Submit script job input | user |
 
 ### Sample API Usage
 
@@ -136,15 +136,4 @@ token="${THEEYE_ACCESS_TOKEN}"
 id="$1"
 
 curl -X PUT "https://supervisor.theeye.io/${customer}/job/${id}/reject?access_token=${token}"
-```
-
-#### **Example 9**
-##### Submit script job input
-
-```bash
-customer=$(echo ${THEEYE_ORGANIZATION_NAME} | jq -r '.')
-token="${THEEYE_ACCESS_TOKEN}"
-id="$1"
-
-curl -X PUT "https://supervisor.theeye.io/${customer}/job/${id}/input?access_token=${token}"
 ```
