@@ -137,4 +137,3 @@ id="$1"
 
 curl -X PUT "https://supervisor.theeye.io/${customer}/job/${id}/reject?access_token=${token}"
 ```
-
