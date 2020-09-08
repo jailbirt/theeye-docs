@@ -73,9 +73,8 @@ On-premise installations allows to integrate the core authorization and user acc
 Once the integration is configured, the system will authenticate every user by default throught the Domain Controller.
 Follow this steps to register users
 
-1. Into the Domain Controller, search the user profile and add the desired group.
-To correctly register a user it must be assigned to a recognized Group by theeye.
-One of the following groups must be used
+To correctly register a user it must be assigned to a recognized Group by theeye. One of the following groups must be used
+
 
   * theeye_owner     
   * theeye_admins     
@@ -84,9 +83,16 @@ One of the following groups must be used
   * theeye_viewers or none to assign to viewers group
 
 
-2. Login into TheEye to complete the registration.
 
-3. After successful registration the user can be invited to any organization by the Owner.
+1. The Domain Controller administrator, search the user and add the group to it.
 
 
-By default all new users will be assigned to a default on-premise organization. This is a core integration setting.
+2. The user must login to TheEye to register and create a profile to operate with de granted permissions.
+
+At this point the user will be assigned by default to a pre-configured on-premise organization.
+
+
+3. After successful registration the user will be ready to be invited to any organization by the users with Members control permissions.   
+
+
+
