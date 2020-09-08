@@ -45,10 +45,12 @@ nav:
   - Templates: './core-concepts/templates.md'
   - Webhooks: './core-concepts/webhooks.md'
   - Scripts:
-      - Working with Scripts: './core-concepts/scripts/index.md'
-      - Run as...: './core-concepts/scripts/runas.md'
-      - Write: './core-concepts/scripts/write.md'
-  - User Management: './core-concepts/user-management.md'
+    - Definitions: './core-concepts/scripts/index.md'
+    - Run as...: './core-concepts/scripts/runas.md'
+    - Write: './core-concepts/scripts/write.md'
+  - IAM:
+    - User Management: './core-concepts/iam/user-management.md'
+    - Logical Access: './core-concepts/iam/logical_access.md'
 - Integrations:
     - Logger: './integrations/logger/index.md'
     - AWS: './integrations/aws/index.md'
