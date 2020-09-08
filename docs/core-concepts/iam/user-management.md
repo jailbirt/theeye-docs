@@ -81,23 +81,21 @@ To correctly register a user it must be assigned to a recognized Group by theeye
   * theeye_managers    
   * theeye_users   
   * theeye_viewers
-   
-  If the user is not assgned to any of the previous groups, the login request will be rejected.
-
-
 
 Follow hereunder steps to allow a domain user to access TheEye:
 
+### Step 1
 
-1. The Domain Controller administrator, search the user and add the group to it.
+Add the desired group to the user in the Domain Controller.
 
-2. The user must login to TheEye to register and create a profile to operate with de granted permissions.
+If the user is not assigned to any of the previous groups, the login request will be rejected.
 
+### Step 2
 
-*At this point the user will be assigned by default to a pre-configured on-premise organization.*
+The user must login to TheEye to register and create a profile with the granted permissions.
 
+### Step 3
 
-3. After successful registration the user will be ready to be invited to any organization by the users with Members control permissions.   
+After successful registration the user can be invited to any organization by the Owners.
 
-
-
+By default all new users will be assigned to a default on-premise organization. This is a core integration setting.
