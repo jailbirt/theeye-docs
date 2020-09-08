@@ -11,10 +11,16 @@ When the Task has arguments, you need to provide the arguments for the task via 
 
 Asuming that your webhook is a trigger of a task with 4 arguments, this is a sample bash script with curl to execute the task:
 
+| Method | Path | Description | ACL |
+| ----- | ----- | ----- | ----- |
+| POST  | /${customer}/webhook/${id}| [Send Arguments](#example-1)  | user |
+| POST  | /${customer}/webhook/${id}?| [Send Arguments with JSON](#example-2)  | user |
 
-```shell
 
-#!/bin/bash
+#### Example 1
+##### Send Arguments 
+
+```bash
 
 # this params should be changed to use your webhook.
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
@@ -22,7 +28,7 @@ id=$ID_WEBHOOK
 secret=$SECRET
 
 
-url="https://supervisor.theeye.io/${customer}/webhook/${id}/trigger/secret/${secret}"
+url="https://supervisor.theeye.io/${customer}/webhook/${id}?trigger/secret/${secret}"
 method='POST'
 contentType='Content-Type: application/json'
 arguments='["my","name","is","test"]'
@@ -38,16 +44,17 @@ curl -i -sS \
 Sometimes, it is necessary to send complex JSON data structures to the tasks.
 In that case, to avoid manually JSON encoding/decoding, we can use a temporary file.
 
-```shell
+#### Example 2
+##### Send Arguments with JSON
+```bash
 
-#!/bin/bash
 
 # this params should be changed to use your webhook.
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
 id=$ID_WEBHOOK
 secret=$SECRET
 
-url="https://supervisor.theeye.io/${customer}/webhook/${id}/trigger/secret/${secret}"
+url="https://supervisor.theeye.io/${customer}/webhook/${id}?trigger/secret/${secret}"
 method='POST'
 contentType='Content-Type: application/json'
 

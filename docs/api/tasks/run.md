@@ -2,9 +2,17 @@
 
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
-## application/json
+| Method | Path | Description | ACL |
+| ----- | ----- | ----- | ----- |
+| POST  | /job/secret/${secret} | [application/json](#example-1) | user |
+| POST  | /job/secret/${secret} | [application/x-www-form-urlencoded](#example-2) | user |
+| POST  | /job/secret/${secret} | [querystring](#example-3) | user |
 
-```shell
+
+#### Example 1
+##### application/json
+
+```bash
 secret=$SECRET_ID
 task=$TASK_ID
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
@@ -16,10 +24,10 @@ curl -i -sS \
   --data '{"task_arguments":["arg1","arg2"]}'
 
 ```
+#### Example 2
+##### application/x-www-form-urlencoded
 
-## application/x-www-form-urlencoded
-
-```shell
+```bash
 secret=$SECRET_ID
 task=$TASK_ID
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
@@ -33,10 +41,10 @@ curl -i -sS \
   --data-urlencode task_arguments="arg3"
 
 ```
+#### Example 3
+##### querystring 
 
-## querystring 
-
-```shell
+```bash
 
 secret=$SECRET_ID
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')

@@ -2,6 +2,8 @@
 
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
+
+
 ## API URL
 
 URL: `https://supervisor.theeye.io/task?access_token={token}&customer={organization_name}`
@@ -26,6 +28,18 @@ URL: `https://supervisor.theeye.io/task?access_token={token}&customer={organizat
 | Environment (env) | env | string | Define extra environment variables that will be present during script execution |
 
 
+
+| Method | Path | Description | ACL |
+| ----- | ----- | ----- | ----- |
+| GET  | /${customer}/task | [List all](#example-1)                | viewer |
+| GET  | /${customer}/task/${id} | [Search task id by name](#example-2) | viewer |
+| GET  | /${customer}/task| [List and timeout](#example-3)  | viewer |
+| POST  | /job/secret/${task_secret_key}| [Using task secret key](#example-4)  | user |
+| POST  | /workflows/${workflow}/secret| [Using workflow secret key](#example-5)  | user |
+| POST  | /${customer}/job/${id}| [Querying job status](#example-7)  | user |
+
+
+
 ## Examples
 
 ### Tasks
@@ -37,8 +51,8 @@ The default execution timeout for tasks is 10 minutes.
 Now it's not possible to change the timeout via API. To modify the timeout for a task contact us.
 
 
-
-### List all
+#### **Example 1**
+##### List all
 
 *Resquest*
 ```bash
@@ -46,16 +60,16 @@ customer=$THEEYE_ORGANIZATION_NAME
 
 curl -sS "https://supervisor.theeye.io/${customer}/task?access_token=$THEEYE_TOKEN"
 ```
-
-### Search task id by name
+#### **Example 2**
+##### Search task id by name
 
 *Request*
 ```bash
 customer=$THEEYE_ORGANIZATION_NAME
-taskid=$(echo $THEEYE_JOB | jq -r '.task_id')
-echo "task id: ${taskid}"
+task_id=$(echo $THEEYE_JOB | jq -r '.task_id')
+echo "task id: ${task_id}"
 
-result=$(curl -sS "https://supervisor.theeye.io/${customer}/task/${taskid}?access_token=${THEEYE_TOKEN}")
+result=$(curl -sS "https://supervisor.theeye.io/${customer}/task/${task_id}?access_token=${THEEYE_TOKEN}")
 
 echo $result | jq -c '. | {"name": .name, "id": .id, "hostname": .hostname}'
 ```
@@ -86,8 +100,8 @@ Returns a json array with tasks, id and hostname:
   }
 ]
 ```
-
-### List and timeout
+#### **Example 3**
+##### List and timeout
 (Timeout = null) means that the timeout is set to default (10 minutes).
 
 ```bash
@@ -129,13 +143,13 @@ When creating Task Jobs via API you will have to provide the Task ID and the Tas
   task_arguments: []
 }
 ```
-
-### Using task secret key. Integration Feature \(recommended\)
+#### **Example 4**
+##### Using task secret key. Integration Feature \(recommended\)
 
 All tasks have a **secret key** which can be used to invoke them directly via API. The secret key provides access to the task it belongs **and only to that task**. **Secret keys** can be revoked any time by just changing them, which makes this the preferred method for it's implicit security.
 
-#### CURL sample Request
 
+##### CURL sample Request
 
 ```bash
 echo $TASK_SECRET
@@ -170,11 +184,12 @@ This technique could be combined with an HTML form to generate an action button.
 
 ```
 
+#### **Example 5**
 ### Using workflow secret key.
 
 You can invoke a **Workflow** using its **secret key**.
 
-#### CURL Sample Request
+##### CURL Sample Request
 
 ```bash
 workflow=$WORKFLOW_ID
@@ -204,8 +219,8 @@ Can also use an HTML form for the same purposes.
 </html>
 
 ```
-
-### Using API integration token (beta)
+#### **Example 6**
+##### Using API integration token (beta)
 
 Integration Tokens can be obtained only by admin users.
 
@@ -214,7 +229,7 @@ Integration Tokens can be obtained only by admin users.
 Accessing to the web interfaz *Menu > Settings > Credentials > Integration Tokens*.
 
 
-#### **Request:**
+##### **Request:**
 
 ```bash
 task_id=$TASK_ID
@@ -296,21 +311,19 @@ curl -X POST \
 The API response is a new created job. We can save the job id and use it later to query the job status.
 In this example the id is "************************"
 
-
-### Querying job status
+#### **Example 7**
+##### Querying job status
 
 Once the job is created we can query it's status using the ID of the job. we can also fetch all the jobs and then filter the response.
 
 #### **Request:**
 
 
-```shell
+```bash
 
 access_token=$THEEYE_ACCESS_TOKEN
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
 job_id=$1
-
-echo "using: $customer"
 
 curl -sS "https://supervisor.theeye.io/${customer}/job/${job_id}?access_token=${access_token}"| jq -r .
 
@@ -364,3 +377,14 @@ curl -sS "https://supervisor.theeye.io/${customer}/job/${job_id}?access_token=${
   "id": "5cdc367240f0bb000f8e9653"
 }
 ```
+
+
+
+
+
+
+
+
+
+
+
