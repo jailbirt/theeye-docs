@@ -73,7 +73,7 @@ On-premise installations allows to integrate the core authorization and user acc
 Once the integration is configured, the system will authenticate every user by default throught the Domain Controller.
 Follow this steps to register users
 
-To correctly register a user it must be assigned to a recognized Group by theeye. One of the following groups must be used
+To correctly register a user it must be assigned to a recognized Group by theeye. User one of the following groups
 
 
   * theeye_owners     
