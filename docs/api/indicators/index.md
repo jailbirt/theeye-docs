@@ -2,6 +2,7 @@
 
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
+
 ## API URL for Indicators
 
 URL: `https://supervisor.theeye.io/indicator?access_token=${token}&customer=${organization_name}`
@@ -27,9 +28,22 @@ URL: `https://supervisor.theeye.io/indicator?access_token=${token}&customer=${or
 | Progress | The indicator value is shown in percent inside a bar, in the same way a progress bar does. value only accepts numbers |
 | Counter | A numeric value is shown starting at one. This indicator has special special methods to increase, decrease and restart the value. value accepts only valid numbers |
 
+| Method | Path | Description | ACL |
+| ----- | ----- | ----- | ----- |
+| GET  | /indicator | [GET All indicators from an organization](#example-1)                | viewer |
+| POST  | /indicator| [Create an Indicator](#example-2)  | user |
+| PATCH  | /indicator/${id}| [Update an Indicator by ID](#example-3)  | user 
+| PATCH  | /indicator/title/{urlencoded_title}| [Update an Indicator by Title](#example-4)  | user |
+| PATCH  | /indicator/{indicator_id}/[action]| [Update a Counter Indicator](#example-5)  | user |
+| POST  | /indicator/${indicator_id}| [Update a Counter Indicator](#example-6)  | user |
+| POST  | /indicator/title/${TITLE_INDICATOR}| [Delete indicator by title](#example-7)  | admin |
+
+
 ## Examples
 
-#### [GET All indicators from an organization](#get)
+#### Example 1
+
+##### GET All indicators from an organization
 
 Method: `GET`
 
@@ -43,7 +57,8 @@ token=$THEEYE_ACCESS_TOKEN
 curl -X GET "https://supervisor.theeye.io/indicator?access_token=${token}&customer=${organization_name}"
 ```
 
-#### Create an Indicator
+#### Example 2 
+##### Create an Indicator
 
 Method: `POST`
 
@@ -89,7 +104,8 @@ The request response will look like this, where customer\_id, customer\_name, us
 ```
 
 
-#### [Update an Indicator by ID](#update)
+#### Example 3 
+##### Update an Indicator by ID
 
 Method: `PATCH`
 
@@ -137,9 +153,9 @@ The request response will look like this, where customer\_id, customer\_name, us
 ```
 
 
-#### 
 
-#### [Update an Indicator by Title](#updateByTitle)
+#### Example 4 
+##### Update an Indicator by Title
 
 Method: `PATCH`
 
@@ -153,14 +169,16 @@ Check the following example, used to update the text indicator value shown at th
 ```bash
 customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
 token=$THEEYE_ACCESS_TOKEN
+indicatorName=$1
 
-curl -X PUT "https://supervisor.theeye.io/indicator/title/ejemplodeprueba?access_token=${token}&customer=${customer}"\
+curl -X PUT "https://supervisor.theeye.io/indicator/title/${indicatorName}?access_token=${token}&customer=${customer}"\
 --header 'Content-Type: application/json' \
 --data "{\"value\":\"15\"}"
 ```
 
 
-**Update a Counter Indicator**
+#### Example 5
+##### Update a Counter Indicator
 
 Method: ****`PATCH`
 
@@ -178,8 +196,8 @@ indicator_id=$ID_INDICATOR
 
 curl -X PATCH "https://supervisor.theeye.io/indicator/${indicator_id}/increase?access_token=${token}&customer=${customer}"
 ```
-
-#### create an indicator with admin
+#### Example 6
+##### create an indicator with admin
 
 Method: `POST`
 
@@ -199,14 +217,14 @@ curl -X POST "https://supervisor.theeye.io/indicator?access_token=${token}&custo
 --data "{\"title\":\"poblacion\",\"state\":\"normal\",\"type\":\"text\",\"value\":\"44millones\",\"acl\":[\"example_user@theeye.io\",\"example_viewer@theeye.io\"]}"
 ```
 
-
-#### Delete indicator by title
+#### Example 7
+##### Delete indicator by title
 
 Method: `DELETE`
 
 Properties: `title, state, value`
 
-URL: `https://supervisor.theeye.io/indicator/${indicator_id}`
+URL: `https://supervisor.theeye.io/indicator/title/${TITLE_INDICATOR}`
 
 Check the following example, used to update the text indicator value shown at the begining of this page.
 
