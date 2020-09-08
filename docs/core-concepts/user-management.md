@@ -76,11 +76,13 @@ Follow this steps to register users
 To correctly register a user it must be assigned to a recognized Group by theeye. One of the following groups must be used
 
 
-  * theeye_owner     
+  * theeye_owners     
   * theeye_admins     
   * theeye_managers    
   * theeye_users   
-  * theeye_viewers or none to assign to viewers group            
+  * theeye_viewers
+   
+  If the user is not assgned to any of the previous groups, the login request will be rejected.
 
 
 
