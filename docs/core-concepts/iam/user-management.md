@@ -1,6 +1,8 @@
-# IAM - Identity and Access Management
-
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
+
+# IAM - Roles and access management
+
+___
 
 ## Roles
 
@@ -47,6 +49,7 @@
 
     * view (ACL's required)
 
+___
 
 ## Members control
 
@@ -57,6 +60,8 @@ To add, modify or revoke users for the current organization, go to the left hamb
 When you invite a new member, it will be prompted to select the user's role \(admin/user/viewer/manager\).
 The role can be changed at any time by a manager or the owner of the account.
 
+___
+
 ## ACLs
 
 In the previous section we've described user roles and user administration.
@@ -65,6 +70,7 @@ Admin users can make resources visible to other members by adding them to the in
 When a user is added to an ACL list, then the resource becomes available and accesible according to the member's role.
 Notifications are sent to all users within the ACL list, regardless the user role.
 
+___
 
 ## Users Domain Controller
 
