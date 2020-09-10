@@ -55,7 +55,7 @@ ___
 
 To add, modify or revoke users for the current organization, go to the left hamburguer menu , then go to _Settings_ > _Members_ section.
 
-![](../images/members.png)
+![](../../images/members.png)
 
 When you invite a new member, it will be prompted to select the user's role \(admin/user/viewer/manager\).
 The role can be changed at any time by a manager or the owner of the account.
