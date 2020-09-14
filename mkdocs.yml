@@ -1,3 +1,4 @@
+
 # Configuration site theme
 theme:
   name: material
@@ -64,6 +65,7 @@ nav:
       - Arguments: './api/tasks/arguments.md'
       - Execution: './api/tasks/run.md'
     - Monitors: './api/monitors/index.md'
+    - Webhooks: './api/webhooks/index.md'
     - Jobs:
       - Basics: './api/jobs/index.md'
 - Assets:
