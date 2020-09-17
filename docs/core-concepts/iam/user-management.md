@@ -49,7 +49,9 @@ ___
 
     * view (ACL's required)
 
-___
+
+-----
+
 
 ## Members control
 
@@ -60,7 +62,9 @@ To add, modify or revoke users for the current organization, go to the left hamb
 When you invite a new member, it will be prompted to select the user's role \(admin/user/viewer/manager\).
 The role can be changed at any time by a manager or the owner of the account.
 
-___
+
+-----
+
 
 ## ACLs
 
@@ -70,37 +74,81 @@ Admin users can make resources visible to other members by adding them to the in
 When a user is added to an ACL list, then the resource becomes available and accesible according to the member's role.
 Notifications are sent to all users within the ACL list, regardless the user role.
 
-___
+
+-----
+
 
 ## Users Domain Controller
 
-On-premise installations allows to integrate the core authorization and user access control to a Domain Controller.
 
-Once the integration is configured, the system will authenticate every user by default throught the Domain Controller.
-Follow this steps to register users
+On-premises installation allows to integrate the core users authorization and access control to a Domain Controller.
+
+
+### Setup
+
+TheEye creates a copy of the user Domain Controller profile with the following attributes:
+
+* id
+
+* fullname
+
+* email
+
+* username
+
+* groups
+
+
+The groups are required to assign a credencial in TheEye, acl y and permissions.
+
+With the created profile, the user will be identifid in the logs activity and in the user interface.
+
+Some common **pre-requistes** to integrate Domain Controller AD or LDAP
+
+
+* Bind DN
+
+* Bind Credentials
+
+* TLS Certificate
+
+
+Once the integration is configured, the system will authenticate every user authentication request by default throught the Domain Controller.
+
+
+### Groups
 
 To correctly register a user it must be assigned to a recognized Group by theeye. User one of the following groups
 
 
   * theeye_owners     
+
   * theeye_admins     
+
   * theeye_managers    
+
   * theeye_users   
+
   * theeye_viewers
+
+
+If the user is not assigned to any groups, will not be able to access.
+
+### User registration
 
 Follow hereunder steps to allow a domain user to access TheEye:
 
-### Step 1
+#### Step 1
 
 Add the desired group to the user in the Domain Controller.
 
 If the user is not assigned to any of the previous groups, the login request will be rejected.
 
-### Step 2
+#### Step 2
 
 The user must login to TheEye to register and create a profile with the granted permissions.
 
-### Step 3
+#### Step 3
 
 After successful registration the user can be invited to any organization by the Owners.
 
