@@ -1,40 +1,49 @@
-# Jobs
-
 [![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
 
-## API URL for Jobs
+# Jobs API
 
-### API V1 URL
+-----
 
-Consider replacing the `${customer}` keyword with your organization name
+## Model Properties
+
+ | Property Name | UI Name | Type   | Default | Description    | 
+ | -----         | -----   | -----  |         | -----          | 
+ | name          | Name    | string |         |                | 
+
+-----
+
+## API Paths
+
+### V1 
+
+Replace the `${customer}` keyword with your organization name
 
 `https://supervisor.theeye.io/${customer}/job?access_token=${token}`
 
-| Method | Path | Description | ACL |
-| ----- | ----- | ----- | ----- |
-| GET  | /${customer}/job/${id} | [Get job by id](#example-1)                | viewer |
-| GET  | /${customer}/job       | [Get all jobs](#example-2) | viewer |
-| PUT  | /${customer}/job/${id} | Finish a job, update execution status | *agent |
-| POST | /${customer}/job | Create a new job instance | user | task id |
-| GET  | /${customer}/job/${id}/lifecycle | [Get job lifecycle](#example-3) | user |
-| PUT  | /${customer}/job/${id}/cancel | [Cancel job](#example-4) | user |
+ | Method | Path                             | Description                           | ACL    | 
+ | -----  | -----                            | -----                                 | -----  | 
+ | GET    | /${customer}/job                 | [Get all jobs](#example-2)            | viewer | 
+ | GET    | /${customer}/job/${id}           | [Get job by id](#example-1)           | viewer | 
+ | PUT    | /${customer}/job/${id}           | Finish a job, update execution status | \*agent | 
+ | POST   | /${customer}/job                 | Create a new job instance             | user   |
+ | GET    | /${customer}/job/${id}/lifecycle | [Get job lifecycle](#example-3)       | user   | 
+ | PUT    | /${customer}/job/${id}/cancel    | [Cancel job](#example-4)              | user   | 
 
-### API V2 URL
+### V2
 
 `https://supervisor.theeye.io/job?access_token={token}&customer={organization_name}`
 
-| Method | Path | Description | ACL |
-| ----- | ----- | ----- | ----- |
-| POST | /job | [Create a new job instance](#example-5) | user |
-| POST | /job/secret/:secret | Create a new job instance using the task secret key | anonymous |
-| DELETE | /job/finished | [Delete completed jobs history](#example-6) | admin |
-| PUT  | /job/${id}/approve | [Approve Approval job](#example-7) | viewer |
-| PUT  | /job/${id}/reject | [Reject Approval job](#example-8) | viewer |
-| PUT  | /job/${id}/input | Submit script job input | user |
+  | Method | Path                | Description                                 | ACL       |
+  | -----  | -----               | -----                                       | -----     |
+  | POST   | /job                | [Creates a job](#example-5)                 | user      |
+  | POST   | /job/secret/:secret | [Creates a job using the secret key](#example-9) | anonymous |
+  | DELETE | /job/finished       | [Delete completed jobs history](#example-6) | admin     |
+  | PUT    | /job/${id}/approve  | [Approve Approval job](#example-7)          | viewer    |
+  | PUT    | /job/${id}/reject   | [Reject Approval job](#example-8)           | viewer    |
+  | PUT    | /job/${id}/input    | Submit script job input                     | user      |
 
-### Sample API Usage
 
-NodeJS Api helper: <a target="_black" href="https://github.com/theeye-io/recipes/tree/master/api/jobs">Fetch and Cancel jobs using TheEye API</a>
+-----
 
 ## EXAMPLES
 
@@ -85,8 +94,8 @@ curl -sS --request PUT "https://supervisor.theeye.io/${customer}/job/${id}/cance
 ```
 
 
-#### **Example 5**
-##### Create a new job instance using the task secret key
+### **Example 5**
+### Create a job using the task secret key
 
 ```bash
 task="$1"
@@ -99,9 +108,8 @@ curl -i -sS -X POST "https://supervisor.theeye.io/job/secret/${secret}" \
 ```
 
 
-
-#### **Example 6**
-#### Delete completed jobs history
+### **Example 6**
+### Delete completed jobs history
 
 ```bash
 access_token=$THEEYE_ACCESS_TOKEN
@@ -137,3 +145,10 @@ id="$1"
 
 curl -X PUT "https://supervisor.theeye.io/${customer}/job/${id}/reject?access_token=${token}"
 ```
+
+-----
+
+### Sample API Usage
+
+NodeJS Api helper: <a target="_black" href="https://github.com/theeye-io/recipes/tree/master/api/jobs">Fetch and Cancel jobs using TheEye API</a>
+

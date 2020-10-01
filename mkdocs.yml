@@ -62,10 +62,11 @@ nav:
     - Tasks:
       - Basics: './api/tasks/index.md'
       - Arguments: './api/tasks/arguments.md'
-      - Execution: './api/tasks/run.md'
     - Monitors: './api/monitors/index.md'
     - Jobs:
       - Basics: './api/jobs/index.md'
+    - Webhooks: './api/webhooks/index.md'
+    - Sync: './api/sync/index.md'
 - Assets:
     - Recipes: './assets/recipes/index.md'
     - Scripts: './assets/scripts/index.md'
