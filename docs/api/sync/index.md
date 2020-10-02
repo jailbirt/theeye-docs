@@ -10,9 +10,9 @@ ____
 
 Tasks execution in TheEye is asynchronous by nature. This means, that task will get executed and then continue in background an the time it takes to complete varies. Usually, we do not need to wait the result and we can check it later.                                                    
 
-But there are cases when we need to call the task and we want to wait the result. This is very common when connecting apis, interfaces that requires user interaction and many other escenarios. 
+But there are cases when we need to invoke the task and we want to wait the result. This is very common when connecting apis, using task with interfaces that requires user interaction and many other escenarios. 
 
-All this cases can be achived using the API in sync mode. The only restriction is the task execution timeout. A recommended timeout would be between 10 to 30 seconds maximum. Most of the web client will abort the request near the 60 seconds. Clients behaviour can be configured and changed but experience tells us that it is not recommended, unless you really need it.
+This can be achived using the API in sync mode. The only restriction is the task execution timeout. A recommended timeout would be between 10 to 30 seconds maximum. Most of the web client will abort the request near the 60 seconds. Clients behaviour can be configured and changed but experience tells us that it is not recommended, unless you really need it.
 
 ___
 
