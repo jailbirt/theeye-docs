@@ -2,20 +2,24 @@
 
 # IAM - Roles and access management
 
-___
+-----
 
-## Roles
-
-\* Access to the task should be provided via ACL's
+## Roles by group
 
 
- | Rol     | Task       | IAM   | CRUD  | ACL's | 
- | -----   | -----      | ----- | ----- | ----- | 
- | Onwer   | x          | x     | x     | x     | 
- | Admin   | x          |       |       | x     | 
- | Manager | \* view    | x     |       |       | 
- | User    | \* execute |       |       |       | 
- | Viewer  | \* view    |       |       |       | 
+
+   | Rol         | Task     | IAM      | CRUD     | ACL's    | 
+   | -----       | -----    | -----    | -----    | -----    | 
+   | Onwer       | &#10003; | &#10003; | &#10003; | &#10003; | 
+   | Admin       | &#10003; | -        | -        | &#10003; | 
+   | Manager     | view     | &#10003; | -        | -        | 
+   | User        | execute  | -        | -        | -        | 
+   | Viewer      | view     | -        | -        | -        | 
+   | Agent       | \*       | -        | -        | -        | 
+   | Integration | \*       | -        | -        | -        | 
+
+
+### Human Users
 
 
 1. **owner**
@@ -52,12 +56,19 @@ ___
 
 -----
 
+### Bot Users
+
+1. **agent**
+
+
+2. **integration**
+
 
 ## Members control
 
 To add, modify or revoke users for the current organization, go to the left hamburguer menu , then go to _Settings_ > _Members_ section.
 
-![](../images/members.png)
+![](../../images/members.png)
 
 When you invite a new member, it will be prompted to select the user's role \(admin/user/viewer/manager\).
 The role can be changed at any time by a manager or the owner of the account.
@@ -118,8 +129,9 @@ Once the integration is configured, the system will authenticate every user auth
 
 ### Groups
 
-To correctly register a user it must be assigned to a recognized Group by theeye. User one of the following groups
+To allow a user to use theeye it must be assigned to the group **theeye_users**
 
+User profile can be controlled via Domain, assigning the user to one of the following groups
 
   * theeye_owners     
 
@@ -131,25 +143,21 @@ To correctly register a user it must be assigned to a recognized Group by theeye
 
   * theeye_viewers
 
-
-If the user is not assigned to any groups, will not be able to access.
-
-### User registration
-
-Follow hereunder steps to allow a domain user to access TheEye:
+Then, follow hereunder steps to allow a domain user to access TheEye:
 
 #### Step 1
 
-Add the desired group to the user in the Domain Controller.
+In the Domain Controller add the group to the desired user.
 
-If the user is not assigned to any of the previous groups, the login request will be rejected.
+If the user is assigned to an invalid group, the login attempt will be rejected.
 
 #### Step 2
 
-The user must login to TheEye to register and create a profile with the granted permissions.
+Login the web interface using a user with credential owner or manager.
+
+Invite the user from the members panel of the organization.
 
 #### Step 3
 
-After successful registration the user can be invited to any organization by the Owners.
+The user is ready to login TheEye
 
-By default all new users will be assigned to a default on-premise organization. This is a core integration setting.

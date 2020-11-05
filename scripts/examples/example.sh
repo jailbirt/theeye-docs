@@ -1,23 +1,68 @@
-#!/usr/bin/env bash
-
-## For both Monitors and Tasks We need that your script ends by returning "normal" or "failure". 
-STATE="success"
-
-# run your command. this will generate output , but we will only parse the last line
-echo "Hello World"
-
-# change state if needed.
-# print state. last line of this script will be the $STATE value
-if [ $? -ne 0 ]; then STATE="failure"; fi
-echo $STATE
-
+# ------------------------------------------------------------------------
 #
-# You can also generate aditional output by sending json valid string.
-# An array in the data property is required when you need to output the inputs for the next task
-# 
-# I.E :
-# echo "{\"state\":\"$STATE\",\"data\":[\"arg1\",\"arg2\",\"arg3\"]}"
-# 
-# Alternative 
-# MYJSON=$(echo $1 | base64 -d)
-# echo "$MYJSON"
+# TheEye.io - Bash Boilerplate for writing script tasks
+#
+# ------------------------------------------------------------------------
+
+# Enable error handling
+set -euo pipefail
+
+# uncomment with bash>4.4 only
+#shopt -s inherit_errexit nullglob compat"${BASH_COMPAT=42}"
+
+trap 'catch_output $? $LINENO' ERR
+trap 'catch_output $? $LINENO' EXIT
+
+PROGNAME=$(basename $0)
+#alias echo="printf"
+
+function catch_output
+{
+  if [ "$1" != "0" ];
+  then
+	  echo "Error $1 occurred on $2" && failure_output
+  fi
+}
+
+function failure_output
+{
+  echo "{\"state\":\"failure\",\"data\":[\"error\"]}"
+  exit 1
+}
+
+function success_output
+{
+  # using cat to remove end of line characters
+  output=$(tr -d '\r|\n' < output.json)
+  printf '{"state":"success","data":%b}' "${output}"
+  exit 0
+}
+
+# ------------------------------------------------------------------------
+#
+# write your code into main function
+#
+# ------------------------------------------------------------------------
+function main 
+{
+
+  # build the JSON output
+  date=$(date --rfc-3339=seconds | sed 's/ /T/')
+  cat << JSON > ./output.json
+[
+  "test arguments",
+  {
+    "prop1":"val1",
+    "prop2":"val2"
+  },
+  "${date}",
+  "another argument"
+]
+JSON
+  
+  # output.json will be handled for you
+  return 0 # task exit code
+}
+
+main
+success_output
