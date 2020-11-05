@@ -4,18 +4,22 @@
 
 ___
 
-## Roles
-
-\* Access to the task should be provided via ACL's
+## Roles by group
 
 
- | Rol     | Task       | IAM   | CRUD  | ACL's | 
- | -----   | -----      | ----- | ----- | ----- | 
- | Onwer   | x          | x     | x     | x     | 
- | Admin   | x          |       |       | x     | 
- | Manager | \* view    | x     |       |       | 
- | User    | \* execute |       |       |       | 
- | Viewer  | \* view    |       |       |       | 
+
+   | Rol         | Task     | IAM      | CRUD     | ACL's    | 
+   | -----       | -----    | -----    | -----    | -----    | 
+   | Onwer       | &#10003; | &#10003; | &#10003; | &#10003; | 
+   | Admin       | &#10003; | -        | -        | &#10003; | 
+   | Manager     | view     | &#10003; | -        | -        | 
+   | User        | execute  | -        | -        | -        | 
+   | Viewer      | view     | -        | -        | -        | 
+   | Agent       | \*       | -        | -        | -        | 
+   | Integration | \*       | -        | -        | -        | 
+
+
+### Human Users
 
 
 1. **owner**
@@ -49,6 +53,14 @@ ___
 
     * view (ACL's required)
 
+
+### Bot Users
+
+1. **agent**
+
+
+2. **integration**
+
 ___
 
 ## Members control
@@ -79,8 +91,9 @@ On-premise installations allows to integrate the core authorization and user acc
 Once the integration is configured, the system will authenticate every user by default throught the Domain Controller.
 Follow this steps to register users
 
-To correctly register a user it must be assigned to a recognized Group by theeye. User one of the following groups
+To allow a user to use theeye it must be assigned to the group **theeye_users**
 
+User profile can be controlled via Domain, assigning the user to one of the following groups
 
   * theeye_owners     
   * theeye_admins     
@@ -88,20 +101,21 @@ To correctly register a user it must be assigned to a recognized Group by theeye
   * theeye_users   
   * theeye_viewers
 
-Follow hereunder steps to allow a domain user to access TheEye:
+Then, follow hereunder steps to allow a domain user to access TheEye:
 
 ### Step 1
 
-Add the desired group to the user in the Domain Controller.
+In the Domain Controller add the group to the desired user.
 
-If the user is not assigned to any of the previous groups, the login request will be rejected.
+If the user is assigned to an invalid group, the login attempt will be rejected.
 
 ### Step 2
 
-The user must login to TheEye to register and create a profile with the granted permissions.
+Login the web interface using a user with credential owner or manager.
+
+Invite the user from the members panel of the organization.
 
 ### Step 3
 
-After successful registration the user can be invited to any organization by the Owners.
+The user is ready to login TheEye
 
-By default all new users will be assigned to a default on-premise organization. This is a core integration setting.

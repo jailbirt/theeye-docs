@@ -26,17 +26,31 @@ URL: `https://supervisor.theeye.io/indicator?access_token=${token}&customer=${or
 | ----- | ----- |
 | Text | The indicator value is shown as typed. value accepts strings |
 | Progress | The indicator value is shown in percent inside a bar, in the same way a progress bar does. value only accepts numbers |
-| Counter | A numeric value is shown starting at one. This indicator has special special methods to increase, decrease and restart the value. value accepts only valid numbers |
+| Chart | Admits JSON data |
+| Counter | A numeric value is shown starting at one. This indicator has special methods to increase, decrease and restart the value. value accepts only valid numbers |
 
 | Method | Path | Description | ACL |
 | ----- | ----- | ----- | ----- |
-| GET  | /indicator | [GET All indicators from an organization](#example-1)                | viewer |
-| POST  | /indicator| [Create an Indicator](#example-2)  | user |
-| PATCH  | /indicator/${id}| [Update an Indicator by ID](#example-3)  | user 
-| PATCH  | /indicator/title/{urlencoded_title}| [Update an Indicator by Title](#example-4)  | user |
-| PATCH  | /indicator/{indicator_id}/[action]| [Update a Counter Indicator](#example-5)  | user |
-| POST  | /indicator/${indicator_id}| [Update a Counter Indicator](#example-6)  | user |
-| POST  | /indicator/title/${TITLE_INDICATOR}| [Delete indicator by title](#example-7)  | admin |
+| GET   | /indicator                           | [GET All indicators from an organization](#example-1) | viewer | 
+| GET   | /indicator/${id}                     | Get one                                               | viewer | 
+| GET   | /indicator/title/${title}            | Get one                                               | viewer | 
+| POST  | /indicator                           | [Create an Indicator](#example-2)                     | admin  | 
+| PUT   | /indicator/${id}                     | Replace                                               | admin  | 
+| PUT   | /indicator/title/${urlencoded_title} | Replace                                               | admin  | 
+| PATCH | /indicator/${id}                     | [Update an Indicator by ID](#example-3)               | admin  | 
+| PATCH | /indicator/title/${urlencoded_title} | [Update an Indicator by Title](#example-4)            | admin  | 
+| PATCH | /indicator/${indicator_id}/state     | Change state or value                                 | agent  | 
+| DELETE  | /indicator/${indicator_id}           | Delete             | admin  | 
+| DELETE  | /indicator/title/${urlencoded_title} | [Delete indicator by title](#example-7)               | admin  | 
+
+
+### Counter Indicator
+
+| Method | Path | Description | ACL |
+| ----- | ----- | ----- | ----- |
+| PATCH   | /indicator/${id}/increase | Increase | agent | 
+| PATCH   | /indicator/${id}/decrease | Decrease | agent | 
+| PATCH   | /indicator/${id}/restart | Restart | agent | 
 
 
 ## Examples
