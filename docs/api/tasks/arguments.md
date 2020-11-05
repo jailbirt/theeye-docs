@@ -17,10 +17,14 @@ Check the following Documentation Sections
 
 ___
 
-## Providing Arguments, variations
+## Providing Arguments
+
+To execute a task via Api you must provide the values for every task argument.
 
 
 ### application/json
+
+#### Alternative 1
 
 ```shell
 secret=$SECRET_ID
@@ -32,6 +36,25 @@ curl -i -sS \
   --url "https://supervisor.theeye.io/job/secret/${secret}?customer=${customer}&task=${task}" \
   --header 'Content-Type: application/json' \
   --data '{"task_arguments":["arg1","arg2"]}'
+
+```
+
+#### Alternative 2
+
+The full request body will must be an array.
+Each index of the array will be mapped in the provided order with the task arguments.
+
+
+```shell
+secret=$SECRET_ID
+task=$TASK_ID
+customer=$(echo $THEEYE_ORGANIZATION_NAME | jq -r '.')
+
+curl -i -sS \
+  --request POST \
+  --url "https://supervisor.theeye.io/${customer}/task/${task}/secret/${secret}/job" \
+  --header 'Content-Type: application/json' \
+  --data '["",{"prop":"value"},[1,2,3],0,null,"hola",""]'
 
 ```
 
@@ -54,7 +77,7 @@ curl -i -sS \
 
 ### querystring 
 
-#### Variation 1
+#### Alternative 1
 
 ```shell
 
@@ -68,7 +91,7 @@ curl -i -sS \
 
 ```
 
-#### Variation 2
+#### Alternative 2
 
 
 ```shell
