@@ -3,7 +3,10 @@
 // error and output handlers must go first.
 
 /**
- * @param {Array} data
+ * @param {Object}
+ * @prop {Mixed} data
+ * @prop {Array} components
+ * @prop {Object} next
  */
 const successOutput = ({ data, components, next }) => {
   // https://documentation.theeye.io/core-concepts/scripts/#passing-arguments-in-workflow
