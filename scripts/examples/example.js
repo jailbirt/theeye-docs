@@ -50,7 +50,7 @@ const main = async () => {
   const result = {
     data: ["arg1","arg2","arg3"],
     components: { "popup": "Hi World!" },
-    next
+    next: {}
   }
 
   // add your code here.
