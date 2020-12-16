@@ -1,6 +1,8 @@
+[![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
+
 # Script Task
 
-[![theeye.io](../../images/logo-theeye-theOeye-logo2.png)](https://theeye.io/en/index.html)
+---
 
 ## Components
 
@@ -19,10 +21,10 @@ Task A is the task that will modify the arguments of the next task. It's script 
 // place this piece of code within the NodeJS Boilerplate
 const main = async () => {
   const options = [
-    {id:'1', label: 'Agustin'},
-    {id:'2', label: 'Facundo'},
-    {id:'3', label: 'Tomas'},
-    {id:'4', label: 'Santiago'}
+    { id: '1', label: 'Agustin' },
+    { id: '2', label: 'Facundo' },
+    { id: '3', label: 'Tomas' },
+    { id: '4', label: 'Santiago' }
   ]
   const components = {
     input_options: [{ order: 1, options }]
@@ -43,10 +45,11 @@ To enable this on task B:
 
 3. Go to the bottom and click **Advanced Options**
 
-4. The **Require user interaction** option must be checked
+4. The **Require user interaction** option must be checked   
 
+---
 
-## Modify an Remote Options argument: input_remote_option
+### Modify an Remote Options argument: input_remote_option
 
 You can use the input_remote_option component from a task to modify the params of the Remote options argument if the next task.
 You can pass all this params or just the one you need to everride. The available params to modify are:
@@ -58,6 +61,7 @@ You can pass all this params or just the one you need to everride. The available
 Let's check this example:
 
 #### task A
+
 Task A is the task that will modify the remote options argument of the next task. It's script output should be as follows:
 
 ```javascript
@@ -92,6 +96,7 @@ try {
 ```
 
 #### task B
+
 Task B is the task that will have its arguments modified.
 To enable this on task B:
 
@@ -101,10 +106,11 @@ To enable this on task B:
 
 3. Go to the bottom and click **Advanced Options**
 
-4. The **Require user interaction** option must be checked
+4. The **Require user interaction** option must be checked    
 
+---
 
-## Popup Message
+### Popup Message
 
 The Web Popup Message allows to display a friendly message to the users when a task completes the execution.
 
@@ -152,8 +158,7 @@ To display a list, the value for popup property should be changed to an array
 
 ```
 
-
-Let's try some code
+Sample code
 
 ```javascript
 
@@ -182,7 +187,7 @@ You can download the recipe from this link.
 [Popup Recipe](https://github.com/theeye-io/recipes/blob/master/task/script/Show_Popup_Message.json)
 
 
-### Enable Popup
+#### Enable Popup
 
 To enable this feature
 
@@ -192,6 +197,26 @@ To enable this feature
 
 3. The **Result Popup** option must be checked
 
+---
+
+### Dynamic Approvers
+
+
+```json
+
+  {
+    "state": "success",
+    "data": [],
+    "next": {
+      "approval": {
+        "approvers": [ "theeye.user@theeye.io" ]
+      }
+    }
+  }
+
+```
+
+---
 
 
 ## Runtime Information
