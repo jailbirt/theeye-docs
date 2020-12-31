@@ -17,6 +17,7 @@ const successOutput = ({ data, components, next }) => {
     next
   }
   console.log( JSON.stringify(output) )
+  process.exit(0)
 }
 
 /**
@@ -33,6 +34,7 @@ const failureOutput = (err) => {
     }
   }
   console.error( JSON.stringify(output) )
+  process.exit(1)
 }
 
 process.on('unhandledRejection', (reason, p) => {
