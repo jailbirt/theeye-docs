@@ -1,5 +1,3 @@
-#!/usr/local/bin/node
-
 // error and output handlers must go first.
 
 /**
