@@ -32,8 +32,10 @@ function failure_output
 
 function success_output
 {
-  # using cat to remove end of line characters
-  output=$(tr -d '\r|\n' < output.json)
+  # remove end of line characters
+  #output=$(tr -d '\r|\n' < output.json)
+  # jq alternative (recommended)
+  output=$(cat output.json | jq -c '.')
   printf '{"state":"success","data":%b}' "${output}"
   exit 0
 }

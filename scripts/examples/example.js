@@ -1,13 +1,21 @@
-#!/usr/local/bin/node
-
 // error and output handlers must go first.
 
 /**
- * @param {Array} data
+ * @param {Object}
+ * @prop {Mixed} data
+ * @prop {Array} components
+ * @prop {Object} next
  */
-const successOutput = (data) => {
-  let output = { state: "success", data }
-  console.log(JSON.stringify(output)) 
+const successOutput = ({ data, components, next }) => {
+  // https://documentation.theeye.io/core-concepts/scripts/#passing-arguments-in-workflow
+  const output = {
+    state: "success",
+    data,
+    components, // https://documentation.theeye.io/core-concepts/tasks/script_type/#components
+    next
+  }
+  console.log( JSON.stringify(output) )
+  process.exit(0)
 }
 
 /**
@@ -15,8 +23,7 @@ const successOutput = (data) => {
  */
 const failureOutput = (err) => {
   console.error(err)
-  
-  let output = {
+  const output = {
     state: "failure",
     data: {
       message: err.message,
@@ -24,7 +31,8 @@ const failureOutput = (err) => {
       data: err.data 
     }
   }
-  console.error(JSON.stringify(output))
+  console.error( JSON.stringify(output) )
+  process.exit(1)
 }
 
 process.on('unhandledRejection', (reason, p) => {
@@ -39,9 +47,15 @@ process.on('uncaughtException', err => {
 
 // NodeJs boilerplate
 const main = async () => {
-  let data = []
+  const result = {
+    data: ["arg1","arg2","arg3"],
+    components: { "popup": "Hi World!" },
+    next: {}
+  }
+
   // add your code here.
-  return data
+
+  return result
 }
 
 // invoke main and capture result output
