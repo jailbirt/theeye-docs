@@ -78,6 +78,7 @@ nav:
     - Home: './support/index.md'
     - Http Server: './support/http_server_discovery.md'
     - Troubleshooting: './support/troubleshooting.md'
+    - TLS/SSL Certificates: './support/tls_certs.md'
   - FAQ's: './faqs_pages/index.md'
   - About:
     - About us: './about/index.md'
