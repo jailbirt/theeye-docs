@@ -247,6 +247,7 @@ This is the user that executes the Task. This env will contain different values 
 | ---  | --- | --- |
 | id | string | the user id |
 | email | string | the user email |
+| username | string | the user username |
 
 ### THEEYE_JOB_WORKFLOW (object)
 
