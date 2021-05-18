@@ -65,6 +65,9 @@ nav:
     - Tasks:
       - Basics: './api/tasks/index.md'
       - Arguments: './api/tasks/arguments.md'
+      - ACL: './api/tasks/acl.md'
+    - Workflow:
+      - ACL: './api/workflows/acl.md'
     - Monitors: './api/monitors/index.md'
     - Jobs:
       - Basics: './api/jobs/index.md'
