@@ -30,7 +30,7 @@ Fill in:
 
 #### Check Members that belog to an Organization
 
-> Search for the organizacion in the searchbar, click on the organization name in the results. You can edit/delete members directly bu clicking on the three spots next to the user.
+> Search for the organizacion in the searchbar, click on the organization name in the results. You can edit/delete members directly by clicking on the three spots next to the user.
 
 ![core iam admin organization members](../../images/core_iam_admin_organizations_members_down.jpg)
 
