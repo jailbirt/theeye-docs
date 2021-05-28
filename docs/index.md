@@ -23,7 +23,7 @@ The **bolded keywords** in the above paragraph are all core concepts of The Eye.
 The Eye consists on the core _**orchestation**_ platform running in a SaaS infrastructure. The _**orchestrator**_ receives _**bots**_ and _**clients**_ connections.
 It works as a finite-state machine to keeps track of _**monitors**_ and _**indicators**_ states, _**tasks**_ and _**workflows**_ execution results,
 and trigger _**notifications**_ on _**events**_.
-It helps maintains _**scripts**_ and _**files**_.
+It helps to maintain _**scripts**_ and _**files**_.
 
 [Monitors](core-concepts/monitors/).
 
@@ -45,11 +45,3 @@ Once a _**user**_ registers, a unique key/secret pair is assigned to his/her acc
 _**Tasks**_ are, well, _**tasks**_. They are the means of the _**core platform**_ to instruct _**agents**_ to execute _**scripts**_ and routines. When a _**user**_ creates a _**task**_ the _**core platform**_ stores any _**scripts**_ and/or options for the _**task**_ and assigns it to the _**host**_. _**Tasks**_ can be launched, _**scheduled**_ for one time or periodic execution, or even be _**triggered**_ by some _**monitor event**_ or _**workflow**_.
 
 The _**user**_ can upload or write _**scripts**_. _**Scripts**_ are stored on the _**core platform**_ and provided to the _**agent**_ when a _**task**_ needs to be executed.
-
-A _**monitor event**_ is...
-
-A _**trigger**_ is what happens when...
-
-A _**workflow**_ consists in a...
-
-
