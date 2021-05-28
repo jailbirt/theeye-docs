@@ -199,7 +199,38 @@ To enable this feature
 
 ---
 
+## Customizing jobs ejecution during run-time.
+
+The keyword "next" is used to customize the triggered job settings.
+
+### Users Interaction with Tasks and Workflows
+
+| name | type | description |
+| ----- | ----- | ----- |
+| acl | array of email / username | job acl control wich users can observe the jobs execution. limit the job acl to the list of users that need to view the job lifecycle changes |
+| user_inputs | boolean | using on jobs that accepts input arguments. the job will be created on hold waiting for users to complete de inputs before continue |
+| user_inputs_members | array of email / username | when "user_inputs" is "true" , control which users must complete the inputs |
+
+
+```json
+
+{
+  "state":"success",
+  "next":{
+    "user_inputs":true,
+    "user_inputs_members":[
+      "facugon"
+    ]
+  }
+}
+
+```
+
 ### Dynamic Approvers
+
+This features will be applied only when the next task is an Approval Task.
+
+"approvers" is the list of email / username that must approve the request.
 
 
 ```json
