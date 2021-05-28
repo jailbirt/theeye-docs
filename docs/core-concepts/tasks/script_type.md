@@ -184,7 +184,11 @@ try {
 
 You can download the recipe from this link.
 
-[Popup Recipe](https://github.com/theeye-io/recipes/blob/master/task/script/Show_Popup_Message.json)
+
+[Popup Recipe](https://github.com/theeye-io/recipes/blob/master/task/script/Show_Popup_Message.json) 
+
+
+------
 
 
 #### Enable Popup
@@ -197,7 +201,36 @@ To enable this feature
 
 3. The **Result Popup** option must be checked
 
----
+------
+
+
+## Customizing jobs ejecution during run-time.
+
+The keyword "next" is used to customize the triggered job settings.
+
+### Users Interaction with Tasks and Workflows
+
+| name | type | description |
+| ----- | ----- | ----- |
+| user_inputs | boolean | using on jobs that accepts input arguments. the job will be created on hold waiting for users to complete de inputs before continue |
+| user_inputs_members | array of email / username | when "user_inputs" is "true" , control which users must complete the inputs |     
+
+
+
+```json
+
+{
+  "state":"success",
+  "next":{
+    "user_inputs":true,
+    "user_inputs_members":[
+      "facugon"
+    ]
+  }
+}
+
+```
+
 
 ## Customizing jobs ejecution during run-time.
 
