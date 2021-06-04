@@ -32,7 +32,7 @@ La URL admite dos parámetros opcionales, que pueden ser colocados en cualquier 
 
 ### Rest API with NodeJS
 
-[https://github.com/theeye-io/theeye-logger-server-nodejs](https://github.com/theeye-io/theeye-logger-server-nodejs)
+[https://github.com/theeye-io/theeye-logger-server-nodejs/tree/master/logger-app](https://github.com/theeye-io/theeye-logger-server-nodejs/tree/master/logger-app)
 
 El codigo de ejemplo se encuentra en este repositorio GitHub.
 
@@ -55,3 +55,11 @@ Tambien hay una interfaz reducida y facil de adaptar para visualizar facilmente 
 ![](../../images/integrations_logger_screen_7.png)
 
 -----
+
+### FluentD
+
+[https://github.com/theeye-io/theeye-logger-server-nodejs/tree/master/fluentd](https://github.com/theeye-io/theeye-logger-server-nodejs/tree/master/fluentd)
+
+Este repositorio contiene un script de inicio de un contenedor docker para recibir los eventos y enviarlos a un archivo de log.
+
+![](../../images/integrations_logger_screen_8.png)
