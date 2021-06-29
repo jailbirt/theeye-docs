@@ -89,15 +89,30 @@ Notifications are sent to all users within the ACL list, regardless the user rol
 -----
 
 
-## Users Domain Controller
+## Domain Controller
 
 
-On-premises installation allows to integrate the core users authorization and access control to a Domain Controller.
+On-premises installation of TheEye allows to integrate the core users authorization and access control to the customer Domain Controller.
 
 
-### Setup
+### Pre-Requistes
 
-TheEye creates a copy of the user Domain Controller profile with the following attributes:
+To integrate to a Domain Controller
+
+
+* Bind DN
+
+* Bind Credentials
+
+* TLS Certificate
+
+
+Once the integration is configured, the system will authenticate every user throught the Domain Controller.
+
+
+### User Profile
+
+The first time a user login to TheEye using the Domain Controller, TheEye internally register the user profile using the following attributes obtained from the Domain Controller:
 
 * id
 
@@ -110,28 +125,17 @@ TheEye creates a copy of the user Domain Controller profile with the following a
 * groups
 
 
-The groups are required to assign a credencial in TheEye, acl y and permissions.
+The groups attribute is required to obtain a credencial for the user.
 
-With the created profile, the user will be identifid in the logs activity and in the user interface.
+The profile will be used to identified the user in the system activity logs and in the web interface.
 
-Some common **pre-requistes** to integrate Domain Controller AD or LDAP
-
-
-* Bind DN
-
-* Bind Credentials
-
-* TLS Certificate
-
-
-Once the integration is configured, the system will authenticate every user authentication request by default throught the Domain Controller.
 
 
 ### Groups
 
-To allow a user to use theeye it must be assigned to the group **theeye_users**
+Users must be assigned to the group **theeye_users** to use TheEye. If the user is not assigned to a group recognized by TheEye, the authentication system will forbidd access.
 
-User profile can be controlled via Domain, assigning the user to one of the following groups
+Credential can also be controlled assigning one of the following groups to the users
 
   * theeye_owners     
 
@@ -143,21 +147,24 @@ User profile can be controlled via Domain, assigning the user to one of the foll
 
   * theeye_viewers
 
-Then, follow hereunder steps to allow a domain user to access TheEye:
+
+### First Time Login
+
+Follow hereunder steps to allow a domain user to access TheEye:
 
 #### Step 1
 
-In the Domain Controller add the group to the desired user.
+In the Domain Controller add the group to the user.
 
 If the user is assigned to an invalid group, the login attempt will be rejected.
 
 #### Step 2
 
-Login the web interface using a user with credential owner or manager.
+Login to TheEye web interface using a user with owner or manager permissions.
 
-Invite the user from the members panel of the organization.
+Invite the user from the members panel of the target organization.
 
 #### Step 3
 
-The user is ready to login TheEye
+The user is now ready to login to TheEye web interface.
 
